@@ -1,1 +1,9 @@
-{"type": "string", "description": "1. ACK: If the request is valid (for basic checks) and async callback (i.e webhook) will be invoked by reciever back to the sender.\n2. NACK: If the request is valid (for basic checks) and there is no futher updates from reciever back to the sender.\n3. ERR: If the reuqest is invalid and reciver can't process the request. error object holds error code, message.\n", "enum": ["ACK", "NACK", "ERR"]}
+{
+  "type": "string",
+  "description": "1. ACK: If the request is valid (for basic checks) and async callback (i.e webhook) will be invoked by reciever back to the sender.\n2. NACK: If the request is valid (for basic checks) and there is no futher updates from reciever back to the sender.\n3. ERR: If the reuqest is invalid and reciver can't process the request. error object holds error code, message.\n",
+  "enum": [
+    "ACK",
+    "NACK",
+    "ERR"
+  ]
+}

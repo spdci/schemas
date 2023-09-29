@@ -1,1 +1,7 @@
-{"type": "object", "description": "@context: \"https://example.org/schema/RecordType\" <br>\n@type: \"CRVSPerson\" <br>\n@container: \"@set\" <br>\n\n**Notes:**\n  1. Record type values defined as per implementation context.\n  2. Usually a list of **enum** values of all possible queryable identifiers.\n", "example": {"$ref": "../../extensions/dci/CRVSPerson.yaml"}}
+{
+  "type": "object",
+  "description": "@context: \"https://example.org/schema/RecordType\" <br>\n@type: \"CRVSPerson\" <br>\n@container: \"@set\" <br>\n\n**Notes:**\n  1. Record type values defined as per implementation context.\n  2. Usually a list of **enum** values of all possible queryable identifiers.\n",
+  "example": {
+    "$ref": "../../extensions/dci/CRVSPerson.yaml"
+  }
+}

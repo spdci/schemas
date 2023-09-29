@@ -42,11 +42,11 @@ def yaml_to_json(read_folder_yaml: str):
 
                 with open(path_yaml, 'r') as yaml_in, open(path_json, "w") as json_out:
                     yaml_object = yaml.safe_load(yaml_in)  # yaml_object will be a list or a dict
-                    json.dump(yaml_object, json_out)
+                    json.dump(yaml_object, json_out, indent=2)
 
 
 # Read all files
 # Comment in if you want to execute this
 
-# input_folder = "."
-# yaml_to_json(input_folder)
+input_folder = "."
+yaml_to_json(input_folder)

@@ -1,1 +1,5 @@
-{"type": "string", "description": "Unique code to identify the subscription request by the entity providing subscription service.\nHelps to check status, unsubscribe etc.,\n", "maxLength": 99}
+{
+  "type": "string",
+  "description": "Unique code to identify the subscription request by the entity providing subscription service.\nHelps to check status, unsubscribe etc.,\n",
+  "maxLength": 99
+}

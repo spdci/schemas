@@ -1,1 +1,13 @@
-{"type": "string", "description": "Operator in an expression", "enum": ["gt", "lt", "eq", "ge", "le", "in"], "example": "eq"}
+{
+  "type": "string",
+  "description": "Operator in an expression",
+  "enum": [
+    "gt",
+    "lt",
+    "eq",
+    "ge",
+    "le",
+    "in"
+  ],
+  "example": "eq"
+}

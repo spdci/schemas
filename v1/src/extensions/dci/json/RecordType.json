@@ -1,1 +1,8 @@
-{"type": "string", "description": "Predefined registry record to return in respone as object\n", "enum": ["person", "other"]}
+{
+  "type": "string",
+  "description": "Predefined registry record to return in respone as object\n",
+  "enum": [
+    "person",
+    "other"
+  ]
+}

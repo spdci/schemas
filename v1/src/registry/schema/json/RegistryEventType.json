@@ -1,1 +1,5 @@
-{"type": "string", "description": "@context: \"https://example.org/schema/RegistryEventType\" <br>\n@type: \"VitalEvent\" <br>\n\n**Notes:**\n  1. Registry event type values defined as per implementation context.\n  2. Usually a list of **enum** values of all possible queryable identifiers.\n  3. example: \"ns:org:RegistryEventType:LiveBirth\"\n", "example": "ns:org:RegistryEventType:LiveBirth"}
+{
+  "type": "string",
+  "description": "@context: \"https://example.org/schema/RegistryEventType\" <br>\n@type: \"VitalEvent\" <br>\n\n**Notes:**\n  1. Registry event type values defined as per implementation context.\n  2. Usually a list of **enum** values of all possible queryable identifiers.\n  3. example: \"ns:org:RegistryEventType:LiveBirth\"\n",
+  "example": "ns:org:RegistryEventType:LiveBirth"
+}

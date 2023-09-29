@@ -1,1 +1,10 @@
-{"in": "header", "name": "accept-language", "description": "Default value: en", "required": false, "schema": {"type": "string", "example": "en"}}
+{
+  "in": "header",
+  "name": "accept-language",
+  "description": "Default value: en",
+  "required": false,
+  "schema": {
+    "type": "string",
+    "example": "en"
+  }
+}

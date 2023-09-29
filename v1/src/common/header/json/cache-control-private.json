@@ -1,1 +1,10 @@
-{"schema": {"type": "string", "enum": ["private"], "example": "private"}, "required": true}
+{
+  "schema": {
+    "type": "string",
+    "enum": [
+      "private"
+    ],
+    "example": "private"
+  },
+  "required": true
+}

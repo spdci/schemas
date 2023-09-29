@@ -1,1 +1,10 @@
-{"in": "header", "name": "timestamp", "description": "request timestamp in HTTP Date format - Tue, 06 Mar 2020 21:00:00 GMT", "required": true, "schema": {"type": "string", "example": "Tue, 06 Mar 2020 21:00:00 GMT"}}
+{
+  "in": "header",
+  "name": "timestamp",
+  "description": "request timestamp in HTTP Date format - Tue, 06 Mar 2020 21:00:00 GMT",
+  "required": true,
+  "schema": {
+    "type": "string",
+    "example": "Tue, 06 Mar 2020 21:00:00 GMT"
+  }
+}

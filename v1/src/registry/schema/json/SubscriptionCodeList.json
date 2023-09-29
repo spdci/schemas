@@ -1,1 +1,5 @@
-{"items": {"$ref": "SubscriptionCode.yaml"}}
+{
+  "items": {
+    "$ref": "SubscriptionCode.yaml"
+  }
+}

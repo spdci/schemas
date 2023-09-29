@@ -1,1 +1,6 @@
-{"type": "array", "items": {"$ref": "LangaugeValue.yaml"}}
+{
+  "type": "array",
+  "items": {
+    "$ref": "LangaugeValue.yaml"
+  }
+}

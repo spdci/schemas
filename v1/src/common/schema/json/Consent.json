@@ -1,1 +1,25 @@
-{"type": "object", "description": "@context: \"https://example.org/schema/Consent\" <br>\n@type: \"Consent\"\n", "example": {"@context": "https://example.org/schema/Consent", "@type": "Consent", "ts": {"$ref": "./DateTime.yaml"}, "purpose": {"text": {"type": "string"}, "code": {"type": "string", "description": "From a fixed set, documented at refUri"}, "refUri": {"type": "string", "format": "uri", "description": "Uri to provide more info on consent codes"}}}}
+{
+  "type": "object",
+  "description": "@context: \"https://example.org/schema/Consent\" <br>\n@type: \"Consent\"\n",
+  "example": {
+    "@context": "https://example.org/schema/Consent",
+    "@type": "Consent",
+    "ts": {
+      "$ref": "./DateTime.yaml"
+    },
+    "purpose": {
+      "text": {
+        "type": "string"
+      },
+      "code": {
+        "type": "string",
+        "description": "From a fixed set, documented at refUri"
+      },
+      "refUri": {
+        "type": "string",
+        "format": "uri",
+        "description": "Uri to provide more info on consent codes"
+      }
+    }
+  }
+}

@@ -1,1 +1,4 @@
-{"type": "object", "description": "Additional JSON property oject to hold custom user defined contextual data"}
+{
+  "type": "object",
+  "description": "Additional JSON property oject to hold custom user defined contextual data"
+}

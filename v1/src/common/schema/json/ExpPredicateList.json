@@ -1,1 +1,7 @@
-{"type": "array", "description": "list of attributes with matching conditions", "items": {"$ref": "./ExpPredicate.yaml"}}
+{
+  "type": "array",
+  "description": "list of attributes with matching conditions",
+  "items": {
+    "$ref": "./ExpPredicate.yaml"
+  }
+}

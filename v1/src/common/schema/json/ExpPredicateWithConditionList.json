@@ -1,1 +1,6 @@
-{"type": "array", "items": {"$ref": "./ExpPredicateWithCondition.yaml"}}
+{
+  "type": "array",
+  "items": {
+    "$ref": "./ExpPredicateWithCondition.yaml"
+  }
+}

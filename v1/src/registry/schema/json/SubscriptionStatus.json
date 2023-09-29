@@ -1,1 +1,8 @@
-{"type": "string", "description": "subscription status", "enum": ["subscribe", "unsubscribe"]}
+{
+  "type": "string",
+  "description": "subscription status",
+  "enum": [
+    "subscribe",
+    "unsubscribe"
+  ]
+}

@@ -1,1 +1,5 @@
-{"type": "string", "description": "Unique reference_id set by txn initiating system for each request in a batch", "example": "12345678901234567890"}
+{
+  "type": "string",
+  "description": "Unique reference_id set by txn initiating system for each request in a batch",
+  "example": "12345678901234567890"
+}

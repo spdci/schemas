@@ -1,1 +1,10 @@
-{"type": "string", "description": "Standardized codes/values represent key events to [integrate](https://docs.mosip.io/1.2.0/integrations/mosip-opencrvs-integration#scope) with civil registries. <br><br>\n**Sample flow to explain birth registration between MOSIP and CRVS systems:**\n1. Step 1: MOSIP subscribes to BIRTH_REGISTERED event with CRVS for RegistrationRecord\n2. Step 2: CRVS subscribes to BIRTH_REGISTERED event with MOSIP for MOSIPVerifiableCredential\n3. Step 3: CRVS notifies RegistrationRecord data to MOSIP \n4. Step 4: MOSIP notifies MOSIPVerifiableCredential data to CRVS <br>\n\n**Sample flow to explain data modification (push) flow from MOSIP to CRVS systems:**\n  1. Step 1: CRVS subscribes to DATA_MODIFICATION event with MOSIP for MOSIPToken data\n  2. Step 2: MOSIP notifies MOSIPToken data to CRVS<br>\n\n**Note:** \n1. Data modifiation (pull) flow can be accomodated with sync/search or existing mosip's eKyc auth api.\n2. Death, Death Reversal fllows same pattern as described in for birth registration.\n", "enum": ["BIRTH_REGISTERED", "DEATH_REGISTERED", "DEATH_REVERSAL", "DATA_MODIFICATION"]}
+{
+  "type": "string",
+  "description": "Standardized codes/values represent key events to [integrate](https://docs.mosip.io/1.2.0/integrations/mosip-opencrvs-integration#scope) with civil registries. <br><br>\n**Sample flow to explain birth registration between MOSIP and CRVS systems:**\n1. Step 1: MOSIP subscribes to BIRTH_REGISTERED event with CRVS for RegistrationRecord\n2. Step 2: CRVS subscribes to BIRTH_REGISTERED event with MOSIP for MOSIPVerifiableCredential\n3. Step 3: CRVS notifies RegistrationRecord data to MOSIP \n4. Step 4: MOSIP notifies MOSIPVerifiableCredential data to CRVS <br>\n\n**Sample flow to explain data modification (push) flow from MOSIP to CRVS systems:**\n  1. Step 1: CRVS subscribes to DATA_MODIFICATION event with MOSIP for MOSIPToken data\n  2. Step 2: MOSIP notifies MOSIPToken data to CRVS<br>\n\n**Note:** \n1. Data modifiation (pull) flow can be accomodated with sync/search or existing mosip's eKyc auth api.\n2. Death, Death Reversal fllows same pattern as described in for birth registration.\n",
+  "enum": [
+    "BIRTH_REGISTERED",
+    "DEATH_REGISTERED",
+    "DEATH_REVERSAL",
+    "DATA_MODIFICATION"
+  ]
+}

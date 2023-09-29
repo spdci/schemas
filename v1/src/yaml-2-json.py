@@ -48,5 +48,5 @@ def yaml_to_json(read_folder_yaml: str):
 # Read all files
 # Comment in if you want to execute this
 
-input_folder = "."
-yaml_to_json(input_folder)
+# input_folder = "."
+# yaml_to_json(input_folder)

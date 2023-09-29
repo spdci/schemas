@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"latitude": {"type": "string", "example": "11\u00c2\u00b024'12.2\"N"}, "longitude": {"type": "string", "example": "88\u00c2\u00b050'26.5\"E"}}}

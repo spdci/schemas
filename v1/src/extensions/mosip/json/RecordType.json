@@ -1,0 +1,1 @@
+{"type": "string", "description": "Predefined registry record to return in respone as object\n", "enum": ["RegistrationRecord", "MOSIPVerifiableCredential"]}

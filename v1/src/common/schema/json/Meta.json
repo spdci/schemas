@@ -1,0 +1,1 @@
+{"type": "object", "description": "@context: \"https://example.org/schema/Meta\" <br>\n@type: \"@context\" <br>\n  \n**Notes:**\n  1. Additional meta info defined as per implementation context.\n  2. Usually unencrypted list of name/value, tags, etc., to provide additional info to intermediary entities.\n  3. The information SHOULD be privacy preserving"}

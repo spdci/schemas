@@ -1,0 +1,1 @@
+{"type": "string", "description": "@context: \"https://example.org/schema/RegistryType\" <br>\n@type: \"RegistryType\" <br>\n\n**Notes:**\n  1. Registry type values defined as per implementation context.\n  2. Usually a list of **enum** values of all possible queryable functional registries \n  3. example: \"ns:org:RegistryType:Civil\"\n", "example": "ns:org:RegistryType:Civil"}

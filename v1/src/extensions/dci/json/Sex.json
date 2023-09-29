@@ -1,0 +1,1 @@
+{"type": "string", "description": "Standardized codes/values representing diverse Sex categories.\nReference: [FHIR Administrative Gender](https://build.fhir.org/valueset-administrative-gender.html)\n1 : Male\n2 : Female\n3 : Others\n4 : Unknown\n", "enum": ["male", "female", "other", "unknown"]}

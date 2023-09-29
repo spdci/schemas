@@ -1,0 +1,1 @@
+{"type": "string", "description": "Request (e.g disburse, link, unlink, resolve, issue, search, verify, etc.,) status: <br> 1. rcvd: Received; Request received <br> 2. pdng: Pending; Request initiated <br> 3. succ: Success; Request successful <br> 4. rjct: Rejected; Request rejected", "enum": ["rcvd", "pdng", "succ", "rjct"]}

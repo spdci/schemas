@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"identifier_type": {"$ref": "IdentifierType.yaml"}, "identifier_value": {"type": "string", "description": "Value of the identifier"}}}

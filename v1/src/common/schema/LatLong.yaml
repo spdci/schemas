@@ -1,0 +1,8 @@
+type: object
+properties:
+  latitude:
+    type: string
+    example: 11°24'12.2"N 
+  longitude:
+    type: string
+    example: 88°50'26.5"E 

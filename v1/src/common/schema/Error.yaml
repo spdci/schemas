@@ -1,0 +1,29 @@
+description: |
+  Commumication layer Asyn errors that are returned as part of message acknowledgement.
+  1. Messages that are not parsable or message integrity check fails.
+  2. This object may be used across all transport layer protocols (https, sftp, messaging, etc,) to ack the receipt of a message.
+  3. Business context and related validation is NOT in scope of this error object.
+type: object
+properties:
+  code:
+    type: string
+    description: Standard error code
+    enum:
+      - "err.request.bad"
+      - "err.request.unauthorized"
+      - "err.request.forbidden"
+      - "err.request.not_found"
+      - "err.request.timeout"
+      - "err.version.not_supported"
+      - "err.request.too_many_requests"
+      - "err.sender_id.invalid"
+      - "err.sender_uri.invalid"
+      - "err.receiver_id.invalid"
+      - "err.signature.missing"
+      - "err.signature.invalid"
+      - "err.encryption.invalid"
+      - "err.service.unavailable"
+  message:
+    type: string
+    description: message to describe above error code
+    maxLength: 999

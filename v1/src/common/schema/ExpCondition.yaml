@@ -1,0 +1,7 @@
+type: string
+description: 'Condition in an expression'
+enum:
+  - "and"
+  - "or"
+  - "not"
+example: "and"

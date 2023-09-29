@@ -1,0 +1,7 @@
+oneOf:
+  - type: string
+  - type: integer
+  - type: number
+  - type: boolean
+  - type: object
+example: "1980"

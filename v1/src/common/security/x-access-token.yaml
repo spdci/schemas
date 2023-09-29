@@ -1,0 +1,4 @@
+type: http
+scheme: bearer
+bearerFormat: jwt
+description: "Authenticating using sessiong token issued by platfrom/system api gateway or auth services issuing session token apis using client id & secret"

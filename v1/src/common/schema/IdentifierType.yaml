@@ -1,0 +1,10 @@
+type: string
+description: |
+  @context: "https://example.org/schema/IdType" <br>
+  @type: "IdType" <br>
+  
+  **Notes:**
+    1. Identifier type values defined as per implementation context.
+    2. Usually a list of **enum** values of all possible queryable identifiers.
+    3. e.g: UIN, MOBILE, BRN, MRN, DRN, etc., 
+example: "UIN"

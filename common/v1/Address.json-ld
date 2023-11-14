@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "@vocab": "https://spdci.org/",
+    "schema": "http://schema.org/",
+    "spdci": "https://spdci.github.io/schemas/",
+    "spdci-common": "https://spdci.github.io/schemas/common/v1",
+    "spdci-extensions": "https://spdci.github.io/schemas/extensions/v1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "address_line1": {
+      "@type": "xsd:string",
+      "description": "Full mailing address, formatted for display or use on a mailing label. This field MAY contain multiple lines, separated by newlines. Newlines can be represented either as a carriage return/line feed pair ('\r\n') or as a single line feed character ('\n')."
+    },
+    "address_line_2": {
+      "@type": "xsd:boolean",
+      "description": "Full street address component, which MAY include house number, street name, Post Office Box, and multi-line extended street address information. This field MAY contain multiple lines, separated by newlines. Newlines can be represented either as a carriage return/line feed pair ('\r\n') or as a single line feed character ('\n')."
+    },
+    "locality": {
+      "@type": "xsd:string",
+      "description": "City or locality component"
+    },
+    "sub_region_code": {
+      "@type": "xsd:string",
+      "description": "District or sub-regional code"
+    },
+    "region_code": {
+      "@type": "xsd:string",
+      "description": "State, province, prefecture, or region component."
+    },
+    "postal_code": {
+      "@type": "xsd:string",
+      "description": "Zip code or postal code component."
+    },
+    "country_code": {
+      "@type": "xsd:string",
+      "description": "Country part of an address represented using an ISO 3-letter code [ISO3166-3], e.g., \"USA\" or \"JPN\". 2-letter ISO codes [ISO3166-1] e.g. ,e.g. US, JP"
+    },
+    "geo_location": {
+      "@oneOf": [
+        {
+          "latlong": "spdci-common:LatLong"
+        },
+        {
+          "plus_code": "spdci-common:GooglePlusCode"
+        }
+      ]
+    }
+  }
+}

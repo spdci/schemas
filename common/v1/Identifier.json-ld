@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "https://spdci.org/",
+    "schema": "http://schema.org/",
+    "spdci": "https://spdci.github.io/schemas/",
+    "spdci-common": "https://spdci.github.io/schemas/common/v1",
+    "spdci-extensions": "https://spdci.github.io/schemas/extensions/v1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "identifier_type": {
+      "@type": "xsd:string",
+      "description": "1. Identifier type values defined as per implementation context. 2. Usually a list of **enum** values of all possible queryable identifiers.3. e.g: UIN, MOBILE, BRN, MRN, DRN, etc."
+    },
+    "identifier_value": {
+      "@type": "xsd:string",
+      "description": "Identifier Value of the subject"
+    }
+  }
+}

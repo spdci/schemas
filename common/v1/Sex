@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "sex": {
+      "@id": "schema:sex",
+      "@type": "@id",
+      "@description": "Standardized codes/values representing diverse Sex categories. Reference: [FHIR Administrative Gender](https://build.fhir.org/valueset-administrative-gender.html) 1: Male, 2: Female, 3: Others, 4: Unknown",
+      "@enum": [
+        "male",
+        "female",
+        "other",
+        "unknown"
+      ]
+    }
+  }
+}

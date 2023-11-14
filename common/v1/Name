@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "@vocab": "https://spdci.org/",
+    "schema": "http://schema.org/",
+    "spdci": "https://spdci.github.io/schemas/",
+    "spdci-common": "https://spdci.github.io/schemas/common/v1",
+    "spdci-extensions": "https://spdci.github.io/schemas/extensions/v1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sur_name": {
+      "@type": "xsd:string",
+      "@description": "Surname(s) or last name(s) of the applicant"
+    },
+    "given_name": {
+      "@type": "xsd:string",
+      "@description": "Given name(s) or first name(s) of the applicant"
+    },
+    "second_name": {
+      "@type": "xsd:string",
+      "@description": "Second name(s) or middle name(s) of the applicant"
+    },
+    "suffix": {
+      "@type": "xsd:string",
+      "@description": "Suffix part of the applicant's name"
+    },
+    "prefix": {
+      "@type": "xsd:string",
+      "@description": "Prefix part of the applicant's name"
+    }
+  }
+}

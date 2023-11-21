@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/common/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "event:VitalEventTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Vital Event Type Enum",
+      "rdfs:comment": "Enumeration for types of vital events.",
+      "owl:oneOf": [
+        "event:LiveBirth",
+        "event:Death",
+        "event:FetalDeath",
+        "event:Marriage",
+        "event:Divorce",
+        "event:Adoption"
+      ]
+    },
+    {
+      "@id": "event:LiveBirth",
+      "@type": "event:VitalEventTypeEnum",
+      "rdfs:label": "Live Birth",
+      "rdfs:comment": "Record of a live birth."
+    },
+    {
+      "@id": "event:Death",
+      "@type": "event:VitalEventTypeEnum",
+      "rdfs:label": "Death",
+      "rdfs:comment": "Record of a death."
+    },
+    {
+      "@id": "event:FetalDeath",
+      "@type": "event:VitalEventTypeEnum",
+      "rdfs:label": "Fetal Death",
+      "rdfs:comment": "Record of a fetal death."
+    },
+    {
+      "@id": "event:Marriage",
+      "@type": "event:VitalEventTypeEnum",
+      "rdfs:label": "Marriage",
+      "rdfs:comment": "Record of a marriage."
+    },
+    {
+      "@id": "event:Divorce",
+      "@type": "event:VitalEventTypeEnum",
+      "rdfs:label": "Divorce",
+      "rdfs:comment": "Record of a divorce."
+    },
+    {
+      "@id": "event:Adoption",
+      "@type": "event:VitalEventTypeEnum",
+      "rdfs:label": "Adoption",
+      "rdfs:comment": "Record of an adoption."
+    }
+  ]
+}

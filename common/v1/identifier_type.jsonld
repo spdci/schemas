@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/common/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "identifier:IdentifierTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Identifier Type Enum",
+      "rdfs:comment": "Enumeration for types of identifiers.",
+      "owl:oneOf": [
+        "identifier:UIN",
+        "identifier:BRN",
+        "identifier:MRN",
+        "identifier:DRN"
+      ]
+    },
+    {
+      "@id": "identifier:UIN",
+      "@type": "identifier:IdentifierTypeEnum",
+      "rdfs:label": "UIN",
+      "rdfs:comment": "Unique Identification Number."
+    },
+    {
+      "@id": "identifier:BRN",
+      "@type": "identifier:IdentifierTypeEnum",
+      "rdfs:label": "BRN",
+      "rdfs:comment": "Birth Registration Number."
+    },
+    {
+      "@id": "identifier:MRN",
+      "@type": "identifier:IdentifierTypeEnum",
+      "rdfs:label": "MRN",
+      "rdfs:comment": "Marriage Record Number."
+    },
+    {
+      "@id": "identifier:DRN",
+      "@type": "identifier:IdentifierTypeEnum",
+      "rdfs:label": "DRN",
+      "rdfs:comment": "Death Record Number."
+    }
+  ]
+}

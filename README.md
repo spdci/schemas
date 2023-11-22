@@ -1,42 +1,55 @@
-# schemas
+# SPDCI Interoperability Schemas
 
-SPDCI JSON-LD Schema defination
-------------
-JSON-LD (JavaScript Object Notation for Linking Data) is a lightweight Linked
-Data format. It is easy for humans to read and write. It is easy for machines
-to parse and generate. It is based on the already successful JSON format and
-provides a way to help JSON data interoperate at Web-scale. If you are already
-familiar with JSON, writing JSON-LD is very easy. There is a smooth migration
-path from the JSON you use today, to the JSON-LD you will use in the future.
-These properties make JSON-LD an ideal Linked Data interchange language for
-JavaScript environments, Web services, and unstructured databases such as
-CouchDB and MongoDB.
+## Enhancing Interoperability Between CRVS and Social Protection Systems with JSON-LD
 
-If you are already using JSON-LD, add yourself to the `list of users`_ in our wiki.
+JSON-LD (JavaScript Object Notation for Linking Data) is a pivotal component in facilitating the interoperability between systems. This repository contains schema definitions using JSON-LD, designed to ensure seamless data integration and communication across diverse platforms and systems.
 
+### Why JSON-LD for SPDCI?
+JSON-LD extends the standard JSON format to include linked data, allowing for more expressive and interconnected data representations. This feature is particularly beneficial in complex environments like CRVS and social protection systems, where data consistency and universal understanding are paramount.
 
-A Simple Example
-----------------
+### Example: JSON-LD in Action
+Below is a practical example of how our JSON-LD schema represents a CRVS entity. This schema encapsulates key identifiers, personal information, and relational data in a structured, web-scale interoperable format:
 
-A simple example of a JSON object with added semantics::
+```json
+{
+    "@context": {
+      "@vocab": "http://spdci.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:CRVS_Person_2",
+    "@type": "spdci:CRVS_Person",
+    "identifier": "UIN:789456",
+    "name": {
+        "@type": "spdci:Name",
+        "given_name": "Sudarat",
+        "sur_name": "Phumchai"
+    },
+    "phone_number": "+66 891 234567",
+    "email": "sudarat.phumchai@example.com",
+    "sex": "spdci:Female",
+    "birthdate": "1985-06-10T00:00:00",
+    "birthplace": "Phumchai_Village_Clinic",
+    "address": {
+        "@type": "spdci:Place",
+        "address": "45, Rural Road, Phumchai Village",
+        "geo": {
+            "@type": "spdci:GeoCoordinates",
+            "latitude": "18.775632",
+            "longitude": "98.985524"
+        },
+        "containedInPlace": "Place_2",
+    },
+    "marital_status": "spdci:Married",
+    "marriagedate": "2010-04-20T00:00:00"
+}
+```
 
- {
-   "@context": "https://json-ld.org/contexts/person.jsonld",
-   "@id": "http://dbpedia.org/resource/John_Lennon",
-   "name": "John Lennon",
-   "born": "1940-10-09",
-   "spouse": "http://dbpedia.org/resource/Cynthia_Lennon"
- }
+### Dive Deeper
+- For an in-depth understanding of how these schemas work, visit our [documentation page](https://standards.spdci.org/standards/standards/1.-crvs/6.5-data-standards).
+- To see these schemas in action, try out our interactive examples in the [JSON-LD Playground](https://json-ld.org/playground/).
 
-The example above describes a person whose name is John Lennon. The difference
-between regular JSON and JSON-LD is that the JSON-LD object above uniquely
-identifies itself on the Web and can be used, without introducing ambiguity,
-across every Web site, Web services and databases in operation today.
-
-The Playground
---------------
-
-If you would like to play around with JSON-LD markup, you may do so here:
-
-https://json-ld.org/playground/
-
+### Community and Contributions
+We welcome contributions, ideas, and feedback from the community. To contribute or report issues, please follow our [contribution guidelines](https://github.com/spdci).

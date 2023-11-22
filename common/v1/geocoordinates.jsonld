@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/common/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "spdci:GeoCoordinates",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A geographical coordinate set defined by a latitude and a longitude according to the WGS 84 system.",
+      "rdfs:property": [
+        {
+          "@id": "spdci:latitude",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "rdfs:label": "latitude",
+          "rdfs:domain": "spdci:GeoCoordinates",
+          "rdfs:range": "xsd:decimal"
+        },
+        {
+          "@id": "spdci:longitude",
+          "@type": "rdf:Property",
+          "rdfs:comment": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "rdfs:label": "longitude",
+          "rdfs:domain": "spdci:GeoCoordinates",
+          "rdfs:range": "xsd:decimal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/common/v1/",
+    "@vocab": "http://spdci.org/schemas/common/v1",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"    
+  },
+  "@graph": [
+    {
+      "@id": "category:MaritalStatusCategoryEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Marital Status Type Enum",
+      "rdfs:comment": "Enumeration for types of marital status category.",
+      "owl:oneOf": [
+        "category:S",
+        "category:M",
+        "category:W",
+        "category:A",
+        "category:D",
+        "category:L",
+        "category:U"
+      ]
+    },
+    {
+      "@id": "category:S",
+      "@type": "category:MaritalStatusCategoryEnum",
+      "rdfs:label": "Never Married",
+      "rdfs:comment": "No marriage contract has ever been entered."
+    },
+    {
+      "@id": "category:M",
+      "@type": "category:MaritalStatusCategoryEnum",
+      "rdfs:label": "Married",
+      "rdfs:comment": "A current marriage contract is active."
+    },
+    {
+      "@id": "category:W",
+      "@type": "category:MaritalStatusCategoryEnum",
+      "rdfs:label": "Widow",
+      "rdfs:comment": "The spouse has died."
+    },
+    {
+      "@id": "category:A",
+      "@type": "category:MaritalStatusCategoryEnum",
+      "rdfs:label": "Annulled",
+      "rdfs:comment": "Marriage contract has been declared null and to not have existed."
+    },
+    {
+      "@id": "category:D",
+      "@type": "category:MaritalStatusCategoryEnum",
+      "rdfs:label": "Divorced",
+      "rdfs:comment": "Marriage contract has been declared dissolved and inactive."
+    },
+    {
+      "@id": "category:L",
+      "@type": "category:MaritalStatusCategoryEnum",
+      "rdfs:label": "Legally Separated",
+      "rdfs:comment": "Legally Separated."
+    },
+    {
+      "@id": "category:U",
+      "@type": "category:MaritalStatusCategoryEnum",
+      "rdfs:label": "Unmarried",
+      "rdfs:comment": "The person is not presently married. The marital history is not known or stated."
+    }
+  ]
+}

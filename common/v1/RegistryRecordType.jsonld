@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/common/v1/",
+    "@vocab": "http://spdci.org/schemas/common/v1",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"    
+  },
+  "@graph": [
+    {
+      "@id": "category:RegistryTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Registry type values Enum",
+      "rdfs:comment": "Registry type values defined as per implementation context.",
+      "owl:oneOf": [
+        "category:LiveBirth",
+        "category:Death",
+        "category:Marriage",
+        "category:Divorce"
+      ]
+    },
+    {
+      "@id": "category:Civil",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "Civil",
+      "rdfs:comment": "Civil registry type"
+    },
+    {
+      "@id": "category:IBR",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "IBR",
+      "rdfs:comment": "IBR registry type"
+    },
+    {
+      "@id": "category:Social",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "Social",
+      "rdfs:comment": "Social registry type"
+    },
+    {
+      "@id": "category:unknown",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "unknown",
+      "rdfs:comment": "Unknown registry type"
+    }
+  ]
+}  

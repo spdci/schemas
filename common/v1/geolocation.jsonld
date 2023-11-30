@@ -63,7 +63,7 @@
       ]
     },
     {
-      "@id": "spdci:GeoCoordinates",
+      "@id": "spdci:location",
       "@type": "rdfs:Class",
       "rdfs:property": [
         {

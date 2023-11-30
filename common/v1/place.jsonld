@@ -46,14 +46,14 @@
       "rdfs:comment": "Geo Location details."
     },
     {
-      "@id": "spdci:containedInPlace",
+      "@id": "spdci:contained_in_place",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Place",
       "rdfs:range": "spdci:Place",
       "rdfs:comment": "A relationship indicating a larger place that this place is part of."
     },
     {
-      "@id": "spdci:containsPlace",
+      "@id": "spdci:contains_place",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Place",
       "rdfs:range": "spdci:Place",

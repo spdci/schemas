@@ -10,7 +10,7 @@
   "rdfs:comment": "The name data object represents a person's name with various components.",
   "rdfs:property": [
     {
-      "@id": "spdci:sur_name",
+      "@id": "spdci:surname",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Name",
       "rdfs:range": "xsd:string"

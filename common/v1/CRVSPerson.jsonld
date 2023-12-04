@@ -46,31 +46,31 @@
           "rdfs:comment": "Sex of the applicant, represented as an enumeration (Male, Female, Others, Unknown).",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "spdci:SexEnum"
+          "rdfs:range": {"@id": "category:SexCategoryEnum"} 
         },
         {
-          "@id": "spdci:birthdate",
+          "@id": "spdci:birth_date",
           "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": "schema:DateTime"
         },
         {
-          "@id": "spdci:birthplace",
+          "@id": "spdci:birth_place",
           "rdfs:comment": "Physical location where the applicant was born, represented as an address object.",
           "@type": "rdfs:ObjectProperty",
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": "spdci:Place"
         },
         {
-          "@id": "spdci:deathdate",
+          "@id": "spdci:death_date",
           "rdfs:comment": "The date of death of the applicant, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": "schema:DateTime"
         },
         {
-          "@id": "spdci:deathplace",
+          "@id": "spdci:death_place",
           "rdfs:comment": "Physical location where the applicant died, if applicable. Represented as an address object.",
           "@type": "rdfs:ObjectProperty",
           "rdfs:domain": "spdci:CRVS_Person",
@@ -88,17 +88,17 @@
           "rdfs:comment": "Current marital status of the applicant, represented as an enumeration (e.g., Married, Divorced, etc.).",
           "@type": "rdfs:ObjectProperty",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "spdci:MaritalStatusEnum"
+          "rdfs:range": {"@id": "category:MaritalStatusEnum"}
         },
         {
-          "@id": "spdci:marriagedate",
+          "@id": "spdci:marriage_date",
           "rdfs:comment": "Date when the applicant got married, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": "schema:DateTime"
         },
         {
-          "@id": "spdci:divorcedate",
+          "@id": "spdci:divorce_date",
           "rdfs:comment": "Date when the applicant got divorced, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
@@ -112,106 +112,6 @@
           "rdfs:comment": "Relationships the applicant has with other persons, represented as an array of relationship objects."
         }
       ]
-    },
-    {
-      "@id": "spdci:MaritalStatusEnum",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Enumeration for marital status.",
-      "rdfs:subClassOf": "rdfs:Resource",
-      "owl:oneOf": [
-        "spdci:NeverMarried",
-        "spdci:Married",
-        "spdci:Widow",
-        "spdci:Annulled",
-        "spdci:Divorced",
-        "spdci:LegallySeparated",
-        "spdci:Unmarried"
-      ]
-    },
-    {
-      "@id": "spdci:marital_status",
-      "@type": "rdf:Property",
-      "rdfs:comment": "The marital status of a person.",
-      "rdfs:domain": "spdci:CRVS_Person",
-      "rdfs:range": "spdci:MaritalStatusEnum"
-    },
-    {
-      "@id": "spdci:NeverMarried",
-      "@type": "spdci:MaritalStatusEnum",
-      "rdfs:label": "Never Married",
-      "rdfs:comment": "No marriage contract has ever been entered"
-    },
-    {
-      "@id": "spdci:Married",
-      "@type": "spdci:MaritalStatusEnum",
-      "rdfs:label": "Married",
-      "rdfs:comment": "A current marriage contract is active"
-    },
-    {
-      "@id": "spdci:Widow",
-      "@type": "spdci:MaritalStatusEnum",
-      "rdfs:label": "Widow",
-      "rdfs:comment": "The spouse has died"
-    },
-    {
-      "@id": "spdci:Annulled",
-      "@type": "spdci:MaritalStatusEnum",
-      "rdfs:label": "Annulled",
-      "rdfs:comment": "Marriage contract has been declared null and to not have existed"
-    },
-    {
-      "@id": "spdci:Divorced",
-      "@type": "spdci:MaritalStatusEnum",
-      "rdfs:label": "Divorced",
-      "rdfs:comment": "Marriage contract has been declared dissolved and inactive"
-    },
-    {
-      "@id": "spdci:LegallySeparated",
-      "@type": "spdci:MaritalStatusEnum",
-      "rdfs:label": "Legally Separated",
-      "rdfs:comment": "Legally Separated"
-    },
-    {
-      "@id": "spdci:Unmarried",
-      "@type": "spdci:MaritalStatusEnum",
-      "rdfs:label": "Unmarried",
-      "rdfs:comment": "The person is not presently married. The marital history is not known or stated."
-    },
-    {
-      "@id": "spdci:SexEnum",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Enumeration for sex.",
-      "rdfs:subClassOf": "rdfs:Resource",
-      "owl:oneOf": [
-        "spdci:Male",
-        "spdci:Female",
-        "spdci:Others",
-        "spdci:Unknown"
-      ]
-    },
-    {
-      "@id": "spdci:Male",
-      "@type": "spdci:SexEnum",
-      "rdfs:label": "male",
-      "rdfs:comment": "Male"
-    },
-    {
-      "@id": "spdci:Female",
-      "@type": "spdci:SexEnum",
-      "rdfs:label": "female",
-      "rdfs:comment": "Female"
-    },
-    {
-      "@id": "spdci:Others",
-      "@type": "spdci:SexEnum",
-      "rdfs:label": "other",
-      "rdfs:comment": "Others"
-    },
-    {
-      "@id": "spdci:Unknown",
-      "@type": "spdci:SexEnum",
-      "rdfs:label": "unknown",
-      "rdfs:comment": "Unknown"
     }
   ]
 }

@@ -9,7 +9,7 @@
   },
   "@graph": [
     {
-      "@id": "category:MaritalStatusCategoryEnum",
+      "@id": "category:MaritalStatusEnum",
       "@type": "rdfs:Class",
       "rdfs:subClassOf": "rdfs:Resource",
       "rdfs:label": "Marital Status Type Enum",
@@ -26,43 +26,43 @@
     },
     {
       "@id": "category:S",
-      "@type": "category:MaritalStatusCategoryEnum",
+      "@type": "category:MaritalStatusEnum",
       "rdfs:label": "Never Married",
       "rdfs:comment": "No marriage contract has ever been entered."
     },
     {
       "@id": "category:M",
-      "@type": "category:MaritalStatusCategoryEnum",
+      "@type": "category:MaritalStatusEnum",
       "rdfs:label": "Married",
       "rdfs:comment": "A current marriage contract is active."
     },
     {
       "@id": "category:W",
-      "@type": "category:MaritalStatusCategoryEnum",
+      "@type": "category:MaritalStatusEnum",
       "rdfs:label": "Widow",
       "rdfs:comment": "The spouse has died."
     },
     {
       "@id": "category:A",
-      "@type": "category:MaritalStatusCategoryEnum",
+      "@type": "category:MaritalStatusEnum",
       "rdfs:label": "Annulled",
       "rdfs:comment": "Marriage contract has been declared null and to not have existed."
     },
     {
       "@id": "category:D",
-      "@type": "category:MaritalStatusCategoryEnum",
+      "@type": "category:MaritalStatusEnum",
       "rdfs:label": "Divorced",
       "rdfs:comment": "Marriage contract has been declared dissolved and inactive."
     },
     {
       "@id": "category:L",
-      "@type": "category:MaritalStatusCategoryEnum",
+      "@type": "category:MaritalStatusEnum",
       "rdfs:label": "Legally Separated",
       "rdfs:comment": "Legally Separated."
     },
     {
       "@id": "category:U",
-      "@type": "category:MaritalStatusCategoryEnum",
+      "@type": "category:MaritalStatusEnum",
       "rdfs:label": "Unmarried",
       "rdfs:comment": "The person is not presently married. The marital history is not known or stated."
     }

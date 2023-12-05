@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "@vocab": "http://spdci.org/schemas/src/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "identifier:IdentifierTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Identifier Type Enum",
+      "rdfs:comment": "An identifier type includes unique numbers legally assigned to individuals.",
+      "owl:oneOf": "identifier:UIN"
+    },
+    {
+      "@id": "identifier:UIN",
+      "@type": "identifier:IdentifierTypeEnum",
+      "rdfs:label": "UIN",
+      "rdfs:comment": "Unique Identification Number."
+    }
+  ]
+}

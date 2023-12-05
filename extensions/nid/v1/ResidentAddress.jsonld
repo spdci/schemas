@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:ResidentAddress",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "ResidentAddress of the Resident in English Language",
+  "rdfs:label": "Resident Address",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:care_of",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Care of information"
+    },
+    {
+      "@id": "spdci:building",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Building identity"
+    },
+    {
+      "@id": "spdci:street",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Street details"
+    },
+    {
+      "@id": "spdci:landmark",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Landmark details"
+    },
+    {
+      "@id": "spdci:pincode",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Pincode"
+    },
+    {
+      "@id": "spdci:po_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Post office name"
+    },
+    {
+      "@id": "spdci:vtc",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Village/Town/City Code"
+    },
+    {
+      "@id": "spdci:vtc_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Village/Town/City Name"
+    },
+    {
+      "@id": "spdci:sub_district_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Sub District Name"
+    },
+    {
+      "@id": "spdci:district_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "District Name"
+    },
+    {
+      "@id": "spdci:state",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "State Name"
+    },
+    {
+      "@id": "spdci:country",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Country Name"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/ibr/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dci": "http://spdci.org/schemas/src/extensions/dci/v1/",
+    "openid": "http://spdci.org/schemas/src/extensions/openid/v1/"
+  },
+  "@id": "spdci:Person",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Attributes of a person to create fetch records, create verifiable credentials or use in search criteria.",
+  "rdfs:label": "Person Record",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "spdci:IdentifierTypeValue",
+      "rdfs:comment": "Information of identifier of the person."
+    },
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:Name"
+    },
+    {
+      "@id": "spdci:sex",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:SexCategoryEnum"
+    },
+    {
+      "@id": "spdci:birthdate",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Represents Date and time of the applicant's birth as in [ISO 8601](https://www.iso.org/standard/40874.html)"
+    },
+    {
+      "@id": "spdci:address",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "openid:Address"
+    },
+    {
+      "@id": "spdci:marital_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:MaritalStatusCategoryEnum"
+    },
+    {
+      "@id": "spdci:poverty_score",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "details of poverty score."
+    },
+    {
+      "@id": "spdci:disabled",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "True is disabled, false if no disability."
+    },
+    {
+      "@id": "spdci:household_identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Value of the household identifier."
+    },
+    {
+      "@id": "spdci:programms",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Details of the programmes the person is enrolled in",
+      "rdfs:label": "Programms",
+      "rdfs:range": {
+        "@id": "spdci:Programme",
+        "@type": "rdfs:Class",
+        "@container": "@list"
+      }
+    },
+    {
+      "@id": "spdci:benefits",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Benefits received by the person",
+      "rdfs:label": "Benefits",
+      "rdfs:range": {
+        "@id": "spdci:Benefit",
+        "@type": "rdfs:Class",
+        "@container": "@list"
+      }
+    },
+    {
+      "@id": "spdci:payments",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Payment information",
+      "rdfs:label": "Payments",
+      "rdfs:range": {
+        "@id": "spdci:DisbursementInfo",
+        "@type": "rdfs:Class",
+        "@container": "@list"
+      }
+    }
+  ]
+}
+
+

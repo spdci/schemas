@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/src/extensions/mosip/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "event:EventTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Event Type Enum",
+      "rdfs:comment": "Enumeration for types of events.",
+      "owl:oneOf": [
+        "event:BIRTH_REGISTERED",
+        "event:DEATH_REGISTERED",
+        "event:DEATH_REVERSAL",
+        "event:DATA_MODIFICATION"
+      ]
+    },
+    {
+      "@id": "event:BIRTH_REGISTERED",
+      "@type": "event:EventTypeEnum",
+      "rdfs:label": "Birth Registered",
+      "rdfs:comment": "Standardized code for a birth registration event."
+    },
+    {
+      "@id": "event:DEATH_REGISTERED",
+      "@type": "event:EventTypeEnum",
+      "rdfs:label": "Death Registered",
+      "rdfs:comment": "Standardized code for a death registration event."
+    },
+    {
+      "@id": "event:DEATH_REVERSAL",
+      "@type": "event:EventTypeEnum",
+      "rdfs:label": "Death Reversal",
+      "rdfs:comment": "Standardized code for a death reversal event."
+    },
+    {
+      "@id": "event:DATA_MODIFICATION",
+      "@type": "event:EventTypeEnum",
+      "rdfs:label": "Data Modification",
+      "rdfs:comment": "Standardized code for a data modification event."
+    }
+  ]
+}

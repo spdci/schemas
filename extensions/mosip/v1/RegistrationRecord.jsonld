@@ -1,0 +1,162 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/mosip/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:RegistrationRecord",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Birth Registration record to sync with MOSIP.",
+  "rdfs:label": "Registration Record",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:registration_id",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Unique identifier for the birth registration record."
+    },
+    {
+      "@id": "spdci:packetId",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Identifier for the packet associated with the birth registration record."
+    },
+    {
+      "@id": "spdci:additional_info_reqId",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Identifier for additional information request associated with the birth registration record."
+    },
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Name associated with the birth registration record."
+    },
+    {
+      "@id": "spdci:email",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Email associated with the birth registration record."
+    },
+    {
+      "@id": "spdci:phone",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Phone number associated with the birth registration record."
+    },
+    {
+      "@id": "spdci:registration_type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Type of birth registration."
+    },
+    {
+      "@id": "spdci:packet_hash_value",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Hash value associated with the packet."
+    },
+    {
+      "@id": "spdci:packet_size",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:number"
+    },
+    {
+      "@id": "spdci:supervisor_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Status of the supervisor for the birth registration record."
+    },
+    {
+      "@id": "spdci:supervisor_comment",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Comment provided by the supervisor for the birth registration record."
+    },
+    {
+      "@id": "spdci:optional_values",
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": {
+        "@id": "rdf:List",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "Optional values associated with the birth registration record.",
+        "rdfs:label": "Optional Values",
+        "rdfs:member": {
+          "@id": "rdf:rest",
+          "@type": "rdf:Property",
+          "rdf:first": {
+            "@id": "rdf:first",
+            "@type": "rdfs:Datatype",
+            "rdfs:range": "xsd:string"
+          },
+          "rdf:rest": {
+            "@id": "rdf:rest",
+            "@type": "rdf:Property"
+          }
+        }
+      }
+    },
+    {
+      "@id": "spdci:lang_code",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Language code associated with the birth registration record."
+    },
+    {
+      "@id": "spdci:create_date_time",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "@range": "http://spdci.org/schemas/src/common/schema/DateTime",
+      "rdfs:comment": "Date and time when the birth registration record was created."
+    },
+    {
+      "@id": "spdci:update_date_time",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "@range": "http://spdci.org/schemas/src/common/schema/DateTime",
+      "rdfs:comment": "Date and time when the birth registration record was last updated."
+    },
+    {
+      "@id": "spdci:deleted_date_time",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "@range": "http://spdci.org/schemas/src/common/schema/DateTime",
+      "rdfs:comment": "Date and time when the birth registration record was deleted."
+    },
+    {
+      "@id": "spdci:is_active",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "Indicator of whether the birth registration record is active."
+    },
+    {
+      "@id": "spdci:is_deleted",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:RegistrationRecord",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "Indicator of whether the birth registration record is deleted."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:DeceasedRecord",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Deceased record obtainable from registries",
+  "rdfs:label": "Deceased Record",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:reference_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Unique reference number maintained in the registry for recording death record"
+    },
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences"
+    },
+    {
+      "@id": "spdci:gender",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "End-User's gender. Values defined by this specification are female, male, transgender"
+    },
+    {
+      "@id": "spdci:dob",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Date of Birth in DDMMYYYY format"
+    },
+    {
+      "@id": "spdci:dod",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Date of Death in DDMMYYYY format"
+    },
+    {
+      "@id": "spdci:reported_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Date in DDMMYYYY format to record on which the death incident reported"
+    },
+    {
+      "@id": "spdci:demo_check_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "Whether demo check has been undertaken or not"
+    },
+    {
+      "@id": "spdci:demo_check_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Date in DDMMYYYY format to capture the Demo Check Date"
+    },
+    {
+      "@id": "spdci:document",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:DeceasedRecord",
+      "rdfs:range": "spdci:Document",
+      "rdfs:comment": "Reference to the document associated with the deceased record"
+    }
+  ]
+}

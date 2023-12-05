@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/src/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:GroupTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Group Type  Enum",
+      "rdfs:comment": "Enumeration for the type of grouping to which a beneficiary belongs.",
+      "owl:oneOf": [
+        "type:1",
+        "type:2",
+        "type:3"
+      ]
+    },
+    {
+      "@id": "type:1",
+      "@type": "type:GroupTypeEnum",
+      "rdfs:label": "Household",
+      "rdfs:comment": "Standardized code for household beneficiary."
+    },
+    {
+      "@id": "type:2",
+      "@type": "type:GroupTypeEnum",
+      "rdfs:label": "Family",
+      "rdfs:comment": "Standardized code for the Family beneficiary."
+    },
+    {
+      "@id": "type:3",
+      "@type": "type:GroupTypeEnum",
+      "rdfs:label": "Group",
+      "rdfs:comment": "Standardized code for the group beneficiary."
+    }
+  ]
+}

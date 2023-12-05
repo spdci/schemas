@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "spdci":"http://spdci.org/schemas/src/extensions/dci/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:Name",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "The name data object represents a person's name with various components.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:sur_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "spdci:given_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "spdci:second_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "spdci:prefix",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "spdci:suffix",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/openid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:PersonDocDetails",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Person document details as per OpenID identity-assurance specification.",
+  "rdfs:label": "Person Document Details",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:PersonDocDetails",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "String denoting the type of the document. The OP MAY use other than the predefined values in which case the RPs will either be unable to process the assertion, just store this value for audit purposes, or apply bespoken business logic to it."
+    },
+    {
+      "@id": "spdci:document_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:PersonDocDetails",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "String representing an identifier/number that uniquely identifies a document that was issued to the End-User. This is used on one document and will change if it is reissued, e.g., a passport number, certificate number, etc. Note, number can be used as an alias for 'document_number' for backward compatibility purposes but will be deprecated in future releases, implementers are recommended to use document_number."
+    },
+    {
+      "@id": "spdci:personal_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:PersonDocDetails",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "String representing an identifier that is assigned to the End-User and is not limited to being used in one document, for example a national identification number, personal identity number, citizen number, social security number, driver number, account number, customer number, licensee number, etc."
+    },
+    {
+      "@id": "spdci:serial_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:PersonDocDetails",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "String representing an identifier/number that identifies the document irrespective of any personalization information (this usually only applies to physical artifacts and is present before personalization)."
+    },
+    {
+      "@id": "spdci:date_of_issuance",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:PersonDocDetails",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The date the document was issued as ISO 8601 [ISO8601] YYYY-MM-DD format."
+    },
+    {
+      "@id": "spdci:date_of_expiry",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:PersonDocDetails",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The date the document will expire as ISO 8601 [ISO8601] YYYY-MM-DD format."
+    },
+    {
+      "@id": "spdci:issuer",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:PersonDocDetails",
+      "rdfs:range": "spdci:Issuer",
+      "rdfs:comment": "JSON object containing information about the issuer of this document."
+    }
+  ]
+}

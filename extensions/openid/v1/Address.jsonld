@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/openid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:Address",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "An address is a structured entity that represents the details and components of an address.",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:address_line_1",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Full mailing address, formatted for display or use on a mailing label."
+    },
+    {
+      "@id": "spdci:address_line_2",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Full street address component, which MAY include house number, street name, Post Office Box, and multi-line extended street address information. This field MAY contain multiple lines, separated by newlines."
+    },
+    {
+      "@id": "spdci:locality",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "City or locality component."
+    },
+    {
+      "@id": "spdci:sub_region_code",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "District or sub-regional code."
+    },
+    {
+      "@id": "spdci:region_code",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "State, province, prefecture, or region component."
+    },
+    {
+      "@id": "spdci:postal_code",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Zip Code or postal code component."
+    },
+    {
+      "@id": "spdci:country_code",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Country part of an address."
+    },
+    {
+      "@id": "spdci:geo_location",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "spdci:GeoLocation"
+    }
+  ]
+}

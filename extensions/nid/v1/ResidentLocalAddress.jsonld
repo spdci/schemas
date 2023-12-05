@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:ResidentLocalAddress",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "ResidentLocalAddress of the Resident in English Language",
+  "rdfs:label": "Resident Local Address",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:local_careof",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Care of information in local language"
+    },
+    {
+      "@id": "spdci:local_building",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Building information in local language"
+    },
+    {
+      "@id": "spdci:local_street",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Street information in local language"
+    },
+    {
+      "@id": "spdci:local_landmark",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Landmark information in local language"
+    },
+    {
+      "@id": "spdci:local_locality",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Locality information in local language"
+    },
+    {
+      "@id": "spdci:pincode",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Pincode"
+    },
+    {
+      "@id": "spdci:po_name_local",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Post office name in local"
+    },
+    {
+      "@id": "spdci:local_vtc",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "vtc information in local language"
+    },
+    {
+      "@id": "spdci:local_subdistrict",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Sub District information in local language"
+    },
+    {
+      "@id": "spdci:local_district",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "District information in local language"
+    },
+    {
+      "@id": "spdci:local_state",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "State information in local language"
+    },
+    {
+      "@id": "spdci:local_country",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentLocalAddress",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Country information in local language"
+    }
+  ]
+}

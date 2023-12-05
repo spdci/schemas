@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/cdpi/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:PersonId",
+  "@type": "rdfs:Datatype",
+  "rdfs:comment": "Person ID is a case-insensitive normative representation as id-type:id@provider.",
+  "rdfs:label": "Person ID",
+  "rdfs:range": "xsd:string",
+  "rdfs:pattern": "^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+$",
+  "rdfs:examples": [
+    "token:12345@nid",
+    "vid:543215@nid",
+    "id:12345@civil-reg",
+    "brn:12345@civil-reg",
+    "mrn:12345@civil-reg",
+    "id:12345@voter-id",
+    "id:12345@driving-license",
+    "mobile:12345@farmer-reg"
+  ]
+}

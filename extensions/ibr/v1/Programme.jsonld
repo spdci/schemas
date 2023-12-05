@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/ibr/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:Programme",
+  "@type": "rdfs:Class",
+  "rdfs:label": "Programme Enrollment",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:programme_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Programme",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The programme name sent by the SP system."
+    },
+    {
+      "@id": "spdci:programme_identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Programme",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Programme identifier."
+    },
+    {
+      "@id": "spdci:registration_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Programme",
+      "rdfs:range": "  ",
+      "rdfs:comment": "The date when the beneficiary was registered into the programme."
+    },
+    {
+      "@id": "spdci:enrolment_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Programme",
+      "rdfs:range": " ",
+      "rdfs:comment": "The date when the beneficiary was enrolled into the programme."
+    },
+    {
+      "@id": "spdci:suspension_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Programme",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date when the beneficiary was suspended from the programme."
+    },
+    {
+      "@id": "spdci:graduation_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Programme",
+      "rdfs:range": " ",
+      "rdfs:comment": "The date when the beneficiary graduated."
+    },
+    {
+      "@id": "spdci:status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Programme",
+      "rdfs:range": "benefit:BeneficiaryStatusEnum"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:ResidentRecord",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Resident Information",
+  "rdfs:label": "Resident Information",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences."
+    },
+    {
+      "@id": "spdci:gender",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "End-User's gender. Values defined by this specification are female, male, transgender."
+    },
+    {
+      "@id": "spdci:dob",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Date of Birth in DDMMYYYY format"
+    },
+    {
+      "@id": "spdci:dob_type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Date of Birth Type i.e Declared, Approximate, Verified"
+    },
+    {
+      "@id": "spdci:phone",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Phone number of the resident. If the number contains an extension, it is RECOMMENDED that the extension be represented using the RFC 3966 [RFC3966] extension syntax, for example, +1 (604) 555-1234;ext=5678."
+    },
+    {
+      "@id": "spdci:email",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "End-User's preferred e-mail address. Its value MUST conform to the RFC 5322 [RFC5322] addr-spec syntax. The RP MUST NOT rely upon this value being unique, as discussed in Section 5.7."
+    },
+    {
+      "@id": "spdci:address",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "spdci:ResidentAddress"
+    },
+    {
+      "@id": "spdci:local_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "spdci:ResidentLocalName"
+    },
+    {
+      "@id": "spdci:local_address",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "spdci:ResidentLocalAddress"
+    },
+    {
+      "@id": "spdci:photo",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "spdci:ResidentPhoto"
+    },
+    {
+      "@id": "spdci:nationality",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "spdci:ResidentNationality"
+    },
+    {
+      "@id": "spdci:kyc_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "spdci:EKycDetails"
+    },
+    {
+      "@id": "spdci:document",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentRecord",
+      "rdfs:range": "spdci:Document"
+    }
+  ]
+}

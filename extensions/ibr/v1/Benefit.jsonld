@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/ibr/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:Benefit",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "The Benefit object provides information about benefits",
+  "rdfs:label": "Benefit",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:benefit_type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Benefit",
+      "rdfs:range": "spdci:benefit_type"
+    },
+    {
+      "@id": "spdci:benefit_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Benefit",
+      "rdfs:range": "spdci:   "
+    },
+    {
+      "@id": "spdci:benefit_value",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Benefit",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "This can be any value like monetary value like currency value or any objects received"
+    }
+  ]
+}

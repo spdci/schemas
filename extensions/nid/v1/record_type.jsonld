@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "@id": "record:RecordTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Record Type Enum",
+      "rdfs:comment": "Predefined registry record to return in response as object.",
+      "owl:oneOf": [
+        "record:resident_record",
+        "record:deceased_record"
+      ]
+    },
+    {
+      "@id": "record:resident_record",
+      "@type": "record:RecordTypeEnum",
+      "rdfs:label": "Resident Record",
+      "rdfs:comment": "Resident Record"
+    },
+    {
+      "@id": "record:deceased_record",
+      "@type": "record:RecordTypeEnum",
+      "rdfs:label": "Deceased Record",
+      "rdfs:comment": "Deceased Record"
+    }
+  ]
+}

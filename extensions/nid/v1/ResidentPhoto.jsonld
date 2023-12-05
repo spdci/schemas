@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:ResidentPhoto",
+  "@type": "rdfs:Class",
+  "rdfs:label": "Resident Photo ",
+  "rdfs:comment": "Resident Photo,Image encoded as Base64 string",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:photo",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentPhoto",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Photo encoded as Base64 string"
+    }
+  ]
+}

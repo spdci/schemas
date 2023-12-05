@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:ResidentNationality",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Resident Nationality Information",
+  "rdfs:label": "Resident Nationality Information",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:nationality",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentNationality",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Nationality information of the Resident"
+    },
+    {
+      "@id": "spdci:passport_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentNationality",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Passport number of the Resident"
+    },
+    {
+      "@id": "spdci:passport_valid_upto",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentNationality",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Passport validity date in DDMMYYYY format"
+    },
+    {
+      "@id": "spdci:visa_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentNationality",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Visa number of the Resident"
+    },
+    {
+      "@id": "spdci:visa_valid_upto",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentNationality",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Visa validity details"
+    },
+    {
+      "@id": "spdci:oci_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentNationality",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "OCI card details"
+    },
+    {
+      "@id": "spdci:oci_valid_upto",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ResidentNationality",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "OCI Validity date in DDMMYYYY format"
+    }
+  ]
+}

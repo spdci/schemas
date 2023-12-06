@@ -1,7 +1,7 @@
 {
   "@context": {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "@vocab": "http://spdci.org/schemas/src/extensions/nid/v1/",
+    "@vocab": "https://schema.spdci.org/extensions/nid/v1/",
     "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [

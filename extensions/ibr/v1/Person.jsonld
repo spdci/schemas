@@ -1,11 +1,11 @@
 {
   "@context": {
-    "spdci": "http://spdci.org/schemas/src/extensions/ibr/v1/",
+    "spdci": "https://schema.spdci.org/extensions/ibr/v1/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
-    "dci": "http://spdci.org/schemas/src/extensions/dci/v1/",
-    "openid": "http://spdci.org/schemas/src/extensions/openid/v1/"
+    "dci": "https://schema.spdci.org/extensions/dci/v1/",
+    "openid": "https://schema.spdci.org/extensions/openid/v1/"
   },
   "@id": "spdci:Person",
   "@type": "rdfs:Class",

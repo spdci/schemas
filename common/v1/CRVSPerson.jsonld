@@ -110,6 +110,20 @@
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": "spdci:Relationship",
           "rdfs:comment": "Relationships the applicant has with other persons, represented as an array of relationship objects."
+        },
+        {
+          "@id": "spdci:parent1_identifier",
+          "rdfs:comment": "Identifier for one parent of the applicant. Must be a unique identifier similar to the applicant's identifier.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": "schema:DateTime"
+        },
+        {
+          "@id": "spdci:parent2_identifier",
+          "rdfs:comment": "Identifier for another parent of the applicant, if applicable. Must be a unique identifier similar to the applicant's identifier.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": "@id"
         }
       ]
     }

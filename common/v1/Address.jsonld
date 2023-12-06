@@ -19,14 +19,14 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Address",
       "rdfs:range": "xsd:string",
-      "rdfs:comment": "Full mailing address, formatted for display or use on a mailing label."
+      "rdfs:comment": "First line of a mailing address (Person-agnostic)."
     },
     {
       "@id": "spdci:address_line_2",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Address",
       "rdfs:range": "xsd:string",
-      "rdfs:comment": "Full street address component, which may include house number, street name, Post Office Box, and multi-line extended street address information."
+      "rdfs:comment": "Second line of a mailing address (Person-agnostic)."
     },
     {
       "@id": "spdci:locality",
@@ -67,7 +67,8 @@
       "@id": "spdci:geo_location",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Address",
-      "rdfs:range": "spdci:GeoLocation"
+      "rdfs:range": "spdci:GeoLocation",
+      "rdfs:comment": "Location Information"
     }
   ]
 }

@@ -15,33 +15,25 @@
   ],
   "rdfs:property": [
     {
-      "@id": "spdci:identifier",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Place",
-      "rdfs:range": "@id",
-      "rdfs:comment": "Place identifier in another system such as the HDX location identifier https://data.humdata.org/."
-    },
-    {
       "@id": "spdci:name",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Place",
       "rdfs:range": "xsd:string",
-      "rdfs:comment": "Full mailing address, formatted for display or use on a mailing label. This field may contain multiple lines, separated by newlines."
+      "rdfs:comment": "Name of the place, e.g. 'King's Palace'."
     },
     {
-      "@id": "spdci:address",
+      "@id": "spdci:address_line",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Place",
       "rdfs:range": "xsd:string",
-      "rdfs:comment": "Full mailing address, formatted for display or use on a mailing label. This field may contain multiple lines, separated by newlines."
+      "rdfs:comment": "Full mailing address, formatted for display or use on a mailing label."
     },
     {
       "@id": "spdci:geo",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Place",
       "rdfs:range": [
-        "spdci:GeoCoordinates",
-        "spdci:GeoShape"
+        "spdci:GeoCoordinates"
       ],
       "rdfs:comment": "Geo Location details."
     },

@@ -13,31 +13,36 @@
       "@id": "spdci:surname",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Name",
-      "rdfs:range": "xsd:string"
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The surname or family name of a person."
     },
     {
       "@id": "spdci:given_name",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Name",
-      "rdfs:range": "xsd:string"
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The given or first name of a person."
     },
     {
       "@id": "spdci:second_name",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Name",
-      "rdfs:range": "xsd:string"
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The second name or middle name of a person."
     },
     {
       "@id": "spdci:prefix",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Name",
-      "rdfs:range": "xsd:string"
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Any prefix used in the person's name."
     },
     {
       "@id": "spdci:suffix",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Name",
-      "rdfs:range": "xsd:string"
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Any suffix used in the person's name."
     }
   ]
 }

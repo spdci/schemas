@@ -27,19 +27,19 @@
       "@id": "identifier:BRN",
       "@type": "identifier:IdentifierTypeEnum",
       "rdfs:label": "BRN",
-      "rdfs:comment": "Birth Registration Number."
+      "rdfs:comment": "Birth Registration Number or Birth Serial Number."
     },
     {
       "@id": "identifier:MRN",
       "@type": "identifier:IdentifierTypeEnum",
       "rdfs:label": "MRN",
-      "rdfs:comment": "Marriage Record Number."
+      "rdfs:comment": "Marriage Registration Number."
     },
     {
       "@id": "identifier:DRN",
       "@type": "identifier:IdentifierTypeEnum",
       "rdfs:label": "DRN",
-      "rdfs:comment": "Death Record Number."
+      "rdfs:comment": "Death Registration Number."
     }
   ]
 }

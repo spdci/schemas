@@ -36,7 +36,7 @@
         "xsd:float",
         "xsd:string"
       ],
-      "rdfs:comment": "Indicates the elevation of a location (WGS 84). Values may be formatted as 'NUMBER UNIT_OF_MEASUREMENT' (e.g., '1,000 m', '3,200 ft'), with standalone numbers interpreted as meters."
+      "rdfs:comment": "Indicates the elevation of a location (WGS 84)."
     },
     {
       "@id": "spdci:line",

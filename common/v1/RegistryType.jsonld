@@ -15,10 +15,10 @@
       "rdfs:label": "Registry type values Enum",
       "rdfs:comment": "Registry type values defined as per implementation context.",
       "owl:oneOf": [
-        "category:LiveBirth",
-        "category:Death",
-        "category:Marriage",
-        "category:Divorce"
+        "category:Civil",
+        "category:IBR",
+        "category:Social",
+        "category:unknown"
       ]
     },
     {

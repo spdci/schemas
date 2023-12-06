@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/src/extensions/social/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "category:HeadEnumType",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "is head type Enum",
+      "rdfs:comment": "Enumeration for head type.",
+      "owl:oneOf": [
+        "category:1",
+        "category:2",
+        "category:3"
+      ]
+    },
+    {
+      "@id": "category:1",
+      "@type": "category:HeadEnumType",
+      "rdfs:label": "Head of household",
+      "rdfs:comment": "Head of household"
+    },
+    {
+      "@id": "category:2",
+      "@type": "category:HeadEnumType",
+      "rdfs:label": "Not head of household",
+      "rdfs:comment": "Not head of household"
+    },
+    {
+      "@id": "category:3",
+      "@type": "category:HeadEnumType",
+      "rdfs:label": "Unknown",
+      "rdfs:comment": "Unknown"
+    }
+  ]
+}

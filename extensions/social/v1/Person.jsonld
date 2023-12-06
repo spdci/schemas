@@ -1,0 +1,215 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/extensions/social/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dci":"http://spdci.org/schemas/src/extensions/dci/v1/",
+    "schema": "http://schema.org/",
+    "openid": "http://spdci.org/schemas/src/extensions/openid/v1/"
+  },
+  "@id": "spdci:Person",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains the information on people and households held in the social registry.",
+  "rdfs:label": "Person",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:Identifier",
+      "rdfs:comment": "The person's identification number."
+    },
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:Name",
+      "rdfs:comment": "Full name in a displayable form, possibly including titles and suffixes, in the order of the applicant's locale norms and/or preferences."
+    },
+    {
+      "@id": "spdci:parent1_identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:Identifier",
+      "rdfs:comment": "Identifier for one parent of the applicant. Must be a unique identifier similar to the applicant's identifier."
+    },
+    {
+      "@id": "spdci:parent2_identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:Identifier",
+      "rdfs:comment": "Identifier for one parent of the applicant. Must be a unique identifier similar to the applicant's identifier."
+    },
+    {
+      "@id": "spdci:birth_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "schema:DateTime",
+      "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
+    },
+    {
+      "@id": "spdci:sex",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+        "@id": "category:SexCategoryEnum"
+      },
+      "rdfs:comment": "Sex of the applicant, represented as an enumeration ."
+    },
+    {
+      "@id": "spdci:phone_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Applicant's preferred phone number. The format E.164 is recommended."
+    },
+    {
+      "@id": "spdci:marital_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:MaritalStatusCategoryEnum"
+    },
+    {
+      "@id": "spdci:poverty_score",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:decimal",
+      "rdfs:comment": "The poverty score assigned to the household as a result of a proxy means test or other poverty ranking approach."
+    },
+    {
+      "@id": "spdci:disabled",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "True is disabled, false if no disability."
+    },
+    {
+      "@id": "spdci:household_identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The identifier for a household that the person is linked too."
+    },
+    {
+      "@id": "spdci:is_head",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+        "@id": "category:HeadEnumType"
+      },
+      "rdfs:comment": "Defines if the person is the head of the household or not."
+    },
+    {
+      "@id": "spdci:is_disabled",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "Specifies if the applicant is disabled, not disabled or not known."
+    },
+    {
+      "@id": "spdci:registration_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The date on which the person was first registered in the social registry."
+    },
+    {
+      "@id": "spdci:address",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "openid:Address",
+      "rdfs:comment": "Current residential address of the applicant, represented as an address object."
+    },
+    {
+      "@id": "spdci:death_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "schema:DateTime",
+      "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
+    },
+
+    {
+      "@id": "spdci:email",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Applicant's preferred email address. The format must comply with RFC 5322 addr-spec."
+    },
+    {
+      "@id": "spdci:nationality",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The nationality of the person registered."
+    },
+    {
+      "@id": "spdci:employment_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+         "@id": "category:EmploymentStatusCategoryEnum"
+      },
+      "rdfs:comment": "Binary representation of if the beneficiary is formally employed or not."
+    },
+    {
+      "@id": "spdci:disability_identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "dci:Identifier",
+      "rdfs:comment": "Identifier for the disability registry."
+    },
+    {
+      "@id": "spdci:disability_type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+      "@id": "type:DisabilityTypeEnum"
+      },
+      "rdfs:comment": "Identifier for the disability registry."
+    },
+    {
+      "@id": "spdci:functional_limitation_type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Functional limitation of the beneficiary."
+    },
+    {
+      "@id": "spdci:functional_severity",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+       "@id": "category:FunctionalSeverityTypeEnum"
+      },
+      "rdfs:comment": "Identifier for the disability registry."
+    },
+    {
+      "@id": "spdci:is_deceased",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "Binary representation of if the beneficiary is deceased or not."
+    },
+    {
+      "@id": "spdci:ethnicity",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Ethnicity of the applicant."
+    },
+    {
+      "@id": "spdci:last_updated",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Date on which applicant data was last updated."
+    }
+  ]
+}

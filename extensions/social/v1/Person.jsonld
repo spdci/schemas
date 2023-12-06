@@ -84,13 +84,6 @@
       "rdfs:comment": "The poverty score assigned to the household as a result of a proxy means test or other poverty ranking approach."
     },
     {
-      "@id": "spdci:disabled",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
-      "rdfs:range": "xsd:boolean",
-      "rdfs:comment": "True is disabled, false if no disability."
-    },
-    {
       "@id": "spdci:household_identifier",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",

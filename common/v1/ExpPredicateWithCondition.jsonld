@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:ExpPredicateWithCondition",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Expression",
+  "rdfs:label": "Expression Predicate With Condition",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:seq_num",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ExpPredicateWithCondition",
+      "rdfs:comment": "Sequence number to help define precedence for evaluating a list of expression Predicates.",
+      "rdfs:range": "xsd:integer"
+    },
+    {
+      "@id": "spdci:expression1",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ExpPredicateWithCondition",
+      "rdfs:range": "spdci:ExpPredicate",
+    },
+    {
+      "@id": "spdci:condition",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ExpPredicateWithCondition",
+      "rdfs:range": {
+        "@id": "type:ExpCondition",
+      }
+    },
+    {
+      "@id": "spdci:expression2",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ExpPredicateWithCondition",
+      "rdfs:range": "spdci:ExpPredicate",
+    }
+  ]
+}
+

@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:AttributeNameValue",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Attribute name value object",
+  "rdfs:label": "Attribute Name Value",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:AttributeNameValue",
+      "rdfs:comment": "Attribute name",
+      "rdfs:range": "xsd:string",
+      "rdfs:examples": "YOB"
+    },
+    {
+      "@id": "spdci:value",
+      "@type": "rdfs:Datatype",
+      "rdfs:comment": "Attribute value",
+      "rdfs:domain": "spdci:AttributeNameValue",
+      "rdfs:range": {
+        "@id": "type:AttributeValueEnum"
+      }
+    }
+  ]
+}
+

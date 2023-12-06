@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:EncryptedHeader",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Encrypted Header information",
+  "rdfs:label": "Encrypted Header",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:alg",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The JWE algorithm used for encryption"
+    },
+    {
+      "@id": "spdci:enc",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The encryption algorithm used for encrypting the plaintext"
+    },
+    {
+      "@id": "spdci:kid",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The key identifier for the encryption key"
+    }
+  ]
+}

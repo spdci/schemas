@@ -1,0 +1,125 @@
+{
+  "@context": {
+    "@vocab": "http://spdci.org/schemas/common/schema/v1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "rdfs:subClassOf": "rdfs:Resource",
+      "@id": "spdci:Error",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Async errors that are returned as part of message acknowledgement.",
+      "rdfs:property": [
+        {
+          "@id": "spdci:code",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Error",
+          "rdfs:range": "spdci:ErrorEnum",
+          "rdfs:comment": "Standard error code."
+        },
+        {
+          "@id": "spdci:message",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Error",
+          "rdfs:range": "xsd:string",
+          "rdfs:comment": "Message to describe above error code."
+        }
+      ]
+    },
+    {
+      "@id": "spdci:ErrorEnum",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Enumeration for Standard Error Codes.",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "owl:oneOf": [
+        "spdci:err.request.bad",
+        "spdci:err.request.unauthorized",
+        "spdci:err.request.forbidden",
+        "spdci:err.request.not_found",
+        "spdci:err.request.timeout",
+        "spdci:err.version.not_supported",
+        "spdci:err.request.too_many_requests",
+        "spdci:err.sender_id.invalid",
+        "spdci:err.sender_uri.invalid",
+        "spdci:err.receiver_id.invalid",
+        "spdci:err.signature.missing",
+        "spdci:err.signature.invalid",
+        "spdci:err.encryption.invalid",
+        "spdci:err.service.unavailable"
+      ]
+    },
+    {
+      "@id": "spdci:err.request.bad",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Bad Request"
+    },
+    {
+      "@id": "spdci:err.request.unauthorized",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Unauthorized"
+    },
+    {
+      "@id": "spdci:err.request.forbidden",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Forbidden"
+    },
+    {
+      "@id": "spdci:err.request.timeout",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Request timeout"
+    },
+    {
+      "@id": "spdci:err.request.not_found",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Not Found"
+    },
+    {
+      "@id": "spdci:err.version.not_supported",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Not Supported"
+    },
+    {
+      "@id": "spdci:err.request.too_many_requests",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Too Many Request"
+    },
+    {
+      "@id": "spdci:err.sender_id.invalid",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Invalid Sender Id"
+    },
+    {
+      "@id": "spdci:err.sender_uri.invalid",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Invalid sender uri"
+    },
+    {
+      "@id": "spdci:err.receiver_id.invalid",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Invalid Receiver id"
+    },
+    {
+      "@id": "spdci:err.signature.missing",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Signature Missing"
+    },
+    {
+      "@id": "spdci:err.signature.invalid",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Invalid Signature"
+    },
+    {
+      "@id": "spdci:err.encryption.invalid",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Encryption Invalid"
+    },
+    {
+      "@id": "spdci:err.service.unavailable",
+      "@type": "spdci:ErrorEnum",
+      "rdfs:label": "Service Unavailable"
+    }
+  ]
+}

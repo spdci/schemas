@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:CorrelationId",
+  "@type": "rdfs:Datatype",
+  "rdfs:label": "Correlation Id",
+  "rdfs:comment": "correlation_id acknowledged by end txn processing system (i.e receiver) to co-relate all related requests in the context of a business transaction..",
+  "rdfs:range": "xsd:string",
+  "rdfs:examples": "9876543210"
+}

@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "http://code.org/schemas/common/schema/v1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "@id": "code:MsgHeaderStatusReasonCodeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Enumeration for Message header related common status reason codes.",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "owl:oneOf": [
+        "code:rjct.version.invalid",
+        "code:rjct.message_id.duplicate",
+        "code:rjct.message_ts.invalid",
+        "code:rjct.action.invalid",
+        "code:rjct.action.not_supported",
+        "code:rjct.total_count.invalid",
+        "code:rjct.total_count.limit_exceeded",
+        "code:rjct.errors.too_many"
+      ]
+    },
+    {
+      "@id": "code:rjct.version.invalid",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    },
+    {
+      "@id": "code:rjct.message_id.duplicate",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    },
+    {
+      "@id": "code:rjct.message_ts.invalid",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    },
+    {
+      "@id": "code:rjct.action.not_supported",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    },
+    {
+      "@id": "code:rjct.action.invalid",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    },
+    {
+      "@id": "code:rjct.total_count.invalid",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    },
+    {
+      "@id": "code:rjct.total_count.limit_exceeded",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    },
+    {
+      "@id": "code:rjct.errors.too_many",
+      "@type": "code:MsgHeaderStatusReasonCodeEnum"
+    }
+  ]
+}

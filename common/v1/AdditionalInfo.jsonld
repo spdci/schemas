@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/src/common/schema/v1/"
+  },
+  "@id": "rdfs:AdditionalInfo",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Additional JSON property object to hold custom user-defined contextual data",
+  "rdfs:label": "Additional Information"
+}

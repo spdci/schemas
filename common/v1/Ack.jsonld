@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://spdci.org/schemas/src/common/schema/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:ResponseTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Response Type Enum",
+      "rdfs:comment": "Enumeration for the response type.",
+      "owl:oneOf": [
+        "type:ACK",
+        "type:NACK",
+        "type:ERR"
+      ]
+    },
+    {
+      "@id": "type:ACK",
+      "@type": "type:ResponseTypeEnum",
+      "rdfs:label": "ACK",
+      "rdfs:comment": "If the request is valid (for basic checks) and async callback (i.e webhook) will be invoked by receiver back to the sender.."
+    },
+    {
+      "@id": "type:NACK",
+      "@type": "type:ResponseTypeEnum",
+      "rdfs:label": "NACK",
+      "rdfs:comment": "If the request is valid (for basic checks) and there is no further updates from receiver back to the sender."
+    },
+    {
+      "@id": "type:ERR",
+      "@type": "type:ResponseTypeEnum",
+      "rdfs:label": "ERR",
+      "rdfs:comment": "If the request is invalid and receiver can't process the request. error object holds error code, message."
+    }
+  ]
+}

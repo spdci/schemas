@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:EncryptedMessage",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Encrypted payload",
+  "rdfs:label": "Encrypted Payload",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:header",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedMessage",
+      "rdfs:range": "spdci:EncryptedHeader"
+    },
+    {
+      "@id": "spdci:ciphertext",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedMessage",
+      "rdfs:range": "xsd:string",
+      "rdfs:description": "This is the result of encrypting the plaintext using the CEK and the IV. It's Base64Url-encoded."
+    },
+    {
+      "@id": "spdci:encrypted_key",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedMessage",
+      "rdfs:range": "xsd:string",
+      "rdfs:description": "The base64-url encoded encrypted key"
+    },
+    {
+      "@id": "spdci:tag",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedMessage",
+      "rdfs:range": "xsd:string",
+      "rdfs:description": "This is a Base64Url-encoded value that provides evidence of the integrity and authenticity of the ciphertext, Initialization Vector, and Additional Authenticated Data"
+    },
+    {
+      "@id": "spdci:iv",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EncryptedMessage",
+      "rdfs:range": "xsd:string",
+      "rdfs:description": "This is a Base64Url-encoded random bit string to be used as the Initialization Vector (IV) when encrypting the plaintext to produce the ciphertext. The size of the IV depends on the encryption algorithm used."
+    }
+  ]
+}

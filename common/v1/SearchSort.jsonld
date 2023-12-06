@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "spdci:SearchSort",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Sorting definition",
+      "rdfs:label": "Search Sort",
+      "rdfs:subClassOf": [
+        {
+          "@type": "rdfs:Class",
+          "rdfs:label": "Structured Entity"
+        }
+      ],
+      "rdfs:property": [
+        {
+          "@id": "spdci:attribute_name",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:SearchSort",
+          "rdfs:comment": "Attribute name",
+          "rdfs:range": "xsd:string",
+          "rdfs:examples": "YOB"
+        }
+      ]
+    },
+    {
+      "@id": "spdci:SortOrderEnum",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Enumeration for sorting order",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "owl:oneOf": [
+        "spdci:asc",
+        "spdci:desc"
+      ]
+    },
+    {
+      "@id": "spdci:sort_order",
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:SearchSort",
+      "rdfs:comment": "Sort order",
+      "rdfs:range": "spdci:SortOrderEnum"
+    },
+    {
+      "@id": "spdci:asc",
+      "@type": "spdci:SortOrderEnum",
+      "rdfs:comment": "Sort order in ascending order"
+    },
+    {
+      "@id": "spdci:desc",
+      "@type": "spdci:SortOrderEnum",
+      "rdfs:comment": "Sort order in descending order"
+    }
+  ]
+}

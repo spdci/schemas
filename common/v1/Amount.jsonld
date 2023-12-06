@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "spdci:Amount",
+  "@type": "rdfs:Datatype",
+  "rdfs:comment": "Describes amount in decimal value format",
+  "rdfs:label": "Amount",
+  "rdfs:range": "xsd:string",
+  "xsd:minInclusive": "0",
+  "xsd:maxInclusive": ""
+}

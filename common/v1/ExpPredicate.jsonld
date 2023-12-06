@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:ExpPredicate",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Expression",
+  "rdfs:label": "Expression Predicate",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:attribute_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ExpPredicate",
+      "rdfs:comment": "Attribute name",
+      "rdfs:range": "xsd:string",
+      "rdfs:examples": "YOB"
+    },
+    {
+      "@id": "spdci:operator",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ExpPredicate",
+      "rdfs:range": {
+        "@id": "type:ExpOperator"
+      }
+    },
+    {
+      "@id": "spdci:attribute_value",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:ExpPredicate",
+      "rdfs:range": {
+        "@id": "type:AttributeValueEnum"
+      }
+    }
+  ]
+}
+

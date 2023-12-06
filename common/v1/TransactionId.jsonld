@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "spdci:TransactionId",
+  "@type": "rdfs:Datatype",
+  "rdfs:comment": "Transaction_id set by txn initiating system (i.e sender) to co-relate all related requests in the context of a business transaction.",
+  "rdfs:label": "Transaction Id",
+  "rdfs:range": "xsd:string",
+  "xsd:maxInclusive": ""
+}

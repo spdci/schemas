@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "spdci": "http://spdci.org/schemas/src/common/schema/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:MsgCallbackHeader",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Message header",
+  "rdfs:label": "Message Header",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:version",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Messaging protocol specification version being used"
+    },
+    {
+      "@id": "spdci:message_id",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Unique message id to communicate between sender and receiver systems to reliable deliver the message over any transport layer i.e https, pub/sub, sftp etc."
+    },
+    {
+      "@id": "spdci:message_ts",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "spdci:DateTime"
+    },
+    {
+      "@id": "spdci:action",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "G2P Connect specific action. Usually verb from the URI. Helps in sync, async, store/fwd processing."
+    },
+    {
+      "@id": "spdci:status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": {
+        "@id": "status:RequestStatus"
+      }
+    },
+    {
+      "@id": "spdci:status_reason_code",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": {
+        "@id": "code:MsgHeaderStatusReasonCodeEnum"
+      }
+    },
+    {
+      "@id": "spdci:status_reason_message",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Status reason code message, if any, Helps actionable messaging for system/end users."
+    },
+    {
+      "@id": "spdci:total_count",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:integer",
+      "rdfs:comment": "Total no of requests present in the message request."
+    },
+    {
+      "@id": "spdci:completed_count",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:integer",
+      "rdfs:comment": "No of requests in completed state. Complete includes success and error requests due to functional errors."
+    },
+    {
+      "@id": "spdci:sender_id",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "sender_id registered with the receiving system or gateway."
+    },
+    {
+      "@id": "spdci:receiver_id",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Receiver id registered with the calling system. Used for authorization, encryption, digital sign verification, etc., functions"
+    },
+    {
+      "@id": "spdci:is_msg_encrypted",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "Is message encrypted?"
+    },
+    {
+      "@id": "spdci:meta",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgCallbackHeader",
+      "rdfs:range": "spdci:Meta"
+    }
+  ]
+}
+

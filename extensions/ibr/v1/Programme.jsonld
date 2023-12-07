@@ -61,7 +61,7 @@
       "@id": "spdci:status",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": "benefit:BeneficiaryStatusEnum"
+      "rdfs:range": "benefit:EnrollmentStatusEnum"
     }
   ]
 }

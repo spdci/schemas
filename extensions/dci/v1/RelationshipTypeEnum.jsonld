@@ -1,0 +1,163 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dci/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "spdci:RelationshipTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Enumeration for relationship types.",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "owl:oneOf": [
+        "spdci:Spouse",
+        "spdci:Son",
+        "spdci:Daughter",
+        "spdci:SonInLaw",
+        "spdci:DaughterInLaw",
+        "spdci:Mother",
+        "spdci:Father",
+        "spdci:Grandson",
+        "spdci:Granddaughter",
+        "spdci:Other",
+        "spdci:Groom",
+        "spdci:Bride",
+        "spdci:Grandfather",
+        "spdci:Grandmother",
+        "spdci:Brother",
+        "spdci:Sister",
+        "spdci:OtherFamilyMember",
+        "spdci:LegalGuardian",
+        "spdci:HeadOfGroomFamily",
+        "spdci:HeadOfBrideFamily",
+        "spdci:HeadOfFamily"
+      ]
+    },
+    {
+      "@id": "spdci:Spouse",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Spouse",
+      "rdfs:comment": "Spouse."
+    },
+    {
+      "@id": "spdci:Son",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Son",
+      "rdfs:comment": "Son."
+    },
+    {
+      "@id": "spdci:Daughter",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Daughter",
+      "rdfs:comment": "Daughter."
+    },
+    {
+      "@id": "spdci:SonInLaw",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Son-in-law",
+      "rdfs:comment": "Son-in-law."
+    },
+    {
+      "@id": "spdci:DaughterInLaw",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Daughter-in-law",
+      "rdfs:comment": "Daughter-in-law."
+    },
+    {
+      "@id": "spdci:Mother",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Mother",
+      "rdfs:comment": "Mother."
+    },
+    {
+      "@id": "spdci:Father",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Father",
+      "rdfs:comment": "Father."
+    },
+    {
+      "@id": "spdci:Grandson",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Grandson",
+      "rdfs:comment": "Grandson."
+    },
+    {
+      "@id": "spdci:Granddaughter",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Granddaughter",
+      "rdfs:comment": "Granddaughter."
+    },
+    {
+      "@id": "spdci:Other",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Other",
+      "rdfs:comment": "Other relationship to the applicant."
+    },
+    {
+      "@id": "spdci:Groom",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Groom",
+      "rdfs:comment": "Groom in the context of a marriage event."
+    },
+    {
+      "@id": "spdci:Bride",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Bride",
+      "rdfs:comment": "Bride in the context of a marriage event."
+    },
+    {
+      "@id": "spdci:Grandfather",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Grandfather",
+      "rdfs:comment": "Grandfather."
+    },
+    {
+      "@id": "spdci:Grandmother",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Grandmother",
+      "rdfs:comment": "Grandmother."
+    },
+    {
+      "@id": "spdci:Brother",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Brother",
+      "rdfs:comment": "Brother."
+    },
+    {
+      "@id": "spdci:Sister",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Sister",
+      "rdfs:comment": "Sister."
+    },
+    {
+      "@id": "spdci:OtherFamilyMember",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Other family member",
+      "rdfs:comment": "Other family member."
+    },
+    {
+      "@id": "spdci:LegalGuardian",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Legal guardian",
+      "rdfs:comment": "Legal guardian."
+    },
+    {
+      "@id": "spdci:HeadOfGroomFamily",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Head of groom family",
+      "rdfs:comment": "Head of the family of the groom in the context of a marriage event."
+    },
+    {
+      "@id": "spdci:HeadOfBrideFamily",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Head of bride family",
+      "rdfs:comment": "Head of the family of the bride in the context of a marriage event."
+    },
+    {
+      "@id": "spdci:HeadOfFamily",
+      "@type": "spdci:RelationshipTypeEnum",
+      "rdfs:label": "Head of family",
+      "rdfs:comment": "Head of the family."
+    }
+  ]
+}

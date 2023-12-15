@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/common/v1/",
+    "@vocab": "https://schema.spdci.org/common/v1",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"    
+  },
+  "@graph": [
+    {
+      "@id": "category:RegistryRecordType",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Registry record type values Enum",
+      "rdfs:comment": "Registry record type values defined as per implementation context.",
+      "owl:oneOf": [
+        "category:Person"
+      ]
+    },
+    {
+      "@id": "category:Person",
+      "@type": "category:RegistryRecordType",
+      "rdfs:label": "Person information",
+      "rdfs:comment": "Person information"
+    }
+  ]
+} 

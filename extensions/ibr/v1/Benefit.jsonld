@@ -3,7 +3,8 @@
     "spdci": "https://schema.spdci.org/extensions/ibr/v1/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#"
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "common": "https://schema.spdci.org/common/v1/"
   },
   "@id": "spdci:Benefit",
   "@type": "rdfs:Class",
@@ -20,20 +21,21 @@
       "@id": "spdci:benefit_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Benefit",
-      "rdfs:range": "spdci:benefit_type"
+      "rdfs:range": "spdci:BenefitTypeEnum",
+      "rdfs:comment": "The type of benefit received"
     },
     {
       "@id": "spdci:benefit_date",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Benefit",
-      "rdfs:range": "spdci:   "
+      "rdfs:range": "common:DateTime"
     },
     {
       "@id": "spdci:benefit_value",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Benefit",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "This can be any value like monetary value like currency value or any objects received"
+      "rdfs:range": "common:Currency",
+      "rdfs:comment": "The value of the benefit received"
     }
   ]
 }

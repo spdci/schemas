@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "benefit:BenefitingEntity",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Benefiting Entity",
+      "rdfs:comment": "The entity benefiting from the programme.",
+      "owl:oneOf": [
+        "benefit:1",
+        "benefit:2"
+      ]
+    },
+    {
+      "@id": "benefit:1",
+      "@type": "benefit:BenefitingEntity",
+      "rdfs:label": "Person"
+    },
+    {
+      "@id": "benefit:2",
+      "@type": "benefit:BenefitingEntity",
+      "rdfs:label": "Household"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "category:IsDisabledEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Is Disabled Enum",
+      "rdfs:comment": "Standardized codes and values representing if the person has a disability or not.",
+      "owl:oneOf": [
+        "category:1",
+        "category:2",
+        "category:3"
+      ]
+    },
+    {
+      "@id": "category:1",
+      "@type": "category:IsDisabledEnum",
+      "rdfs:label": "Disabled"
+    },
+    {
+      "@id": "category:2",
+      "@type": "category:IsDisabledEnum",
+      "rdfs:label": "Not disabled"
+    },
+    {
+      "@id": "category:3",
+      "@type": "category:IsDisabledEnum",
+      "rdfs:label": "Unknown"
+    }
+  ]
+}

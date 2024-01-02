@@ -20,48 +20,49 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
       "rdfs:range": "xsd:string",
-      "rdfs:comment": "The programme name sent by the SP system."
+      "rdfs:comment": "The name for the programme in which the person is/was enrolled."
     },
     {
       "@id": "spdci:programme_identifier",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
       "rdfs:range": "xsd:string",
-      "rdfs:comment": "Programme identifier."
+      "rdfs:comment": "The identifier for a programme in which the person is/was enrolled."
     },
     {
       "@id": "spdci:registration_date",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": "  ",
-      "rdfs:comment": "The date when the beneficiary was registered into the programme."
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date on which the person registered for the programme."
     },
     {
       "@id": "spdci:enrolment_date",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": " ",
-      "rdfs:comment": "The date when the beneficiary was enrolled into the programme."
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date on which the person was enrolled in the programme."
     },
     {
       "@id": "spdci:suspension_date",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
       "rdfs:range": "common:DateTime",
-      "rdfs:comment": "The date when the beneficiary was suspended from the programme."
+      "rdfs:comment": "The date on which the person was suspended from the programme."
     },
     {
       "@id": "spdci:graduation_date",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": " ",
-      "rdfs:comment": "The date when the beneficiary graduated."
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date on which the person graduated from the programme."
     },
     {
-      "@id": "spdci:status",
+      "@id": "spdci:enrolment_status",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": "benefit:EnrollmentStatusEnum"
+      "rdfs:range": "spdci:EnrollmentStatusEnum",
+      "rdfs:comment": "The current status of the person in relation to the programme"
     }
   ]
 }

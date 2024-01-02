@@ -31,6 +31,13 @@
       "rdfs:comment": "The second name or middle name of a person."
     },
     {
+      "@id": "spdci:maiden_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The maiden name of a person."
+    },
+    {
       "@id": "spdci:prefix",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Name",

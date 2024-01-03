@@ -37,5 +37,6 @@
       "rdfs:range": "common:Currency",
       "rdfs:comment": "The value of the benefit received"
     }
-  ]
+  ],
+  "required": ["@context","@type", "spdci:benefit_type", "spdci:benefit_date"]
 }

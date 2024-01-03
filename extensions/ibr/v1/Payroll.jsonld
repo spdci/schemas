@@ -36,7 +36,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Payroll",
       "rdfs:range": "common:Currency",
-      "rdfs:comment": "Amount credited to beneficiary (after charges deducted)"
+      "rdfs:comment": "Amount credited to beneficiary (after charges deducted) "
     },
     {
       "@id": "spdci:payment_charges",

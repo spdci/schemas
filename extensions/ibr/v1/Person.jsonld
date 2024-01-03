@@ -22,7 +22,11 @@
       "@id": "spdci:identifier",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
-      "rdfs:range": "common:Identifier",
+      "rdfs:range": {
+          "@id": "common:Identifier",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+      },
       "rdfs:comment": "The person's identification number"
     },
     {
@@ -90,30 +94,47 @@
       "@id": "spdci:household_identifier",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
-      "rdfs:range": "xsd:string",
+      "rdfs:range": {
+           "@id": "xsd:string",
+           "@container": "@list"
+      },
       "rdfs:comment": "The identifier for a household that the person is linked to."
     },
     {
       "@id": "spdci:programme",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
-      "rdfs:range": "spdci:Programme",
+      "rdfs:range": {
+           "@id": "spdci:Programme",
+           "@type": "rdfs:Class",
+           "@container": "@list"
+      },
       "rdfs:comment": "The name for the programme in which the person is/was enrolled and accompanying information"
     },
     {
       "@id": "spdci:benefit",
       "@type": "rdfs:Datatype",
-      "rdfs:range": "spdci:Benefit",
+      "rdfs:range": {
+           "@id": "spdci:Benefit",
+           "@type": "rdfs:Class",
+           "@container": "@list"
+      },
       "rdfs:comment": "The type of benefit received by the person"
     },
     {
       "@id": "spdci:payroll",
       "@type": "rdfs:Datatype",
-      "rdfs:comment": "The payroll information for cases where the benefit was provided as a cash transfer",
       "rdfs:label": "Payroll",
-      "rdfs:range": "spdci:Payroll"
+      "rdfs:range": {
+           "@id": "spdci:Payroll",
+           "@type": "rdfs:Class",
+           "@container": "@list"
+      },
+      "rdfs:comment": "The payroll information for cases where the benefit was provided as a cash transfer"
     }
-  ]
+  ],
+  "required": ["@context","@type","spdci:identifier", "spdci:household_status", "spdci:benefiting_entity", "spdci:sub_region_code","spdci:household_identifier", "spdci:programme"]
+
 }
 
 

@@ -64,5 +64,6 @@
       "rdfs:range": "spdci:EnrollmentStatusEnum",
       "rdfs:comment": "The current status of the person in relation to the programme"
     }
-  ]
+  ],
+  "required": ["@context","@type", "spdci:programme_name", "spdci:programme_identifier", "spdci:enrolment_date", "spdci:enrolment_status"]
 }

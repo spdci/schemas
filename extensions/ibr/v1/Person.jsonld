@@ -47,7 +47,7 @@
       "@type":"rdfs:Datatype",
       "rdfs:domain": "spdci:BenefitingEntity",
       "rdfs:comment": "Defines if the entity benefiting is a person or a household"
-    }
+    },
     {
       "@id": "spdci:sex",
       "@type": "rdfs:Datatype",
@@ -59,7 +59,7 @@
       "@id": "spdci:birth_date",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
-      "rdfs:range": "xsd:string",
+      "rdfs:range": "common:DateTime",
       "rdfs:comment": "Birth date of the person"
     },
     {

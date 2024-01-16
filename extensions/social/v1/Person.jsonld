@@ -79,8 +79,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
-        "@id": "spdci:DisabilityTypeEnum",
-        "@type": "rdfs:Class",
+        "@id": "xsd:string",
         "@container": "@list"
       },
       "rdfs:comment": "Identifier for the disability registry."
@@ -90,8 +89,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range":  {
-        "@id": "spdci:FunctionalLimitationType",
-        "@type": "rdfs:Class",
+        "@id": "xsd:string",
         "@container":"@list"
 
       },
@@ -102,8 +100,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
-       "@id": "spdci:FunctionalSeverityEnum",
-       "@type": "rdfs:Class",
+       "@id": "xsd:string",
        "@container":"@list"
       },
       "rdfs:comment": "Functional severity of the person."
@@ -113,8 +110,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
-       "@id": "spdci:NationalityEnum",
-       "@type": "rdfs:Class",
+       "@id": "xsd:string",
        "@container":"@list"
       },
       "rdfs:comment": "The nationality of the person registered."

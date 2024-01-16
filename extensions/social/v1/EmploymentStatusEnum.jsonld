@@ -5,7 +5,7 @@
   },
   "@graph": [
     {
-      "@id": "category:EmploymentStatusCategoryEnum",
+      "@id": "category:EmploymentStatusEnum",
       "@type": "rdfs:Class",
       "rdfs:subClassOf": "rdfs:Resource",
       "rdfs:label": "Employment Status Category Enum",
@@ -18,19 +18,19 @@
     },
     {
       "@id": "category:1",
-      "@type": "category:EmploymentStatusCategoryEnum",
+      "@type": "category:EmploymentStatusEnum",
       "rdfs:label": "Employed",
       "rdfs:comment": "Employed"
     },
     {
       "@id": "category:2",
-      "@type": "category:EmploymentStatusCategoryEnum",
+      "@type": "category:EmploymentStatusEnum",
       "rdfs:label": "Not Employed",
       "rdfs:comment": "Not Employed"
     },
     {
       "@id": "category:3",
-      "@type": "category:EmploymentStatusCategoryEnum",
+      "@type": "category:EmploymentStatusEnum",
       "rdfs:label": "Unknown",
       "rdfs:comment": "Unknown"
     }

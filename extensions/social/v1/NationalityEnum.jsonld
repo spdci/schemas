@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/social/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:NationalityEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Nationality  Enum",
+      "rdfs:comment": "Enumeration for nationality of the person.",
+      "owl:oneOf": [
+        "type:ISO 3166-2:AF",
+        "type:ISO 3166-2:AL",
+        "type:ISO 3166-2:DZ",
+        "type:etc"
+      ]
+    },
+    {
+      "@id": "type:ISO 3166-2:AF",
+      "@type": "type:NationalityEnum",
+      "rdfs:label": "Afghanistan",
+      "rdfs:comment": "Afghanistan"
+    },
+    {
+      "@id": "type:ISO 3166-2:AL",
+      "@type": "type:NationalityEnum",
+      "rdfs:label": "Albania",
+      "rdfs:comment": "Albania"
+    },
+    {
+      "@id": "type:ISO 3166-2:DZ",
+      "@type": "type:NationalityEnum",
+      "rdfs:label": "Algeria",
+      "rdfs:comment": "Algeria"
+    },
+    {
+      "@id": "type:etc",
+      "@type": "type:NationalityEnum",
+      "rdfs:label": "etc ",
+      "rdfs:comment": "etc "
+    }
+  ]
+}

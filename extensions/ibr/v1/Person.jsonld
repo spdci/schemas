@@ -40,7 +40,7 @@
       "@id": "spdci:household_status",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
-      "rdfs:range": "spdci:HouseholdStatusEnum"
+      "rdfs:range": "common:HouseholdStatusEnum"
     },
     {
       "@id": "spdci:benefiting_entity",

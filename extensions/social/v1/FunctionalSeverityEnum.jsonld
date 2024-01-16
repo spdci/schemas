@@ -5,7 +5,7 @@
   },
   "@graph": [
     {
-      "@id": "category:FunctionalSeverityTypeEnum",
+      "@id": "category:FunctionalSeverityEnum",
       "@type": "rdfs:Class",
       "rdfs:subClassOf": "rdfs:Resource",
       "rdfs:label": "Functional Severity  Enum",
@@ -22,43 +22,43 @@
     },
     {
       "@id": "category:0",
-      "@type": "category:FunctionalSeverityTypeEnum",
+      "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "No difficulty",
       "rdfs:comment": "No difficulty"
     },
     {
       "@id": "category:1",
-      "@type": "category:FunctionalSeverityTypeEnum",
+      "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "Mild difficulty",
       "rdfs:comment": "Mild difficulty"
     },
     {
       "@id": "category:2",
-      "@type": "category:FunctionalSeverityTypeEnum",
+      "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "Moderate difficulty",
       "rdfs:comment": "Moderate difficulty"
     },
     {
       "@id": "category:3",
-      "@type": "category:FunctionalSeverityTypeEnum",
+      "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "Severe difficulty",
       "rdfs:comment": "Severe difficulty"
     }
     {
       "@id": "category:4",
-      "@type": "category:FunctionalSeverityTypeEnum",
+      "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "Complete difficulty",
       "rdfs:comment": "Complete difficulty"
     },
     {
       "@id": "category:5",
-      "@type": "category:FunctionalSeverityTypeEnum",
+      "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "Not specified",
       "rdfs:comment": "Not specified"
     },
     {
       "@id": "category:6",
-      "@type": "category:FunctionalSeverityTypeEnum",
+      "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "Not applicable",
       "rdfs:comment": "Not applicable"
     }

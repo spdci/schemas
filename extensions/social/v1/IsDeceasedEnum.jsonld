@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/social/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "category:IsDeceasedEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Is Deceased Enum",
+      "rdfs:comment": "Standardized codes and values representing if the person is deceased or not.",
+      "owl:oneOf": [
+        "category:1",
+        "category:2",
+        "category:3"
+      ]
+    },
+    {
+      "@id": "category:1",
+      "@type": "category:IsDeceasedEnum",
+      "rdfs:label": "Deceased"
+    },
+    {
+      "@id": "category:2",
+      "@type": "category:IsDeceasedEnum",
+      "rdfs:label": "Not Deceased"
+    },
+    {
+      "@id": "category:3",
+      "@type": "category:IsDeceasedEnum",
+      "rdfs:label": "Unknown"
+    }
+  ]
+}

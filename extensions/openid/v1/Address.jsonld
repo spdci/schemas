@@ -2,7 +2,8 @@
   "@context": {
     "spdci": "https://schema.spdci.org/extensions/openid/v1/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "common": "https://schema.spdci.org/common/v1/"
   },
   "@id": "spdci:Address",
   "@type": "rdfs:Class",
@@ -67,7 +68,7 @@
       "@id": "spdci:geo_location",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Address",
-      "rdfs:range": "spdci:GeoLocation"
+      "rdfs:range": "common:GeoLocation"
     }
   ]
 }

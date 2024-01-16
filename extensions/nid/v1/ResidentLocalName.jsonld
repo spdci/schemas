@@ -20,7 +20,7 @@
       "@id": "spdci:language_code",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:ResidentLocalName",
-      "rdfs:range": " "
+      "rdfs:range": "xsd:string"
     },
     {
       "@id": "spdci:local_name",

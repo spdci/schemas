@@ -32,9 +32,7 @@
       "@id": "spdci:geo",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Place",
-      "rdfs:range": [
-        "spdci:GeoCoordinates"
-      ],
+      "rdfs:range": "spdci:GeoCoordinates",
       "rdfs:comment": "Geo Location details."
     },
     {

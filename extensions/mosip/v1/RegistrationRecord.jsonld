@@ -127,21 +127,21 @@
       "@id": "spdci:create_date_time",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:RegistrationRecord",
-      "@range": "https://schema.spdci.org/common/schema/DateTime",
+      "rdfs:range": "common:DateTime",
       "rdfs:comment": "Date and time when the birth registration record was created."
     },
     {
       "@id": "spdci:update_date_time",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:RegistrationRecord",
-      "@range": "https://schema.spdci.org/common/schema/DateTime",
+      "rdfs:range": "common:DateTime",
       "rdfs:comment": "Date and time when the birth registration record was last updated."
     },
     {
       "@id": "spdci:deleted_date_time",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:RegistrationRecord",
-      "@range": "https://schema.spdci.org/common/schema/DateTime",
+     "rdfs:range": "common:DateTime",
       "rdfs:comment": "Date and time when the birth registration record was deleted."
     },
     {

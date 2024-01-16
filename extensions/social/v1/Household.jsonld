@@ -4,9 +4,8 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
-    "dci":"https://schema.spdci.org/extensions/dci/v1/",
-    "schema": "http://schema.org/",
-    "openid": "https://schema.spdci.org/extensions/openid/v1/"
+    "common": "https://schema.spdci.org/common/v1/"
+
   },
   "@id": "spdci:Household",
   "@type": "rdfs:Class",
@@ -23,7 +22,7 @@
       "@id": "spdci:household_identifier",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
-      "rdfs:range": "dci:Identifier",
+      "rdfs:range": "common:Identifier",
       "rdfs:comment": "The unique identifier for a household."
     },
     {
@@ -37,7 +36,7 @@
       "@id": "spdci:identifier",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
-      "rdfs:range": "dci:Identifier",
+      "rdfs:range": "common:Identifier",
       "rdfs:comment": "Identifier for one parent of the applicant. Must be a unique identifier similar to the applicant's identifier."
     },
     {
@@ -45,7 +44,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
       "rdfs:range": {
-        "@id": "category:HeadEnumType"
+        "@id": "spdci:HeadEnum"
       },
       "rdfs:comment": "A designation for which member is the head of household."
     },

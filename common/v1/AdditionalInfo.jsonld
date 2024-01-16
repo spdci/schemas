@@ -1,7 +1,7 @@
 {
   "@context": {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "@vocab": "http://spdci.org/schemas/src/common/schema/v1/"
+    "@vocab": "https://schema.spdci.org/common/v1/",
   },
   "@id": "rdfs:AdditionalInfo",
   "@type": "rdfs:Class",

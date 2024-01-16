@@ -1,8 +1,7 @@
 {
   "@context": {
-    "@vocab": "https://schema.spdci.org/common/v1",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "schema": "http://schema.org/",
+    "spdci": "https://schema.spdci.org/common/v1/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#"
   },
@@ -17,7 +16,7 @@
           "@id": "spdci:identifier",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "@id",
+          "rdfs:range": "spdci:Identifier",
           "rdfs:comment": "Applicant's identifier in the CRVS system using URI format."
         },
         {
@@ -46,14 +45,14 @@
           "rdfs:comment": "Sex of the applicant, represented as an enumeration (Male, Female, Others, Unknown).",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": {"@id": "category:SexCategoryEnum"} 
+          "rdfs:range": {"@id": "spdci:SexCategoryEnum"}
         },
         {
           "@id": "spdci:birth_date",
           "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "spdci:DateTime"
         },
         {
           "@id": "spdci:birth_place",
@@ -67,7 +66,7 @@
           "rdfs:comment": "The date of death of the applicant, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "spdci:DateTime"
         },
         {
           "@id": "spdci:death_place",
@@ -88,21 +87,21 @@
           "rdfs:comment": "Current marital status of the applicant, represented as an enumeration (e.g., Married, Divorced, etc.).",
           "@type": "rdfs:ObjectProperty",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": {"@id": "category:MaritalStatusEnum"}
+          "rdfs:range": {"@id": "spdci:MaritalStatusEnum"}
         },
         {
           "@id": "spdci:marriage_date",
           "rdfs:comment": "Date when the applicant got married, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "spdci:DateTime"
         },
         {
           "@id": "spdci:divorce_date",
           "rdfs:comment": "Date when the applicant got divorced, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "spdci:DateTime"
         },
         {
           "@id": "spdci:relations",
@@ -116,14 +115,14 @@
           "rdfs:comment": "Identifier for one parent of the applicant. Must be a unique identifier similar to the applicant's identifier.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "spdci:Identifier"
         },
         {
           "@id": "spdci:parent2_identifier",
           "rdfs:comment": "Identifier for another parent of the applicant, if applicable. Must be a unique identifier similar to the applicant's identifier.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "@id"
+          "rdfs:range": "spdci:Identifier"
         }
       ]
     }

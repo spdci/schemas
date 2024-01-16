@@ -2,7 +2,7 @@
   "@context": {
     "@vocab": "https://schema.spdci.org/extensions/dci/v1",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "schema": "http://schema.org/",
+    "common": "https://schema.spdci.org/common/v1/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#"
   },
@@ -17,14 +17,16 @@
           "@id": "spdci:identifier",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "@id",
+          "rdfs:range": {
+            "@id":"common:Identifier",
+          },
           "rdfs:comment": "Applicant's identifier in the CRVS system using URI format."
         },
         {
           "@id": "spdci:name",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "spdci:Name",
+          "rdfs:range": "common:Name",
           "rdfs:comment": "Full name in a displayable form, including possible titles and suffixes. Formatted according to the applicant's locale norms and/or preferences."
         },
         {
@@ -46,63 +48,65 @@
           "rdfs:comment": "Sex of the applicant, represented as an enumeration (Male, Female, Others, Unknown).",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": {"@id": "category:SexCategoryEnum"}
+          "rdfs:range": {
+            "@id": "common:SexCategoryEnum"
+           }
         },
         {
           "@id": "spdci:birth_date",
           "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "common:DateTime"
         },
         {
           "@id": "spdci:birth_place",
           "rdfs:comment": "Physical location where the applicant was born, represented as an address object.",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "spdci:Place"
+          "rdfs:range": "common:Place"
         },
         {
           "@id": "spdci:death_date",
           "rdfs:comment": "The date of death of the applicant, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "common:DateTime"
         },
         {
           "@id": "spdci:death_place",
           "rdfs:comment": "Physical location where the applicant died, if applicable. Represented as an address object.",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "spdci:Place"
+          "rdfs:range": "common:Place"
         },
         {
           "@id": "spdci:address",
           "rdfs:comment": "Current residential address of the applicant, represented as an address object.",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "spdci:Place"
+          "rdfs:range": "common:Place"
         },
         {
           "@id": "spdci:marital_status",
           "rdfs:comment": "Current marital status of the applicant, represented as an enumeration (e.g., Married, Divorced, etc.).",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": {"@id": "category:MaritalStatusEnum"}
+          "rdfs:range": {"@id": "common:MaritalStatusEnum"}
         },
         {
           "@id": "spdci:marriage_date",
           "rdfs:comment": "Date when the applicant got married, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "common:DateTime"
         },
         {
           "@id": "spdci:divorce_date",
           "rdfs:comment": "Date when the applicant got divorced, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Person",
-          "rdfs:range": "schema:DateTime"
+          "rdfs:range": "common:DateTime"
         },
         {
           "@id": "spdci:related_person",

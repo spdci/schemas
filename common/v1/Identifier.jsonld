@@ -15,7 +15,7 @@
       "@id": "spdci:identifier_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Identifier",
-      "rdfs:range": "identifier:IdentifierTypeEnum",
+      "rdfs:range": "spdci:IdentifierTypeEnum",
       "rdfs:comment": "Type of identifier used by the person."
     },
     {

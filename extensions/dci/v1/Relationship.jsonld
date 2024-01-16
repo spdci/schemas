@@ -16,10 +16,7 @@
           "@id": "spdci:person",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Relationship",
-          "rdfs:range": [
-            "@id",
-            "spdci:CRVS_Person"
-          ],
+          "rdfs:range": {"@id": "spdci:CRVS_Person"},
           "rdfs:comment": "Identifier of the person related to the applicant."
         },
         {

@@ -27,14 +27,14 @@
               {
                 "@id": "spdci:global_code",
                 "@type": "rdfs:Datatype",
-                "rdfs:domain": "spdci:GeoLocation",
+                "rdfs:domain": "spdci:plus_code",
                 "rdfs:range": "xsd:string",
                 "rdfs:comment": "provides the global code for the latitude/longitude"
               },
               {
                 "@id": "spdci:geometry",
                 "@type": "rdfs:Datatype",
-                "rdfs:domain": "spdci:GeoLocation",
+                "rdfs:domain": "spdci:plus_code",
                 "rdfs:comment": "Contains the Geometry Object.",
                 "rdfs:range": {
                   "@id": "rdfs:Class",

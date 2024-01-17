@@ -25,7 +25,8 @@
       "rdfs:range": {
           "@id": "common:Identifier",
           "@type": "rdfs:Class",
-          "@container": "@list"
+          "@container": "@list",
+          "minitems":1
       },
       "rdfs:comment": "The person's identification number"
     },
@@ -95,8 +96,9 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
-           "@id": "xsd:string",
-           "@container": "@list"
+           "@typ": "xsd:string",
+           "@container": "@list",
+           "minitems":1
       },
       "rdfs:comment": "The identifier for a household that the person is linked to."
     },
@@ -107,7 +109,8 @@
       "rdfs:range": {
            "@id": "spdci:Programme",
            "@type": "rdfs:Class",
-           "@container": "@list"
+           "@container": "@list",
+           "minitems":1
       },
       "rdfs:comment": "The name for the programme in which the person is/was enrolled and accompanying information"
     },

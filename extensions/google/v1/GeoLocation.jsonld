@@ -32,20 +32,20 @@
               {
                 "@id": "spdci:bounds",
                 "@type": "rdfs:Datatype",
-                "rdfs:domain": "spdci:GeoLocation",
+                "rdfs:domain": "spdci:geometry",
                 "rdfs:range": {
                   "@id": "rdfs:Class",
                   "rdfs:property": [
                     {
                       "@id": "spdci:northeast",
                       "@type": "rdfs:Datatype",
-                      "rdfs:domain": "spdci:GeoLocation",
+                      "rdfs:domain": "spdci:bounds",
                       "rdfs:range": "spdci:GeoCoordinates"
                     },
                     {
                       "@id": "spdci:southwest",
                       "@type": "rdfs:Datatype",
-                      "rdfs:domain": "spdci:GeoLocation",
+                      "rdfs:domain": "spdci:bounds",
                       "rdfs:range": "spdci:GeoCoordinates"
                     }
                   ]
@@ -54,7 +54,7 @@
               {
                 "@id": "spdci:location",
                 "@type": "rdfs:Datatype",
-                "rdfs:domain": "spdci:GeoLocation",
+                "rdfs:domain": "spdci:geometry",
                 "rdfs:range": "spdci:GeoCoordinates"
               }
             ]

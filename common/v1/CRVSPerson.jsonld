@@ -16,7 +16,11 @@
           "@id": "spdci:identifier",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "spdci:Identifier",
+          "rdfs:range": {
+            "@id": "spdci:Identifier",
+            "@type": "rdfs:Class",
+            "@container": "@list"
+          },
           "rdfs:comment": "Applicant's identifier in the CRVS system using URI format."
         },
         {
@@ -30,14 +34,20 @@
           "@id": "spdci:phone_number",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "xsd:string",
+          "rdfs:range": {
+            "@type": "xsd:string",
+            "@container":"@list"
+          },
           "rdfs:comment": "Applicant's preferred phone number. The format E.164 is recommended."
         },
         {
           "@id": "spdci:email",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "xsd:string",
+          "rdfs:range": {
+            "@type": "xsd:string",
+            "@container":"@list"
+          },
           "rdfs:comment": "Applicant's preferred email address. The format must comply with RFC 5322 addr-spec."
         },
         {
@@ -57,7 +67,7 @@
         {
           "@id": "spdci:birth_place",
           "rdfs:comment": "Physical location where the applicant was born, represented as an address object.",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": "spdci:Place"
         },
@@ -71,21 +81,25 @@
         {
           "@id": "spdci:death_place",
           "rdfs:comment": "Physical location where the applicant died, if applicable. Represented as an address object.",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": "spdci:Place"
         },
         {
           "@id": "spdci:address",
           "rdfs:comment": "Current residential address of the applicant, represented as an address object.",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "spdci:Place"
+          "rdfs:range": {
+            "@id": "spdci:Address",
+            "@type": "rdfs:Class",
+            "@container": "@list"
+          }
         },
         {
           "@id": "spdci:marital_status",
           "rdfs:comment": "Current marital status of the applicant, represented as an enumeration (e.g., Married, Divorced, etc.).",
-          "@type": "rdfs:ObjectProperty",
+          "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
           "rdfs:range": {"@id": "spdci:MaritalStatusEnum"}
         },
@@ -94,21 +108,20 @@
           "rdfs:comment": "Date when the applicant got married, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "spdci:DateTime"
+          "rdfs:range": {
+            "@id": "spdci:DateTime",
+            "@container": "@list"
+          }
         },
         {
           "@id": "spdci:divorce_date",
           "rdfs:comment": "Date when the applicant got divorced, if applicable. Formatted according to schema:DateTime.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "spdci:DateTime"
-        },
-        {
-          "@id": "spdci:relations",
-          "@type": "rdfs:ObjectProperty",
-          "rdfs:domain": "spdci:CRVS_Person",
-          "rdfs:range": "spdci:Relationship",
-          "rdfs:comment": "Relationships the applicant has with other persons, represented as an array of relationship objects."
+          "rdfs:range": {
+            "@id": "spdci:DateTime",
+            "@container": "@list"
+          }
         },
         {
           "@id": "spdci:parent1_identifier",

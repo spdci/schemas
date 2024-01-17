@@ -32,10 +32,7 @@
       "@id": "spdci:elevation",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:GeoShape",
-      "rdfs:range": [
-        "xsd:float",
-        "xsd:string"
-      ],
+      "rdfs:range": "xsd:string",
       "rdfs:comment": "Indicates the elevation of a location (WGS 84)."
     },
     {

@@ -46,7 +46,11 @@
       "@id": "spdci:contains_place",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Place",
-      "rdfs:range": "spdci:Place",
+      "rdfs:range": {
+        "@id": "spdci:Place",
+        "@type":"rdfs:Class",
+        "@container": "@list"
+      },
       "rdfs:comment": "A relationship indicating a smaller place that is contained within this place."
     }
   ]

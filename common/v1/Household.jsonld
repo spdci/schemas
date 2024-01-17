@@ -35,14 +35,22 @@
       "@id": "spdci:identifier",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
-      "rdfs:range": "spdci:Identifier",
+      "rdfs:range": {
+        "@id": "spdci:Identifier",
+        "@type": "rdfs:Class",
+        "@container": "@list"
+      },
       "rdfs:comment": "The unique identifier for a household member."
     },
     {
       "@id": "spdci:household_status",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
-      "rdfs:range": "spdci:HouseholdStatusEnum",
+      "rdfs:range": {
+         "@id": "spdci:HouseholdStatusEnum",
+         "@type": "xsd:string",
+         "@container": "@list"
+      },
       "rdfs:comment": "Defines the status of each person in the household."
     },
     {

@@ -192,7 +192,7 @@
       "@id": "spdci:household_status",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
-      "rdfs:range": "common:HouseholdStatusEnum",
+      "rdfs:range": "common:HouseholdRoleEnum",
       "rdfs:comment": "Defines the person's role in the household"
     },
     {

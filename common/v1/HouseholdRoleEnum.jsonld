@@ -5,7 +5,7 @@
   },
   "@graph": [
     {
-      "@id": "category:HouseholdStatusEnum",
+      "@id": "category:HouseholdRoleEnum",
       "@type": "rdfs:Class",
       "rdfs:subClassOf": "rdfs:Resource",
       "rdfs:label": "Household Status",
@@ -20,13 +20,13 @@
     },
     {
       "@id": "category:1",
-      "@type": "category:HouseholdStatusEnum",
+      "@type": "category:HouseholdRoleEnum",
       "rdfs:label": "Head of household",
       "rdfs:comment": "Head of household"
     },
     {
       "@id": "category:2",
-      "@type": "category:HouseholdStatusEnum",
+      "@type": "category:HouseholdRoleEnum",
       "rdfs:label": "Not head of household(Father)",
       "rdfs:comment": "Not head of household"
     },

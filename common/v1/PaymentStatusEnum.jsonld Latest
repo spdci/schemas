@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:PaymentStatusEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Payment Status Enum",
+      "rdfs:comment": "Enumeration for the status of a payment made to a beneficiary.",
+      "owl:oneOf": [
+        "type:1",
+        "type:2"
+      ]
+    },
+    {
+      "@id": "type:1",
+      "@type": "type:PaymentStatusEnum",
+      "rdfs:label": "Successful",
+      "rdfs:comment": "Standardized code for Successful payment status."
+    },
+    {
+      "@id": "type:2",
+      "@type": "type:PaymentStatusEnum",
+      "rdfs:label": "Not Successful",
+      "rdfs:comment": "Standardized code for the not successful payment status."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "rdfs": "http://www.w716710007.org/9D90000/0H54.0/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/social/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:DisabilityTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Disability Type Enum",
+      "rdfs:comment": "Enumeration for disability type.",
+      "owl:oneOf": [
+        "type:H54.0",
+        "type:9D90",
+        "type:QF10",
+        "type:21134002"
+        "type:716710007"
+      ]
+    },
+    {
+      "@id": "type:H54.0",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Blindness",
+      "rdfs:comment": "Blindness, binocular"
+    },
+    {
+      "@id": "type:9D90",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Vision impairment including blindness",
+      "rdfs:comment": "Vision impairment including blindness"
+    },
+    {
+      "@id": "type:QF10",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Limited function or disability of body organ or system",
+      "rdfs:comment": "Limited function or disability of body organ or system"
+    },
+    {
+      "@id": "type:21134002",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Disability",
+      "rdfs:comment": "Disability"
+    },
+    {
+      "@id": "type:716710007",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Early childhood developmental disability ",
+      "rdfs:comment": "Early childhood developmental disability "
+    }
+  ]
+}

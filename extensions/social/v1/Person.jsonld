@@ -182,11 +182,16 @@
       "rdfs:comment": "Person's preferred email address. The format must comply with RFC 5322 addr-spec."
     },
     {
-      "@id": "spdci:household_identifier",
+      "@id": "spdci:household_info",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "The identifier for a household that the person is linked too."
+      "rdfs:domain": "common:Household",
+      "rdfs:range": {
+           "@id": "spdci:Household",
+           "@type": "rdfs:Class",
+           "@container": "@list",
+           "minitems": 1
+      },
+      "rdfs:comment": "Household information"
     },
     {
       "@id": "spdci:household_status",

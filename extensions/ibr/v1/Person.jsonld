@@ -36,7 +36,13 @@
       "rdfs:domain": "spdci:Person",
       "rdfs:range": "common:Name",
       "rdfs:comment": "Full name in a displayable form, possibly including titles and suffixes, in the order of the applicant's locale norms and/or preferences."
-    }, 
+    },
+    {
+      "@id": "spdci:household_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "common:HouseholdStatusEnum"
+    },
     {
       "@id": "spdci:benefiting_entity",
       "@type":"rdfs:Datatype",
@@ -86,17 +92,16 @@
       "rdfs:comment": "Specifies if the person is disabled, not disabled or not known."
     },
     {
-      "@id": "spdci:household_info",
+      "@id": "spdci:household_identifier",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "common:Household",
+      "rdfs:domain": "spdci:Person",
       "rdfs:range": {
-           "@id": "spdci:Household",
-           "@type": "rdfs:Class",
+           "@typ": "xsd:string",
            "@container": "@list",
-           "minitems": 1
+           "minitems":1
       },
-      "rdfs:comment": "Household information"
-    },,
+      "rdfs:comment": "The identifier for a household that the person is linked to."
+    },
     {
       "@id": "spdci:programme",
       "@type": "rdfs:Datatype",

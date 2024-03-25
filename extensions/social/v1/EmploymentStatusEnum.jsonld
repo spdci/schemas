@@ -13,7 +13,11 @@
       "owl:oneOf": [
         "category:1",
         "category:2",
-        "category:3"
+        "category:3",
+        "category:4",
+        "category:5",
+        "category:6",
+        "category:7"
       ]
     },
     {
@@ -33,6 +37,36 @@
       "@type": "category:EmploymentStatusEnum",
       "rdfs:label": "Unknown",
       "rdfs:comment": "Unknown"
+    },
+    {
+      "@id": "category:4",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Paid employment: Employee",
+      "rdfs:comment": "Paid employment: Employee"
+    },
+    {
+      "@id": "category:5",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Employers",
+      "rdfs:comment": "Self employment: Employers"
+    },
+    {
+      "@id": "category:6",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Own-account workers",
+      "rdfs:comment": "Self employment: Own-account workers"
+    },
+    {
+      "@id": "category:7",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Members of producers’ cooperatives",
+      "rdfs:comment": "Self employment: Members of producers’ cooperatives"
+    },
+    {
+      "@id": "category:8",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Contributing family workers",
+      "rdfs:comment": "Self employment: Contributing family workers"
     }
   ]
 }

@@ -25,6 +25,18 @@
       "rdfs:comment": "The unique identifier for a household."
     },
     {
+      "@id": "spdci:address",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Household",
+      "rdfs:range": {
+           "@id": "spdci:Address",
+           "@type": "rdfs:Class",
+           "@container": "@list",
+           "minitems": 1
+      },
+      "rdfs:comment": "Current residential address of the applicant, represented as an address object."
+    },
+    {
       "@id": "spdci:group_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
@@ -32,33 +44,74 @@
       "rdfs:comment": "The type of group."
     },
     {
-      "@id": "spdci:identifier",
+      "@id": "spdci:poverty_score",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Household",
+      "rdfs:range": "xsd:decimal",
+      "rdfs:comment": "The poverty score assigned to the household as a result of a proxy means test or other poverty ranking approach."
+    },
+    {
+      "@id": "spdci:poverty_score_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
       "rdfs:range": {
-        "@id": "spdci:Identifier",
-        "@type": "rdfs:Class",
-        "@container": "@list"
+        "@type":  "xsd:string",
+        "@container":"@list"
       },
-      "rdfs:comment": "The unique identifier for a household member."
+      "rdfs:comment": "The types of poverty scores that are is to measure and categorize the level of poverty."
     },
     {
-      "@id": "spdci:household_status",
+      "@id": "spdci:household_head_info",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Household",
       "rdfs:range": {
-         "@id": "spdci:HouseholdStatusEnum",
-         "@type": "xsd:string",
-         "@container": "@list"
+           "@id": "spdci:Member",
+           "@type": "rdfs:Class",
+           "@container": "@list"
       },
-      "rdfs:comment": "Defines the status of each person in the household."
+      "rdfs:comment": "Personal details of the head of the household"
     },
     {
-      "@id": "spdci:household_size",
+      "@id": "spdci:unit_size",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
       "rdfs:range": "xsd:integer",
-      "rdfs:comment": "The total number of members in the household."
+      "rdfs:comment": "The size of the unit in terms of number of members."
+    },
+    {
+      "@id": "spdci:member_list",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Household",
+      "rdfs:range": {
+        "@id": "spdci:Member",
+        "@type": "rdfs:Class",
+        "@container": "@list"
+      },
+      "rdfs:comment": "An array of members belonging to the household."
+    },
+    {
+      "@id": "spdci:registration_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Household",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date on which the household was first registered in the social registry."
+    },
+    {
+      "@id": "spdci:last_updated",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Household",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "Date on which applicant data was last updated."
+    },
+    {
+      "@id": "spdci:additional_attributes",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Household",
+      "rdfs:range": {
+        "@type": "xsd:string",
+        "@container": "@list"
+      },
+      "rdfs:comment": "Additional attributes as an array of strings."
     }
-  ]
+  ],
+  "required": ["@context","@type","spdci:household_identifier", "spdci:address", "spdci:household_head_info", "spdci:unit_size","spdci:member_list","spdci:registration_date"]
 }

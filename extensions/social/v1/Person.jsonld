@@ -42,20 +42,19 @@
       "rdfs:comment": "Full name in a displayable form, possibly including titles and suffixes, in the order of the applicant's locale norms and/or preferences."
     },
     {
-      "@id": "spdci:birth_date",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
-      "rdfs:range": "common:DateTime",
-      "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
-    },
-    {
       "@id": "spdci:sex",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range": "common:SexCategoryEnum",
       "rdfs:comment": "Sex of the applicant, represented as an enumeration ."
     },
-    
+    {
+      "@id": "spdci:birth_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
+    },
     {
       "@id": "spdci:death_date",
       "@type": "rdfs:Datatype",
@@ -76,13 +75,6 @@
       "rdfs:comment": "Current residential address of the applicant, represented as an address object."
     },
     {
-      "@id": "spdci:poverty_score",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
-      "rdfs:range": "xsd:decimal",
-      "rdfs:comment": "The poverty score assigned to the household as a result of a proxy means test or other poverty ranking approach."
-    },
-    {
       "@id": "spdci:phone_number",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
@@ -101,13 +93,6 @@
         "@container":"@list"
       },
       "rdfs:comment": "Person's preferred email address. The format must comply with RFC 5322 addr-spec."
-    },
-    {
-      "@id": "spdci:last_updated",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
-      "rdfs:range": "common:DateTime",
-      "rdfs:comment": "Date on which applicant data was last updated."
     }
   ],
   "required": ["@context","@type","spdci:identifier", "spdci:name", "spdci:birth_date", "spdci:sex","spdci:address"]

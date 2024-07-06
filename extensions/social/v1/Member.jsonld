@@ -22,7 +22,7 @@
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
         "rdfs:range": "xsd:string",
-        "rdfs:comment": "The unique identifier for a Member."
+        "rdfs:comment": "A unique identifier assigned to each individual."
       },
       {
         "@id": "spdci:demographic_info",
@@ -42,7 +42,7 @@
           "@type": "rdfs:Class",
           "@container": "@list"
         },
-        "rdfs:comment": "An array of members belonging to the household."
+        "rdfs:comment": "An array of the persons related to the individual and the relationship type."
       },
       {
         "@id": "spdci:is_disabled",
@@ -65,14 +65,14 @@
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
         "rdfs:range": "common:MaritalStatusEnum",
-        "rdfs:comment": "The member's marital status"
+        "rdfs:comment": "Marital status of the individual"
       },
       {
         "@id": "spdci:employment_status",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
         "rdfs:range": "spdci:EmploymentStatusEnum",
-        "rdfs:comment": "Binary representation of if the beneficiary is formally employed or not."
+        "rdfs:comment": "Employment status of the individual."
       },
       {
         "@id": "spdci:occupation",
@@ -80,6 +80,20 @@
         "rdfs:domain": "spdci:Member",
         "rdfs:range": "spdci:OccupationEnum",
         "rdfs:comment": "Occupation of the individual."
+      },
+      {
+        "@id": "spdci:income_level",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "spdci:IncomeLevelEnum",
+        "rdfs:comment": "Income level of the individual."
+      },
+      {
+        "@id": "spdci:language_code",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "spdci:LanguageCodeEnum",
+        "rdfs:comment": "The languages spoken by the individual."
       },
       {
         "@id": "spdci:education_level",

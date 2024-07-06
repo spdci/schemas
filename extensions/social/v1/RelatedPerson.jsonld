@@ -18,6 +18,13 @@
     ],
     "rdfs:property": [
       {
+        "@id": "spdci:relationship_type",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:RelatedPerson",
+        "rdfs:range": "spdci:RelationshipTypeEnum",
+        "rdfs:comment": "The type of relationship a member has with another member of the group."
+      },
+      {
         "@id": "spdci:related_member_identifier",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:RelatedPerson",
@@ -25,6 +32,6 @@
         "rdfs:comment": "A unique identifier assigned to the related household member ."
       }
     ],
-    "required": ["@context","@type","spdci:related_member_identifier"]
+    "required": ["@context","@type","spdci:relationship_type","spdci:related_member_identifier"]
   }
   

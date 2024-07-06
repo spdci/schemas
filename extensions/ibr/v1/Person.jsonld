@@ -96,7 +96,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
-           "@typ": "xsd:string",
+           "@type": "xsd:string",
            "@container": "@list",
            "minitems":1
       },

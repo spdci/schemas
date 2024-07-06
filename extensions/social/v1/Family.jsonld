@@ -1,0 +1,106 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/common/v1/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "schema": "http://schema.org/"
+    },
+    "@id": "spdci:Family",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "A family unit represents a group of related individuals in the social registry",
+    "rdfs:label": "Famlity",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+      {
+        "@id": "spdci:family_identifier",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": "xsd:string",
+        "rdfs:comment": "The identifier for a family that individuals are linked to."
+      },
+      {
+        "@id": "spdci:address",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": {
+             "@id": "spdci:Address",
+             "@type": "rdfs:Class"
+        },
+        "rdfs:comment": "Current residential address of the family."
+      },
+      {
+        "@id": "spdci:poverty_score",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": "xsd:decimal",
+        "rdfs:comment": "A metric generated based on the assessment of various family characteristics."
+      },
+      {
+        "@id": "spdci:poverty_score_type",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": "xsd:string",  
+        "rdfs:comment": "The types of poverty scores that are is to measure and categorize the level of poverty."
+      },
+      {
+        "@id": "spdci:family_head_info",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": {
+             "@id": "spdci:Member",
+             "@type": "rdfs:Class"
+        },
+        "rdfs:comment": "Personal details of the head of the family."
+      },
+      {
+        "@id": "spdci:unit_size",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": "xsd:integer",
+        "rdfs:comment": "The total number of members in the family."
+      },
+      {
+        "@id": "spdci:member_list",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": {
+          "@id": "spdci:Member",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "A list of the related individuals in a family."
+      },
+      {
+        "@id": "spdci:registration_date",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "The date the details of the family were registered."
+      },
+      {
+        "@id": "spdci:last_updated",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "The date the details of the family were last updated."
+      },
+      {
+        "@id": "spdci:additional_attributes",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Family",
+        "rdfs:range": {
+          "@type": "xsd:string",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Additional attributes of the family."
+      }
+    ],
+    "required": ["@context","@type","spdci:household_identifier", "spdci:address", "spdci:household_head_info", "spdci:unit_size","spdci:member_list","spdci:registration_date"]
+  }
+  

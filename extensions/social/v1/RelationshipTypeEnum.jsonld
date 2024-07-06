@@ -1,0 +1,24 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/common/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "category:RelationshipEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Relationship types Enum",
+        "rdfs:comment": "standardized codes and values that represent the relationships individuals have with other members in a family or household.",
+        "owl:oneOf": [
+          "category:self"
+        ]
+      },
+      {
+        "@id": "category:self",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "self",
+        "rdfs:comment": "english language."
+      }
+    ]
+  }

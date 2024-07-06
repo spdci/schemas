@@ -30,18 +30,9 @@
       "rdfs:domain": "spdci:Household",
       "rdfs:range": {
            "@id": "spdci:Address",
-           "@type": "rdfs:Class",
-           "@container": "@list",
-           "minitems": 1
+           "@type": "rdfs:Class"
       },
       "rdfs:comment": "Current residential address of the applicant, represented as an address object."
-    },
-    {
-      "@id": "spdci:group_type",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Household",
-      "rdfs:range": "spdci:GroupTypeEnum",
-      "rdfs:comment": "The type of group."
     },
     {
       "@id": "spdci:poverty_score",
@@ -54,10 +45,7 @@
       "@id": "spdci:poverty_score_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Household",
-      "rdfs:range": {
-        "@type":  "xsd:string",
-        "@container":"@list"
-      },
+      "rdfs:range": "xsd:string",
       "rdfs:comment": "The types of poverty scores that are is to measure and categorize the level of poverty."
     },
     {
@@ -65,8 +53,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:range": {
            "@id": "spdci:Member",
-           "@type": "rdfs:Class",
-           "@container": "@list"
+           "@type": "rdfs:Class"
       },
       "rdfs:comment": "Personal details of the head of the household"
     },

@@ -1,0 +1,24 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/common/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "category:IncomeLevelEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Income level Enum",
+        "rdfs:comment": "Enumeration for types of incomes.",
+        "owl:oneOf": [
+          "category:1"
+        ]
+      },
+      {
+        "@id": "category:1",
+        "@type": "category:IncomeLevelEnum",
+        "rdfs:label": "1",
+        "rdfs:comment": "income level I."
+      }
+    ]
+  }

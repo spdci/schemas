@@ -43,7 +43,7 @@
       "@type": "category:FunctionalSeverityEnum",
       "rdfs:label": "Severe difficulty",
       "rdfs:comment": "Severe difficulty"
-    }
+    },
     {
       "@id": "category:4",
       "@type": "category:FunctionalSeverityEnum",

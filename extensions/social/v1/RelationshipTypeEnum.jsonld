@@ -11,14 +11,756 @@
         "rdfs:label": "Relationship types Enum",
         "rdfs:comment": "standardized codes and values that represent the relationships individuals have with other members in a family or household.",
         "owl:oneOf": [
-          "category:self"
+          "category:SELF",
+          "category:PRIMSPOUS",
+          "category:FAMMEMB",
+          "category:CHILD",
+          "category:CHLDADOPT",
+          "category:DAUADOPT",
+          "category:SONADOPT",
+          "category:CHLDFOST",
+          "category:DAUFOST",
+          "category:SONFOST",
+          "category:DAUC",
+          "category:DAU",
+          "category:STPDAU",
+          "category:NCHILD",
+          "category:SON",
+          "category:SONC",
+          "category:STPSON",
+          "category:STPCHILD",
+          "category:EXT",
+          "category:AUNT",
+          "category:MAUNT",
+          "category:PAUNT",
+          "category:COUSN",
+          "category:MCOUSN",
+          "category:PCOUSN",
+          "category:GGRPRN",
+          "category:GGRFTH",
+          "category:MGGRFTH",
+          "category:PGGRFTH",
+          "category:GGRMTH",
+          "category:MGGRNTH",
+          "category:PGGRMTH",
+          "category:MGGRPRN",
+          "category:PGGRPRN",
+          "category:GRNDCHILD",
+          "category:GRNDDAU",
+          "category:GRANDSON",
+          "category:GRPRN",
+          "category:GRFTH",
+          "category:MGRFTH",
+          "category:PGRFTH",
+          "category:GRMTH",
+          "category:MGRMTH",
+          "category:PGRMTH",
+          "category:MGRPRN",
+          "category:PGRPRN",
+          "category:INLAW",
+          "category:CHLDINLAW",
+          "category:DAUINLAW",
+          "category:SONINLAW",
+          "category:PRNINLAW",
+          "category:FTHINLAW",
+          "category:MTHINLAW",
+          "category:SIBINLAW",
+          "category:BROINLAW",
+          "category:SISINLAW",
+          "category:NIENEPH",
+          "category:NEPHEW",
+          "category:NEICE",
+          "category:UNCLE",
+          "category:MUNCLE",
+          "category:PUNCLE",
+          "category:PRN",
+          "category:ADOPTP",
+          "category:ADOPTF",
+          "category:ADOPTM",
+          "category:FTH",
+          "category:FTHFOST",
+          "category:NFTH",
+          "category:NFTHF",
+          "category:STPFTH",
+          "category:MTH",
+          "category:GESTM",
+          "category:MTHFOST",
+          "category:NMTH",
+          "category:NMTHF",
+          "category:STPMTH",
+          "category:NPRN",
+          "category:PRNFOST",
+          "category:STPPRN",
+          "category:SIB",
+          "category:BRO",
+          "category:HBRO",
+          "category:NBRO",
+          "category:TWINBRO",
+          "category:FTWINBRO",
+          "category:ITWINBRO",
+          "category:STPBRO",
+          "category:HSIB",
+          "category:HSIS",
+          "category:NSIB",
+          "category:NSIS",
+          "category:TWINSIS",
+          "category:FTWINSIS",
+          "category:ITWINSIS",
+          "category:TWIN",
+          "category:FTWIN",
+          "category:ITWIN",
+          "category:SIS",
+          "category:STEPSIS",
+          "category:STEPSIB",
+          "category:SIGOTHR",
+          "category:DOMPART",
+          "category:FRMSPS",
+          "category:SPS",
+          "category:HUSB",
+          "category:WIFE"
         ]
       },
       {
-        "@id": "category:self",
+        "@id": "category:SELF",
         "@type": "category:RelationshipEnum",
-        "rdfs:label": "self",
-        "rdfs:comment": "english language."
-      }
-    ]
+        "rdfs:label": "Self",
+        "rdfs:comment": "The reference person."
+      },
+      {
+        "@id": "category:PRIMSPOUS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "Primary Spouse",
+        "rdfs:comment": "Primary Spouse in case of polygamous relationships."
+      },
+      {
+        "@id": "category:FAMMEMB",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "family member",
+        "rdfs:comment": "A relationship between two people characterizing their familial relationship"
+      },
+      {
+        "@id": "category:CHILD",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "child",
+        "rdfs:comment": "The player of the role is a child of the scoping entity."
+      },
+      {
+        "@id": "category:CHILDADOPT",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "adopted child",
+        "rdfs:comment": "The player of the role is a child taken into a family through legal means and raised by the scoping person (parent) as his or her own child."
+      },
+      {
+        "@id": "category:DAUADOPT",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "adopted daughter",
+        "rdfs:comment": "The player of the role is a female child taken into a family through legal means and raised by the scoping person (parent) as his or her own child."
+      },
+      {
+        "@id": "category:SONADOPT",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "adopted son",
+        "rdfs:comment": "The player of the role is a male child taken into a family through legal means and raised by the scoping person (parent) as his or her own child."
+      },
+      {
+        "@id": "category:CHILDFOST",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "foster son",
+        "rdfs:comment": "The player of the role is a child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties."
+      },
+      {
+        "@id": "category:DAUFOST",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "foster daughter",
+        "rdfs:comment": "The player of the role is a female child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties."
+      },
+      {
+        "@id": "category:SONFOST",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "foster son",
+        "rdfs:comment": "The player of the role is a male child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties."
+      },
+      {
+        "@id": "category:DAUC",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "daughter",
+        "rdfs:comment": "The player of the role is a female child (of any type) of scoping entity (parent)"
+      },
+      {
+        "@id": "category:DAU",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural daughter",
+        "rdfs:comment": "The player of the role is a female offspring of the scoping entity (parent)."
+      },
+      {
+        "@id": "category:STPDAU",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "stepdaughter",
+        "rdfs:comment": "The player of the role is a daughter of the scoping person's spouse by a previous union."
+      },
+      {
+        "@id": "category:NCHILD",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural child",
+        "rdfs:comment": "The player of the role is an offspring of the scoping entity as determined by birth."
+      },
+      {
+        "@id": "category:SON",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural son",
+        "rdfs:comment": "The player of the role is a male offspring of the scoping entity (parent)."
+      },
+      {
+        "@id": "category:SONC",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "son",
+        "rdfs:comment": "The player of the role is a male child (of any type) of scoping entity (parent)"
+      },
+      {
+        "@id": "category:STPSON",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "stepson",
+        "rdfs:comment": "The player of the role is a son of the scoping person's spouse by a previous union."
+      },
+      {
+        "@id": "category:STPCHILD",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "step child",
+        "rdfs:comment": "The player of the role is a child of the scoping person's spouse by a previous union."
+      },
+      {
+        "@id": "category:EXT",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "extended family member",
+        "rdfs:comment": "A family member not having an immediate genetic or legal relationship e.g. Aunt, cousin, great grandparent, grandchild, grandparent, niece, nephew or uncle."
+      },
+      {
+        "@id": "category:AUNT",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "aunt",
+        "rdfs:comment": "The player of the role is a sister of the scoping person's mother or father."
+      },
+      {
+        "@id": "category:MAUNT",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal aunt",
+        "rdfs:comment": "The player of the role is a biological sister of the scoping person's biological mother."
+      },
+      {
+        "@id": "category:PAUNT",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal aunt",
+        "rdfs:comment": "The player of the role is a biological sister of the scoping person's biological father."
+      },
+      {
+        "@id": "category:COUSN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "cousin",
+        "rdfs:comment": "The player of the role is a relative of the scoping person descended from a common ancestor, such as a grandparent, by two or more steps in a diverging line."
+      },
+      {
+        "@id": "category:MCOUSN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal cousin",
+        "rdfs:comment": "The player of the role is a biological relative of the scoping person descended from a common ancestor on the player's mother's side, such as a grandparent, by two or more steps in a diverging line."
+      },
+      {
+        "@id": "category:PCOUSN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal cousin",
+        "rdfs:comment": "The player of the role is a biological relative of the scoping person descended from a common ancestor on the player's father's side, such as a grandparent, by two or more steps in a diverging line."
+      },
+      {
+        "@id": "category:GGRPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "great grandparent",
+        "rdfs:comment": "The player of the role is a parent of the scoping person's grandparent."
+      },
+      {
+        "@id": "category:GGRFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "great grandfather",
+        "rdfs:comment": "The player of the role is the father of the scoping person's grandparent."
+      },
+      {
+        "@id": "category:MGGRFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal great-grandfather",
+        "rdfs:comment": "The player of the role is the biological father of the scoping person's biological mother's parent."
+      },
+      {
+        "@id": "category:PGGRFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal great-grandfather",
+        "rdfs:comment": "The player of the role is the biological father of the scoping person's biological father's parent."
+      },
+      {
+        "@id": "category:GGRMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "great grandmother",
+        "rdfs:comment": "The player of the role is the mother of the scoping person's grandparent."
+      },
+      {
+        "@id": "category:MGGRMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal great-grandmother",
+        "rdfs:comment": "The player of the role is the biological mother of the scoping person's biological mother's parent."
+      },
+      {
+        "@id": "category:PGGRMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal great-grandmother",
+        "rdfs:comment": "The player of the role is the biological mother of the scoping person's biological father's parent."
+      },
+      {
+        "@id": "category:MGGRPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal great-grandparent",
+        "rdfs:comment": "The player of the role is a biological parent of the scoping person's biological mother's parent."
+      },
+      {
+        "@id": "category:PGGRPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal great-grandparent",
+        "rdfs:comment": "The player of the role is a biological parent of the scoping person's biological father's parent."
+      },
+      {
+        "@id": "category:GRNDCHILD",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "grandchild",
+        "rdfs:comment": "The player of the role is a child of the scoping person's son or daughter."
+      },
+      {
+        "@id": "category:GRNDDAU",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "granddaughter",
+        "rdfs:comment": "The player of the role is a daughter of the scoping person's son or daughter."
+      },
+      {
+        "@id": "category:GRNDSON",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "grandson",
+        "rdfs:comment": "The player of the role is a son of the scoping person's son or daughter."
+      },
+      {
+        "@id": "category:GRPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "grandparent",
+        "rdfs:comment": "The player of the role is a parent of the scoping person's mother or father."
+      },
+      {
+        "@id": "category:GRFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "grandfather",
+        "rdfs:comment": "The player of the role is the father of the scoping person's mother or father."
+      },
+      {
+        "@id": "category:MGRFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal grandfather",
+        "rdfs:comment": "The player of the role is the biological father of the scoping person's biological mother."
+      },
+      {
+        "@id": "category:PGRFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal grandfather",
+        "rdfs:comment": "The player of the role is the biological father of the scoping person's biological father."
+      },
+      {
+        "@id": "category:GRMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "grandmother",
+        "rdfs:comment": "The player of the role is the mother of the scoping person's mother or father."
+      },
+      {
+        "@id": "category:PGRMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal grandmother",
+        "rdfs:comment": "The player of the role is the biological mother of the scoping person's biological father."
+      },
+      {
+        "@id": "category:MGRMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal grandmother",
+        "rdfs:comment": "The player of the role is the biological mother of the scoping person's biological mother."
+      },
+      {
+        "@id": "category:PGRPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "paternal grandparent",
+        "rdfs:comment": "The player of the role is the biological mother of the scoping person's biological father."
+      },
+      {
+        "@id": "category:MGRPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal grandparent",
+        "rdfs:comment": "The player of the role is the biological mother of the scoping person's biological mother."
+      },
+      {
+        "@id": "category:INLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "inlaw",
+        "rdfs:comment": "A relationship between an individual and a member of their spousal partner's immediate family."
+      },
+      {
+        "@id": "category:CHLDINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "child-in-law",
+        "rdfs:comment": "The player of the role is the spouse of scoping person's child."
+      },
+      {
+        "@id": "category:DAUINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "daughter in-law",
+        "rdfs:comment": "The player of the role is the wife of scoping person's son."
+      },
+      {
+        "@id": "category:SONINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "son in-law",
+        "rdfs:comment": "The player of the role is the husband of scoping person's daughter."
+      },
+      {
+        "@id": "category:PRNINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "parent in-law",
+        "rdfs:comment": "The player of the role is the parent of scoping person's husband or wife."
+      },
+      {
+        "@id": "category:FTHINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "father-in-law",
+        "rdfs:comment": "The player of the role is the father of the scoping person's husband or wife."
+      },
+      {
+        "@id": "category:MTHINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "mother-in-law",
+        "rdfs:comment": "The player of the role is the mother of the scoping person's husband or wife."
+      },
+      {
+        "@id": "category:SIBINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "sibling in-law",
+        "rdfs:comment": "The player of the role is: (1) a sibling of the scoping person's spouse, or (2) the spouse of the scoping person's sibling, or (3) the spouse of a sibling of the scoping person's spouse."
+      },
+      {
+        "@id": "category:BROINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "brother in-law",
+        "rdfs:comment": "The player of the role is: (1) a brother of the scoping person's spouse, or (2) the husband of the scoping person's sister, or (3) the husband of a sister of the scoping person's spouse."
+      },
+      {
+        "@id": "category:SISINLAW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "sister in-law",
+        "rdfs:comment": "The player of the role is: (1) a sister of the scoping person's spouse, or (2) the wife of the scoping person's brother, or (3) the wife of a brother of the scoping person's spouse."
+      },
+      {
+        "@id": "category:NIENEPH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "niece/nephew",
+        "rdfs:comment": "The player of the role is a child of scoping person's brother or sister or of the brother or sister of the scoping person's spouse."
+      },
+      {
+        "@id": "category:NEPHEW",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "nephew",
+        "rdfs:comment": "The player of the role is a son of the scoping person's brother or sister or of the brother or sister of the scoping person's spouse."
+      },
+      {
+        "@id": "category:NEICE",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "neice",
+        "rdfs:comment": "The player of the role is a daughter of the scoping person's brother or sister or of the brother or sister of the scoping person's spouse."
+      },
+      {
+        "@id": "category:UNCLE",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "uncle",
+        "rdfs:comment": "The player of the role is a brother of the scoping person's mother or father."
+      },
+      {
+        "@id": "category:PUNCLE",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "parental uncle",
+        "rdfs:comment": "The player of the role is a biological brother of the scoping person's biological father."
+      },
+      {
+        "@id": "category:MUNCLE",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "maternal uncle",
+        "rdfs:comment": "The player of the role is a biological brother of the scoping person's biological mother."
+      },
+      {
+        "@id": "category:PRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "parent",
+        "rdfs:comment": "The player of the role is one who begets, gives birth to, or nurtures and raises the scoping entity (child)."
+      },
+      {
+        "@id": "category:ADOPTP",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "adoptive parent",
+        "rdfs:comment": "The player of the role (parent) has taken the scoper (child) into their family through legal means and raises them as his or her own child."
+      },
+      {
+        "@id": "category:ADOPTF",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "adoptive father",
+        "rdfs:comment": "The player of the role (father) has taken the scoper (child) into their family through legal means and raises them as his or her own child."
+      },
+      {
+        "@id": "category:ADOPTM",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "adoptive mother",
+        "rdfs:comment": "The player of the role (mother) has taken the scoper (child) into their family through legal means and raises them as his or her own child."
+      },
+      {
+        "@id": "category:FTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "father",
+        "rdfs:comment": "The player of the role is a male who begets or raises or nurtures the scoping entity (child)."
+      },
+      {
+        "@id": "category:FTHFOST",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "foster father",
+        "rdfs:comment": "The player of the role (parent) who is a male state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child."
+      },
+      {
+        "@id": "category:NFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural father",
+        "rdfs:comment": "The player of the role is a male who begets the scoping entity (child)."
+      },
+      {
+        "@id": "category:NFTHF",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural father of fetus",
+        "rdfs:comment": "Indicates the biologic male parent of a fetus."
+      },
+      {
+        "@id": "category:STPFTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "stepfather",
+        "rdfs:comment": "The player of the role is the husband of scoping person's mother and not the scoping person's natural father."
+      },
+      {
+        "@id": "category:MTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "mother",
+        "rdfs:comment": "The player of the role is a female who conceives, gives birth to, or raises and nurtures the scoping entity (child)."
+      },
+      {
+        "@id": "category:GESTM",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "gestational mother",
+        "rdfs:comment": "The player is a female whose womb carries the fetus of the scoper. Generally used when the gestational mother and natural mother are not the same."
+      },
+      {
+        "@id": "category:FOSTMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "foster mother",
+        "rdfs:comment": "The player of the role (parent) who is a female state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary. The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child."
+      },
+      {
+        "@id": "category:NMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural mother",
+        "rdfs:comment": "The player of the role is a female who conceives or gives birth to the scoping entity (child)."
+      },
+      {
+        "@id": "category:NMTHF",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural mother of fetus",
+        "rdfs:comment": "The player is the biologic female parent of the scoping fetus."
+      },
+      {
+        "@id": "category:STPMTH",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "stepmother",
+        "rdfs:comment": "The player of the role is the wife of scoping person's father and not the scoping person's natural mother."
+      },
+      {
+        "@id": "category:NPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural parent",
+        "rdfs:comment": ""
+      },
+      {
+        "@id": "category:PRNFOST",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "foster parent",
+        "rdfs:comment": "The player of the role (parent) who is a state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child."
+      },
+      {
+        "@id": "category:STPPRN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "step parent",
+        "rdfs:comment": "The player of the role is the spouse of the scoping person's parent and not the scoping person's natural parent."
+      },
+      {
+        "@id": "category:SIB",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "sibling",
+        "rdfs:comment": "The player of the role shares one or both parents in common with the scoping entity."
+      },
+      {
+        "@id": "category:BRO",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "borther",
+        "rdfs:comment": "The player of the role is a male sharing one or both parents in common with the scoping entity."
+      },
+      {
+        "@id": "category:HBRO",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "half-brother",
+        "rdfs:comment": "The player of the role is a male related to the scoping entity by sharing only one biological parent."
+      },
+      {
+        "@id": "category:NBRO",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural brother",
+        "rdfs:comment": "The player of the role is a male having the same biological parents as the scoping entity."
+      },
+      {
+        "@id": "category:TWINBRO",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "twin brother",
+        "rdfs:comment": "The scoper was carried in the same womb as the male player and shares common biological parents."
+      },
+      {
+        "@id": "category:FTWINBRO",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "faternal twin brother",
+        "rdfs:comment": "The scoper was carried in the same womb as the male player and shares common biological parents but is the product of a distinct egg/sperm pair."
+      },
+      {
+        "@id": "category:ITWINBRO",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "identical twin brother",
+        "rdfs:comment": "The male scoper is an offspring of the same egg-sperm pair as the male player."
+      },
+      {
+        "@id": "category:STPBRO",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "stepbrother",
+        "rdfs:comment": "The player of the role is a son of the scoping person's stepparent."
+      },
+      {
+        "@id": "category:HSIB",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "half-sibling",
+        "rdfs:comment": "The player of the role is related to the scoping entity by sharing only one biological parent."
+      },
+      {
+        "@id": "category:HSIS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "half-sister",
+        "rdfs:comment": "The player of the role is a female related to the scoping entity by sharing only one biological parent."
+      },
+      {
+        "@id": "category:NSIB",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural sibling",
+        "rdfs:comment": "The player of the role has both biological parents in common with the scoping entity."
+      },
+      {
+        "@id": "category:NSIS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "natural sister",
+        "rdfs:comment": "The player of the role is a female having the same biological parents as the scoping entity."
+      },
+      {
+        "@id": "category:TWINSIS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "twin sister",
+        "rdfs:comment": "The scoper was carried in the same womb as the female player and shares common biological parents."
+      },
+      {
+        "@id": "category:FTWINSIS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "faternal twin sister",
+        "rdfs:comment": "The scoper was carried in the same womb as the female player and shares common biological parents but is the product of a distinct egg/sperm pair."
+      },
+      {
+        "@id": "category:ITWINSIS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "identical twin sister",
+        "rdfs:comment": "The female scoper is an offspring of the same egg-sperm pair as the female player."
+      },
+      {
+        "@id": "category:TWIN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "twin",
+        "rdfs:comment": "The scoper and player were carried in the same womb and shared common biological parents."
+      },
+      {
+        "@id": "category:FTWIN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "faternal twin",
+        "rdfs:comment": "The scoper and player were carried in the same womb and share common biological parents but are the product of distinct egg/sperm pairs."
+      },
+      {
+        "@id": "category:ITWIN",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "identical twin",
+        "rdfs:comment": "The scoper and player are offspring of the same egg-sperm pair."
+      },
+      {
+        "@id": "category:SIS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "sister",
+        "rdfs:comment": "The player of the role is a female sharing one or both parents in common with the scoping entity."
+      },
+      {
+        "@id": "category:STPSIS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "step-sister",
+        "rdfs:comment": "The player of the role is a daughter of the scoping person's stepparent."
+      },
+      {
+        "@id": "category:STPSIB",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "step-sibling",
+        "rdfs:comment": "The player of the role is a child of the scoping person's stepparent."
+      },
+      {
+        "@id": "category:SIGOTHR",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "significant other",
+        "rdfs:comment": "A person who is important to one's well being; especially a spouse or one in a similar relationship. (The player is the one who is important)"
+      },
+      {
+        "@id": "category:DOMPART",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "domestic partner",
+        "rdfs:comment": "The player of the role cohabits with the scoping person but is not the scoping person's spouse."
+      },
+      {
+        "@id": "category:FRMSPS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "former spouse",
+        "rdfs:comment": "Player of the role was previously joined to the scoping person in marriage and this marriage is now dissolved and inactive. Usage Note: This is significant to indicate as some jurisdictions have different legal requirements for former spouse to access the patient's record, from a general friend."
+      },
+      {
+        "@id": "category:SPS",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "spouse",
+        "rdfs:comment": "The player of the role is a marriage partner of the scoping person."
+      },
+      {
+        "@id": "category:HUSB",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "husband",
+        "rdfs:comment": "The player of the role is a man joined to a woman (scoping person) in marriage."
+      },
+      {
+        "@id": "category:WIFE",
+        "@type": "category:RelationshipEnum",
+        "rdfs:label": "wife",
+        "rdfs:comment": "The player of the role is a woman joined to a man (scoping person) in marriage."
+      },
+    
   }

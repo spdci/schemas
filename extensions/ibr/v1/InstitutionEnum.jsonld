@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "institution:InstitutionEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Institution Enum",
+      "rdfs:comment": "The type of institution implementing the programme​",
+      "owl:oneOf": [
+        "institution:1",
+        "institution:2",
+        "institution:3",
+        "institution:4",
+        "institution:5",
+        "institution:6",
+        "institution:7",
+        "institution:8"
+      ]
+    },
+    {
+      "@id": "institution:1",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "Public",
+      "rdfs:comment": "Public"
+    },
+    {
+      "@id": "institution:2",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "Private",
+      "rdfs:comment": "Private"
+    },
+    {
+      "@id": "institution:3",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "International Organization",
+      "rdfs:comment": "International Organization"
+    },
+    {
+      "@id": "institution:4",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "NGO",
+      "rdfs:comment": "NGO"
+    },
+    {
+      "@id": "institution:5",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "CSO",
+      "rdfs:comment": "CSO"
+    },
+    {
+      "@id": "institution:6",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "Religious institution",
+      "rdfs:comment": "Religious institution"
+    },
+    {
+      "@id": "institution:7",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "Philanthropy",
+      "rdfs:comment": "Philanthropy"
+    },
+    {
+      "@id": "institution:8",
+      "@type": "institution:InstitutionEnum",
+      "rdfs:label": "Other",
+      "rdfs:comment": "Other"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/ibr/v1/",
+    "social": "https://schema.spdci.org/extensions/social/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "common": "https://schema.spdci.org/common/v1/"
+  },
+  "@id": "spdci:Beneficiary",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains information conveyed from SP-MIS to the IBR regarding beneficiaries, which could be individuals, families, or households, and the benefits received. For families or households, information about the head or nominated beneficiary is provided. The data object also includes details on the most recently provided benefit and current enrolment status in the program. Some personal data available in SP-MIS but not required in the IBR is excluded for data protection purposes",
+  "rdfs:label": "Beneficiary",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:assistance_unit",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": "spdci:AssistanceUnit",
+      "rdfs:comment": "The entity benefiting from the programme"
+    },
+    {
+      "@id": "spdci:household",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": "social:Household",
+      "rdfs:comment": "Household assistance unit"
+    },
+    {
+      "@id": "spdci:family",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": "social:Family",
+      "rdfs:comment": "Family assistance unit"
+    },
+    {
+      "@id": "spdci:member",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": "social:Member",
+      "rdfs:comment": "An individual belonging to a family or household"
+    },
+    {
+      "@id": "spdci:programme_identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": {
+        "@type": "spdci:Programme",
+        "@container": "@list"
+      },
+      "rdfs:comment": "The programme in which the beneficiary is/was enrolled and accompanying information"
+    },
+    {
+      "@id": "spdci:enrollment_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment" : "The date the beneficiary was enrolled into the programme"
+    },
+    {
+      "@id": "spdci:enrollment_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": "spdci:EnrollementStatusEnum",
+      "rdfs:comment" : "The beneficiaries status with a specific programme"
+    },
+    {
+      "@id": "spdci:status_change_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": {
+        "@type": "common:DateTime",
+        "@container": "@list"
+      },
+      "rdfs:comment" : "The date the beneficiary enrolment status changed in the programme"
+    },
+    {
+      "@id": "spdci:benefits",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Beneficiary",
+      "rdfs:range": {
+        "@type": "spdci:Benefit",
+        "@container": "@list"
+      },
+      "rdfs:comment": "List of benefits received by the beneficiary"
+    },
+    {
+      "@id": "spdci:additional_attributes",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Household",
+      "rdfs:range": {
+        "@type": "xsd:string",
+        "@container": "@list"
+      },
+      "rdfs:comment": "Additional attributes as an array of strings."
+    }
+
+  ],
+  "required": ["@context","@type", "spdci:assistance_unit", "spdci:programme_identifier", "spdci:enrollment_date","spdci:enrollment_status","spdci:benefits"]
+}

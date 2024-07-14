@@ -9,7 +9,7 @@
     "@id": "spdci:Family",
     "@type": "rdfs:Class",
     "rdfs:comment": "A family unit represents a group of related individuals in the social registry",
-    "rdfs:label": "Famlity",
+    "rdfs:label": "Family",
     "rdfs:subClassOf": [
       {
         "@type": "rdfs:Class",

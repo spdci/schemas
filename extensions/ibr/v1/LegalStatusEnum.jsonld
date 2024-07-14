@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "legal:LegalStatusEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Legal Status Enum",
+      "rdfs:comment": "The legal status of the programme​​",
+      "owl:oneOf": [
+        "legal:1",
+        "legal:2",
+        "legal:3"
+      ]
+    },
+    {
+      "@id": "legal:1",
+      "@type": "legal:LegalStatusEnum",
+      "rdfs:label": "Anchored in national legislation",
+      "rdfs:comment": "Anchored in national legislation"
+    },
+    {
+      "@id": "legal:2",
+      "@type": "legal:LegalStatusEnum",
+      "rdfs:label": "Not anchored (charity, NGO etc)",
+      "rdfs:comment": "Not anchored (charity, NGO etc)"
+    },
+    {
+      "@id": "legal:3",
+      "@type": "legal:LegalStatusEnum",
+      "rdfs:label": "Not yet implemented",
+      "rdfs:comment": "Not yet implemented"
+    }
+  ]
+}

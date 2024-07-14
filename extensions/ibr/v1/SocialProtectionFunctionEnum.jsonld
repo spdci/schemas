@@ -1,0 +1,122 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "spfunctions:spfunctionEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Social protection functions Enum",
+      "rdfs:comment": "The type of social protection functions provided for by the programme​​",
+      "owl:oneOf": [
+        "spfunction:1",
+        "spfunction:2",
+        "spfunction:3",
+        "spfunction:4",
+        "spfunction:5",
+        "spfunction:6",
+        "spfunction:7",
+        "spfunction:8",
+        "spfunction:9",
+        "spfunction:10",
+        "spfunction:11",
+        "spfunction:12",
+        "spfunction:13",
+        "spfunction:14",
+        "spfunction:15"
+      ]
+    },
+    {
+      "@id": "spfunctions:1",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Old Age",
+      "rdfs:comment": "Old Age"
+    },
+    {
+      "@id": "spfunctions:2",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Invalidity / Disability Survivorships ",
+      "rdfs:comment": "Invalidity / Disability Survivorships "
+    },
+    {
+      "@id": "spfunctions:3",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Sickness (in cash)",
+      "rdfs:comment": "Sickness (in cash)"
+    },
+    {
+      "@id": "spfunctions:4",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Maternity / Paternity Children",
+      "rdfs:comment": "Maternity / Paternity Children"
+    },
+    {
+      "@id": "spfunctions:5",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Family",
+      "rdfs:comment": "Family"
+    },
+    {
+      "@id": "spfunctions:6",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Access to Education",
+      "rdfs:comment": "Access to Education"
+    },
+    {
+      "@id": "spfunctions:7",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Unemployment",
+      "rdfs:comment": "Unemployment"
+    },
+    {
+      "@id": "spfunctions:8",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Employment Injury",
+      "rdfs:comment": "Employment Injury"
+    },
+    {
+      "@id": "spfunctions:9",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Healthcare",
+      "rdfs:comment": "Healthcare"
+    },
+    {
+      "@id": "spfunctions:10",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Social Work Services",
+      "rdfs:comment": "Social Work Services"
+    },
+    {
+      "@id": "spfunctions:11",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Public Works Programs",
+      "rdfs:comment": "Public Works Programs"
+    },
+    {
+      "@id": "spfunctions:12",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Housing Subsidies",
+      "rdfs:comment": "Housing Subsidies"
+    },
+    {
+      "@id": "spfunctions:13",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Food and Nutrition",
+      "rdfs:comment": "Food and Nutrition"
+    },
+    {
+      "@id": "spfunctions:14",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Social Assistance targeted at poverty reduction",
+      "rdfs:comment": "Social Assistance targeted at poverty reduction"
+    },
+    {
+      "@id": "spfunctions:15",
+      "@type": "spfunctions:spfunctionsEnum",
+      "rdfs:label": "Other support/assistance",
+      "rdfs:comment": "Other support/assistance"
+    }
+  ]
+}

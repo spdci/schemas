@@ -1,0 +1,39 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "assistanceunit:AssistanceUnitEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Assitance Unit Enum",
+        "rdfs:comment": "The entity benefiting from the programme",
+        "owl:oneOf": [
+          "assistanceunit:1",
+          "assistanceunit:2",
+          "assistanceunit:3"
+        ]
+      },
+      {
+        "@id": "assistanceunit:1",
+        "@type": "assistanceunit:AssistanceUnitEnum",
+        "rdfs:label": "Member (Person/Individual)",
+        "rdfs:comment": "Member (Person/Individual)"
+      },
+      {
+        "@id": "assistanceunit:2",
+        "@type": "assistanceunit:AssistanceUnitEnum",
+        "rdfs:label": "Household",
+        "rdfs:comment": "Family"
+      },
+      {
+        "@id": "assistanceunit:3",
+        "@type": "assistanceunit:AssistanceUnitEnum",
+        "rdfs:label": "Family",
+        "rdfs:comment": "Family"
+      }
+    ]
+  }
+  

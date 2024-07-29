@@ -1,0 +1,130 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/social/v1/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "common": "https://schema.spdci.org/common/v1/"
+    },
+    "@id": "spdci:Member",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on people and households held in the social registry.",
+    "rdfs:label": "Member",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+      {
+        "@id": "spdci:member_identifier",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "xsd:string",
+        "rdfs:comment": "A unique identifier assigned to each individual."
+      },
+      {
+        "@id": "spdci:demographic_info",
+        "@type": "rdfs:Datatype",
+        "rdfs:range": {
+             "@id": "spdci:Person",
+             "@type": "rdfs:Class"
+        },
+        "rdfs:comment": "Personal details of the individual"
+      },
+      {
+        "@id": "spdci:related_person",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": {
+          "@id": "spdci:RelatePerson",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "An array of the persons related to the individual and the relationship type."
+      },
+      {
+        "@id": "spdci:is_disabled",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "xsd:boolean",
+        "rdfs:comment": "Is the individual disabled? true (1) or false (0)."
+      },
+      {
+        "@id": "spdci:disability_info",
+        "@type": "rdfs:Datatype",
+        "rdfs:range": {
+             "@id": "spdci:DisabilityInfo",
+             "@type": "rdfs:Class"
+        },
+        "rdfs:comment": "Additional attributes for people with disabilities"
+      },  
+      {
+        "@id": "spdci:marital_status",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "common:MaritalStatusEnum",
+        "rdfs:comment": "Marital status of the individual"
+      },
+      {
+        "@id": "spdci:employment_status",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "spdci:EmploymentStatusEnum",
+        "rdfs:comment": "Employment status of the individual."
+      },
+      {
+        "@id": "spdci:occupation",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "spdci:OccupationEnum",
+        "rdfs:comment": "Occupation of the individual."
+      },
+      {
+        "@id": "spdci:income_level",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "spdci:IncomeLevelEnum",
+        "rdfs:comment": "Income level of the individual."
+      },
+      {
+        "@id": "spdci:language_code",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "spdci:LanguageCodeEnum",
+        "rdfs:comment": "The languages spoken by the individual."
+      },
+      {
+        "@id": "spdci:education_level",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "spdci:EducationCodeEnum",
+        "rdfs:comment": "Individual's education level."
+      },
+      {
+        "@id": "spdci:additional_attributes",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": {
+          "@type": "xsd:string",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Additional attributes as an array of strings."
+      },
+      {
+        "@id": "spdci:registration_date",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "The date the household individual was registered."
+      },
+      {
+        "@id": "spdci:last_updated",
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": "Date on which applicant data was last updated."
+      }
+    ],
+    "required": ["@context","@type","spdci:member_identifier","spdci:demographic_info","spdci:is_disabled","spdci:marital_status","spdci:registration_date"]
+  }
+  

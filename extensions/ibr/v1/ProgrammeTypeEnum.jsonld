@@ -1,0 +1,116 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "programme:ProgrammeTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Programme type Enum",
+      "rdfs:comment": "The type of programme modality or intervention.​​",
+      "owl:oneOf": [
+        "programme:1",
+        "programme:2",
+        "programme:3",
+        "programme:4",
+        "programme:5",
+        "programme:6",
+        "programme:7",
+        "programme:8",
+        "programme:9",
+        "programme:10",
+        "programme:11",
+        "programme:12",
+        "programme:13",
+        "programme14",
+        "programme:15"
+      ]
+    },
+    {
+      "@id": "programme:1",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Unconditional cash transfers (poverty targeted)",
+      "rdfs:comment": "Unconditional cash transfers (poverty targeted)"
+    },
+    {
+      "@id": "programme:2",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Conditional cash transfers (poverty targeted)",
+      "rdfs:comment": "Conditional cash transfers (poverty targeted)"
+    },
+    {
+      "@id": "programme:3",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Universal categorical",
+      "rdfs:comment": "Universal categorical"
+    },
+    {
+      "@id": "programme:4",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Food and in-kind transfers",
+      "rdfs:comment": "Food and in-kind transfers"
+    },
+    {
+      "@id": "programme:5",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "School feeding",
+      "rdfs:comment": "School feeding"
+    },
+    {
+      "@id": "programme:6",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Public works, workfare and direct job creation",
+      "rdfs:comment": "Public works, workfare and direct job creation"
+    },
+    {
+      "@id": "programme:7",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Fee waivers and targeted subsidies",
+      "rdfs:comment": "Fee waivers and targeted subsidies"
+    },
+    {
+      "@id": "programme:8",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Other social assistance",
+      "rdfs:comment": "Other social assistance"
+    },
+    {
+      "@id": "programme:9",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Social insurance (maternity, health, unemployment)",
+      "rdfs:comment": "Social insurance (maternity, health, unemployment)"
+    },
+    {
+      "@id": "programme:10",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Provident fund",
+      "rdfs:comment": "Provident fund"
+    },
+    {
+      "@id": "programme:11",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Occupational pension",
+      "rdfs:comment": "Occupational pension"
+    },
+    {
+      "@id": "programme:12",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Notional defined contribution",
+      "rdfs:comment": "Notional defined contribution"
+    },
+    {
+      "@id": "programme:13",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Employer liability",
+      "rdfs:comment": "Employer liability"
+    },
+    {
+      "@id": "programme:14",
+      "@type": "programme:ProgrammeTypeEnum",
+      "rdfs:label": "Other employment-related",
+      "rdfs:comment": "Other employment-related"
+    }
+  ]
+}

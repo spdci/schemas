@@ -36,6 +36,20 @@
       "rdfs:domain": "spdci:Benefit",
       "rdfs:range": "common:Currency",
       "rdfs:comment": "The value of the benefit received"
+    },
+    {
+      "@id": "spdci:benefit_description",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Benefit",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "A more specific description of the benefit.  May be used to specify the type of in-kind benefit (eg sacks of rice)"
+    },
+    {
+      "@id": "spdci:benefit_quantity",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Benefit",
+      "rdfs:range": "xsd:integer",
+      "rdfs:comment": "The quantity of benefit provided.  May be used to specific quantities of in-kind benefit (eg 5)"
     }
   ],
   "required": ["@context","@type", "spdci:benefit_type", "spdci:benefit_date"]

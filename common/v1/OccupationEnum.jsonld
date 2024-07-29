@@ -1,0 +1,77 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/common/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:OccupationEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Occupation  Enum",
+        "rdfs:comment": "Standardized codes and values representing the occupation of the person.",
+        "owl:oneOf": [
+          "occupation:1",
+          "occupation:2",
+          "occupation:3",
+          "occupation:4",
+          "occupation:5",
+          "occupation:6",
+          "occupation:7",
+          "occupation:8",
+          "occupation:9",
+          "occupation:0"
+        ]
+      },
+      {
+        "@id": "occupation:1",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Manager"
+      },
+      {
+        "@id": "occupation:2",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Professional"
+      },
+      {
+        "@id": "occupation:3",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Technician and Associate Professional"
+      },
+      {
+        "@id": "occupation:4",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Clerical Support Worker"
+      },
+      {
+        "@id": "occupation:5",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Service and Sales Worker"
+      },
+      {
+        "@id": "occupation:6",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Skilled Agricultural, Forestery and Fishery Worker"
+      },
+      {
+        "@id": "occupation:7",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Craft and Related Trades Worker"
+      },
+      {
+        "@id": "occupation:8",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Plant and Machine Operator and Assembler"
+      },
+      {
+        "@id": "occupation:9",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Elementary Occupation"
+      },
+      {
+        "@id": "occupation:0",
+        "@type": "type:OccupationEnum",
+        "rdfs:label": "Armed Forces Occupation"
+      }
+    ]
+}

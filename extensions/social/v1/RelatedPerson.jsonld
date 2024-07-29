@@ -25,13 +25,13 @@
         "rdfs:comment": "The type of relationship a member has with another member of the group."
       },
       {
-        "@id": "spdci:related_member_identifier",
+        "@id": "spdci:related_member",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:RelatedPerson",
-        "rdfs:range": "xsd:string",
-        "rdfs:comment": "A unique identifier assigned to the related household member ."
+        "rdfs:range": "spdci:Person",
+        "rdfs:comment": "the related person object ."
       }
     ],
-    "required": ["@context","@type","spdci:relationship_type","spdci:related_member_identifier"]
+    "required": ["@context","@type","spdci:relationship_type","spdci:related_member"]
   }
   

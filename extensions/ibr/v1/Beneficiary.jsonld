@@ -26,18 +26,11 @@
       "rdfs:comment": "The entity benefiting from the programme"
     },
     {
-      "@id": "spdci:household",
+      "@id": "spdci:group",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Beneficiary",
-      "rdfs:range": "social:Household",
+      "rdfs:range": "social:Group",
       "rdfs:comment": "Household assistance unit"
-    },
-    {
-      "@id": "spdci:family",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Beneficiary",
-      "rdfs:range": "social:Family",
-      "rdfs:comment": "Family assistance unit"
     },
     {
       "@id": "spdci:member",

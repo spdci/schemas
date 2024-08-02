@@ -56,7 +56,8 @@
         "@type": "rdfs:Datatype",
         "rdfs:range": {
              "@id": "spdci:DisabilityInfo",
-             "@type": "rdfs:Class"
+             "@type": "rdfs:Class",
+             "@container": "@list"
         },
         "rdfs:comment": "Additional attributes for people with disabilities"
       },  

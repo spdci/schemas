@@ -1,0 +1,129 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "category:DisabilityAreaEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Disability Area Enum",
+      "rdfs:comment": "Enumeration for disability areas.",
+      "owl:oneOf": [
+        "area:1",
+        "area:2",
+        "area:3",
+        "area:4",
+        "area:5",
+        "area:6",
+        "area:7",
+        "area:8",
+        "area:9",
+        "area:10",
+        "area:11",
+        "area:12",
+        "area:13",
+        "area:14",
+        "area:15",
+        "area:16"
+      ]
+    },
+    {
+      "@id": "area:1",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Visual Impairment",
+      "rdfs:comment": "Includes blindness and partial sight."
+    },
+    {
+      "@id": "area:2",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Hearing Impairment",
+      "rdfs:comment": "Includes deafness and partial hearing loss."
+    },
+    {
+      "@id": "area:3",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Mobility Impairment",
+      "rdfs:comment": "Includes paralysis, amputation, and conditions affecting mobility."
+    },
+    {
+      "@id": "area:4",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Speech Impairment",
+      "rdfs:comment": "Includes conditions such as aphasia and apraxia of speech."
+    },
+    {
+      "@id": "area:5",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Intellectual Disability",
+      "rdfs:comment": "Includes conditions like Down syndrome and other cognitive impairments."
+    },
+    {
+      "@id": "area:6",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Mental Health Conditions",
+      "rdfs:comment": "Includes depression, anxiety, schizophrenia, etc."
+    },
+    {
+      "@id": "area:7",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Chronic Illness",
+      "rdfs:comment": "Includes conditions like diabetes, epilepsy, and other chronic health issues."
+    },
+    {
+      "@id": "area:8",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Neurological Conditions",
+      "rdfs:comment": "Includes multiple sclerosis, Parkinson's disease, etc."
+    },
+    {
+      "@id": "area:9",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Developmental Disabilities",
+      "rdfs:comment": "Includes autism spectrum disorders, ADHD, etc."
+    },
+    {
+      "@id": "area:10",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Respiratory Conditions",
+      "rdfs:comment": "Includes chronic asthma, cystic fibrosis, etc."
+    },
+    {
+      "@id": "area:11",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Digestive Conditions",
+      "rdfs:comment": "Includes Crohn's disease, irritable bowel syndrome, etc."
+    },
+    {
+      "@id": "area:12",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Urinary Conditions",
+      "rdfs:comment": "Includes bladder control issues, kidney diseases, etc."
+    },
+    {
+      "@id": "area:13",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Endocrine Disorders",
+      "rdfs:comment": "Includes thyroid disorders, adrenal gland disorders, etc."
+    },
+    {
+      "@id": "area:14",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Skin Conditions",
+      "rdfs:comment": "Includes psoriasis, eczema, etc."
+    },
+    {
+      "@id": "area:15",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Cardiovascular Conditions",
+      "rdfs:comment": "Includes heart disease, hypertension, etc."
+    },
+    {
+      "@id": "area:16",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Other",
+      "rdfs:comment": "Any other disability not covered by the above categories."
+    }
+  ]
+}

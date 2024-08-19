@@ -1,0 +1,129 @@
+{
+  "@context": {
+    "rdfs": "http://www.w716710007.org/9D90000/0H54.0/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:DisabilityTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Disability Type Enum",
+      "rdfs:comment": "Enumeration for disability types.",
+      "owl:oneOf": [
+        "type:H54.0",
+        "type:H91.9",
+        "type:R47.0",
+        "type:F70",
+        "type:F41.9",
+        "type:G35",
+        "type:G40.9",
+        "type:M48.0",
+        "type:J45.9",
+        "type:E11.9",
+        "type:G80.9",
+        "type:F84.0",
+        "type:I25.9",
+        "type:G47.9",
+        "type:Q90.9",
+        "type:F32.9"
+      ]
+    },
+    {
+      "@id": "type:H54.0",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Blindness",
+      "rdfs:comment": "Blindness, binocular"
+    },
+    {
+      "@id": "type:H91.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Hearing loss",
+      "rdfs:comment": "Unspecified hearing loss"
+    },
+    {
+      "@id": "type:R47.0",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Speech and language disorders",
+      "rdfs:comment": "Dysphasia and aphasia"
+    },
+    {
+      "@id": "type:F70",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Mild intellectual disabilities",
+      "rdfs:comment": "Mild intellectual disabilities"
+    },
+    {
+      "@id": "type:F41.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Anxiety disorder",
+      "rdfs:comment": "Anxiety disorder, unspecified"
+    },
+    {
+      "@id": "type:G35",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Multiple sclerosis",
+      "rdfs:comment": "Multiple sclerosis"
+    },
+    {
+      "@id": "type:G40.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Epilepsy",
+      "rdfs:comment": "Epilepsy, unspecified"
+    },
+    {
+      "@id": "type:M48.0",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Spinal stenosis",
+      "rdfs:comment": "Spinal stenosis, not elsewhere classified"
+    },
+    {
+      "@id": "type:J45.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Asthma",
+      "rdfs:comment": "Asthma, unspecified"
+    },
+    {
+      "@id": "type:E11.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Diabetes mellitus",
+      "rdfs:comment": "Type 2 diabetes mellitus without complications"
+    },
+    {
+      "@id": "type:G80.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Cerebral palsy",
+      "rdfs:comment": "Cerebral palsy, unspecified"
+    },
+    {
+      "@id": "type:F84.0",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Autism spectrum disorder",
+      "rdfs:comment": "Autistic disorder"
+    },
+    {
+      "@id": "type:I25.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Chronic ischemic heart disease",
+      "rdfs:comment": "Chronic ischemic heart disease, unspecified"
+    },
+    {
+      "@id": "type:G47.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Sleep disorders",
+      "rdfs:comment": "Sleep disorder, unspecified"
+    },
+    {
+      "@id": "type:Q90.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Down syndrome",
+      "rdfs:comment": "Down syndrome, unspecified"
+    },
+    {
+      "@id": "type:F32.9",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Major depressive disorder",
+      "rdfs:comment": "Major depressive disorder, single episode, unspecified"
+    }
+  ]
+}

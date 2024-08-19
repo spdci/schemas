@@ -1,6 +1,7 @@
 {
     "@context": {
       "spdci": "https://schema.spdci.org/extensions/social/v1/",
+      "dr": "https://schema.spdci.org/extensions/dr/v1/",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "owl": "http://www.w3.org/2002/07/owl#",
@@ -55,7 +56,7 @@
         "@id": "spdci:disability_info",
         "@type": "rdfs:Datatype",
         "rdfs:range": {
-             "@id": "spdci:DisabilityInfo",
+             "@id": "dr:DisabilityInfo",
              "@type": "rdfs:Class",
              "@container": "@list"
         },

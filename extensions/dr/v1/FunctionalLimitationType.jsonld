@@ -1,0 +1,122 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:FunctionalLimitationType",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Functional Limitation Type Enum",
+      "rdfs:comment": "Standardized codes and values representing functional limitation types.",
+      "owl:oneOf": [
+        "type:d132",
+        "type:b1440",
+        "type:d110",
+        "type:d115",
+        "type:d120",
+        "type:d130",
+        "type:b2100",
+        "type:d175",
+        "type:d240",
+        "type:d320",
+        "type:d330",
+        "type:d410",
+        "type:d430",
+        "type:d460",
+        "type:d510"
+      ]
+    },
+    {
+      "@id": "type:d132",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Acquiring language",
+      "rdfs:comment": "Limitations in acquiring language skills."
+    },
+    {
+      "@id": "type:b1440",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Short-term memory",
+      "rdfs:comment": "Limitations in short-term memory function."
+    },
+    {
+      "@id": "type:d110",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Understanding and communication",
+      "rdfs:comment": "Limitations in understanding and communication abilities."
+    },
+    {
+      "@id": "type:d115",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Acquiring information",
+      "rdfs:comment": "Limitations in acquiring information."
+    },
+    {
+      "@id": "type:d120",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Problem solving",
+      "rdfs:comment": "Limitations in problem-solving skills."
+    },
+    {
+      "@id": "type:d130",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Making decisions",
+      "rdfs:comment": "Limitations in making decisions."
+    },
+    {
+      "@id": "type:b2100",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Visual acuity",
+      "rdfs:comment": "Limitations in visual acuity."
+    },
+    {
+      "@id": "type:d175",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Cognitive flexibility",
+      "rdfs:comment": "Limitations in cognitive flexibility."
+    },
+    {
+      "@id": "type:d240",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Fine motor skills",
+      "rdfs:comment": "Limitations in fine motor skills."
+    },
+    {
+      "@id": "type:d320",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Speaking",
+      "rdfs:comment": "Limitations in speech abilities."
+    },
+    {
+      "@id": "type:d330",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Hearing",
+      "rdfs:comment": "Limitations in hearing abilities."
+    },
+    {
+      "@id": "type:d410",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Changing body positions",
+      "rdfs:comment": "Limitations in changing body positions."
+    },
+    {
+      "@id": "type:d430",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Lifting and carrying objects",
+      "rdfs:comment": "Limitations in lifting and carrying objects."
+    },
+    {
+      "@id": "type:d460",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Walking",
+      "rdfs:comment": "Limitations in walking."
+    },
+    {
+      "@id": "type:d510",
+      "@type": "type:FunctionalLimitationType",
+      "rdfs:label": "Self-care",
+      "rdfs:comment": "Limitations in self-care activities."
+    }
+  ]
+}

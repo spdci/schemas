@@ -15,7 +15,10 @@
       "rdfs:label": "Registry record type values Enum",
       "rdfs:comment": "Registry record type values defined as per implementation context.",
       "owl:oneOf": [
-        "category:Person"
+        "category:Person",
+        "category:Member",
+        "category:Group",
+        "category:DisabledPerson"
       ]
     },
     {
@@ -23,6 +26,24 @@
       "@type": "category:RegistryRecordType",
       "rdfs:label": "Person information",
       "rdfs:comment": "Person information"
+    },
+    {
+      "@id": "category:Member",
+      "@type": "category:RegistryRecordType",
+      "rdfs:label": "Member information",
+      "rdfs:comment": "Member information"
+    },
+    {
+      "@id": "category:Group",
+      "@type": "category:RegistryRecordType",
+      "rdfs:label": "Group information",
+      "rdfs:comment": "Group information"
+    },
+    {
+      "@id": "category:DisabledPerson",
+      "@type": "category:RegistryRecordType",
+      "rdfs:label": "Disabled Person information",
+      "rdfs:comment": "Disabled Person information"
     }
   ]
 } 

@@ -18,6 +18,7 @@
         "category:Civil",
         "category:IBR",
         "category:Social",
+        "category:DR",
         "category:unknown"
       ]
     },
@@ -38,6 +39,12 @@
       "@type": "category:RegistryTypeEnum",
       "rdfs:label": "Social",
       "rdfs:comment": "Social registry type"
+    },
+    {
+      "@id": "category:DR",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "DR",
+      "rdfs:comment": "Disabled registry type"
     },
     {
       "@id": "category:unknown",

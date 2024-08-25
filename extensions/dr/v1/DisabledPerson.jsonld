@@ -18,6 +18,13 @@
       }
     ],
     "rdfs:property": [
+        {
+            "@id": "spdci:identifier",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:disabled",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The identifier for a group that individuals are linked to."
+        },
       {
         "@id": "spdci:member",
         "@type": "rdfs:Datatype",

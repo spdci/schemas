@@ -7,10 +7,10 @@
       "owl": "http://www.w3.org/2002/07/owl#",
       "common": "https://schema.spdci.org/common/v1/"
     },
-    "@id": "spdci:TreatingHospital",
+    "@id": "spdci:Treatment",
     "@type": "rdfs:Class",
     "rdfs:comment": "This data object contains the information on hospital a disabled member is being treated in",
-    "rdfs:label": "Treating Hospital",
+    "rdfs:label": "Treatment",
     "rdfs:subClassOf": [
       {
         "@type": "rdfs:Class",
@@ -21,14 +21,14 @@
         {
             "@id": "spdci:hospital",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:TreatingHospital",
+            "rdfs:domain": "spdci:Treatment",
             "rdfs:range": "xsd:string",
             "rdfs:comment": "hospital name member getting treatment in."
           },
           {
             "@id": "spdci:address",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:TreatingHospital",
+            "rdfs:domain": "spdci:Treatment",
             "rdfs:range": {
                  "@id": "spdci:Address",
                  "@type": "rdfs:Class"
@@ -38,21 +38,21 @@
           {
             "@id": "spdci:treating_doctor",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:TreatingHospital",
+            "rdfs:domain": "spdci:Treatment",
             "rdfs:range": "social:Person",
             "rdfs:comment": "The doctor treating the Disabled person"
           },
           {
             "@id": "spdci:treatment_type",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:TreatingHospital",
+            "rdfs:domain": "spdci:Treatment",
             "rdfs:range": "xsd:string",
             "rdfs:comment": "general description of the type of treatment being administered (e.g., surgery, rehabilitation)."
           },
           {
             "@id": "spdci:treatment_status",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:TreatingHospital",
+            "rdfs:domain": "spdci:Treatment",
             "rdfs:range": "xsd:string",
             "rdfs:comment": "An indicator of the current status of the treatment (e.g., ongoing, completed, discharged)."
           },
@@ -69,5 +69,5 @@
             "rdfs:comment": "Date on which applicant ended treatment."
           }
     ],
-    "required": ["@context","@type","spdci:hospital","spdci:address","spdci:treating_doctor"]
+    "required": ["@context","@type","spdci:treating_doctor","spdci:treatment_status","spdci:treatment_start_date"]
   }

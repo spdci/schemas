@@ -11,119 +11,168 @@
       "rdfs:label": "Disability Area Enum",
       "rdfs:comment": "Enumeration for disability areas.",
       "owl:oneOf": [
-        "area:1",
-        "area:2",
-        "area:3",
-        "area:4",
-        "area:5",
-        "area:6",
-        "area:7",
-        "area:8",
-        "area:9",
-        "area:10",
-        "area:11",
-        "area:12",
-        "area:13",
-        "area:14",
-        "area:15",
-        "area:16"
+        "area:B1",
+        "area:B2",
+        "area:B3",
+        "area:B4",
+        "area:B5",
+        "area:B6",
+        "area:B7",
+        "area:B8",
+        "area:S1",
+        "area:S2",
+        "area:S3",
+        "area:S4",
+        "area:S5",
+        "area:S6",
+        "area:S7",
+        "area:S8",
+        "area:D1",
+        "area:D2",
+        "area:D3",
+        "area:D4",
+        "area:D5",
+        "area:D6",
+        "area:D7"
       ]
     },
     {
-      "@id": "area:1",
+      "@id": "area:B1",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Visual Impairment",
-      "rdfs:comment": "Includes blindness and partial sight."
+      "rdfs:label": "Mental Functions",
+      "rdfs:comment": "MENTAL FUNCTIONS"
     },
     {
-      "@id": "area:2",
+      "@id": "area:B2",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Hearing Impairment",
-      "rdfs:comment": "Includes deafness and partial hearing loss."
+      "rdfs:label": "Sensory Functions and Pain",
+      "rdfs:comment": "SENSORY FUNCTIONS AND PAIN"
     },
     {
-      "@id": "area:3",
+      "@id": "area:B3",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Mobility Impairment",
-      "rdfs:comment": "Includes paralysis, amputation, and conditions affecting mobility."
+      "rdfs:label": "Voice and Speech Functions",
+      "rdfs:comment": "VOICE AND SPEECH FUNCTIONS"
     },
     {
-      "@id": "area:4",
+      "@id": "area:B4",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Speech Impairment",
-      "rdfs:comment": "Includes conditions such as aphasia and apraxia of speech."
+      "rdfs:label": "Functions of The Cardiovascular, Haematological, Immunological and Respiratory systems",
+      "rdfs:comment": "FUNCTIONS OF THE CARDIOVASCULAR, HAEMATOLOGICAL,IMMUNOLOGICAL AND RESPIRATORY SYSTEMS."
     },
     {
-      "@id": "area:5",
+      "@id": "area:B5",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Intellectual Disability",
-      "rdfs:comment": "Includes conditions like Down syndrome and other cognitive impairments."
+      "rdfs:label": "Functions of The Digestive, Metabolic and Endocrine Systems",
+      "rdfs:comment": "FUNCTIONS OF THE DIGESTIVE, METABOLIC AND ENDOCRINE SYSTEMS"
     },
     {
-      "@id": "area:6",
+      "@id": "area:B6",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Mental Health Conditions",
-      "rdfs:comment": "Includes depression, anxiety, schizophrenia, etc."
+      "rdfs:label": "Genitourinary and Reproductive functions",
+      "rdfs:comment": "GENITOURINARY AND REPRODUCTIVE FUNCTIONS"
     },
     {
-      "@id": "area:7",
+      "@id": "area:B7",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Chronic Illness",
-      "rdfs:comment": "Includes conditions like diabetes, epilepsy, and other chronic health issues."
+      "rdfs:label": "Neuromusculoskeletal and Movement Related Functions",
+      "rdfs:comment": "NEUROMUSCULOSKELETAL AND MOVEMENT RELATED FUNCTIONS"
     },
     {
-      "@id": "area:8",
+      "@id": "area:B8",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Neurological Conditions",
-      "rdfs:comment": "Includes multiple sclerosis, Parkinson's disease, etc."
+      "rdfs:label": "Functions of The Skin and Related Structures",
+      "rdfs:comment": "FUNCTIONS OF THE SKIN AND RELATED STRUCTURES"
     },
     {
-      "@id": "area:9",
+      "@id": "area:S1",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Developmental Disabilities",
-      "rdfs:comment": "Includes autism spectrum disorders, ADHD, etc."
+      "rdfs:label": "Structure of The Nervous System",
+      "rdfs:comment": "STRUCTURE OF THE NERVOUS SYSTEM"
     },
     {
-      "@id": "area:10",
+      "@id": "area:S2",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Respiratory Conditions",
-      "rdfs:comment": "Includes chronic asthma, cystic fibrosis, etc."
+      "rdfs:label": "The Eye, Ear and Related Structures",
+      "rdfs:comment": "THE EYE, EAR AND RELATED STRUCTURES"
     },
     {
-      "@id": "area:11",
+      "@id": "area:S3",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Digestive Conditions",
-      "rdfs:comment": "Includes Crohn's disease, irritable bowel syndrome, etc."
+      "rdfs:label": "Structure Involved in Voice and Speech",
+      "rdfs:comment": "STRUCTURES INVOLVED IN VOICE AND SPEECH"
     },
     {
-      "@id": "area:12",
+      "@id": "area:S4",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Urinary Conditions",
-      "rdfs:comment": "Includes bladder control issues, kidney diseases, etc."
+      "rdfs:label": "Structure of The Cardiovascular, Immunological and Respiratory systems",
+      "rdfs:comment": "STRUCTURE OF THE CARDIOVASCULAR,IMMUNOLOGICAL AND RESPIRATORY SYSTEMS"
     },
     {
-      "@id": "area:13",
+      "@id": "area:S5",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Endocrine Disorders",
-      "rdfs:comment": "Includes thyroid disorders, adrenal gland disorders, etc."
+      "rdfs:label": "Structures Related to the Digestive, Metabolism and Endocrine Systems",
+      "rdfs:comment": " STRUCTURES RELATED TO THE DIGESTIVE, METABOLISM AND ENDOCRINE SYSTEMS"
     },
     {
-      "@id": "area:14",
+      "@id": "area:S6",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Skin Conditions",
-      "rdfs:comment": "Includes psoriasis, eczema, etc."
+      "rdfs:label": "Structure related to the genitourinary and system",
+      "rdfs:comment": "STRUCTURE RELATED TO GENITOURINARY AND REPRODUCTIVE SYSTEM"
     },
     {
-      "@id": "area:15",
+      "@id": "area:S7",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Cardiovascular Conditions",
-      "rdfs:comment": "Includes heart disease, hypertension, etc."
+      "rdfs:label": "Structure related to Movement",
+      "rdfs:comment": "STRUCTURE RELATED TO MOVEMENT"
     },
     {
-      "@id": "area:16",
+      "@id": "area:S8",
       "@type": "type:DisabilityAreaEnum",
-      "rdfs:label": "Other",
-      "rdfs:comment": "Any other disability not covered by the above categories."
+      "rdfs:label": "Skin and Related Structures",
+      "rdfs:comment": "SKIN AND RELATED STRUCTURES"
+    },
+    {
+      "@id":"area:D1",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Learning and Applying Knowledge",
+      "rdfs:comment":"LEARNING AND APPLYING KNOWLEDGE"
+    },
+    {
+      "@id":"area:D2",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"General Tasks and Demands",
+      "rdfs:comment":"GENERAL TASKS AND DEMANDS"
+    },
+    {
+      "@id":"area:D3",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Communication",
+      "rdfs:comment":"COMMUNICATION"
+    },
+    {
+      "@id":"area:D4",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Mobility",
+      "rdfs:comment":"MOBILITY"
+    },
+    {
+      "@id":"area:D5",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Self Care",
+      "rdfs:comment":"SELF CARE"
+    },
+    {
+      "@id":"area:D6",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Domestic Life",
+      "rdfs:comment":"DOMESTIC LIFE"
+    },
+    {
+      "@id":"area:D7",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Interpersonal Interactions and RelationShip",
+      "rdfs:comment":"INTERPERSONAL INTERACTIONS AND RELATIONSHIP"
     }
   ]
 }

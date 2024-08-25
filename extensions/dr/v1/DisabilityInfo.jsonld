@@ -22,7 +22,7 @@
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range": {
-                "@id": "spdci:DisabilityTypeEnum",
+                "@id": "spdci:DisabilityClassificationEnum",
                 "@type": "xsd:string"
             },
             "rdfs:comment": "The specific type of disability the individual has. For example, H54.0 might represent a particular type of visual impairment."
@@ -51,14 +51,14 @@
             "rdfs:comment": "Describes the area of disability experienced by the individual."
           },
           {
-            "@id": "spdci:treating_hospital",
+            "@id": "spdci:treatment",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range": {
-              "@type": "xsd:TreatingHospital",
+              "@type": "xsd:Treatment",
               "@container": "@list"
             },
-            "rdfs:comment": "hospital history."
+            "rdfs:comment": "treatment history."
           },
           {
             "@id": "spdci:disability_due_to",
@@ -72,7 +72,7 @@
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range":  {
-              "@type": "xsd:string"
+              "@type": "xsd:FunctionalLimitationType"
       
             },
             "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
@@ -82,10 +82,10 @@
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range": {
-             "@type": "xsd:string"
+             "@type": "xsd:FunctionalSeverityEnum"
             },
             "rdfs:comment": "Indicates the severity level of the functional limitation."
           }
     ],
-    "required": ["@context","@type","spdci:disability_type"]
+    "required": ["@context","@type","spdci:disability_type", "spdci:disability_area","spdci:disability_limitation_type","spdci:functional_severity"]
   }

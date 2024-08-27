@@ -35,9 +35,7 @@
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
            "@id": "common:Name",
-           "@type": "rdfs:Class",
-           "@container": "@list",
-           "minitems": 1
+           "@type": "rdfs:Class"
       },
       "rdfs:comment": "Full name in a displayable form, possibly including titles and suffixes, in the order of the applicant's locale norms and/or preferences."
     },
@@ -68,9 +66,7 @@
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
            "@id": "spdci:Address",
-           "@type": "rdfs:Class",
-           "@container": "@list",
-           "minitems": 1
+           "@type": "rdfs:Class"
       },
       "rdfs:comment": "Current residential address of the applicant, represented as an address object."
     },

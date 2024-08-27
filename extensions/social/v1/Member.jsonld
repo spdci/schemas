@@ -106,13 +106,16 @@
       },
       {
         "@id": "spdci:additional_attributes",
-        "@type": "rdfs:Datatype",
+        "@type": "rdf:Property",
         "rdfs:domain": "spdci:Member",
         "rdfs:range": {
-          "@type": "xsd:string",
+          "@type": "@id",
           "@container": "@list"
         },
-        "rdfs:comment": "Additional attributes as an array of strings."
+        "rdfs:comment": "Additional attributes of the group, represented as a list of key-value pairs.",
+        "schema:value": {
+          "@type": "xsd:string"
+        }
       },
       {
         "@id": "spdci:registration_date",

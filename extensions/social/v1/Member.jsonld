@@ -112,7 +112,7 @@
           "@type": "@id",
           "@container": "@list"
         },
-        "rdfs:comment": "Additional attributes of the group, represented as a list of key-value pairs.",
+        "rdfs:comment": "Additional attributes of the member, represented as a list of key-value pairs.",
         "schema:value": {
           "@type": "xsd:string"
         }

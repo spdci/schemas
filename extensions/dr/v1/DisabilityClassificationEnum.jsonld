@@ -31,7 +31,7 @@
     {
       "@id": "type:D",
       "@type": "type:DisabilityClassificationEnum",
-      "rdfs:label": "Activity and participation",
+      "rdfs:label": "Activity and participation restrictions",
       "rdfs:comment": "ACTIVITY LIMITATIONS & PARTICIPATION RESTRICTION"
     }
   ]

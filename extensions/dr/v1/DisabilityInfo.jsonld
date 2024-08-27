@@ -18,14 +18,14 @@
     ],
     "rdfs:property": [
         {
-            "@id": "spdci:disability_type",
+            "@id": "spdci:disability_classification",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range": {
                 "@id": "spdci:DisabilityClassificationEnum",
                 "@type": "xsd:string"
             },
-            "rdfs:comment": "The specific type of disability the individual has. For example, H54.0 might represent a particular type of visual impairment."
+            "rdfs:comment": "The specific classification of disability the individual has. For example, D might represent a disability in Activity and participation restrictions."
           },
           {
             "@id": "spdci:disability_by_birth",

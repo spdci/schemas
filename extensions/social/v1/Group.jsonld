@@ -21,8 +21,12 @@
         "@id": "spdci:group_identifier",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Group",
-        "rdfs:range": "xsd:string",
-        "rdfs:comment": "The identifier for a group that individuals are linked to."
+        "rdfs:range": {
+          "@id": "spdci:Identifier",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "A unique identifier assigned to each individual."
       },
       {
         "@id": "spdci:group_type",
@@ -37,6 +41,24 @@
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Group",
         "rdfs:range": "common:Place"
+      },
+      {
+        "@id": "spdci:address",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+             "@id": "spdci:Address",
+             "@type": "rdfs:Class",
+             "@container":"@list"
+        },
+        "rdfs:comment": "Current residential address of the group, represented as an address object."
+      },
+      {
+        "@id": "spdci:place_address",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": "xsd:boolean",
+        "rdfs:comment": "added place or address? place (1) or address (0)."
       },
       {
         "@id": "spdci:poverty_score",
@@ -107,7 +129,5 @@
           "@type": "xsd:string"
         }
       }
-    ],
-    "required": ["@context","@type","spdci:group_identifier", "spdci:geographical_location", "spdci:group_head_info", "spdci:group_size","spdci:member_list","spdci:registration_date"]
-  }
+    ] }
   

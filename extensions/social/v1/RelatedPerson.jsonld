@@ -31,7 +31,6 @@
         "rdfs:range": "spdci:Person",
         "rdfs:comment": "the related person object ."
       }
-    ],
-    "required": ["@context","@type","spdci:relationship_type","spdci:related_member"]
+    ]
   }
   

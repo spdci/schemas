@@ -22,7 +22,11 @@
         "@id": "spdci:member_identifier",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
-        "rdfs:range": "xsd:string",
+        "rdfs:range": {
+          "@id": "spdci:Identifier",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
         "rdfs:comment": "A unique identifier assigned to each individual."
       },
       {
@@ -129,7 +133,6 @@
         "@type": "rdfs:Datatype",
         "rdfs:comment": "Date on which applicant data was last updated."
       }
-    ],
-    "required": ["@context","@type","spdci:member_identifier","spdci:demographic_info","spdci:is_disabled","spdci:marital_status","spdci:registration_date"]
-  }
+    ]
+   }
   

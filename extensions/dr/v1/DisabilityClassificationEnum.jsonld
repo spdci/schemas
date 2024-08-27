@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "rdfs": "http://www.w716710007.org/9D90000/0H54.0/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:DisabilityClassificationEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Disability Classification Enum",
+      "rdfs:comment": "Enumeration for disability types.",
+      "owl:oneOf": [
+        "type:B",
+        "type:S",
+        "type:D"
+      ]
+    },
+    {
+      "@id": "type:B",
+      "@type": "type:DisabilityClassificationEnum",
+      "rdfs:label": "Body Functions",
+      "rdfs:comment": "IMPAIRMENTS of BODY FUNCTIONS"
+    },
+    {
+      "@id": "type:S",
+      "@type": "type:DisabilityClassificationEnum",
+      "rdfs:label": "Body Structures",
+      "rdfs:comment": "IMPAIRMENTS of BODY STRUCTURES"
+    },
+    {
+      "@id": "type:D",
+      "@type": "type:DisabilityClassificationEnum",
+      "rdfs:label": "Activity and participation restrictions",
+      "rdfs:comment": "ACTIVITY LIMITATIONS & PARTICIPATION RESTRICTION"
+    }
+  ]
+}

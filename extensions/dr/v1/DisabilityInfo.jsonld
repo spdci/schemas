@@ -1,0 +1,91 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/dr/v1/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "common": "https://schema.spdci.org/common/v1/"
+    },
+    "@id": "spdci:DisabilityInfo",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on disabilities a member is suffering from.",
+    "rdfs:label": "DisabilityInfo",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+        {
+            "@id": "spdci:disability_classification",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range": {
+                "@id": "spdci:DisabilityClassificationEnum",
+                "@type": "xsd:string"
+            },
+            "rdfs:comment": "The specific classification of disability the individual has. For example, D might represent a disability in Activity and participation restrictions."
+          },
+          {
+            "@id": "spdci:disability_by_birth",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range": "xsd:boolean",
+            "rdfs:comment": "Is the individual disabled from birth? true (1) or false (0)."
+          },
+          {
+            "@id": "spdci:disabled_since",
+            "@type": "rdfs:Datatype",
+            "rdfs:range": "xsd:DateTime",
+            "rdfs:comment": "Date on which applicant became disabled."
+          },
+          {
+            "@id": "spdci:disability_area",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityArea",
+            "rdfs:range":  {
+              "@type": "xsd:string"
+      
+            },
+            "rdfs:comment": "Describes the area of disability experienced by the individual."
+          },
+          {
+            "@id": "spdci:treatment",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range": {
+              "@type": "xsd:Treatment",
+              "@container": "@list"
+            },
+            "rdfs:comment": "treatment history."
+          },
+          {
+            "@id": "spdci:disability_due_to",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "reason of disability."
+          },
+          {
+            "@id": "spdci:disability_limitation_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range":  {
+              "@type": "xsd:FunctionalLimitationType"
+      
+            },
+            "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
+          },
+          {
+            "@id": "spdci:functional_severity",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range": {
+             "@type": "xsd:FunctionalSeverityEnum"
+            },
+            "rdfs:comment": "Indicates the severity level of the functional limitation."
+          }
+    ],
+    "required": ["@context","@type","spdci:disability_type", "spdci:disability_area","spdci:disability_limitation_type","spdci:functional_severity"]
+  }

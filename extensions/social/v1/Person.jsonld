@@ -35,9 +35,7 @@
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
            "@id": "common:Name",
-           "@type": "rdfs:Class",
-           "@container": "@list",
-           "minitems": 1
+           "@type": "rdfs:Class"
       },
       "rdfs:comment": "Full name in a displayable form, possibly including titles and suffixes, in the order of the applicant's locale norms and/or preferences."
     },
@@ -68,9 +66,7 @@
       "rdfs:domain": "spdci:Person",
       "rdfs:range": {
            "@id": "spdci:Address",
-           "@type": "rdfs:Class",
-           "@container": "@list",
-           "minitems": 1
+           "@type": "rdfs:Class"
       },
       "rdfs:comment": "Current residential address of the applicant, represented as an address object."
     },
@@ -93,7 +89,21 @@
         "@container":"@list"
       },
       "rdfs:comment": "Person's preferred email address. The format must comply with RFC 5322 addr-spec."
+    },
+    {
+      "@id": "spdci:registration_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+    },
+    {
+      "@id": "spdci:last_updated",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
     }
   ],
-  "required": ["@context","@type","spdci:identifier", "spdci:name", "spdci:birth_date", "spdci:sex","spdci:address"]
+  "required": ["@context","@type","spdci:identifier", "spdci:name", "spdci:birth_date", "spdci:sex","spdci:address","spdci:registration_date"]
 }

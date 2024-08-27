@@ -1,0 +1,178 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "category:DisabilityAreaEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Disability Area Enum",
+      "rdfs:comment": "Enumeration for disability areas.",
+      "owl:oneOf": [
+        "area:B1",
+        "area:B2",
+        "area:B3",
+        "area:B4",
+        "area:B5",
+        "area:B6",
+        "area:B7",
+        "area:B8",
+        "area:S1",
+        "area:S2",
+        "area:S3",
+        "area:S4",
+        "area:S5",
+        "area:S6",
+        "area:S7",
+        "area:S8",
+        "area:D1",
+        "area:D2",
+        "area:D3",
+        "area:D4",
+        "area:D5",
+        "area:D6",
+        "area:D7"
+      ]
+    },
+    {
+      "@id": "area:B1",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Mental Functions",
+      "rdfs:comment": "MENTAL FUNCTIONS"
+    },
+    {
+      "@id": "area:B2",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Sensory Functions and Pain",
+      "rdfs:comment": "SENSORY FUNCTIONS AND PAIN"
+    },
+    {
+      "@id": "area:B3",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Voice and Speech Functions",
+      "rdfs:comment": "VOICE AND SPEECH FUNCTIONS"
+    },
+    {
+      "@id": "area:B4",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Functions of The Cardiovascular, Haematological, Immunological and Respiratory systems",
+      "rdfs:comment": "FUNCTIONS OF THE CARDIOVASCULAR, HAEMATOLOGICAL,IMMUNOLOGICAL AND RESPIRATORY SYSTEMS."
+    },
+    {
+      "@id": "area:B5",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Functions of The Digestive, Metabolic and Endocrine Systems",
+      "rdfs:comment": "FUNCTIONS OF THE DIGESTIVE, METABOLIC AND ENDOCRINE SYSTEMS"
+    },
+    {
+      "@id": "area:B6",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Genitourinary and Reproductive functions",
+      "rdfs:comment": "GENITOURINARY AND REPRODUCTIVE FUNCTIONS"
+    },
+    {
+      "@id": "area:B7",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Neuromusculoskeletal and Movement Related Functions",
+      "rdfs:comment": "NEUROMUSCULOSKELETAL AND MOVEMENT RELATED FUNCTIONS"
+    },
+    {
+      "@id": "area:B8",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Functions of The Skin and Related Structures",
+      "rdfs:comment": "FUNCTIONS OF THE SKIN AND RELATED STRUCTURES"
+    },
+    {
+      "@id": "area:S1",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Structure of The Nervous System",
+      "rdfs:comment": "STRUCTURE OF THE NERVOUS SYSTEM"
+    },
+    {
+      "@id": "area:S2",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "The Eye, Ear and Related Structures",
+      "rdfs:comment": "THE EYE, EAR AND RELATED STRUCTURES"
+    },
+    {
+      "@id": "area:S3",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Structure Involved in Voice and Speech",
+      "rdfs:comment": "STRUCTURES INVOLVED IN VOICE AND SPEECH"
+    },
+    {
+      "@id": "area:S4",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Structure of The Cardiovascular, Immunological and Respiratory systems",
+      "rdfs:comment": "STRUCTURE OF THE CARDIOVASCULAR,IMMUNOLOGICAL AND RESPIRATORY SYSTEMS"
+    },
+    {
+      "@id": "area:S5",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Structures Related to the Digestive, Metabolism and Endocrine Systems",
+      "rdfs:comment": " STRUCTURES RELATED TO THE DIGESTIVE, METABOLISM AND ENDOCRINE SYSTEMS"
+    },
+    {
+      "@id": "area:S6",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Structure related to the genitourinary and system",
+      "rdfs:comment": "STRUCTURE RELATED TO GENITOURINARY AND REPRODUCTIVE SYSTEM"
+    },
+    {
+      "@id": "area:S7",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Structure related to Movement",
+      "rdfs:comment": "STRUCTURE RELATED TO MOVEMENT"
+    },
+    {
+      "@id": "area:S8",
+      "@type": "type:DisabilityAreaEnum",
+      "rdfs:label": "Skin and Related Structures",
+      "rdfs:comment": "SKIN AND RELATED STRUCTURES"
+    },
+    {
+      "@id":"area:D1",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Learning and Applying Knowledge",
+      "rdfs:comment":"LEARNING AND APPLYING KNOWLEDGE"
+    },
+    {
+      "@id":"area:D2",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"General Tasks and Demands",
+      "rdfs:comment":"GENERAL TASKS AND DEMANDS"
+    },
+    {
+      "@id":"area:D3",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Communication",
+      "rdfs:comment":"COMMUNICATION"
+    },
+    {
+      "@id":"area:D4",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Mobility",
+      "rdfs:comment":"MOBILITY"
+    },
+    {
+      "@id":"area:D5",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Self Care",
+      "rdfs:comment":"SELF CARE"
+    },
+    {
+      "@id":"area:D6",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Domestic Life",
+      "rdfs:comment":"DOMESTIC LIFE"
+    },
+    {
+      "@id":"area:D7",
+      "@type":"type:DisabilityAreaEnum",
+      "rdfs:label":"Interpersonal Interactions and RelationShip",
+      "rdfs:comment":"INTERPERSONAL INTERACTIONS AND RELATIONSHIP"
+    }
+  ]
+}

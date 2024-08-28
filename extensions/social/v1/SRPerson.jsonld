@@ -6,10 +6,10 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "common": "https://schema.spdci.org/common/v1/"
   },
-  "@id": "spdci:Person",
+  "@id": "spdci:SR_Person",
   "@type": "rdfs:Class",
   "rdfs:comment": "This data object contains the information on people and households held in the social registry.",
-  "rdfs:label": "Person",
+  "rdfs:label": "SR Person",
   "rdfs:subClassOf": [
     {
       "@type": "rdfs:Class",
@@ -24,15 +24,14 @@
       "rdfs:range": {
            "@id": "common:Identifier",
            "@type": "rdfs:Class",
-           "@container": "@list",
-           "minitems": 1
+           "@container": "@list"
       },
       "rdfs:comment": "The person's identification number."
     },
     {
       "@id": "spdci:name",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": {
            "@id": "common:Name",
            "@type": "rdfs:Class"
@@ -42,38 +41,39 @@
     {
       "@id": "spdci:sex",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": "common:SexCategoryEnum",
       "rdfs:comment": "Sex of the applicant, represented as an enumeration ."
     },
     {
       "@id": "spdci:birth_date",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": "common:DateTime",
       "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
     },
     {
       "@id": "spdci:death_date",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": "common:DateTime",
       "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
     },
     {
       "@id": "spdci:address",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": {
            "@id": "spdci:Address",
-           "@type": "rdfs:Class"
+           "@type": "rdfs:Class",
+           "@container":"@list"
       },
       "rdfs:comment": "Current residential address of the applicant, represented as an address object."
     },
     {
       "@id": "spdci:phone_number",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": {
         "@type":  "xsd:string",
         "@container":"@list"
@@ -83,7 +83,7 @@
     {
       "@id": "spdci:email",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": {
         "@type":  "xsd:string",
         "@container":"@list"
@@ -93,17 +93,16 @@
     {
       "@id": "spdci:registration_date",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": "common:DateTime",
       "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
     },
     {
       "@id": "spdci:last_updated",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": "common:DateTime",
       "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
     }
-  ],
-  "required": ["@context","@type","spdci:identifier", "spdci:name", "spdci:birth_date", "spdci:sex","spdci:address","spdci:registration_date"]
+  ]
 }

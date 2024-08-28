@@ -22,7 +22,11 @@
         "@id": "spdci:member_identifier",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
-        "rdfs:range": "xsd:string",
+        "rdfs:range": {
+          "@id": "spdci:Identifier",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
         "rdfs:comment": "A unique identifier assigned to each individual."
       },
       {
@@ -106,13 +110,16 @@
       },
       {
         "@id": "spdci:additional_attributes",
-        "@type": "rdfs:Datatype",
+        "@type": "rdf:Property",
         "rdfs:domain": "spdci:Member",
         "rdfs:range": {
-          "@type": "xsd:string",
+          "@type": "@id",
           "@container": "@list"
         },
-        "rdfs:comment": "Additional attributes as an array of strings."
+        "rdfs:comment": "Additional attributes of the member, represented as a list of key-value pairs.",
+        "schema:value": {
+          "@type": "xsd:string"
+        }
       },
       {
         "@id": "spdci:registration_date",
@@ -126,7 +133,6 @@
         "@type": "rdfs:Datatype",
         "rdfs:comment": "Date on which applicant data was last updated."
       }
-    ],
-    "required": ["@context","@type","spdci:member_identifier","spdci:demographic_info","spdci:is_disabled","spdci:marital_status","spdci:registration_date"]
-  }
+    ]
+   }
   

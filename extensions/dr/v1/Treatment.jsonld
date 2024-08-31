@@ -68,6 +68,5 @@
             "rdfs:range": "xsd:DateTime",
             "rdfs:comment": "Date on which applicant ended treatment."
           }
-    ],
-    "required": ["@context","@type","spdci:treating_doctor","spdci:treatment_status","spdci:treatment_start_date"]
+    ]
   }

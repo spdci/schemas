@@ -86,6 +86,5 @@
             },
             "rdfs:comment": "Indicates the severity level of the functional limitation."
           }
-    ],
-    "required": ["@context","@type","spdci:disability_type", "spdci:disability_area","spdci:disability_limitation_type","spdci:functional_severity"]
-  }
+    ]
+    }

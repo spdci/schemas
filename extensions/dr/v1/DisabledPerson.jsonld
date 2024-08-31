@@ -7,10 +7,10 @@
       "owl": "http://www.w3.org/2002/07/owl#",
       "common": "https://schema.spdci.org/common/v1/"
     },
-    "@id": "spdci:disabled",
+    "@id": "spdci:DR_Person",
     "@type": "rdfs:Class",
     "rdfs:comment": "This data object contains the information on people  held in the disabled registry",
-    "rdfs:label": "disabled",
+    "rdfs:label": "DR_Person",
     "rdfs:subClassOf": [
       {
         "@type": "rdfs:Class",
@@ -21,33 +21,46 @@
         {
             "@id": "spdci:identifier",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:disabled",
+            "rdfs:domain": "spdci:DR_Person",
             "rdfs:range": "xsd:string",
             "rdfs:comment": "The identifier for a group that individuals are linked to."
         },
       {
         "@id": "spdci:member",
         "@type": "rdfs:Datatype",
-        "rdfs:domain": "spdci:disabled",
+        "rdfs:domain": "spdci:DR_Person",
         "rdfs:range": "social:Member",
         "rdfs:comment": "An individual belonging to a family or household"
       },
       {
         "@id": "spdci:care_giver",
         "@type": "rdfs:Datatype",
-        "rdfs:domain": "spdci:disabled",
+        "rdfs:domain": "spdci:DR_Person",
         "rdfs:range": "social:person",
         "rdfs:comment": "An individual belonging to a family or household that is taking care of the registered disabled"
       },
       {
         "@id": "spdci:relationship_type",
         "@type": "rdfs:Datatype",
-        "rdfs:domain": "spdci:disabled",
+        "rdfs:domain": "spdci:DR_Person",
         "rdfs:range": "social:RelationshipTypeEnum",
         "rdfs:comment": "The type of relationship disable has to the care giver."
+      },
+      {
+        "@id": "spdci:registration_date",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DR_Person",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+      },
+      {
+        "@id": "spdci:last_updated",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DR_Person",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
       }
       
-    ],
-    "required": ["@context","@type", "spdci:person", "spdci:care_giver","spdci:relationship_type"]
+    ]
   }
   

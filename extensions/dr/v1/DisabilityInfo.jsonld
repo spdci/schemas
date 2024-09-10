@@ -41,23 +41,12 @@
             "rdfs:comment": "Date on which applicant became disabled."
           },
           {
-            "@id": "spdci:treatment",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:DisabilityInfo",
-            "rdfs:range": {
-              "@type": "xsd:Treatment",
-              "@container": "@list"
-            },
-            "rdfs:comment": "treatment history."
-          },
-          {
             "@id": "spdci:disability_due_to",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range": "xsd:string",
-            "rdfs:comment": "reason of disability."
-          },
-          
+            "rdfs:comment": "reason of disability. ( Acquired , Injured , Congenital/Inborn , Chronic illness)"
+          },     
           {
             "@id": "spdci:functional_severity",
             "@type": "rdfs:Datatype",

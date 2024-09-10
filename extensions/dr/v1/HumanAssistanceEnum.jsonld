@@ -1,0 +1,39 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "category:HumanAssistanceEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "type of human assistance needed Enum",
+        "rdfs:comment": "Enumeration for human assistance needed.",
+        "owl:oneOf": [
+          "assistance:permanent",
+          "assistance:occasional",
+          "assistance:none"
+        ]
+      },
+      {
+        "@id": "assistance:permanent",
+        "@type": "type:HumanAssistanceEnum",
+        "rdfs:label": "Permanent",
+        "rdfs:comment": "human assistance is needed all the time"
+      },
+      {
+        "@id": "assistance:occasional",
+        "@type": "type:HumanAssistanceEnum",
+        "rdfs:label": "occasional",
+        "rdfs:comment": "human assistance is needed sometimes"
+      },
+      {
+        "@id": "assistance:none",
+        "@type": "type:HumanAssistanceEnum",
+        "rdfs:label": "none",
+        "rdfs:comment": "human assistance is not needed"
+      }
+    ]
+  }
+  

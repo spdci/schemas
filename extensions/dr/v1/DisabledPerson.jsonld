@@ -33,6 +33,20 @@
         "rdfs:comment": "An individual belonging to a family or household"
       },
       {
+        "@id": "spdci:disability_support",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DR_Person",
+        "rdfs:range": "spdci:DisabilitySupport",
+        "rdfs:comment": "The support needed/received by the disabled person."
+      },
+      {
+        "@id": "spdci:human_assistance",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DR_Person",
+        "rdfs:range": "spdci:HumanAssistanceEnum",
+        "rdfs:comment": "Is the level of human assistance the disabled person needs"
+      },
+      {
         "@id": "spdci:care_giver",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:DR_Person",

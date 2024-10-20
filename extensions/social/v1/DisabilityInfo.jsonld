@@ -1,6 +1,6 @@
 {
     "@context": {
-      "spdci": "https://schema.spdci.org/extensions/dr/v1/",
+      "spdci": "https://schema.spdci.org/extensions/social/v1/",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "owl": "http://www.w3.org/2002/07/owl#",
@@ -18,41 +18,30 @@
     ],
     "rdfs:property": [
           {
+            "@id": "spdci:disability_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range":  {
+              "@type": "common:DisabilityType"
+            },
+            "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
+          },
+          {
             "@id": "spdci:disability_limitation_type",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range":  {
-              "@type": "xsd:FunctionalLimitationType"
+              "@type": "common:FunctionalLimitationType"
       
             },
             "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
           },
           {
-            "@id": "spdci:disability_by_birth",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:DisabilityInfo",
-            "rdfs:range": "xsd:boolean",
-            "rdfs:comment": "Is the individual disabled from birth? true (1) or false (0)."
-          },
-          {
-            "@id": "spdci:disabled_since",
-            "@type": "rdfs:Datatype",
-            "rdfs:range": "xsd:DateTime",
-            "rdfs:comment": "Date on which applicant became disabled."
-          },
-          {
-            "@id": "spdci:disability_due_to",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:DisabilityInfo",
-            "rdfs:range": "xsd:string",
-            "rdfs:comment": "reason of disability. ( Acquired , Injured , Congenital/Inborn , Chronic illness)"
-          },     
-          {
             "@id": "spdci:functional_severity",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range": {
-             "@type": "xsd:FunctionalSeverityEnum"
+             "@type": "common:FunctionalSeverityEnum"
             },
             "rdfs:comment": "Indicates the severity level of the functional limitation."
           }

@@ -19,18 +19,59 @@
     ],
     "rdfs:property": [
       {
-        "@id": "spdci:support_status",
+        "@id": "spdci:human_assistance",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:DisabilitySupport",
-        "rdfs:range": "spdci:SupportStatusEnum",
-        "rdfs:comment": "Is the support type needed or received? received (1) or needed (0)."
+        "rdfs:range": {
+          "@id": "spdci:HumanAssistance",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the human support details."
       },
       {
         "@id": "spdci:assistive_technology",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:DisabilitySupport",
-        "rdfs:range": "xsd:AssistiveTechnologyEnum",
-        "rdfs:comment": "Is the type of gadgets needed for disabled person such as wheel chair."
+        "rdfs:range": {
+          "@id": "spdci:AssistiveTechnology",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the technology gadgets details needed."
+      },
+      {
+        "@id": "spdci:housing_support",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:HousingSupport",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the housing support details needed."
+      },
+      {
+        "@id": "spdci:medical_care",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:MedicalCare",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the medical support details needed."
+      },
+      {
+        "@id": "spdci:animal_assistance",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:AnimalAssistance",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the animal support details needed."
       },
       {
         "@id": "spdci:registration_date",

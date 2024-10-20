@@ -15,52 +15,38 @@
         "category:1",
         "category:2",
         "category:3",
-        "category:4",
-        "category:5",
-        "category:6"
+        "category:4"
       ]
     },
     {
       "@id": "category:0",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "No difficulty",
-      "rdfs:comment": "No difficulty"
+      "rdfs:label": "None",
+      "rdfs:comment": "None"
     },
     {
       "@id": "category:1",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Mild difficulty",
-      "rdfs:comment": "Mild difficulty"
+      "rdfs:label": "Mild",
+      "rdfs:comment": "Mild"
     },
     {
       "@id": "category:2",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Moderate difficulty",
-      "rdfs:comment": "Moderate difficulty"
+      "rdfs:label": "Moderate",
+      "rdfs:comment": "Moderate"
     },
     {
       "@id": "category:3",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Severe difficulty",
-      "rdfs:comment": "Severe difficulty"
+      "rdfs:label": "Severe",
+      "rdfs:comment": "Severe"
     },
     {
       "@id": "category:4",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Complete difficulty",
-      "rdfs:comment": "Complete difficulty"
-    },
-    {
-      "@id": "category:5",
-      "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Not specified",
-      "rdfs:comment": "Not specified"
-    },
-    {
-      "@id": "category:6",
-      "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Not applicable",
-      "rdfs:comment": "Not applicable"
+      "rdfs:label": "Extreme or cannot do",
+      "rdfs:comment": "Extreme or cannot do"
     }
   ]
 }

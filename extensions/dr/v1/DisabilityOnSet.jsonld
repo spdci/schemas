@@ -1,0 +1,46 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "case:DisabilityOnSet",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Disability on set",
+        "rdfs:comment": "Enumeration for functional severity categories.",
+        "owl:oneOf": [
+          "case:0",
+          "case:1",
+          "case:2",
+          "case:3"
+        ]
+      },
+      {
+        "@id": "case:0",
+        "@type": "case:DisabilityOnSet",
+        "rdfs:label": "Born With",
+        "rdfs:comment": "Born With"
+      },
+      {
+        "@id": "case:1",
+        "@type": "case:DisabilityOnSet",
+        "rdfs:label": "Childhood",
+        "rdfs:comment": "Childhood"
+      },
+      {
+        "@id": "case:2",
+        "@type": "case:DisabilityOnSet",
+        "rdfs:label": "Working age",
+        "rdfs:comment": "Working age"
+      },
+      {
+        "@id": "case:3",
+        "@type": "case:DisabilityOnSet",
+        "rdfs:label": "Old age",
+        "rdfs:comment": "Old age"
+      }
+    ]
+  }
+  

@@ -20,7 +20,7 @@
     {
       "@id": "spdci:identifier",
       "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Person",
+      "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": {
            "@id": "common:Identifier",
            "@type": "rdfs:Class",

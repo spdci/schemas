@@ -20,7 +20,7 @@
         "@id": "requirement:0",
         "@type": "type:TransportRequirement",
         "rdfs:label": "Public transportation",
-        "rdfs:comment": "Support is needed"
+        "rdfs:comment": "can use public transportation"
       },
       {
         "@id": "requirement:1",

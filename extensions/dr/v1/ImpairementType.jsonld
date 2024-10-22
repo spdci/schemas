@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:ImpairementType",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Functional Limitation Type Enum",
+      "rdfs:comment": "Standardized codes and values representing functional limitation types.",
+      "owl:oneOf": [
+        "type:d1",
+        "type:d2",
+        "type:d3",
+        "type:d4",
+        "type:d5",
+        "type:d6"
+      ]
+    },
+    {
+      "@id": "type:d1",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Cognition",
+      "rdfs:comment": "Cognition"
+    },
+    {
+      "@id": "type:d2",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Mobility",
+      "rdfs:comment": "Mobility"
+    },
+    {
+      "@id": "type:d3",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Selfcare",
+      "rdfs:comment": "Selfcare"
+    },
+    {
+      "@id": "type:d4",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Getting along",
+      "rdfs:comment": "Getting along"
+    },
+    {
+      "@id": "type:d5",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Life activities",
+      "rdfs:comment": "Life activities"
+    },
+    {
+      "@id": "type:d6",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Participation",
+      "rdfs:comment": "Participation"
+    }
+  
+  ]
+}

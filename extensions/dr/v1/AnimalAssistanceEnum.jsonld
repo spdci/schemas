@@ -1,0 +1,39 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "support:AnimalAssistanceEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "type of Medical Care needed Enum",
+        "rdfs:comment": "Enumeration for medical care needed.",
+        "owl:oneOf": [
+          "support:guide_dog",
+          "support:hearing_dog",
+          "support:alert_dog"
+        ]
+      },
+      {
+        "@id": "support:guide_dog",
+        "@type": "type:AnimalAssistanceEnum",
+        "rdfs:label": "Guide Dog",
+        "rdfs:comment": "Guide Dog"
+      },
+      {
+        "@id": "support:hearing_dog",
+        "@type": "type:AnimalAssistanceEnum",
+        "rdfs:label": "Hearing Dog",
+        "rdfs:comment": "Hearing Dog"
+      },
+      {
+        "@id": "support:hearing_dog",
+        "@type": "type:AnimalAssistanceEnum",
+        "rdfs:label": "alert_dog",
+        "rdfs:comment": "Alert Dog"
+      }
+    ]
+  }
+  

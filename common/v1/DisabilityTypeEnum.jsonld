@@ -11,42 +11,50 @@
       "rdfs:label": "Disability Type Enum",
       "rdfs:comment": "Enumeration for disability type.",
       "owl:oneOf": [
-        "type:H54.0",
-        "type:9D90",
-        "type:QF10",
-        "type:21134002",
-        "type:716710007"
+        "type:VIS_SS",
+        "type:HEAR_SS",
+        "type:MOB_SS",
+        "type:COG_SS",
+        "type:SC_SS",
+        "type:COM_SS"
+     
       ]
     },
     {
-      "@id": "type:H54.0",
+      "@id": "type:VIS_SS",
       "@type": "type:DisabilityTypeEnum",
-      "rdfs:label": "Blindness",
-      "rdfs:comment": "Blindness, binocular"
+      "rdfs:label": "Vision",
+      "rdfs:comment": "Vision"
     },
     {
-      "@id": "type:9D90",
+      "@id": "type:HEAR_SS",
       "@type": "type:DisabilityTypeEnum",
-      "rdfs:label": "Vision impairment including blindness",
-      "rdfs:comment": "Vision impairment including blindness"
+      "rdfs:label": "Hearing",
+      "rdfs:comment": "Hearing"
     },
     {
-      "@id": "type:QF10",
+      "@id": "type:MOB_SS",
       "@type": "type:DisabilityTypeEnum",
-      "rdfs:label": "Limited function or disability of body organ or system",
-      "rdfs:comment": "Limited function or disability of body organ or system"
+      "rdfs:label": "Mobility",
+      "rdfs:comment": "Mobility"
     },
     {
-      "@id": "type:21134002",
+      "@id": "type:COG_SS",
       "@type": "type:DisabilityTypeEnum",
-      "rdfs:label": "Disability",
-      "rdfs:comment": "Disability"
+      "rdfs:label": "COGNITION (REMEMBERING)",
+      "rdfs:comment": "COGNITION (REMEMBERING)"
     },
     {
-      "@id": "type:716710007",
+      "@id": "type:SC_SS",
       "@type": "type:DisabilityTypeEnum",
-      "rdfs:label": "Early childhood developmental disability ",
-      "rdfs:comment": "Early childhood developmental disability "
+      "rdfs:label": "Self care",
+      "rdfs:comment": "Self care"
+    },
+    {
+      "@id": "type:COM_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Communication",
+      "rdfs:comment": "Communication"
     }
   ]
 }

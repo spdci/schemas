@@ -11,49 +11,49 @@
       "rdfs:label": "Functional Limitation Type Enum",
       "rdfs:comment": "Standardized codes and values representing functional limitation types.",
       "owl:oneOf": [
-        "type:d1",
-        "type:d2",
-        "type:d3",
-        "type:d4",
-        "type:d5",
-        "type:d6"
+        "type:1",
+        "type:2",
+        "type:3",
+        "type:4",
+        "type:5",
+        "type:6"
       ]
     },
     {
-      "@id": "type:d1",
+      "@id": "type:1",
       "@type": "type:ImpairementType",
-      "rdfs:label": "Cognition",
-      "rdfs:comment": "Cognition"
+      "rdfs:label": "Vision",
+      "rdfs:comment": "Vision"
     },
     {
-      "@id": "type:d2",
+      "@id": "type:2",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Hearing",
+      "rdfs:comment": "Hearing"
+    },
+    {
+      "@id": "type:3",
       "@type": "type:ImpairementType",
       "rdfs:label": "Mobility",
       "rdfs:comment": "Mobility"
     },
     {
-      "@id": "type:d3",
+      "@id": "type:4",
       "@type": "type:ImpairementType",
-      "rdfs:label": "Selfcare",
-      "rdfs:comment": "Selfcare"
+      "rdfs:label": "Cognitive",
+      "rdfs:comment": "Cognitive"
     },
     {
-      "@id": "type:d4",
+      "@id": "type:5",
       "@type": "type:ImpairementType",
-      "rdfs:label": "Getting along",
-      "rdfs:comment": "Getting along"
+      "rdfs:label": "Speech",
+      "rdfs:comment": "Speech"
     },
     {
-      "@id": "type:d5",
+      "@id": "type:6",
       "@type": "type:ImpairementType",
-      "rdfs:label": "Life activities",
-      "rdfs:comment": "Life activities"
-    },
-    {
-      "@id": "type:d6",
-      "@type": "type:ImpairementType",
-      "rdfs:label": "Participation",
-      "rdfs:comment": "Participation"
+      "rdfs:label": "Mental",
+      "rdfs:comment": "Mental"
     }
   
   ]

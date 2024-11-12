@@ -11,18 +11,11 @@
       "rdfs:label": "Functional Severity  Enum",
       "rdfs:comment": "Enumeration for functional severity categories.",
       "owl:oneOf": [
-        "category:0",
         "category:1",
         "category:2",
         "category:3",
         "category:4"
       ]
-    },
-    {
-      "@id": "category:0",
-      "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "None",
-      "rdfs:comment": "None"
     },
     {
       "@id": "category:1",
@@ -45,8 +38,8 @@
     {
       "@id": "category:4",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Extreme or cannot do",
-      "rdfs:comment": "Extreme or cannot do"
+      "rdfs:label": "Extreme",
+      "rdfs:comment": "Extreme"
     }
   ]
 }

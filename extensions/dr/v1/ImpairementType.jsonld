@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+  },
+  "@graph": [
+    {
+      "@id": "type:ImpairementType",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Functional Limitation Type Enum",
+      "rdfs:comment": "Standardized codes and values representing functional limitation types.",
+      "owl:oneOf": [
+        "type:1",
+        "type:2",
+        "type:3",
+        "type:4",
+        "type:5",
+        "type:6"
+      ]
+    },
+    {
+      "@id": "type:1",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Vision",
+      "rdfs:comment": "Vision"
+    },
+    {
+      "@id": "type:2",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Hearing",
+      "rdfs:comment": "Hearing"
+    },
+    {
+      "@id": "type:3",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Mobility",
+      "rdfs:comment": "Mobility"
+    },
+    {
+      "@id": "type:4",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Cognitive",
+      "rdfs:comment": "Cognitive"
+    },
+    {
+      "@id": "type:5",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Speech",
+      "rdfs:comment": "Speech"
+    },
+    {
+      "@id": "type:6",
+      "@type": "type:ImpairementType",
+      "rdfs:label": "Mental",
+      "rdfs:comment": "Mental"
+    }
+  
+  ]
+}

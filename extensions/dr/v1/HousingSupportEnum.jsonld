@@ -1,0 +1,39 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "support:HousingSupportEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "type of housing support needed Enum",
+        "rdfs:comment": "Enumeration for housing support needed.",
+        "owl:oneOf": [
+          "support:accessibility_modification",
+          "support:relocation",
+          "support:housing_issues"
+        ]
+      },
+      {
+        "@id": "support:accessibility_modification",
+        "@type": "type:HousingSupportEnum",
+        "rdfs:label": "Accessibility Modification",
+        "rdfs:comment": "Accessibilty Modification"
+      },
+      {
+        "@id": "assistance:relocation",
+        "@type": "type:HousingSupportEnum",
+        "rdfs:label": "Relocation",
+        "rdfs:comment": "relocation needed"
+      },
+      {
+        "@id": "assistance:housing_issues",
+        "@type": "type:HousingSupportEnum",
+        "rdfs:label": "Housing Issues",
+        "rdfs:comment": "Housing issues (heating, additional use of electricity for disability related issues)"
+      }
+    ]
+  }
+  

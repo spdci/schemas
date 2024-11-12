@@ -1,7 +1,7 @@
 {
   "@context": {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "@vocab": "https://schema.spdci.org/extensions/common/v1/"
+    "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
   },
   "@graph": [
     {
@@ -20,26 +20,26 @@
     {
       "@id": "category:1",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "No difficulty",
-      "rdfs:comment": "No difficulty"
+      "rdfs:label": "Mild",
+      "rdfs:comment": "Mild"
     },
     {
       "@id": "category:2",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Some difficulty",
-      "rdfs:comment": "Some difficulty"
+      "rdfs:label": "Moderate",
+      "rdfs:comment": "Moderate"
     },
     {
       "@id": "category:3",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "A lot difficulty",
-      "rdfs:comment": "A lot difficulty"
+      "rdfs:label": "Severe",
+      "rdfs:comment": "Severe"
     },
     {
       "@id": "category:4",
       "@type": "category:FunctionalSeverityEnum",
-      "rdfs:label": "Cannot do it at all",
-      "rdfs:comment": "Cannot do it at all"
+      "rdfs:label": "Extreme",
+      "rdfs:comment": "Extreme"
     }
   ]
 }

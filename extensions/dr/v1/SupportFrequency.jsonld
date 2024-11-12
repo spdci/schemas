@@ -1,0 +1,54 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/dr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "category:SupportFrequency",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Intensity Enum",
+        "rdfs:comment": "Enumeration for support intensity.",
+        "owl:oneOf": [
+          "intensity:1",
+          "intensity:2",
+          "intensity:3",
+          "intensity:4",
+          "intensity:5"
+  
+        ]
+      },
+      {
+        "@id": "intensity:1",
+        "@type": "type:SupportFrequency",
+        "rdfs:label": "Permanent",
+        "rdfs:comment": "Support is needed all time"
+      },
+      {
+        "@id": "intensity:2",
+        "@type": "type:SupportFrequency",
+        "rdfs:label": "Daily",
+        "rdfs:comment": "Support is needed daily"
+      },
+      {
+        "@id": "intensity:3",
+        "@type": "type:SupportFrequency",
+        "rdfs:label": "Weekly",
+        "rdfs:comment": "Support is needed Weekly"
+      },
+      {
+        "@id": "intensity:4",
+        "@type": "type:SupportFrequency",
+        "rdfs:label": "Occasional",
+        "rdfs:comment": "Support is needed Occasional"
+      },
+      {
+        "@id": "intensity:5",
+        "@type": "type:SupportFrequency",
+        "rdfs:label": "None",
+        "rdfs:comment": "Support is not needed"
+      }
+    ]
+  }
+  

@@ -26,7 +26,13 @@
         "@id": "assistance:relocation",
         "@type": "type:HousingSupportEnum",
         "rdfs:label": "Relocation",
-        "rdfs:comment": "relocation needed"
+        "rdfs:comment": "Relocation"
+      },
+      {
+        "@id": "assistance:housing_modification",
+        "@type": "type:HousingSupportEnum",
+        "rdfs:label": "Housing modification",
+        "rdfs:comment": "Housing modification "
       },
       {
         "@id": "assistance:housing_issues",

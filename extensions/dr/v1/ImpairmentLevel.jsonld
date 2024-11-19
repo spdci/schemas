@@ -19,25 +19,25 @@
     },
     {
       "@id": "category:1",
-      "@type": "category:FunctionalSeverityEnum",
+      "@type": "category:ImpairmentLevel",
       "rdfs:label": "Mild",
       "rdfs:comment": "Mild"
     },
     {
       "@id": "category:2",
-      "@type": "category:FunctionalSeverityEnum",
+      "@type": "category:ImpairmentLevel",
       "rdfs:label": "Moderate",
       "rdfs:comment": "Moderate"
     },
     {
       "@id": "category:3",
-      "@type": "category:FunctionalSeverityEnum",
+      "@type": "category:ImpairmentLevel",
       "rdfs:label": "Severe",
       "rdfs:comment": "Severe"
     },
     {
       "@id": "category:4",
-      "@type": "category:FunctionalSeverityEnum",
+      "@type": "category:ImpairmentLevel",
       "rdfs:label": "Extreme",
       "rdfs:comment": "Extreme"
     }

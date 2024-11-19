@@ -33,6 +33,13 @@
         "rdfs:comment": "The support needed/received by the disabled person."
       },
       {
+        "@id": "spdci:disability_level",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DR_Person",
+        "rdfs:range": "spdci:DisabilityLevelEnum",
+        "rdfs:comment": "The support needed/received by the disabled person."
+      },
+      {
         "@id": "spdci:disability_details",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:DR_Person",

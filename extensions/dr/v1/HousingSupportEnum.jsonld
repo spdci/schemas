@@ -11,16 +11,16 @@
         "rdfs:label": "type of housing support needed Enum",
         "rdfs:comment": "Enumeration for housing support needed.",
         "owl:oneOf": [
-          "support:accessibility_modification",
+          "support:home_adaptation",
           "support:relocation",
-          "support:housing_issues"
+          "support:utility_cost"
         ]
       },
       {
-        "@id": "support:accessibility_modification",
+        "@id": "support:home_adaptation",
         "@type": "type:HousingSupportEnum",
-        "rdfs:label": "Accessibility Modification",
-        "rdfs:comment": "Accessibilty Modification"
+        "rdfs:label": "Home Adaptation",
+        "rdfs:comment": "Home Adaptation"
       },
       {
         "@id": "assistance:relocation",
@@ -29,16 +29,10 @@
         "rdfs:comment": "Relocation"
       },
       {
-        "@id": "assistance:housing_modification",
+        "@id": "assistance:utility_cost",
         "@type": "type:HousingSupportEnum",
-        "rdfs:label": "Housing modification",
-        "rdfs:comment": "Housing modification "
-      },
-      {
-        "@id": "assistance:housing_issues",
-        "@type": "type:HousingSupportEnum",
-        "rdfs:label": "Housing Issues",
-        "rdfs:comment": "Housing issues (heating, additional use of electricity for disability related issues)"
+        "rdfs:label": "Utility cost",
+        "rdfs:comment": "Significant Utility cost"
       }
     ]
   }

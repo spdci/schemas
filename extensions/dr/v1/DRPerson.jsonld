@@ -2,6 +2,7 @@
     "@context": {
       "spdci": "https://schema.spdci.org/extensions/dr/v1/",
       "social": "https://schema.spdci.org/extensions/social/v1/",
+      "ibr": "https://schema.spdci.org/extensions/ibr/v1/",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "owl": "http://www.w3.org/2002/07/owl#",
@@ -33,7 +34,7 @@
         "rdfs:comment": "The support needed/received by the disabled person."
       },
       {
-        "@id": "spdci:disability_level",
+        "@id": "spdci:disability_status_level",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:DR_Person",
         "rdfs:range": "spdci:DisabilityLevelEnum",
@@ -74,6 +75,17 @@
         "rdfs:domain": "spdci:DR_Person",
         "rdfs:range": "spdci:HousingType",
         "rdfs:comment": "The house where the disabled person currently in."
+      },
+      {
+        "@id": "spdci:programs_enrolments",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DR_Person",
+        "rdfs:range": {
+          "@id": "ibr:Programme",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the disability support of the person"
       },
       {
         "@id": "spdci:registration_date",

@@ -11,28 +11,28 @@
         "rdfs:label": "type of Medical Care needed Enum",
         "rdfs:comment": "Enumeration for medical care needed.",
         "owl:oneOf": [
-          "support:guide_dog",
-          "support:hearing_dog",
-          "support:alert_dog"
+          "support:service_dog",
+          "support:therapy_animal",
+          "support:aotherlert_dog"
         ]
       },
       {
-        "@id": "support:guide_dog",
+        "@id": "support:service_dog",
         "@type": "type:AnimalAssistanceEnum",
-        "rdfs:label": "Guide Dog",
-        "rdfs:comment": "Guide Dog"
+        "rdfs:label": "Service Dog",
+        "rdfs:comment": "Service Dog (guide, hearing ...)"
       },
       {
-        "@id": "support:hearing_dog",
+        "@id": "support:therapy_animal",
         "@type": "type:AnimalAssistanceEnum",
-        "rdfs:label": "Hearing Dog",
-        "rdfs:comment": "Hearing Dog"
+        "rdfs:label": "Therapy Animal",
+        "rdfs:comment": "Therapy Animal"
       },
       {
-        "@id": "support:hearing_dog",
+        "@id": "support:other",
         "@type": "type:AnimalAssistanceEnum",
-        "rdfs:label": "alert_dog",
-        "rdfs:comment": "Alert Dog"
+        "rdfs:label": "Other",
+        "rdfs:comment": "Other"
       }
     ]
   }

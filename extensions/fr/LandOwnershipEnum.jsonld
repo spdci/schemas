@@ -1,0 +1,46 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:LandOwnership",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "LandOwnership  Enum",
+        "rdfs:comment": "Enumeration for landownership",
+        "owl:oneOf": [
+          "type:0",
+          "type:1",
+          "type:2",
+          "type:3"
+        ]
+      },
+      {
+        "@id": "type:0",
+        "@type": "type:LandOwnership",
+        "rdfs:label": "Owner",
+        "rdfs:comment": "Owner of the land"
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:LandOwnership",
+        "rdfs:label": "Tenant",
+        "rdfs:comment": "Tenant of the land"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:LandOwnership",
+        "rdfs:label": "Sharecropper",
+        "rdfs:comment": "Sharecropper"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:LandOwnership",
+        "rdfs:label": "Landless",
+        "rdfs:comment": "Landless"
+      }
+    ]
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/fr/v1/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "common": "https://schema.spdci.org/common/v1/"
+    },
+    "@id": "spdci:Machineries",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on machineries owned by a farmer",
+    "rdfs:label": "Machineries",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+          {
+            "@id": "spdci:type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Machineries",
+            "rdfs:range": "spdci:MachineriesEnum",
+            "rdfs:comment": "Is the type of the machineries the farmer owns."
+          },
+          {
+            "@id": "spdci:count",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Machineries",
+            "rdfs:range": "xsd:Integer",
+            "rdfs:comment": "Is the count of the machineries owned by farmer."
+          },
+          {
+
+            "@id": "spdci:registration_date",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Machineries",
+            "rdfs:range": "common:DateTime",
+            "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+          },
+          {
+            "@id": "spdci:last_updated",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Machineries",
+            "rdfs:range": "common:DateTime",
+            "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+          }
+          
+    ]
+    }

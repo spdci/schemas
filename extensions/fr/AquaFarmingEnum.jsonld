@@ -1,0 +1,32 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:AquaFarmingEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "AquaFarming  Enum",
+        "rdfs:comment": "Enumeration for aquafarming types",
+        "owl:oneOf": [
+          "type:0",
+          "type:1"
+        ]
+      },
+      {
+        "@id": "type:0",
+        "@type": "type:AquaFarmingEnum",
+        "rdfs:label": "Marine aquafarming",
+        "rdfs:comment": "Marine aquafarming"
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:AquaFarmingEnum",
+        "rdfs:label": "Freshwater aquafarming",
+        "rdfs:comment": "Freshwater aquafarming"
+      }
+    ]
+  }
+  

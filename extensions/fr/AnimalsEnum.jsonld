@@ -1,0 +1,67 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:AnimalsEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Animals  Enum",
+        "rdfs:comment": "Enumeration for animals",
+        "owl:oneOf": [
+          "type:0",
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4",
+          "type:5",
+          "type:6"
+        ]
+      },
+      {
+        "@id": "type:0",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Bovine animals",
+        "rdfs:comment": "Bovine animals"
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Sheep and goats",
+        "rdfs:comment": "Sheep and goats"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Swine/pigs",
+        "rdfs:comment": "Swine/pigs"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Camels and camelids",
+        "rdfs:comment": "Camels and camelids"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Poultry",
+        "rdfs:comment": "Poultry"
+      },
+      {
+        "@id": "type:5",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Other animals",
+        "rdfs:comment": "Other animals"
+      },
+      {
+        "@id": "type:6",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Insects and Worms",
+        "rdfs:comment": "Insects and Worms"
+      }
+    ]
+  }
+  

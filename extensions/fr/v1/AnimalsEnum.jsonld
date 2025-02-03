@@ -9,7 +9,7 @@
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
         "rdfs:label": "Animals  Enum",
-        "rdfs:comment": "Enumeration for animals",
+        "rdfs:comment": "This directory offers a list of animal categories which corresponds to groups defined Annex 6 of the World Programme for the Census of Agriculture 2020, which is based on Division 02 of the Central Product Classification (CPC), Version 2.1. Lower levels can be adapted based on countries requirements.",
         "owl:oneOf": [
           "type:0",
           "type:1",

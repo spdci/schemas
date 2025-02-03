@@ -1,0 +1,25 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:AquaSupportActivityEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "AquaSupportActivity  Enum",
+        "rdfs:comment": "This directory offers a list of support activities to agriculture and post-harvest crop activities corresponding to Group 16 of  International Standard Industrial Classification of All Economic Activities (ISIC4)",
+        "owl:oneOf": [
+          "type:0330"
+        ]
+      },
+      {
+        "@id": "type:0330",
+        "@type": "type:AquaSupportActivityEnum",
+        "rdfs:label": "Support activities for fishing and aquaculture",
+        "rdfs:comment": "Support activities for fishing and aquaculture"
+      }
+    ]
+  }
+  

@@ -18,6 +18,13 @@
     ],
     "rdfs:property": [
           {
+            "@id": "spdci:crop_group_name",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "spdci:CropGroupEnum",
+            "rdfs:comment": "Is the group of the crop."
+          },
+          {
             "@id": "spdci:crop_type_name",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:CropDetails",

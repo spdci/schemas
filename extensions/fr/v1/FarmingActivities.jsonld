@@ -20,45 +20,47 @@
     ],
     "rdfs:property": [
         {
-            "@id": "spdci:non_perennial_crops",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:Farming_Activities",
-            "rdfs:range": "spdci:CropDetails",
-            "rdfs:comment": "Growing of non-perennial crops."
+          "@id": "spdci:economic_activity",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Farming_Activities",
+          "rdfs:range": {
+                "@id": "spdci:EconomicGroupEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+          },
+          "rdfs:comment": "group activity"
         },
         {
-            "@id": "spdci:perennial_crops",
+            "@id": "spdci:crops_details",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Farming_Activities",
-            "rdfs:range": "spdci:CropDetails",
-            "rdfs:comment": "Growing of perennial crops"
-        },
-        {
-            "@id": "spdci:plant_propagation",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:Farming_Activities",
-            "rdfs:range": "spdci:CropDetails",
-            "rdfs:comment": "Plant propagation"
-        },
-        {
-            "@id": "spdci:mixed_farming",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:Farming_Activities",
-            "rdfs:range": "xsd:boolean",
-            "rdfs:comment": "Mixed farming, Includes both crops and animal related farming activities"
+            "rdfs:range": {
+                "@id": "spdci:CropDetails",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Details on crop types"
         },
         {
             "@id": "spdci:agri_support_activities",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Farming_Activities",
-            "rdfs:range": "spdci:AgriSupportActivityEnum",
+            "rdfs:range": {
+                "@id": "spdci:AgriSupportActivityEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
             "rdfs:comment": "Support activities to agriculture and post-harvest crop activities"
         },
         {
             "@id": "spdci:aquaculture",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Farming_Activities",
-            "rdfs:range": "spdci:AquaCultureEnum",
+            "rdfs:range": {
+                "@id": "spdci:AquaCultureEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
             "rdfs:comment": "Aquaculture"
         },
         {

@@ -8,67 +8,70 @@
         "@id": "type:CropTypeEnum",
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
-        "rdfs:label": "CropType  Enum",
-        "rdfs:comment": "Enumeration for crop types",
+        "rdfs:label": "Crop Type  Enum",
+        "rdfs:comment": "This directory lists classifications of crops . The code directory references level one of the World Programme for the Census of Agriculture 2020 Annex 4 ",
         "owl:oneOf": [
-          "type:0",
           "type:1",
           "type:2",
           "type:3",
           "type:4",
-          "type:5"
+          "type:5",
+          "type:6",
+          "type:7",
+          "type:8",
+          "type:9"
         ]
       },
       {
-        "@id": "type:0",
+        "@id": "type:1",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Cereals",
         "rdfs:comment": "Cereals"
       },
       {
-        "@id": "type:1",
+        "@id": "type:2",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Vegetables and melons",
         "rdfs:comment": "Vegetables and melons"
       },
       {
-        "@id": "type:2",
+        "@id": "type:3",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Fruit and nuts",
         "rdfs:comment": "Fruit and nuts"
       },
       {
-        "@id": "type:3",
+        "@id": "type:4",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Oilseed crops and oleaginous fruits",
         "rdfs:comment": "Oilseed crops and oleaginous fruits"
       },
       {
-        "@id": "type:4",
+        "@id": "type:5",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Root/tuber crops with high starch or inulin content",
         "rdfs:comment": "Root/tuber crops with high starch or inulin content"
       },
       {
-        "@id": "type:5",
+        "@id": "type:6",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Stimulant, spice and aromatic crops",
         "rdfs:comment": "Stimulant, spice and aromatic crops"
       },
       {
-        "@id": "type:6",
+        "@id": "type:7",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Leguminous crops",
         "rdfs:comment": "Leguminous crops"
       },
       {
-        "@id": "type:7",
+        "@id": "type:8",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Sugar crops",
         "rdfs:comment": "Sugar crops"
       },
       {
-        "@id": "type:8",
+        "@id": "type:9",
         "@type": "type:CropTypeEnum",
         "rdfs:label": "Other crops",
         "rdfs:comment": "Other crops"

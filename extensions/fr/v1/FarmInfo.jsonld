@@ -49,11 +49,7 @@
             "@id": "spdci:farming_activities",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:FarmInfo",
-            "rdfs:range": {
-                "@id": "spdci:FarmingActivities",
-                "@type": "rdfs:Class",
-                "@container": "@list"
-            },
+            "rdfs:range": "spdci:FarmingActivities",
             "rdfs:comment": "Is the croptype of the land."
           },
           {

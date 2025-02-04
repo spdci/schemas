@@ -9,58 +9,58 @@
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
         "rdfs:label": "Animals  Enum",
-        "rdfs:comment": "This directory offers a list of animal categories which corresponds to groups defined Annex 6 of the World Programme for the Census of Agriculture 2020, which is based on Division 02 of the Central Product Classification (CPC), Version 2.1. Lower levels can be adapted based on countries requirements.",
+        "rdfs:comment": "This group includes raising (farming) and breeding of all animals, except aquatic animals. It consists of eight ISIC classes",
         "owl:oneOf": [
-          "type:0",
-          "type:1",
-          "type:2",
-          "type:3",
-          "type:4",
-          "type:5",
-          "type:6"
+          "type:0141",
+          "type:0142",
+          "type:0143",
+          "type:0144",
+          "type:0145",
+          "type:0146",
+          "type:0149"
         ]
       },
       {
-        "@id": "type:0",
+        "@id": "type:0141",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Bovine animals",
-        "rdfs:comment": "Bovine animals"
+        "rdfs:label": "cattle and buffaloes",
+        "rdfs:comment": "cattle and buffaloes"
       },
       {
-        "@id": "type:1",
+        "@id": "type:0142",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Sheep and goats",
-        "rdfs:comment": "Sheep and goats"
+        "rdfs:label": "horses and other equines",
+        "rdfs:comment": "horses and other equines"
       },
       {
-        "@id": "type:2",
+        "@id": "type:0143",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Swine/pigs",
-        "rdfs:comment": "Swine/pigs"
+        "rdfs:label": "camel and camelids",
+        "rdfs:comment": "camel and camelids "
       },
       {
-        "@id": "type:3",
+        "@id": "type:0144",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Camels and camelids",
-        "rdfs:comment": "Camels and camelids"
+        "rdfs:label": "sheep and goats",
+        "rdfs:comment": "sheep and goats"
       },
       {
-        "@id": "type:4",
+        "@id": "type:0145",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Poultry",
-        "rdfs:comment": "Poultry"
+        "rdfs:label": " swine/pigs",
+        "rdfs:comment": " swine/pigs"
       },
       {
-        "@id": "type:5",
+        "@id": "type:0146",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Other animals",
-        "rdfs:comment": "Other animals"
+        "rdfs:label": "poultry",
+        "rdfs:comment": "poultry"
       },
       {
-        "@id": "type:6",
+        "@id": "type:0149",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Insects and Worms",
-        "rdfs:comment": "Insects and Worms"
+        "rdfs:label": "other animals",
+        "rdfs:comment": "other animals"
       }
     ]
   }

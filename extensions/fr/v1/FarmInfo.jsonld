@@ -6,10 +6,10 @@
       "owl": "http://www.w3.org/2002/07/owl#",
       "common": "https://schema.spdci.org/common/v1/"
     },
-    "@id": "spdci:CropType",
+    "@id": "spdci:FarmInfo",
     "@type": "rdfs:Class",
-    "rdfs:comment": "This data object contains the information on crop type for a certain land",
-    "rdfs:label": "CropType",
+    "rdfs:comment": "This data object contains the information on farm info for a certain farmer",
+    "rdfs:label": "FarmInfo",
     "rdfs:subClassOf": [
       {
         "@type": "rdfs:Class",
@@ -18,41 +18,54 @@
     ],
     "rdfs:property": [
           {
-            "@id": "spdci:crop_type_name",
+            "@id": "spdci:location",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:CropType",
-            "rdfs:range": "spdci:CropTypeEnum",
+            "rdfs:domain": "spdci:FarmInfo",
+            "rdfs:range": "common:Place",
             "rdfs:comment": "Is the type of the crop."
           },
           {
-            "@id": "spdci:variety",
+            "@id": "spdci:land_tenure",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:CropType",
-            "rdfs:range": "xsd:string",
+            "rdfs:domain": "spdci:FarmInfo",
+            "rdfs:range": "spdci:LandTenureEnum",
             "rdfs:comment": "Is the variarty of the crop."
           },
           {
-            "@id": "spdci:season",
+            "@id": "spdci:land_size",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:CropType",
-            "rdfs:range": "xsd:string",
+            "rdfs:domain": "spdci:FarmInfo",
+            "rdfs:range": "xsd:Decimal",
             "rdfs:comment": "Is the season of the crop."
+          },
+          {
+            "@id": "spdci:measurment",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:FarmInfo",
+            "rdfs:range": "spdci:MeasurmentUnitEnum",
+            "rdfs:comment": "Is the season of the crop."
+          },
+          {
+            "@id": "spdci:farming_activities",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:FarmInfo",
+            "rdfs:range": "spdci:FarmingActivities",
+            "rdfs:comment": "Is the croptype of the land."
           },
           {
 
             "@id": "spdci:registration_date",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:Animals",
+            "rdfs:domain": "spdci:FarmInfo",
             "rdfs:range": "common:DateTime",
             "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
           },
           {
             "@id": "spdci:last_updated",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:Animals",
+            "rdfs:domain": "spdci:FarmInfo",
             "rdfs:range": "common:DateTime",
             "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
           }
-          
     ]
     }

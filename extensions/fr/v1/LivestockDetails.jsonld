@@ -32,6 +32,13 @@
             "rdfs:comment": "Is the count of the animals owned by farmer."
           },
           {
+            "@id": "spdci:livestock_system",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Animals",
+            "rdfs:range": "spdci:LivestockSystemEnum",
+            "rdfs:comment": "Is the type the farmer owns."
+          },
+          {
 
             "@id": "spdci:registration_date",
             "@type": "rdfs:Datatype",

@@ -1,0 +1,67 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:ForestActivityEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Forest Activity Enum",
+        "rdfs:comment": "This code directory lists  list of various forestry activities that can be conducted on a farm",
+        "owl:oneOf": [
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4",
+          "type:5",
+          "type:6",
+          "type:7"
+        ]
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:ForestActivityEnum",
+        "rdfs:label": "Logging",
+        "rdfs:comment": "Logging"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:ForestActivityEnum",
+        "rdfs:label": "Afforestation (planting trees)",
+        "rdfs:comment": "Afforestation (planting trees)"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:ForestActivityEnum",
+        "rdfs:label": "Reforestation (replanting trees)",
+        "rdfs:comment": "Reforestation (replanting trees)"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:ForestActivityEnum",
+        "rdfs:label": "Nursery (cultivating seedlings for afforestation or reforestation)",
+        "rdfs:comment": "Nursery (cultivating seedlings for afforestation or reforestation)"
+      },
+      {
+        "@id": "type:5",
+        "@type": "type:ForestActivityEnum",
+        "rdfs:label": "Extraction of fuelwood and production of charcoal",
+        "rdfs:comment": "Extraction of fuelwood and production of charcoal"
+      },
+      {
+        "@id": "type:6",
+        "@type": "type:ForestActivityEnum",
+        "rdfs:label": "Gathering of plant-based edible and non-edible wild non-wood products",
+        "rdfs:comment": "Gathering of plant-based edible and non-edible wild non-wood products"
+      },
+      {
+        "@id": "type:7",
+        "@type": "type:ForestActivityEnum",
+        "rdfs:label": "Gathering of animal-based edible and non-edible wild non-wood products",
+        "rdfs:comment": "Gathering of animal-based edible and non-edible wild non-wood products"
+      }
+    ]
+  }
+  

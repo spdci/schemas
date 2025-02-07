@@ -9,58 +9,65 @@
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
         "rdfs:label": "Animals  Enum",
-        "rdfs:comment": "Enumeration for animals",
+        "rdfs:comment": "This group includes raising (farming) and breeding of all animals, except aquatic animals. It consists of eight ISIC classes",
         "owl:oneOf": [
-          "type:0",
           "type:1",
           "type:2",
           "type:3",
           "type:4",
           "type:5",
-          "type:6"
+          "type:6",
+          "type:7",
+          "type:8"
         ]
       },
       {
-        "@id": "type:0",
+        "@id": "type:1",
         "@type": "type:AnimalsEnum",
         "rdfs:label": "Bovine animals",
         "rdfs:comment": "Bovine animals"
       },
       {
-        "@id": "type:1",
+        "@id": "type:2",
         "@type": "type:AnimalsEnum",
         "rdfs:label": "Sheep and goats",
         "rdfs:comment": "Sheep and goats"
       },
       {
-        "@id": "type:2",
+        "@id": "type:3",
         "@type": "type:AnimalsEnum",
         "rdfs:label": "Swine/pigs",
         "rdfs:comment": "Swine/pigs"
       },
       {
-        "@id": "type:3",
-        "@type": "type:AnimalsEnum",
-        "rdfs:label": "Camels and camelids",
-        "rdfs:comment": "Camels and camelids"
-      },
-      {
         "@id": "type:4",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Poultry",
-        "rdfs:comment": "Poultry"
+        "rdfs:label": "Equines",
+        "rdfs:comment": "Equines"
       },
       {
         "@id": "type:5",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Other animals",
-        "rdfs:comment": "Other animals"
+        "rdfs:label": "Camels and camelids",
+        "rdfs:comment": " Camels and camelids"
       },
       {
         "@id": "type:6",
         "@type": "type:AnimalsEnum",
-        "rdfs:label": "Insects and Worms",
-        "rdfs:comment": "Insects and Worms"
+        "rdfs:label": "poultry",
+        "rdfs:comment": "poultry"
+      },
+      {
+        "@id": "type:7",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "other animals",
+        "rdfs:comment": "other animals"
+      },
+      {
+        "@id": "type:8",
+        "@type": "type:AnimalsEnum",
+        "rdfs:label": "Insects and worms",
+        "rdfs:comment": "Insects and worms"
       }
     ]
   }

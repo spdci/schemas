@@ -1,0 +1,80 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:MachineriesEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Machineries  Enum",
+        "rdfs:comment": "This directory offers a list of farmer equipment and machineries groups which correspends to classed defined Annex 7 of the World Programme for the Census of Agriculture 2020.",
+        "owl:oneOf": [
+          "type:10",
+          "type:20",
+          "type:31",
+          "type:32",
+          "type:33",
+          "type:34",
+          "type:35",
+          "type:36"
+        ]
+      },
+      {
+        "@id": "type:10",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Manually operated machines",
+        "rdfs:comment": "Manually operated machines"
+      },
+      {
+        "@id": "type:20",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Animal-powered equipment",
+        "rdfs:comment": "Animal-powered equipment"
+      },
+      {
+        "@id": "type:31",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Machines for general farm use",
+        "rdfs:comment": "Machines for general farm use"
+      },
+      {
+        "@id": "type:32",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Tractors, bulldozers and other vehicles",
+        "rdfs:comment": "Tractors, bulldozers and other vehicles"
+      },
+      {
+        "@id": "type:33",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Crop machinery and equipment",
+        "rdfs:comment": "Crop machinery and equipment"
+      },
+      {
+        "@id": "type:34",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Livestock machinery and equipment",
+        "rdfs:comment": "Livestock machinery and equipment"
+      },
+      {
+        "@id": "type:35",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Aquacultural machinery and equipment",
+        "rdfs:comment": "Aquacultural machinery and equipment"
+      },
+      {
+        "@id": "type:36",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Forestry machinery and equipment*",
+        "rdfs:comment": "Forestry machinery and equipment*"
+      },
+      {
+        "@id": "type:37",
+        "@type": "type:MachineriesEnum",
+        "rdfs:label": "Unmanned Aerial vehicle and robots*",
+        "rdfs:comment": "Unmanned Aerial vehicle and robots*"
+      }
+    ]
+  }
+  

@@ -1,0 +1,53 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:LivestockSystemEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "livestock system  Enum",
+        "rdfs:comment": "This code directory lists the different types of practices of raising livestock in a farm.",
+        "owl:oneOf": [
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4",
+          "type:5"
+        ]
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:LivestockSystemEnum",
+        "rdfs:label": "Grazing system - Nomadic or totally pastoral",
+        "rdfs:comment": "Grazing system - Nomadic or totally pastoral"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:LivestockSystemEnum",
+        "rdfs:label": "Grazing system - Semi-nomadic, semi-pastoral or transhumant",
+        "rdfs:comment": "Grazing system - Semi-nomadic, semi-pastoral or transhumant"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:LivestockSystemEnum",
+        "rdfs:label": "Grazing system - Sedentary pastoral or ranching",
+        "rdfs:comment": "Grazing system - Sedentary pastoral or ranching"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:LivestockSystemEnum",
+        "rdfs:label": "Mixed system",
+        "rdfs:comment": "Mixed system"
+      },
+      {
+        "@id": "type:5",
+        "@type": "type:LivestockSystemEnum",
+        "rdfs:label": " Industrial system",
+        "rdfs:comment": "Industrial system"
+      }
+    ]
+  }
+  

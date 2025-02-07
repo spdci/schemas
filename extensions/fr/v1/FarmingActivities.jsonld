@@ -20,18 +20,7 @@
     ],
     "rdfs:property": [
         {
-          "@id": "spdci:economic_activity",
-          "@type": "rdfs:Datatype",
-          "rdfs:domain": "spdci:Farming_Activities",
-          "rdfs:range": {
-                "@id": "spdci:EconomicGroupEnum",
-                "@type": "rdfs:Class",
-                "@container": "@list"
-          },
-          "rdfs:comment": "group activity"
-        },
-        {
-            "@id": "spdci:crops_details",
+            "@id": "spdci:crop_production",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Farming_Activities",
             "rdfs:range": {
@@ -39,7 +28,25 @@
                 "@type": "rdfs:Class",
                 "@container": "@list"
             },
-            "rdfs:comment": "Details on crop types"
+            "rdfs:comment": "Group 011 -13: Crop production activities"
+        },
+        {
+          "@id": "spdci:animal_production",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Farming_Activities",
+          "rdfs:range": {
+              "@id": "spdci:livestockDetails",
+              "@type": "rdfs:Class",
+              "@container": "@list"
+          },
+          "rdfs:comment": "Group 014: Animal productions"
+        },
+        {
+          "@id": "spdci:mixed_farming",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CropDetails",
+          "rdfs:range": "xsd:boolean",
+          "rdfs:comment": "Group 015: Mixed farming, Includes both crops and animal related farming activities Yes (1) or No (0)."
         },
         {
             "@id": "spdci:agri_support_activities",
@@ -50,7 +57,7 @@
                 "@type": "rdfs:Class",
                 "@container": "@list"
             },
-            "rdfs:comment": "Support activities to agriculture and post-harvest crop activities"
+            "rdfs:comment": "Group 016: Support activities to agriculture and post-harvest crop activities"
         },
         {
             "@id": "spdci:aquaculture",
@@ -61,15 +68,26 @@
                 "@type": "rdfs:Class",
                 "@container": "@list"
             },
-            "rdfs:comment": "Aquaculture"
+            "rdfs:comment": "Group 032: Aquaculture"
         },
         {
             "@id": "spdci:aqua_support_activities",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Farming_Activities",
             "rdfs:range": "spdci:AquaSupportActivityEnum",
-            "rdfs:comment": "Support activities for fishing and aquaculture"
+            "rdfs:comment": "Group 033: Support activities for fishing and aquaculture"
         },
+        {
+          "@id": "spdci:agroforestry",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Farming_Activities",
+          "rdfs:range": {
+              "@id": "spdci:ForestActivityEnum",
+              "@type": "rdfs:Class",
+              "@container": "@list"
+          },
+          "rdfs:comment": "The forest activity on the farm"
+      },
         {
             "@id": "spdci:registration_date",
             "@type": "rdfs:Datatype",

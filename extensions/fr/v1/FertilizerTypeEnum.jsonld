@@ -1,0 +1,60 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "https://schema.spdci.org/extensions/fr/v1/"
+    },
+    "@graph": [
+      {
+        "@id": "type:FertilizerTypeEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Fertilizer type  Enum",
+        "rdfs:comment": "The code directory includes various substances, both mineral and organic, that can be natural or manufactured.",
+        "owl:oneOf": [
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4",
+          "type:5",
+          "type:6"
+        ]
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:FertilizerTypeEnum",
+        "rdfs:label": "Mineral fertilizers",
+        "rdfs:comment": "Mineral fertilizers"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:FertilizerTypeEnum",
+        "rdfs:label": "Organo-mineral fertilizers",
+        "rdfs:comment": "Organo-mineral fertilizers"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:FertilizerTypeEnum",
+        "rdfs:label": "Organic fertilizers",
+        "rdfs:comment": "Organic fertilizers"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:FertilizerTypeEnum",
+        "rdfs:label": "Biofertilizers",
+        "rdfs:comment": "Biofertilizers"
+      },
+      {
+        "@id": "type:5",
+        "@type": "type:FertilizerTypeEnum",
+        "rdfs:label": "Manure",
+        "rdfs:comment": "Manure"
+      },
+      {
+        "@id": "type:6",
+        "@type": "type:FertilizerTypeEnum",
+        "rdfs:label": "Other organic materials to enhance plant growth",
+        "rdfs:comment": "Other organic materials to enhance plant growth"
+      }
+    ]
+  }
+  

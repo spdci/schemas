@@ -18,11 +18,11 @@
     ],
     "rdfs:property": [
           {
-            "@id": "spdci:crop_group_name",
+            "@id": "spdci:activity_group",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:CropDetails",
-            "rdfs:range": "spdci:CropGroupEnum",
-            "rdfs:comment": "Is the group of the crop."
+            "rdfs:range": "spdci:CropActivityEnum",
+            "rdfs:comment": "Crop production activity"
           },
           {
             "@id": "spdci:crop_type_name",
@@ -36,7 +36,7 @@
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:CropDetails",
             "rdfs:range": "xsd:string",
-            "rdfs:comment": "Is the varierty of the crop."
+            "rdfs:comment": "Is the variety of the crop."
           },
           {
             "@id": "spdci:season",
@@ -44,6 +44,42 @@
             "rdfs:domain": "spdci:CropDetails",
             "rdfs:range": "xsd:string",
             "rdfs:comment": "Is the season of the crop."
+          },
+          {
+            "@id": "spdci:end_use",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "spdci:CropEnduseEnum",
+            "rdfs:comment": "The purpose of the crop"
+          },
+          {
+            "@id": "spdci:irrigation",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "xsd:boolean",
+            "rdfs:comment": "Yes or No ."
+          },
+          {
+            "@id": "spdci:irrigation_water",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": {
+                "@id": "spdci:IrrigationWaterEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Source of irrigation water"
+          },
+          {
+            "@id": "spdci:fertilizer_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": {
+                "@id": "spdci:FertilizerTypeEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "The type of fertilizer applied"
           },
           {
 

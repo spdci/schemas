@@ -37,14 +37,18 @@
         "@id": "spdci:farm_type",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:FR_Person",
-        "rdfs:range": "spdci:FarmeType",
+        "rdfs:range": "spdci:FarmType",
         "rdfs:comment": "The farmer type the farmer is owns ..."
       },
       {
         "@id": "spdci:farm_details",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:FR_Person",
-        "rdfs:range": "spdci:FarmInfo",
+        "rdfs:range": {
+                "@id": "spdci:FarmInfo",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+        },
         "rdfs:comment": "The farm info ..."
       },
       {

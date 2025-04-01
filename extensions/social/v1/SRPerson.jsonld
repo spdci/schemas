@@ -64,7 +64,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:SR_Person",
       "rdfs:range": {
-           "@id": "spdci:Address",
+           "@id": "common:Address",
            "@type": "rdfs:Class",
            "@container":"@list"
       },

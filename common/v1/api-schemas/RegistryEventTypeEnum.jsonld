@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/common/v1/",
+    "@vocab": "https://schema.spdci.org/common/v1",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"    
+  },
+  "@graph": [
+    {
+      "@id": "category:RegistryEventTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Registry type values Enum",
+      "rdfs:comment": "Registry type values defined as per implementation context.",
+      "owl:oneOf": [
+        "category:LiveBirth",
+        "category:Death",
+        "category:Marriage",
+        "category:Divorce"
+      ]
+    },
+    {
+      "@id": "category:LiveBirth",
+      "@type": "category:RegistryEventTypeEnum",
+      "rdfs:label": "LiveBirth",
+      "rdfs:comment": "Birth of a child."
+    },
+    {
+      "@id": "category:Death",
+      "@type": "category:RegistryEventTypeEnum",
+      "rdfs:label": "Death",
+      "rdfs:comment": "Death of a person"
+    },
+    {
+      "@id": "category:Marriage",
+      "@type": "category:RegistryEventTypeEnum",
+      "rdfs:label": "Marriage",
+      "rdfs:comment": "Marriage of a person"
+    },
+    {
+      "@id": "category:Divorce",
+      "@type": "category:RegistryEventTypeEnum",
+      "rdfs:label": "Divorce",
+      "rdfs:comment": "Divorce of a person"
+    }
+  ]
+} 

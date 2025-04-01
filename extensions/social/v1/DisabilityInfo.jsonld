@@ -22,7 +22,7 @@
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",
             "rdfs:range":  {
-              "@type": "common:DisabilityType"
+              "@type": "common:DisabilityTypeEnum"
             },
             "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
           },

@@ -13,7 +13,8 @@
       "owl:oneOf": [
         "type:idtype-value",
         "type:expression",
-        "type:predicate"
+        "type:predicate",
+        "type:graphql"
       ]
     },
     {
@@ -30,6 +31,11 @@
       "@id": "type:predicate",
       "@type": "type:QueryTypeEnum",
       "rdfs:label": "predicate"
+    },
+    {
+      "@id": "type:graphql",
+      "@type": "type:QueryTypeEnum",
+      "rdfs:label": "graphql"
     }
   ]
 }

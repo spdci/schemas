@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/common/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:Consent",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "The Consent object that captures details about a subject's consent for data use.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:ts",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Consent",
+      "rdfs:range": "xsd:dateTime",
+      "rdfs:comment": "Timestamp indicating when the consent was provided."
+    },
+    {
+      "@id": "spdci:purpose",
+      "@type": "rdfs:Class",
+      "rdfs:domain": "spdci:Consent",
+      "rdfs:comment": "Object containing details about the purpose of consent.",
+      "rdfs:property": [
+        {
+          "@id": "spdci:code",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:purpose",
+          "rdfs:range": "xsd:string",
+          "rdfs:comment": "Code indicating the purpose for which consent is given."
+        },
+        {
+          "@id": "spdci:text",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:purpose",
+          "rdfs:range": "xsd:string",
+          "rdfs:comment": "Human-readable description of the consent purpose."
+        },
+        {
+          "@id": "spdci:ref_uri",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:purpose",
+          "rdfs:range": "xsd:anyURI",
+          "rdfs:comment": "Reference URI for additional information on the purpose code."
+        }
+      ]
+    }
+  ]
+}

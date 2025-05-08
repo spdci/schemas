@@ -19,6 +19,7 @@
         "category:IBR",
         "category:Social",
         "category:DR",
+        "category:FR",
         "category:unknown"
       ]
     },
@@ -45,6 +46,12 @@
       "@type": "category:RegistryTypeEnum",
       "rdfs:label": "DR",
       "rdfs:comment": "Disabled registry type"
+    },
+    {
+      "@id": "category:FR",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "FR",
+      "rdfs:comment": "Farmer registry type"
     },
     {
       "@id": "category:unknown",

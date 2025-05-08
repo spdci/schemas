@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/common/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:QueryAttributes",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "A list of attribute names that can be used to query records. These are defined per implementation context.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:attribute_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:QueryAttributes",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The name of the queryable attribute, such as UIN, YOB, DOB, age, mobile, area-code, or pin-code. Defined as an enum list per context."
+    }
+  ]
+}

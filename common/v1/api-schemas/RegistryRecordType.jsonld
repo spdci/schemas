@@ -1,7 +1,7 @@
 {
   "@context": {
-    "spdci": "https://github.com/spdci/schemas/tree/main/common/v1",
-    "@vocab": "https://github.com/spdci/schemas/tree/main/common/v1",
+    "spdci": "https://schema.spdci.org/common/v1",
+    "@vocab": "https://schema.spdci.org/common/v1",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "schema": "http://schema.org/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

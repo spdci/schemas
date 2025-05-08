@@ -1,6 +1,6 @@
 {
   "@context": {
-    "spdci": "https://schema.spdci.org/common/v1/",
+    "spdci": "https://schema.spdci.org/common/v1",
     "@vocab": "https://schema.spdci.org/common/v1",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "schema": "http://schema.org/",
@@ -18,7 +18,9 @@
         "category:Person",
         "category:Member",
         "category:Group",
-        "category:DisabledPerson"
+        "category:Beneficiary",
+        "category:DisabledPerson",
+        "category:Farmer"
       ]
     },
     {

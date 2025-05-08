@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/common/v1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:Authorize",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "The Authorize object that captures information about the authorization granted for data access or processing.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:ts",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Authorize",
+      "rdfs:range": "xsd:dateTime",
+      "rdfs:comment": "Timestamp indicating when the authorization was granted."
+    },
+    {
+      "@id": "spdci:purpose",
+      "@type": "rdfs:Class",
+      "rdfs:domain": "spdci:Authorize",
+      "rdfs:comment": "Object describing the purpose for which authorization is granted.",
+      "rdfs:property": [
+        {
+          "@id": "spdci:code",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:purpose",
+          "rdfs:range": "xsd:string",
+          "rdfs:comment": "Code representing the authorization purpose, from a fixed set defined at the reference URI."
+        },
+        {
+          "@id": "spdci:text",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:purpose",
+          "rdfs:range": "xsd:string",
+          "rdfs:comment": "Human-readable description of the authorization purpose."
+        },
+        {
+          "@id": "spdci:ref_uri",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:purpose",
+          "rdfs:range": "xsd:anyURI",
+          "rdfs:comment": "URI providing more information about the authorization codes."
+        }
+      ]
+    }
+  ]
+}

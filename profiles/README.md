@@ -1,3 +1,8 @@
+## Profile Submission Policy  
+
+All local profiles must be submitted via Pull Request and follow the DCI review workflow.  
+See the full policy and workflow [here](./CONTRIBUTING.md).  
+
 # Template Profile
 
 This folder provides a **template** for creating a country-specific or organization-specific profile of the DCI standards.

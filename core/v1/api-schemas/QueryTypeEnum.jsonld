@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "https://schema.spdci.org/core/v1/api-schemas"
+  },
+  "@graph": [
+    {
+      "@id": "type:QueryTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Identifier Type Enum",
+      "rdfs:comment": "Enumeration for types of types.",
+      "owl:oneOf": [
+        "type:idtype-value",
+        "type:expression",
+        "type:predicate",
+        "type:graphql"
+      ]
+    },
+    {
+      "@id": "type:idtype-value",
+      "@type": "type:QueryTypeEnum",
+      "rdfs:label": "idtype-value"
+    },
+    {
+      "@id": "type:expression",
+      "@type": "type:QueryTypeEnum",
+      "rdfs:label": "expression"
+    },
+    {
+      "@id": "type:predicate",
+      "@type": "type:QueryTypeEnum",
+      "rdfs:label": "predicate"
+    },
+    {
+      "@id": "type:graphql",
+      "@type": "type:QueryTypeEnum",
+      "rdfs:label": "graphql"
+    }
+  ]
+}

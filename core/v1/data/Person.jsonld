@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "code": "https://schema.spdci.org/core/v1/code"
+  },
+  "@id": "spdci:Person",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains the information on a person",
+  "rdfs:label": "Person",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:identifier",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+           "@id": "code:Identifier",
+           "@type": "rdfs:Class",
+           "@container": "@list"
+      },
+      "rdfs:comment": "The person's identification number."
+    },
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+           "@id": "spdci:Name",
+           "@type": "rdfs:Class"
+      },
+      "rdfs:comment": "Full name in a displayable form, possibly including titles and suffixes, in the order of the applicant's locale norms and/or preferences."
+    },
+    {
+      "@id": "spdci:sex",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "code:SexCategoryEnum",
+      "rdfs:comment": "Sex of the applicant, represented as an enumeration ."
+    },
+    {
+      "@id": "spdci:birth_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "spdci:DateTime",
+      "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
+    },
+    {
+      "@id": "spdci:death_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "spdci:DateTime",
+      "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
+    },
+    {
+      "@id": "spdci:address",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+           "@id": "spdci:Address",
+           "@type": "rdfs:Class",
+           "@container":"@list"
+      },
+      "rdfs:comment": "Current residential address of the applicant, represented as an address object."
+    },
+    {
+      "@id": "spdci:phone_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+        "@type":  "xsd:string",
+        "@container":"@list"
+      },
+      "rdfs:comment": "Person's preferred phone number. The format E.164 is recommended."
+    },
+    {
+      "@id": "spdci:email",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": {
+        "@type":  "xsd:string",
+        "@container":"@list"
+      },
+      "rdfs:comment": "Person's preferred email address. The format must comply with RFC 5322 addr-spec."
+    },
+    {
+      "@id": "spdci:registration_date",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "spdci:DateTime",
+      "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+    },
+    {
+      "@id": "spdci:last_updated",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Person",
+      "rdfs:range": "spdci:DateTime",
+      "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+    }
+  ]
+}

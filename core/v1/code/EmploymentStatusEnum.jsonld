@@ -1,0 +1,75 @@
+{
+  "@context": {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#" ,
+      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
+  },
+  "@graph": [
+    {
+      "@id": "category:EmploymentStatusEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Employment Status Category Enum",
+      "rdfs:comment": "Enumeration for employment status categories.",
+      "owl:oneOf": [
+        "category:1",
+        "category:2",
+        "category:3",
+        "category:4",
+        "category:5",
+        "category:6",
+        "category:7"
+      ]
+    },
+    {
+      "@id": "category:1",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Employed",
+      "rdfs:comment": "Employed"
+    },
+    {
+      "@id": "category:2",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Not Employed",
+      "rdfs:comment": "Not Employed"
+    },
+    {
+      "@id": "category:3",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Unknown",
+      "rdfs:comment": "Unknown"
+    },
+    {
+      "@id": "category:4",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Paid employment: Employee",
+      "rdfs:comment": "Paid employment: Employee"
+    },
+    {
+      "@id": "category:5",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Employers",
+      "rdfs:comment": "Self employment: Employers"
+    },
+    {
+      "@id": "category:6",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Own-account workers",
+      "rdfs:comment": "Self employment: Own-account workers"
+    },
+    {
+      "@id": "category:7",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Members of producers’ cooperatives",
+      "rdfs:comment": "Self employment: Members of producers’ cooperatives"
+    },
+    {
+      "@id": "category:8",
+      "@type": "category:EmploymentStatusEnum",
+      "rdfs:label": "Self employment: Contributing family workers",
+      "rdfs:comment": "Self employment: Contributing family workers"
+    }
+  ]
+}

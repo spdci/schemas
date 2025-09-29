@@ -1,0 +1,34 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/fr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:AquaCultureEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "AquaCulture  Enum",
+        "rdfs:comment": "This directory offers a list of aquaculture categories which corresponds Annex 2 of the World Programme for the Census of Agriculture 2020, which is based on International Standard Industrial Classification Of All Economic Activities (ISIC) 5 Group 032.",
+        "owl:oneOf": [
+          "type:0321",
+          "type:0322"
+        ]
+      },
+      {
+        "@id": "type:0321",
+        "@type": "type:AquaCultureEnum",
+        "rdfs:label": "Marine aquaculture",
+        "rdfs:comment": "Marine aquaculture"
+      },
+      {
+        "@id": "type:0322",
+        "@type": "type:AquaCultureEnum",
+        "rdfs:label": "Freshwater aquaculture",
+        "rdfs:comment": "Freshwater aquaculture"
+      }
+    ]
+  }
+  

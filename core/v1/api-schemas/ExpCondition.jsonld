@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab":"https://schema.spdci.org/core/v1/api-schemas"
+
+  },
+  "@graph": [
+    {
+      "@id": "type:ExpCondition",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Expression Condition Type Enum",
+      "rdfs:comment": "Condition in an expression.",
+      "owl:oneOf": [
+        "type:and",
+        "type:or",
+        "type:not"
+      ]
+    },
+    {
+      "@id": "type:and",
+      "@type": "type:ExpCondition",
+      "rdfs:label": "AND"
+    },
+    {
+      "@id": "type:or",
+      "@type": "type:ExpCondition",
+      "rdfs:label": "OR"
+    },
+    {
+      "@id": "type:not",
+      "@type": "type:ExpCondition",
+      "rdfs:label": "NOT"
+    }
+  ]
+}

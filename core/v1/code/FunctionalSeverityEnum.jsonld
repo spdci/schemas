@@ -1,0 +1,48 @@
+{
+  "@context": {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#" ,
+      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
+  },
+  "@graph": [
+    {
+      "@id": "category:FunctionalSeverityEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Functional Severity  Enum",
+      "rdfs:comment": "Enumeration for functional severity categories.",
+      "owl:oneOf": [
+        "category:1",
+        "category:2",
+        "category:3",
+        "category:4"
+      ]
+    },
+    {
+      "@id": "category:1",
+      "@type": "category:FunctionalSeverityEnum",
+      "rdfs:label": "No difficulty",
+      "rdfs:comment": "No difficulty"
+    },
+    {
+      "@id": "category:2",
+      "@type": "category:FunctionalSeverityEnum",
+      "rdfs:label": "Some difficulty",
+      "rdfs:comment": "Some difficulty"
+    },
+    {
+      "@id": "category:3",
+      "@type": "category:FunctionalSeverityEnum",
+      "rdfs:label": "A lot difficulty",
+      "rdfs:comment": "A lot difficulty"
+    },
+    {
+      "@id": "category:4",
+      "@type": "category:FunctionalSeverityEnum",
+      "rdfs:label": "Cannot do it at all",
+      "rdfs:comment": "Cannot do it at all"
+    }
+  ]
+}

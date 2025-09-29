@@ -1,0 +1,49 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/core/v1/data",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "code": "https://schema.spdci.org/core/v1/code"
+    },
+    "@id": "spdci:DisabilityInfo",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on disabilities a member is suffering from.",
+    "rdfs:label": "DisabilityInfo",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+          {
+            "@id": "spdci:disability_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range":  {
+              "@type": "code:DisabilityTypeEnum"
+            },
+            "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
+          },
+          {
+            "@id": "spdci:disability_limitation_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range":  {
+              "@type": "code:FunctionalLimitationType"
+      
+            },
+            "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
+          },
+          {
+            "@id": "spdci:functional_severity",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:DisabilityInfo",
+            "rdfs:range": {
+             "@type": "code:FunctionalSeverityEnum"
+            },
+            "rdfs:comment": "Indicates the severity level of the functional limitation."
+          }
+    ]
+    }

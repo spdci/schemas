@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "code": "https://schema.spdci.org/core/v1/code"
+  },
+  "@id": "spdci:Place",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "A place is a structured entity that represents the details and components of a location.",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Place",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Name of the place, e.g. 'King's Palace'."
+    },
+    {
+      "@id": "spdci:address_line",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Place",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Full mailing address, formatted for display or use on a mailing label."
+    },
+    {
+      "@id": "spdci:geo",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Place",
+      "rdfs:range": "spdci:GeoCoordinates",
+      "rdfs:comment": "Geo Location details."
+    },
+    {
+      "@id": "spdci:contained_in_place",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Place",
+      "rdfs:range": "spdci:Place",
+      "rdfs:comment": "A relationship indicating a larger place that this place is part of."
+    },
+    {
+      "@id": "spdci:contains_place",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Place",
+      "rdfs:range": {
+        "@id": "spdci:Place",
+        "@type":"rdfs:Class",
+        "@container": "@list"
+      },
+      "rdfs:comment": "A relationship indicating a smaller place that is contained within this place."
+    }
+  ]
+}

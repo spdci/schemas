@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/ibr/v1/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
+    "spdcicode": "https://schema.spdci.org/core/v1/code",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:Group",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "A group unit represents a group of related individuals in the social registry.",
+  "rdfs:label": "IBR Group",
+  "rdfs:subClassOf": "spdcicore:Group",   
+  "rdfs:property": [
+    {
+        "@id": "spdci:group_head_info",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+             "@id": "spdci:Member",
+             "@type": "rdfs:Class"
+        },
+        "rdfs:comment": "Personal details of the head of the group."
+      },
+      {
+        "@id": "spdci:member_list",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+          "@id": "spdci:Member",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "A list of the related individuals in a group."
+      }
+  ]
+}

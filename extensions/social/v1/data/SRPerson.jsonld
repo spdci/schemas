@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/social/v1/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
+    "spdcicode": "https://schema.spdci.org/core/v1/code",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:SR_Person",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains the demographic information about a person held in the social registry.",
+  "rdfs:label": "SR Person",
+  "rdfs:subClassOf": "spdcicore:Person",   
+  "rdfs:property": [
+    
+  ]
+}

@@ -1,0 +1,41 @@
+{
+    "@context": {
+     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "requirement:TransportRequirement",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Transport requirement Enum",
+        "rdfs:comment": "Enumeration for transport requirement.",
+        "owl:oneOf": [
+          "requirement:0",
+          "requirement:1",
+          "requirement:2"
+        ]
+      },
+      {
+        "@id": "requirement:0",
+        "@type": "type:TransportRequirement",
+        "rdfs:label": "Public transportation",
+        "rdfs:comment": "can use public transportation"
+      },
+      {
+        "@id": "requirement:1",
+        "@type": "type:TransportRequirement",
+        "rdfs:label": "Point to point transportation",
+        "rdfs:comment": "Point to point transportation"
+      },
+      {
+        "@id": "requirement:2",
+        "@type": "type:TransportRequirement",
+        "rdfs:label": "Adaptable vehical",
+        "rdfs:comment": "Adaptable vehical"
+      }
+    ]
+  }
+  

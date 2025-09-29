@@ -1,0 +1,41 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/fr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:CropActivityEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Crop Activity  Enum",
+        "rdfs:comment": "This code directory lists the various crop production activities that can be conducted on a farm. The list is based on Annex 1: The Agricultural Census Within the Framework of the System of National Accounts of the World Programme for the Census of Agriculture 2020, which is based on System of National Accounts (SNA) and corresponds to level 3 of the International Standard Industrial Classification of All Economic Activities (ISIC4 and 5).",
+        "owl:oneOf": [
+          "activity:011",
+          "activity:012",
+          "activity:013"
+        ]
+      },
+      {
+        "@id": "activity:011",
+        "@type": "type:CropActivityEnum",
+        "rdfs:label": "Non-perennial crops",
+        "rdfs:comment": "Non-perennial crops"
+      },
+      {
+        "@id": "activity:012",
+        "@type": "type:CropActivityEnum",
+        "rdfs:label": "Perennial crops",
+        "rdfs:comment": "Perennial crops"
+      },
+      {
+        "@id": "activity:013",
+        "@type": "type:CropActivityEnum",
+        "rdfs:label": "Plant propagation",
+        "rdfs:comment": "Plant propagation"
+      }
+    ]
+  }
+  

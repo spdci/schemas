@@ -1,0 +1,81 @@
+{
+    "@context": {
+    "spdci": "https://schema.spdci.org/extensions/fr/v1/data",
+    "code": "https://schema.spdci.org/extensions/fr/v1/code",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
+    "spdcicode": "https://schema.spdci.org/core/v1/code",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:Farmer_Person",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on people  held in the farmer registry",
+    "rdfs:label": "Farmer_Person",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+      {
+        "@id": "spdci:farmer_personal_details",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Farmer_Person",
+        "rdfs:range": "spdci:Member",
+        "rdfs:comment": "The farmer person, personal details such as identifier, name ..."
+      },
+      {
+        "@id": "spdci:family_details",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Farmer_Person",
+        "rdfs:range": "spdci:Group",
+        "rdfs:comment": "The farmer person, family details ..."
+      },
+      {
+        "@id": "spdci:farm_type",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Farmer_Person",
+        "rdfs:range": "code:FarmTypeEnum",
+        "rdfs:comment": "The farmer type the farmer is owns ..."
+      },
+      {
+        "@id": "spdci:farm_details",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Farmer_Person",
+        "rdfs:range": {
+                "@id": "spdci:FarmInfo",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+        },
+        "rdfs:comment": "The farm info ..."
+      },
+      {
+        "@id": "spdci:machineries_details",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Farmer_Person",
+        "rdfs:range": {
+                "@id": "spdci:Machineries",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+        },
+        "rdfs:comment": "The machineries details managed by the farmer ..."
+      },
+      {
+        "@id": "spdci:registration_date",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Farmer_Person",
+        "rdfs:range": "spdcicore:DateTime",
+        "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+      },
+      {
+        "@id": "spdci:last_updated",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Farmer_Person",
+        "rdfs:range": "spdcicore:DateTime",
+        "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+      }     
+    ]
+  }
+  

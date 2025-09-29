@@ -1,0 +1,63 @@
+{
+  "@context": {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#" ,
+      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
+  },
+  "@graph": [
+    {
+      "@id": "type:DisabilityTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Disability Type Enum",
+      "rdfs:comment": "Enumeration for disability type.",
+      "owl:oneOf": [
+        "type:VIS_SS",
+        "type:HEAR_SS",
+        "type:MOB_SS",
+        "type:COG_SS",
+        "type:SC_SS",
+        "type:COM_SS"
+     
+      ]
+    },
+    {
+      "@id": "type:VIS_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Vision",
+      "rdfs:comment": "Vision"
+    },
+    {
+      "@id": "type:HEAR_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Hearing",
+      "rdfs:comment": "Hearing"
+    },
+    {
+      "@id": "type:MOB_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Mobility",
+      "rdfs:comment": "Mobility"
+    },
+    {
+      "@id": "type:COG_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "COGNITION (REMEMBERING)",
+      "rdfs:comment": "COGNITION (REMEMBERING)"
+    },
+    {
+      "@id": "type:SC_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Self care",
+      "rdfs:comment": "Self care"
+    },
+    {
+      "@id": "type:COM_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Communication",
+      "rdfs:comment": "Communication"
+    }
+  ]
+}

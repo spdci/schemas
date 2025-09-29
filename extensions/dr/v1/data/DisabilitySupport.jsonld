@@ -1,0 +1,94 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/dr/v1/data",
+      "code": "https://schema.spdci.org/extensions/dr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "spdcicore": "https://schema.spdci.org/core/v1/data",
+      "spdcicode": "https://schema.spdci.org/core/v1/code",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:DisabilitySupport",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on people  held in the disabled registry",
+    "rdfs:label": "DR_Person",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+      {
+        "@id": "spdci:human_assistance",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:HumanAssistance",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the human support details."
+      },
+      {
+        "@id": "spdci:assistive_technology",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:AssistiveTechnology",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the technology gadgets details needed."
+      },
+      {
+        "@id": "spdci:housing_support",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:HousingSupport",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the housing support details needed."
+      },
+      {
+        "@id": "spdci:medical_care",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:MedicalCare",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the medical support details needed."
+      },
+      {
+        "@id": "spdci:animal_assistance",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": {
+          "@id": "spdci:AnimalAssistance",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the animal support details needed."
+      },
+      {
+        "@id": "spdci:registration_date",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": "spdcicore:DateTime",
+        "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+      },
+      {
+        "@id": "spdci:last_updated",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:DisabilitySupport",
+        "rdfs:range": "spdcicore:DateTime",
+        "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+      }
+      
+    ]
+  }
+  

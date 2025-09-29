@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "code":"https://schema.spdci.org/core/v1/cide"
+  },
+  "@id": "spdci:Identifier",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "The spdci:Identifier object refers to unique numbers identifying individuals.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:identifier_type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Identifier",
+      "rdfs:range": "code:IdentifierTypeEnum",
+      "rdfs:comment": "Type of identifier used by the person."
+    },
+    {
+      "@id": "spdci:identifier_value",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Identifier",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Value of the identifier."
+    }
+  ]
+}

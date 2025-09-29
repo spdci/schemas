@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:AttributeNameValueList",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "List of attribute name/Value",
+  "rdfs:label": "Attribute Name Value List",
+  "rdfs:range": {
+    "@id": "spdci:ReferenceId",
+    "@type": "rdfs:Class",
+    "@container": "@list"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/crvs/v1/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
+    "spdcicode": "https://schema.spdci.org/core/v1/code",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "@id": "spdci:CRVS_Person",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Represents a person in a Civil Registration and Vital Statistics context.",
+      "rdfs:subClassOf": "spdcicore:Person",   
+      "rdfs:property": [
+        {
+          "@id": "spdci:birth_place",
+          "rdfs:comment": "Physical location where the applicant was born, represented as an address object.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": "spdcicore:Place"
+        },
+        {
+          "@id": "spdci:death_place",
+          "rdfs:comment": "Physical location where the applicant died, if applicable. Represented as an address object.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": "spdcicore:Place"
+        },
+        {
+          "@id": "spdci:marital_status",
+          "rdfs:comment": "Current marital status of the applicant, represented as an enumeration (e.g., Married, Divorced, etc.).",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": {"@id": "spdcicode:MaritalStatusEnum"}
+        },
+        {
+          "@id": "spdci:marriage_date",
+          "rdfs:comment": "Date when the applicant got married, if applicable. Formatted according to schema:DateTime.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": {
+            "@id": "spdcicore:DateTime",
+            "@container": "@list"
+          }
+        },
+        {
+          "@id": "spdci:divorce_date",
+          "rdfs:comment": "Date when the applicant got divorced, if applicable. Formatted according to schema:DateTime.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": {
+            "@id": "spdcicore:DateTime",
+            "@container": "@list"
+          }
+        },
+        {
+          "@id": "spdci:parent1_identifier",
+          "rdfs:comment": "Identifier for one parent of the applicant. Must be a unique identifier similar to the applicant's identifier.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": "spdcicore:Identifier"
+        },
+        {
+          "@id": "spdci:parent2_identifier",
+          "rdfs:comment": "Identifier for another parent of the applicant, if applicable. Must be a unique identifier similar to the applicant's identifier.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CRVS_Person",
+          "rdfs:range": "spdcicore:Identifier"
+        }
+      ]
+    }
+  ]
+}

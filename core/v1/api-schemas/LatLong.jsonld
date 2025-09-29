@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "spdci:LatLong",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Geo Coordinated",
+      "rdfs:subClassOf": [
+        {
+          "@type": "rdfs:Class",
+          "rdfs:label": "Structured Entity"
+        }
+      ],
+      "rdfs:property": [
+        {
+          "@id": "spdci:latitude",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:LatLong",
+          "rdfs:range": "xsd:string"
+        },
+        {
+          "@id": "spdci:longitude",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:LatLong",
+          "rdfs:range": "xsd:string"
+        }
+      ]
+    }
+  ]
+}
+
+

@@ -1,0 +1,48 @@
+{
+    "@context": {
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/fr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:CropEnduseEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Crop enduse  Enum",
+        "rdfs:comment": "The code directory references the recommendation by the World Programme for the Census of Agriculture 2020 (Item 0403 and 0408) to collect data on end use.",
+        "owl:oneOf": [
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4"
+        ]
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:CropEnduseEnum",
+        "rdfs:label": "Food for human consumption",
+        "rdfs:comment": "Food for human consumption"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:CropEnduseEnum",
+        "rdfs:label": "Feed for animals",
+        "rdfs:comment": "Feed for animals"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:CropEnduseEnum",
+        "rdfs:label": "Biofuels or non-food products",
+        "rdfs:comment": "Biofuels or non-food products"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:CropEnduseEnum",
+        "rdfs:label": "Other uses",
+        "rdfs:comment": "Other uses"
+      }
+    ]
+  }
+  

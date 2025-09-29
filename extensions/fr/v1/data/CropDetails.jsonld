@@ -1,0 +1,103 @@
+{
+    "@context": {
+        "spdci": "https://schema.spdci.org/extensions/fr/v1/data",
+        "code": "https://schema.spdci.org/extensions/fr/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "spdcicore": "https://schema.spdci.org/core/v1/data",
+        "spdcicode": "https://schema.spdci.org/core/v1/code",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:CropDetails",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on crop type for a certain land",
+    "rdfs:label": "CropDetails",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+          {
+            "@id": "spdci:activity_group",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "code:CropActivityEnum",
+            "rdfs:comment": "Crop production activity"
+          },
+          {
+            "@id": "spdci:crop_type_name",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "code:CropTypeEnum",
+            "rdfs:comment": "Is the type of the crop."
+          },
+          {
+            "@id": "spdci:variety",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Is the variety of the crop."
+          },
+          {
+            "@id": "spdci:season",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Is the season of the crop."
+          },
+          {
+            "@id": "spdci:end_use",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "code:CropEnduseEnum",
+            "rdfs:comment": "The purpose of the crop"
+          },
+          {
+            "@id": "spdci:irrigation",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "xsd:boolean",
+            "rdfs:comment": "Yes or No ."
+          },
+          {
+            "@id": "spdci:irrigation_water",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": {
+                "@id": "code:IrrigationWaterEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Source of irrigation water"
+          },
+          {
+            "@id": "spdci:fertilizer_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": {
+                "@id": "code:FertilizerTypeEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "The type of fertilizer applied"
+          },
+          {
+
+            "@id": "spdci:registration_date",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+          },
+          {
+            "@id": "spdci:last_updated",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CropDetails",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+          }
+          
+    ]
+    }

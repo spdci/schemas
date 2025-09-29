@@ -1,0 +1,133 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/core/v1/data",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "code": "https://schema.spdci.org/core/v1/code"
+    },
+    "@id": "spdci:Group",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "A group unit represents a group of related individuals",
+    "rdfs:label": "Group",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+      {
+        "@id": "spdci:group_identifier",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+          "@id": "spdci:Identifier",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "A unique identifier assigned to each individual."
+      },
+      {
+        "@id": "spdci:group_type",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "code:AssistanceUnitEnum",
+        "rdfs:comment": "The entity representing the group"
+      },
+      {
+        "@id": "spdci:geographical_location",
+        "rdfs:comment": "Physical location where the group is living",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "spdci:Place"
+      },
+      {
+        "@id": "spdci:address",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+             "@id": "spdci:Address",
+             "@type": "rdfs:Class",
+             "@container":"@list"
+        },
+        "rdfs:comment": "Current residential address of the group, represented as an address object."
+      },
+      {
+        "@id": "spdci:place_address",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:boolean",
+        "rdfs:comment": "added place or address? place (1) or address (0)."
+      },
+      {
+        "@id": "spdci:poverty_score",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:decimal",
+        "rdfs:comment": "A metric generated based on the assessment of various group characteristics."
+      },
+      {
+        "@id": "spdci:poverty_score_type",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:string",  
+        "rdfs:comment": "The types of poverty scores that are is to measure and categorize the level of poverty."
+      },
+      {
+        "@id": "spdci:group_head_info",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+             "@id": "spdci:Member",
+             "@type": "rdfs:Class"
+        },
+        "rdfs:comment": "Personal details of the head of the group."
+      },
+      {
+        "@id": "spdci:group_size",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:integer",
+        "rdfs:comment": "The total number of members in the group."
+      },
+      {
+        "@id": "spdci:member_list",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+          "@id": "spdci:Member",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "A list of the related individuals in a group."
+      },
+      {
+        "@id": "spdci:registration_date",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "The date the details of the group were registered."
+      },
+      {
+        "@id": "spdci:last_updated",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "The date the details of the group were last updated."
+      },
+      {
+        "@id": "spdci:additional_attributes",
+        "@type": "rdf:Property",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": {
+          "@type": "@id",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Additional attributes of the group, represented as a list of key-value pairs.",
+        "schema:value": {
+          "@type": "xsd:string"
+        }
+      }
+    ] }
+  

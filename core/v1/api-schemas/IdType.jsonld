@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:IdType",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "An identifier type used to uniquely reference an individual or entity, defined as per implementation context.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:IdType",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The type of identifier, such as UIN, MOBILE, BRN, MRN, DRN. Usually defined as an enumeration per context."
+    }
+  ]
+}

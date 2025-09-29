@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:PaginationRequest",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Pagination definition, count starts with 1",
+  "rdfs:label": "Pagination Request",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:page_size",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Pagination",
+      "rdfs:range": "xsd:integer",
+      "rdfs:examples": "2008"
+    },
+    {
+      "@id": "spdci:page_number",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Pagination",
+      "rdfs:range": "xsd:integer",
+      "rdfs:examples": "2008"
+    }
+  ]
+}
+

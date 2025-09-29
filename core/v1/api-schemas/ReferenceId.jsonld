@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:ReferenceId",
+  "@type": "rdfs:Datatype",
+  "rdfs:comment": "Unique reference_id set by txn initiating system for each request in a batch.",
+  "rdfs:label": "Reference Id",
+  "rdfs:range": "xsd:string",
+  "rdfs:examples": "12345678901234567890"
+}

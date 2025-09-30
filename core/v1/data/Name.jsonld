@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:Name",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "The name data object represents a person's name with various components.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:surname",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The surname or family name of a person."
+    },
+    {
+      "@id": "spdci:given_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The given or first name of a person."
+    },
+    {
+      "@id": "spdci:second_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The second name or middle name of a person."
+    },
+    {
+      "@id": "spdci:maiden_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The maiden name of a person."
+    },
+    {
+      "@id": "spdci:prefix",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Any prefix used in the person's name."
+    },
+    {
+      "@id": "spdci:suffix",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Name",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Any suffix used in the person's name."
+    }
+  ]
+}

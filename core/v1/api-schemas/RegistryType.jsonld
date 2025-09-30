@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "@vocab": "https://schema.spdci.org/core/v1/api-schemas",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"    
+  },
+  "@graph": [
+    {
+      "@id": "category:RegistryTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Registry type values Enum",
+      "rdfs:comment": "Registry type values defined as per implementation context.",
+      "owl:oneOf": [
+        "category:Civil",
+        "category:IBR",
+        "category:Social",
+        "category:DR",
+        "category:FR",
+        "category:unknown"
+      ]
+    },
+    {
+      "@id": "category:Civil",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "Civil",
+      "rdfs:comment": "Civil registry type"
+    },
+    {
+      "@id": "category:IBR",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "IBR",
+      "rdfs:comment": "IBR registry type"
+    },
+    {
+      "@id": "category:Social",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "Social",
+      "rdfs:comment": "Social registry type"
+    },
+    {
+      "@id": "category:DR",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "DR",
+      "rdfs:comment": "Disabled registry type"
+    },
+    {
+      "@id": "category:FR",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "FR",
+      "rdfs:comment": "Farmer registry type"
+    },
+    {
+      "@id": "category:unknown",
+      "@type": "category:RegistryTypeEnum",
+      "rdfs:label": "unknown",
+      "rdfs:comment": "Unknown registry type"
+    }
+  ]
+}  

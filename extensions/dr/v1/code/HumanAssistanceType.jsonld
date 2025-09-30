@@ -1,0 +1,55 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "category:HumanAssistanceType",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "type of human assistance needed Enum",
+        "rdfs:comment": "Enumeration for human assistance needed.",
+        "owl:oneOf": [
+          "assistance:basic_activity",
+          "assistance:mobility",
+          "assistance:communication",
+          "assistance:decision_making",
+          "assistance:multiple"
+        ]
+      },
+      {
+        "@id": "assistance:basic_activity",
+        "@type": "type:HumanAssistanceType",
+        "rdfs:label": "Basic Activity",
+        "rdfs:comment": "Assistance for basic daily living activities (toileting eating washing)"
+      },
+      {
+        "@id": "assistance:mobility",
+        "@type": "type:HumanAssistanceType",
+        "rdfs:label": "mobility",
+        "rdfs:comment": "Assistance for mobility(guide..)"
+      },
+      {
+        "@id": "assistance:communication",
+        "@type": "type:HumanAssistanceType",
+        "rdfs:label": "Communication",
+        "rdfs:comment": "Assistance for communication(ISL..)"
+      },
+      {
+        "@id": "assistance:decision_making",
+        "@type": "type:HumanAssistanceType",
+        "rdfs:label": "Decision Making",
+        "rdfs:comment": "Support decision making"
+      },
+      {
+        "@id": "assistance:multiple",
+        "@type": "type:HumanAssistanceType",
+        "rdfs:label": "Multiple",
+        "rdfs:comment": "Multiple"
+      }
+    ]
+  }
+  

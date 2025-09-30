@@ -1,0 +1,69 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/fr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "group:EquipmentSource",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Equipment Source  Enum",
+        "rdfs:comment": "This code directory lists the different means by which the farmer obtained the right to use the specific equipment. It references item 0604 of the World Programme for the Census of Agriculture 2020. Descriptions of each type of the system are provided in the document",
+        "owl:oneOf": [
+          "source:1",
+          "source:2",
+          "source:3",
+          "source:4",
+          "source:5",
+          "source:6",
+          "source:7"
+        ]
+      },
+      {
+        "@id": "source:1",
+        "@type": "type:EquipmentSource",
+        "rdfs:label": "Owned solely by the farmer or members of the farmer’s household",
+        "rdfs:comment": "Owned solely by the farmer or members of the farmer’s household"
+      },
+      {
+        "@id": "source:2",
+        "@type": "type:EquipmentSource",
+        "rdfs:label": "Owned by the farmer jointly with other farmers",
+        "rdfs:comment": "Owned by the farmer jointly with other farmers"
+      },
+      {
+        "@id": "source:3",
+        "@type": "type:EquipmentSource",
+        "rdfs:label": "Provided by the landlord",
+        "rdfs:comment": "Provided by the landlord"
+      },
+      {
+        "@id": "source:4",
+        "@type": "type:EquipmentSource",
+        "rdfs:label": "Provided by other private holders (excluding cooperatives)",
+        "rdfs:comment": "Provided by other private holders (excluding cooperatives)"
+      },
+      {
+        "@id": "source:5",
+        "@type": "type:EquipmentSource",
+        "rdfs:label": "Provided by a cooperative",
+        "rdfs:comment": "Provided by a cooperative"
+      },
+      {
+        "@id": "source:6",
+        "@type": "type:EquipmentSource",
+        "rdfs:label": "Provided by a private agricultural service establishment",
+        "rdfs:comment": "Provided by a private agricultural service establishment"
+      },
+      {
+        "@id": "source:4",
+        "@type": "type:EquipmentSource",
+        "rdfs:label": "Provided by a government agency",
+        "rdfs:comment": "Provided by a government agency"
+      }
+    ]
+  }
+  

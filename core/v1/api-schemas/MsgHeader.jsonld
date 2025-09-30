@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:MsgHeader",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Message header",
+  "rdfs:label": "Message Header",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:version",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Messaging protocol specification version being used"
+    },
+    {
+      "@id": "spdci:message_id",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Unique message id to communicate between sender and receiver systems to reliable deliver the message over any transport layer i.e https, pub/sub, sftp etc."
+    },
+    {
+      "@id": "spdci:message_ts",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "spdci:DateTime"
+    },
+    {
+      "@id": "spdci:action",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "G2P Connect specific action. Usually verb from the URI. Helps in sync, async, store/fwd processing."
+    },
+    {
+      "@id": "spdci:sender_id",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "sender_id registered with the receiving system or gateway."
+    },
+    {
+      "@id": "spdci:sender_uri",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "spdci:string",
+      "rdfs:comment": "Sender url to accept callbacks. Applicable only for async communications and if response ack_status is ACK."
+    },
+    {
+      "@id": "spdci:receiver_id",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Receiver id registered with the calling system. Used for authorization, encryption, digital sign verification, etc., functions"
+    },
+    {
+      "@id": "spdci:total_count",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "xsd:integer",
+      "rdfs:comment": "Total no of requests present in the message request."
+    },
+    {
+      "@id": "spdci:is_msg_encrypted",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "xsd:boolean",
+      "rdfs:comment": "Is message encrypted?"
+    },
+    {
+      "@id": "spdci:meta",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:MsgHeader",
+      "rdfs:range": "spdci:Meta"
+    }
+  ]
+}
+

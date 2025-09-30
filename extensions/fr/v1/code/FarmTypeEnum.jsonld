@@ -1,0 +1,62 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/fr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:FarmTypeEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Farm Type  Enum",
+        "rdfs:comment": "The farm types code directory extends item 0107, which outlines the primary purpose of production, in the World Programme for the Census of Agriculture 2020.",
+        "owl:oneOf": [
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4",
+          "type:5",
+          "type:6"
+        ]
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:FarmTypeEnum",
+        "rdfs:label": "Small subsistence-oriented farms",
+        "rdfs:comment": "Small subsistence-oriented farms"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:FarmTypeEnum",
+        "rdfs:label": "Small semi-subsistence or part-commercial farms",
+        "rdfs:comment": "Small semi-subsistence or part-commercial farms"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:FarmTypeEnum",
+        "rdfs:label": "Small independent specialized farms",
+        "rdfs:comment": "Small independent specialized farms"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:FarmTypeEnum",
+        "rdfs:label": "Small dependent specialized farms",
+        "rdfs:comment": "Small dependent specialized farms"
+      },
+      {
+        "@id": "type:5",
+        "@type": "type:FarmTypeEnum",
+        "rdfs:label": "Large commercial farms",
+        "rdfs:comment": "Large commercial farms"
+      },
+      {
+        "@id": "type:6",
+        "@type": "type:FarmTypeEnum",
+        "rdfs:label": "Commercial estates",
+        "rdfs:comment": "Commercial estates"
+      }
+    ]
+  }
+  

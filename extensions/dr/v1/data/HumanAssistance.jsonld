@@ -1,0 +1,75 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/dr/v1/data",
+      "code": "https://schema.spdci.org/extensions/dr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "spdcicore": "https://schema.spdci.org/core/v1/data",
+      "spdcicode": "https://schema.spdci.org/core/v1/code",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:HumanAssistance",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on human assistance a member needs",
+    "rdfs:label": "HumanAssistance",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+          {
+            "@id": "spdci:type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:range": "code:HumanAssistanceType",
+            "rdfs:comment": "Is the type of human assistance the disabled person will need."
+          },
+          {
+            "@id": "spdci:intensity",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:range": "code:SupportFrequency",
+            "rdfs:comment": "Is the level of assistance the disabled person needs."
+          },
+          {
+            "@id": "spdci:support",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:range": "code:SupportStatusEnum",
+            "rdfs:comment": "Is the support of the assistance needed."
+          },
+          {
+            "@id": "spdci:caregiver",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:range": "spdci:DRPerson",
+            "rdfs:comment": "The disable person, personal details such as identifier, name ..."
+          },
+          {
+
+            "@id": "spdci:relationship",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:range": "spdcicode:RelationshipEnum",
+            "rdfs:comment": "The relationship of the caregiver to the disabled person."
+          },
+          {
+
+            "@id": "spdci:registration_date",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+          },
+          {
+            "@id": "spdci:last_updated",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+          }
+          
+    ]
+    }

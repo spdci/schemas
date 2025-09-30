@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "@vocab": "https://schema.spdci.org/core/v1/api-schemas"
+  },
+  "@graph": [
+    {
+      "@id": "QueryExpression",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Query Expression",
+      "rdfs:comment": "A flexible structure for expressing query logic, direct value filters, predicates, or GraphQL queries."
+    },
+    {
+      "@id": "queryType",
+      "@type": "rdf:Property",
+      "rdfs:label": "Query Type",
+      "rdfs:domain": "QueryExpression",
+      "rdfs:range": "QueryTypeEnum",
+      "rdfs:comment": "Indicates the kind of query: idtype-value, expression, predicate, or graphql."
+    },
+    {
+      "@id": "idValue",
+      "@type": "rdf:Property",
+      "rdfs:label": "ID Value",
+      "rdfs:domain": "QueryExpression",
+      "rdfs:comment": "A simple expression for direct attribute-value matching.",
+      "rdfs:range": "IdValueExpression"
+    },
+    {
+      "@id": "expression",
+      "@type": "rdf:Property" ,
+      "rdfs:label": "Logical Expression",
+      "rdfs:domain": "QueryExpression",
+      "rdfs:comment": "Structured logic using operators like $and, $or, $eq, etc."
+    },
+    {
+      "@id": "predicate",
+      "@type": "rdf:Property",
+      "rdfs:label": "Predicate",
+      "rdfs:domain": "QueryExpression",
+      "rdfs:comment": "Boolean expression in a language like JavaScript or SQL, e.g., 'x > 5 && y < 10'."
+    },
+    {
+      "@id": "graphql",
+      "@type": "rdf:Property",
+      "rdfs:label": "GraphQL Expression",
+      "rdfs:domain": "QueryExpression",
+      "rdfs:comment": "A query written in GraphQL syntax as a string."
+    },
+    {
+      "@id": "IdValueExpression",
+      "@type": "rdfs:Class",
+      "rdfs:label": "ID Value Expression",
+      "rdfs:comment": "Contains an attribute and value for simple filtering."
+    },
+    {
+      "@id": "attribute",
+      "@type": "rdf:Property",
+      "rdfs:label": "Attribute",
+      "rdfs:domain": "IdValueExpression",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "value",
+      "@type": "rdf:Property",
+      "rdfs:label": "Value",
+      "rdfs:domain": "IdValueExpression",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "QueryTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Query Type Enum",
+      "rdfs:comment": "Enumeration for types of query execution modes.",
+      "owl:oneOf": [
+        { "@id": "type:idtype-value" },
+        { "@id": "type:expression" },
+        { "@id": "type:predicate" },
+        { "@id": "type:graphql" }
+      ]
+    },
+    {
+      "@id": "type:idtype-value",
+      "@type": "QueryTypeEnum",
+      "rdfs:label": "idtype-value"
+    },
+    {
+      "@id": "type:expression",
+      "@type": "QueryTypeEnum",
+      "rdfs:label": "expression"
+    },
+    {
+      "@id": "type:predicate",
+      "@type": "QueryTypeEnum",
+      "rdfs:label": "predicate"
+    },
+    {
+      "@id": "type:graphql",
+      "@type": "QueryTypeEnum",
+      "rdfs:label": "graphql"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/dr/v1/data",
+      "code": "https://schema.spdci.org/extensions/dr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "spdcicore": "https://schema.spdci.org/core/v1/data",
+      "spdcicode": "https://schema.spdci.org/core/v1/code",
+      "ibr": "https://schema.spdci.org/extensions/ibr/v1/data",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:PWD_Person",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on people held in the disabled registry",
+    "rdfs:label": "PWD_Person",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+      {
+        "@id": "spdci:personal_details",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": "spdci:Member",
+        "rdfs:comment": "The disable person, personal details such as identifier, name ..."
+      },
+      {
+        "@id": "spdci:disability_status",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": "code:DisabilityStatusEnum",
+        "rdfs:comment": "The support needed/received by the disabled person."
+      },
+      {
+        "@id": "spdci:disability_status_level",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": "code:DisabilityLevelEnum",
+        "rdfs:comment": "The support needed/received by the disabled person."
+      },
+      {
+        "@id": "spdci:disability_details",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": {
+          "@id": "spdci:DisabilityDetails",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the disability details of the person"
+      },
+      {
+        "@id": "spdci:disability_support",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": {
+          "@id": "spdci:DisabilitySupport",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the disability support of the person"
+      },
+      {
+        "@id": "spdci:transport_requirement",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": "code:TransportRequirement",
+        "rdfs:comment": "The support needed for transportation by the disabled person."
+      },
+      {
+        "@id": "spdci:housing_type",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": "code:HousingType",
+        "rdfs:comment": "The house where the disabled person currently in."
+      },
+      {
+        "@id": "spdci:programs_enrolments",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": {
+          "@id": "ibr:Programme",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "Is the disability support of the person"
+      },
+      {
+        "@id": "spdci:registration_date",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": "spdcicore:DateTime",
+        "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+      },
+      {
+        "@id": "spdci:last_updated",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:PWD_Person",
+        "rdfs:range": "spdcicore:DateTime",
+        "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+      }
+      
+    ]
+  }
+  

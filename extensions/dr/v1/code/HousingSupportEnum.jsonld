@@ -1,0 +1,41 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "support:HousingSupportEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "type of housing support needed Enum",
+        "rdfs:comment": "Enumeration for housing support needed.",
+        "owl:oneOf": [
+          "support:home_adaptation",
+          "support:relocation",
+          "support:utility_cost"
+        ]
+      },
+      {
+        "@id": "support:home_adaptation",
+        "@type": "type:HousingSupportEnum",
+        "rdfs:label": "Home Adaptation",
+        "rdfs:comment": "Home Adaptation"
+      },
+      {
+        "@id": "assistance:relocation",
+        "@type": "type:HousingSupportEnum",
+        "rdfs:label": "Relocation",
+        "rdfs:comment": "Relocation"
+      },
+      {
+        "@id": "assistance:utility_cost",
+        "@type": "type:HousingSupportEnum",
+        "rdfs:label": "Utility cost",
+        "rdfs:comment": "Significant Utility cost"
+      }
+    ]
+  }
+  

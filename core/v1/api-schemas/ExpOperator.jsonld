@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab":"https://schema.spdci.org/core/v1/api-schemas"
+  },
+  "@graph": [
+    {
+      "@id": "type:ExpOperator",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Expression Operator Type Enum",
+      "rdfs:comment": "Operator in an expression.",
+      "owl:oneOf": [
+        "type:gt",
+        "type:lt",
+        "type:eq",
+        "type:ge",
+        "type:le",
+        "type:in"
+      ]
+    },
+    {
+      "@id": "type:gt",
+      "@type": "type:ExpOperator",
+      "rdfs:label": "gt"
+    },
+    {
+      "@id": "type:lt",
+      "@type": "type:ExpOperator",
+      "rdfs:label": "lt"
+    },
+    {
+      "@id": "type:eq",
+      "@type": "type:ExpOperator",
+      "rdfs:label": "eq"
+    },
+    {
+      "@id": "type:ge",
+      "@type": "type:ExpOperator",
+      "rdfs:label": "ge"
+    },
+    {
+      "@id": "type:le",
+      "@type": "type:ExpOperator",
+      "rdfs:label": "le"
+    },
+    {
+      "@id": "type:in",
+      "@type": "type:ExpOperator",
+      "rdfs:label": "in"
+    }
+  ]
+}

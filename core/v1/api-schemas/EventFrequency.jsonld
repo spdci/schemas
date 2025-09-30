@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:EventFrequency",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "Frequency at which subscribed services should be notified.",
+  "rdfs:label": "Event Frequency",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:start_time",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EventFrequency",
+      "rdfs:range": "spdci:DateTime"
+    },
+    {
+      "@id": "spdci:end_time",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:EventFrequency",
+      "rdfs:range": "spdci:DateTime"
+    },
+    {
+      "@id": "spdci:frequency",
+      "@type": "rdfs:Datatype",
+      "rdfs:comment": "Frequency at which notification is required. This will be in the form of cron expression.Example - '0 0 0 5,15 * ? *' which says At 00:00:00am, on the 5th and 15th day, every month",
+      "rdfs:domain": "spdci:EventFrequency",
+      "rdfs:range": "xsd:string"
+    }
+  ]
+}
+

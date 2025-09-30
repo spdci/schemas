@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "spdci:GeoLocation",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Geo Location",
+      "rdfs:subClassOf": [
+        {
+          "@type": "rdfs:Class",
+          "rdfs:label": "Structured Entity"
+        }
+      ],
+      "rdfs:property": [
+        {
+          "@id": "spdci:plus_code",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:GeoLocation",
+          "rdfs:comment": "contains the plus code information for the location.",
+          "rdfs:range": {
+            "@id": "rdfs:Class",
+            "rdfs:property": [
+              {
+                "@id": "spdci:global_code",
+                "@type": "rdfs:Datatype",
+                "rdfs:domain": "spdci:plus_code",
+                "rdfs:range": "xsd:string",
+                "rdfs:comment": "provides the global code for the latitude/longitude"
+              },
+              {
+                "@id": "spdci:geometry",
+                "@type": "rdfs:Datatype",
+                "rdfs:domain": "spdci:plus_code",
+                "rdfs:comment": "Contains the Geometry Object.",
+                "rdfs:range": {
+                  "@id": "rdfs:Class",
+                  "rdfs:property": [
+                    {
+                      "@id": "spdci:bounds",
+                      "@type": "rdfs:Datatype",
+                      "rdfs:domain": "spdci:geometry",
+                      "rdfs:comment": "provides the bounding box of the code, with the north east and south west coordinates.",
+                      "rdfs:range": {
+                        "@id": "rdfs:Class",
+                        "rdfs:property": [
+                          {
+                            "@id": "spdci:northeast",
+                            "@type": "rdfs:Datatype",
+                            "rdfs:domain": "spdci:bounds",
+                            "rdfs:range": "spdci:GeoCoordinates",
+                            "rdfs:comment": "provides the centre of the bounding box."
+                          },
+                          {
+                            "@id": "spdci:southwest",
+                            "@type": "rdfs:Datatype",
+                            "rdfs:domain": "spdci:bounds",
+                            "rdfs:range": "spdci:GeoCoordinates",
+                            "rdfs:comment": "provides the centre of the bounding box."
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@id": "spdci:location",
+                      "@type": "rdfs:Datatype",
+                      "rdfs:domain": "spdci:geometry",
+                      "rdfs:range": "spdci:GeoCoordinates",
+                      "rdfs:comment": "provides the centre of the bounding box."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

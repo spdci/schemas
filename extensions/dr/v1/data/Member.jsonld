@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/dr/v1/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
+    "spdcicode": "https://schema.spdci.org/core/v1/code",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:Member",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains the information on people and households held in the disability registry.",
+  "rdfs:label": "DR Member",
+  "rdfs:subClassOf": "spdcicore:Member",   
+  "rdfs:property": [
+    {
+      "@id": "spdcicore:demographic_info",        
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:Member",   
+      "rdfs:range": "spdci:DRPerson",     
+      "rdfs:comment": "In SR, Member.demographic_info must be a DR Person to allow independent evolving of each interface."
+    }
+  ]
+}

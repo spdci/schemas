@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/social/id/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:ID_Person",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains the demographic information about a person held in the id system.",
+  "rdfs:label": "ID Person",
+  "rdfs:subClassOf": "spdcicore:Person",   
+  "rdfs:property": [
+    
+  ]
+}

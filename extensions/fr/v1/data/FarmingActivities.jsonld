@@ -1,0 +1,108 @@
+{
+    "@context": {
+        "spdci": "https://schema.spdci.org/extensions/fr/v1/data",
+        "code": "https://schema.spdci.org/extensions/fr/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "spdcicore": "https://schema.spdci.org/core/v1/data",
+        "spdcicode": "https://schema.spdci.org/core/v1/code",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:Farming_Activities",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on people  held in the farmer registry",
+    "rdfs:label": "Farming_Activities",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+        {
+            "@id": "spdci:crop_production",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Farming_Activities",
+            "rdfs:range": {
+                "@id": "spdci:CropDetails",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Group 011 -13: Crop production activities"
+        },
+        {
+          "@id": "spdci:animal_production",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Farming_Activities",
+          "rdfs:range": {
+              "@id": "spdci:livestockDetails",
+              "@type": "rdfs:Class",
+              "@container": "@list"
+          },
+          "rdfs:comment": "Group 014: Animal productions"
+        },
+        {
+          "@id": "spdci:mixed_farming",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:CropDetails",
+          "rdfs:range": "xsd:boolean",
+          "rdfs:comment": "Group 015: Mixed farming, Includes both crops and animal related farming activities Yes (1) or No (0)."
+        },
+        {
+            "@id": "spdci:agri_support_activities",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Farming_Activities",
+            "rdfs:range": {
+                "@id": "code:AgriSupportActivityEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Group 016: Support activities to agriculture and post-harvest crop activities"
+        },
+        {
+            "@id": "spdci:aquaculture",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Farming_Activities",
+            "rdfs:range": {
+                "@id": "code:AquaCultureEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Group 032: Aquaculture"
+        },
+        {
+            "@id": "spdci:aqua_support_activities",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Farming_Activities",
+            "rdfs:range": "code:AquaSupportActivityEnum",
+            "rdfs:comment": "Group 033: Support activities for fishing and aquaculture"
+        },
+        {
+          "@id": "spdci:agroforestry",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Farming_Activities",
+          "rdfs:range": {
+              "@id": "code:ForestActivityEnum",
+              "@type": "rdfs:Class",
+              "@container": "@list"
+          },
+          "rdfs:comment": "The forest activity on the farm"
+      },
+        {
+            "@id": "spdci:registration_date",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Farming_Activities",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date of registration of the applicant, formatted according to schema:DateTime."
+          },
+          {
+            "@id": "spdci:last_updated",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Farming_Activities",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+          }
+      
+    ]
+  }
+  

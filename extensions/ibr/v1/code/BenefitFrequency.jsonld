@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://schema.spdci.org/extensions/ibr/v1/code",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "spdci:BenefitFrequency",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object outlines the frequency at which a beneficiary receives benefits from a program. It refers to the RRULE.",
+  "rdfs:label": "BenefitFrequency",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+    {
+      "@id": "spdci:freq",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:BenefitFrequency",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The frequency with which a programs delivers a benefit to beneficiaries​"
+    },
+    {
+      "@id": "spdci:dtstart",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:BenefitFrequency",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "The recurrence start. Besides being the base for the recurrence, missing parameters in the final recurrence instances will also be extracted from this date. If not given, the current time will be used instead.​"
+    },
+    {
+      "@id": "spdci:interval",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:BenefitFrequency",
+      "rdfs:range": "xsd:decimal",
+      "rdfs:comment": "The interval between each frequency iteration. For example, when using YEARLY, an interval of 2 means once every two years, but with HOURLY, it means once every two hours. The default interval is 1.​"
+    },
+    {
+      "@id": "spdci:wkst",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:BenefitFrequency",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "The week start day. Must be one of the MO, TU, WE constants, or an integer, specifying the first day of the week. This will affect recurrences based on weekly periods. "
+    },
+    {
+      "@id": "spdci:count",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:BenefitFrequency",
+      "rdfs:range": "xsd:integer",
+      "rdfs:comment": "If given, this determines how many occurrences will be generated.​"
+    },
+    {
+      "@id": "spdci:until",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:BenefitFrequency",
+      "rdfs:range": "common:DateTime",
+      "rdfs:comment": "If given, this must be a date specifying the upper-bound limit of the recurrence. The last recurrence in the rule is the greatest datetime that is less than or equal to the value specified in the until parameter.​​"
+    }
+  ],
+  "required": ["@context","@type", "spdci:benefit_type", "spdci:benefit_date"]
+}

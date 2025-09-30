@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/api-schemas",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:IdentifierTypeValue",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "The Identifier Type Value object.",
+  "rdfs:property": [
+    {
+      "@id": "spdci:type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:IdentifierTypeValue",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Type of identifier used by the person."
+    },
+    {
+      "@id": "spdci:value",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:IdentifierTypeValue",
+      "rdfs:range":  {
+        "@id": "spdci:AttributeValueEnum"
+      },
+      "rdfs:comment": "Identifier Value of the subject."
+    }
+  ]
+}

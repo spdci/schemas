@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:DateTime",
+  "@type": "rdfs:Datatype",
+  "rdfs:label": "Date Time",
+  "rdfs:comment": "All dates and timestamps are represented in [ISO 8601](https://www.iso.org/standard/40874.html) format including timezone - e.g 2022-12-04T17:20:07",
+  "rdfs:range": "xsd:string"
+}

@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://schema.spdci.org/extensions/ibr/v1/code",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "benefit:BenefitTypeEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Benefit Type Enum",
+      "rdfs:comment": "Enumeration for types of benefits provided by a program.",
+      "owl:oneOf": [
+        "benefit:1",
+        "benefit:2",
+        "benefit:3",
+        "benefit:4",
+        "benefit:5",
+        "benefit:6"
+      ]
+    },
+    {
+      "@id": "benefit:1",
+      "@type": "benefit:BenefitTypeEnum",
+      "rdfs:label": "Cash",
+      "rdfs:comment": "Standardized code for a cash benefit."
+    },
+    {
+      "@id": "benefit:2",
+      "@type": "benefit:BenefitTypeEnum",
+      "rdfs:label": "Voucher",
+      "rdfs:comment": "Standardized code for a voucher benefit."
+    },
+    {
+      "@id": "benefit:3",
+      "@type": "benefit:BenefitTypeEnum",
+      "rdfs:label": "In-kind",
+      "rdfs:comment": "Standardized code for an in-kind benefit."
+    },
+    {
+      "@id": "benefit:4",
+      "@type": "benefit:BenefitTypeEnum",
+      "rdfs:label": "Training",
+      "rdfs:comment": "Standardized code for a training benefit."
+    },
+    {
+      "@id": "benefit:5",
+      "@type": "benefit:BenefitTypeEnum",
+      "rdfs:label": "Work Opportunity",
+      "rdfs:comment": "Standardized code for a work opportunity benefit."
+    },
+    {
+      "@id": "benefit:6",
+      "@type": "benefit:BenefitTypeEnum",
+      "rdfs:label": "Insurance",
+      "rdfs:comment": "Standardized code for an insurance benefit."
+    }
+  ]
+}

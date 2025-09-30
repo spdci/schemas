@@ -1,0 +1,82 @@
+{
+    "@context": {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#" ,
+      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
+    },
+    "@graph": [
+        {
+            "@id": "category:EducationCodeEnum",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Education code enums Status",
+            "rdfs:comment": "Standardized codes and values representing for education code",
+            "owl:oneOf": [
+                "education_level:0",
+                "education_level:1",
+                "education_level:2",
+                "education_level:3",
+                "education_level:4",
+                "education_level:5",
+                "education_level:6",
+                "education_level:7",
+                "education_level:8"
+            ]
+        },
+        {
+            "@id": "category:0",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Early childhood education",
+            "rdfs:comment": "Early childhood education"
+        },
+        {
+            "@id": "category:1",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Primary education",
+            "rdfs:comment": "Primary education"
+        },
+        {
+            "@id": "category:2",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Lower secondary education",
+            "rdfs:comment": "Lower secondary education"
+        },
+        {
+            "@id": "category:3",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Upper secondary education",
+            "rdfs:comment": "Upper secondary education"
+        },
+        {
+            "@id": "category:4",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Post-secondary non-tertiary education",
+            "rdfs:comment": "Post-secondary non-tertiary education"
+        },
+        {
+            "@id": "category:5",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Short-cycle tertiary education",
+            "rdfs:comment": "Short-cycle tertiary education"
+        },
+        {
+            "@id": "category:6",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Bachelor's or equivalent",
+            "rdfs:comment": "Bachelor's or equivalent"
+        },
+        {
+            "@id": "category:7",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Master's or equivalent",
+            "rdfs:comment": "Master's or equivalent"
+        },
+        {
+            "@id": "category:8",
+            "@type": "category:EducationCodeEnum",
+            "rdfs:label": "Doctorate or equivalent",
+            "rdfs:comment": "Doctorate or equivalent"
+        }]
+    }

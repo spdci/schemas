@@ -1,0 +1,76 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/fr/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:IrrigationWaterEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "irrigation water  Enum",
+        "rdfs:comment": "This code directory lists the different sources of irrigation water.",
+        "owl:oneOf": [
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4",
+          "type:5",
+          "type:6",
+          "type:7",
+          "type:8"
+        ]
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "Surface water",
+        "rdfs:comment": "Surface water"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "Groundwater",
+        "rdfs:comment": "Groundwater"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "Mixed surface water and groundwater",
+        "rdfs:comment": "Mixed surface water and groundwater"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "Municipal water supply",
+        "rdfs:comment": "Municipal water supply"
+      },
+      {
+        "@id": "type:5",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "Treated or not-treated  wastewater",
+        "rdfs:comment": "Treated or not-treated  wastewater"
+      },
+      {
+        "@id": "type:6",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "Agricultural drainage water",
+        "rdfs:comment": "Agricultural drainage water"
+      },
+      {
+        "@id": "type:7",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "Desalinated water",
+        "rdfs:comment": "Desalinated water"
+      },
+      {
+        "@id": "type:8",
+        "@type": "type:IrrigationWaterEnum",
+        "rdfs:label": "other",
+        "rdfs:comment": "other"
+      }
+    ]
+  }
+  

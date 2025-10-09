@@ -14,8 +14,12 @@
       "rdfs:label": "Functional Limitation Type Enum",
       "rdfs:comment": "Standardized codes and values representing functional Limitation Type.",
       "owl:oneOf": [
-        "type:d132",
-        "type:b1440"
+        "type:VIS_SS",
+        "type:HEAR_SS",
+        "type:MOB_SS",
+        "type:COG_SS",
+        "type:SC_SS",
+        "type:"
       ]
     },
     {

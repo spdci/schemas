@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/social/id/data",
+    "code": "https://schema.spdci.org/extensions/social/id/code",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:Biometric_Data",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains the demographic information about a biometric data to verify against data in the id system.",
+  "rdfs:label": "ID Person",
+  "rdfs:property": [
+    {
+      "@id": "spdci:data",        
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:Biometric_Data",   
+      "rdfs:range": "xsd:binary",     
+      "rdfs:comment": "In SR, Member.demographic_info must be a Social Person to allow independent evolving of each interface."
+    },
+    {
+      "@id": "spdci:type",        
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:Biometric_Data",   
+      "rdfs:range": "code:type",     
+      "rdfs:comment": "the type of data sent as biometric dara."
+    },
+    {
+      "@id": "spdci:issuer",        
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:Biometric_Data",   
+      "rdfs:range": "xsd:string",     
+      "rdfs:comment": "the identity of the sender of this data."
+    }
+  ]
+}

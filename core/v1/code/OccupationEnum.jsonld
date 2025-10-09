@@ -1,0 +1,90 @@
+{
+  "@context": {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#" ,
+      "@vocab": "https://schema.spdci.org/core/v1/code"
+  },
+  "@graph": [
+    {
+      "@id": "occupation:OccupationEnum",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "rdfs:Resource",
+      "rdfs:label": "Occupation Enum",
+      "rdfs:comment": "Enumeration for occupations referenced from ISCO-08.",
+      "owl:oneOf": [
+        "occupation:0",
+        "occupation:1",
+        "occupation:2",
+        "occupation:3",
+        "occupation:4",
+        "occupation:5",
+        "occupation:6",
+        "occupation:7",
+        "occupation:8",
+        "occupation:9"
+      ]
+    },
+    {
+      "@id": "occupation:0",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Armed forces occupation",
+      "rdfs:comment": "Armed forces occupation"
+    },
+    {
+      "@id": "occupation:1",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Manager",
+      "rdfs:comment": "Manager"
+    },
+    {
+      "@id": "occupation:2",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Professional",
+      "rdfs:comment": "Professional"
+    },
+    {
+      "@id": "occupation:3",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Technician and associate professional",
+      "rdfs:comment": "Technician and associate professional"
+    },
+    {
+      "@id": "occupation:4",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Clerical support worker",
+      "rdfs:comment": "Clerical support worker"
+    },
+    {
+      "@id": "occupation:5",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Service and sales worker",
+      "rdfs:comment": "Service and sales worker"
+    },
+    {
+      "@id": "occupation:6",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Skilled agricultural, forestry and fishery worker",
+      "rdfs:comment": "Skilled agricultural, forestry and fishery worker"
+    },
+    {
+      "@id": "occupation:7",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Craft and related trades worker",
+      "rdfs:comment": "Craft and related trades worker"
+    },
+    {
+      "@id": "occupation:8",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Plant and machine operator, and assembler",
+      "rdfs:comment": "Plant and machine operator, and assembler"
+    },
+    {
+      "@id": "occupation:9",
+      "@type": "occupation:OccupationEnum",
+      "rdfs:label": "Elementary occupation",
+      "rdfs:comment": "Elementary occupation"
+    }
+  ]
+}

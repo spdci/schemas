@@ -18,15 +18,6 @@
     ],
     "rdfs:property": [
           {
-            "@id": "spdci:disability_type",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:DisabilityInfo",
-            "rdfs:range":  {
-              "@type": "code:DisabilityTypeEnum"
-            },
-            "rdfs:comment": "Describes the type of functional limitation experienced by the individual."
-          },
-          {
             "@id": "spdci:disability_limitation_type",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:DisabilityInfo",

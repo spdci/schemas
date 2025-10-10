@@ -14,7 +14,7 @@
   "rdfs:subClassOf": "spdcicore:Member",   
   "rdfs:property": [
     {
-      "@id": "spdcicore:demographic_info",        
+      "@id": "spdci:demographic_info",        
       "@type": "rdf:Property",
       "rdfs:domain": "spdci:Member",   
       "rdfs:range": "spdci:SRPerson",     

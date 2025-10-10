@@ -1,0 +1,48 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/id/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:TypeEnum",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Type  Enum",
+        "rdfs:comment": " ",
+        "owl:oneOf": [
+          "type:1",
+          "type:2",
+          "type:3",
+          "type:4"
+        ]
+      },
+      {
+        "@id": "type:1",
+        "@type": "type:TypeEnum",
+        "rdfs:label": "img",
+        "rdfs:comment": "img"
+      },
+      {
+        "@id": "type:2",
+        "@type": "type:TypeEnum",
+        "rdfs:label": "hash",
+        "rdfs:comment": "hash"
+      },
+      {
+        "@id": "type:3",
+        "@type": "type:TypeEnum",
+        "rdfs:label": "template",
+        "rdfs:comment": "template"
+      },
+      {
+        "@id": "type:4",
+        "@type": "type:TypeEnum",
+        "rdfs:label": "sound",
+        "rdfs:comment": "sound"
+      }
+    ]
+  }
+  

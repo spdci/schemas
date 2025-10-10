@@ -12,6 +12,12 @@
   "rdfs:label": "ID Person",
   "rdfs:subClassOf": "spdcicore:Person",   
   "rdfs:property": [
-    
+    {
+      "@id": "spdci:biometric_data",        
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:ID_Person",   
+      "rdfs:range": "spdci:Biometric_Data",     
+      "rdfs:comment": ""
+    }
   ]
 }

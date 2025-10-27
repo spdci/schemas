@@ -6,31 +6,58 @@
       "owl": "http://www.w3.org/2002/07/owl#" ,
       "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
   },
-  "@graph": [
+   "@graph": [
     {
       "@id": "type:FunctionalLimitationType",
       "@type": "rdfs:Class",
       "rdfs:subClassOf": "rdfs:Resource",
-      "rdfs:label": "Functional Limitation Type Enum",
-      "rdfs:comment": "Standardized codes and values representing functional Limitation Type.",
+      "rdfs:label": "Disability Type Enum",
+      "rdfs:comment": "Enumeration for disability type.",
       "owl:oneOf": [
         "type:VIS_SS",
         "type:HEAR_SS",
         "type:MOB_SS",
         "type:COG_SS",
         "type:SC_SS",
-        "type:"
+        "type:COM_SS"
+     
       ]
     },
     {
-      "@id": "type:d132",
-      "@type": "type:FunctionalLimitationType",
-      "rdfs:label": "Acquiring language"
+      "@id": "type:VIS_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Vision",
+      "rdfs:comment": "Vision"
     },
     {
-      "@id": "type:b1440",
-      "@type": "type:FunctionalLimitationType",
-      "rdfs:label": "Short-term memory"
+      "@id": "type:HEAR_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Hearing",
+      "rdfs:comment": "Hearing"
+    },
+    {
+      "@id": "type:MOB_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Mobility",
+      "rdfs:comment": "Mobility"
+    },
+    {
+      "@id": "type:COG_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "COGNITION (REMEMBERING)",
+      "rdfs:comment": "COGNITION (REMEMBERING)"
+    },
+    {
+      "@id": "type:SC_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Self care",
+      "rdfs:comment": "Self care"
+    },
+    {
+      "@id": "type:COM_SS",
+      "@type": "type:DisabilityTypeEnum",
+      "rdfs:label": "Communication",
+      "rdfs:comment": "Communication"
     }
   ]
 }

@@ -1,0 +1,63 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/ess/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:EnrolmentStatus",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "enrolment status Enum",
+        "rdfs:comment": "Enumeration for enrolmnent status types.",
+        "owl:oneOf": [
+          "code:1",
+          "code:2",
+          "code:3",
+          "code:4",
+          "code:5",
+          "code:6",
+          "code:7"
+        ]
+      },
+      {
+        "@id": "code:1",
+        "@type": "type:EnrolmentStatus",
+        "rdfs:label": "Active",
+        "rdfs:comment": "Actively enrolled in program"
+      },
+      {
+        "@id": "code:2",
+        "@type": "type:EnrolmentStatus",
+        "rdfs:label": "Deceased",
+        "rdfs:comment": "member is deceased"
+      },
+      {
+        "@id": "code:3",
+        "@type": "type:EnrolmentStatus",
+        "rdfs:label": "Suspended",
+        "rdfs:comment": "Suspended"
+      },
+      {
+        "@id": "code:4",
+        "@type": "type:EnrolmentStatus",
+        "rdfs:label": "Inactive",
+        "rdfs:comment": "Inactive"
+      },
+      {
+        "@id": "code:5",
+        "@type": "type:EnrolmentStatus",
+        "rdfs:label": "Reinstated",
+        "rdfs:comment": "Reinstated"
+      },
+      {
+        "@id": "code:6",
+        "@type": "type:EnrolmentStatus",
+        "rdfs:label": "Awaiting Renewal",
+        "rdfs:comment": "Awaiting Renewal"
+      }
+    ]
+  }
+  

@@ -1,0 +1,62 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/ess/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:EmploymentType",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "employment types Enum",
+        "rdfs:comment": "Enumeration for employment types.",
+        "owl:oneOf": [
+          "code:1",
+          "code:2",
+          "code:3",
+          "code:4",
+          "code:5",
+          "code:6"
+        ]
+      },
+      {
+        "@id": "code:1",
+        "@type": "type:EmploymentType",
+        "rdfs:label": "Permanent",
+        "rdfs:comment": "Permanent type of contact"
+      },
+      {
+        "@id": "code:2",
+        "@type": "type:EmploymentType",
+        "rdfs:label": "Fixed-term",
+        "rdfs:comment": "a fixed term type of contract"
+      },
+      {
+        "@id": "case:3",
+        "@type": "type:EmploymentType",
+        "rdfs:label": "Casual",
+        "rdfs:comment": "Casual"
+      },
+      {
+        "@id": "code:4",
+        "@type": "type:EmploymentType",
+        "rdfs:label": "Seasonal",
+        "rdfs:comment": "Seasonal"
+      },
+      {
+        "@id": "code:5",
+        "@type": "type:EmploymentType",
+        "rdfs:label": "Part-time",
+        "rdfs:comment": "Part time"
+      },
+      {
+        "@id": "code:6",
+        "@type": "type:EmploymentType",
+        "rdfs:label": "Full-time",
+        "rdfs:comment": "Full time"
+      }
+    ]
+  }
+  

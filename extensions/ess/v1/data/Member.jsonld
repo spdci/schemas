@@ -19,6 +19,24 @@
       "rdfs:domain": "spdci:Member",   
       "rdfs:range": "spdci:ESSPerson",     
       "rdfs:comment": "In ESS, Member.demographic_info must be an ESS Person to allow independent evolving of each interface."
+    },
+    {
+       "@id": "spdci:employment_info",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Member",
+        "rdfs:range": {
+          "@id": "spdci:EmploymentInfo",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+        },
+        "rdfs:comment": "A list of the member employment history."
+    },
+    {
+      "@id": "spdci:unemployment_reason",        
+      "@type": "rdf:Property",
+      "rdfs:domain": "spdci:Member",   
+      "rdfs:range": "spdci:UnemploymentReason",     
+      "rdfs:comment": "reason code why currently member is unemployed"
     }
   ]
 }

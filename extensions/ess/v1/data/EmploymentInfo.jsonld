@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/ess/v1/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
+    "spdcicode": "https://schema.spdci.org/core/v1/code",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "@id": "spdci:Employment_Info",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Represents employment history for a member.",
+      "rdfs:property": [
+        {
+          "@id": "spdci:start_date",
+          "rdfs:comment": "Date when the member started work, if applicable. Formatted according to schema:DateTime.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Employment_Info",
+          "rdfs:range":  "spdcicore:DateTime"
+          
+        },
+        {
+          "@id": "spdci:end_date",
+          "rdfs:comment": "Date when the member stopped work, if applicable. Formatted according to schema:DateTime.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Employment_Info",
+          "rdfs:range":  "spdcicore:DateTime"
+        },
+        {
+          "@id": "spdci:job_title",
+          "rdfs:comment": "the job title for this period of time.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Employment_Info",
+          "rdfs:range": "xsd:string"
+        },
+        {
+          "@id": "spdci:employer",
+          "rdfs:comment": "Employer name.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Employment_Info",
+          "rdfs:range": "xsd:string"
+        },
+        {
+          "@id": "spdci:employment_type",
+          "rdfs:comment": "Employement type.",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Employment_Info",
+          "rdfs:range": "spdcicode:EmploymentType"
+        }
+      ]
+    }
+  ]
+}

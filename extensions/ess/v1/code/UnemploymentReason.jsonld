@@ -24,38 +24,50 @@
       {
         "@id": "code:1",
         "@type": "type:UnemploymentReason",
-        "rdfs:label": "Care Responsibility",
-        "rdfs:comment": "Care Responsibility for children or disabled person"
+        "rdfs:label": "Dismissed or made redundant",
+        "rdfs:comment": "Dismissed or made redundant"
       },
       {
         "@id": "code:2",
         "@type": "type:UnemploymentReason",
-        "rdfs:label": "Chronic Illness",
-        "rdfs:comment": "Chronic Illness"
+        "rdfs:label": "A job of limited duration has ended",
+        "rdfs:comment": "A job of limited duration has ended"
       },
       {
         "@id": "code:3",
         "@type": "type:UnemploymentReason",
-        "rdfs:label": "Elderly",
-        "rdfs:comment": "Elderly"
+        "rdfs:label": "Personal or family responsibilities",
+        "rdfs:comment": "Personal or family responsibilities"
       },
       {
         "@id": "code:4",
         "@type": "type:UnemploymentReason",
-        "rdfs:label": "Education",
-        "rdfs:comment": "Education"
+        "rdfs:label": "Own illness or disability",
+        "rdfs:comment": "Own illness or disability"
       },
       {
         "@id": "code:5",
         "@type": "type:UnemploymentReason",
-        "rdfs:label": "Training",
-        "rdfs:comment": "Training"
+        "rdfs:label": "Education or training",
+        "rdfs:comment": "Education or training"
       },
       {
         "@id": "code:6",
         "@type": "type:UnemploymentReason",
-        "rdfs:label": "Other",
-        "rdfs:comment": "Other"
+        "rdfs:label": "Retirement",
+        "rdfs:comment": "Retirement"
+      },
+      {
+        "@id": "code:7",
+        "@type": "type:UnemploymentReason",
+        "rdfs:label": "Military or community service",
+        "rdfs:comment": "Military or community service"
+      },
+      {
+        "@id": "code:8",
+        "@type": "type:UnemploymentReason",
+        "rdfs:label": "Other reasons",
+        "rdfs:comment": "Other reasons"
       }
     ]
   }

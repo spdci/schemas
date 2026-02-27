@@ -14,28 +14,7 @@
     }
   ],
   "rdfs:property": [
-    {
-      "@id": "spdci:address_line_1",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "First line of a mailing address (Person-agnostic)."
-    },
-    {
-      "@id": "spdci:address_line_2",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "Second line of a mailing address (Person-agnostic)."
-    },
-    {
-      "@id": "spdci:locality",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "City or locality component."
-    },
-    {
+     {
       "@id": "spdci:urban_core_name",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Address",
@@ -48,41 +27,6 @@
       "rdfs:domain": "spdci:Address",
       "rdfs:range": "xsd:string",
       "rdfs:comment": "Tipo del núcleo urbano."
-    },
-    {
-      "@id": "spdci:sub_region_code",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "District or sub-regional code."
-    },
-    {
-      "@id": "spdci:region_code",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "State, province, prefecture, or region component."
-    },
-    {
-      "@id": "spdci:postal_code",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "Zip Code or postal code component."
-    },
-    {
-      "@id": "spdci:country_code",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "xsd:string",
-      "rdfs:comment": "Country part of an address."
-    },
-    {
-      "@id": "spdci:geo_location",
-      "@type": "rdfs:Datatype",
-      "rdfs:domain": "spdci:Address",
-      "rdfs:range": "spdci:GeoLocation",
-      "rdfs:comment": "Location Information"
     }
-  ]
+   ]
 }

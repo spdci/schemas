@@ -86,4 +86,10 @@ includes:
   - extensions/social/v1/RelatedMember.jsonld
   - extensions/social/v1/RelationshipTypeEnum.jsonld
   - extensions/social/v1/SRPerson.jsonld
+  - profiles/peru/extensions/sr/v1/member.jsonld  # override
+  - profiles/peru/extensions/sr/v1/group.jsonld  # override
+  - profiles/peru/extensions/sr/v1/address.jsonld  # override
+
+
+
   

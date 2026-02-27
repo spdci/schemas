@@ -4,13 +4,13 @@ version: "1.0.0"
 baseSchemaVersion: "v1.0.0"
 
 country:
-  name: "Country Name"
-  isoCode: "XXX"
+  name: "Perú"
+  isoCode: "PER"
 language: "en"
 
 maintainer:
-  organization: "Your Organization Name"
-  contactEmail: "contact@example.org"
+  organization: "GIZ"
+  contactEmail: "jdiazgh@gmail.com"
   website: "https://example.org"
 
 applicableModules:
@@ -26,10 +26,10 @@ applicableModules:
 schemasIndex: "schemas.yaml"
 
 changeLog:
-  - date: "YYYY-MM-DD"
-    author: "Your Name"
+  - date: "2026-02-23"
+    author: "Jorge Díaz garcía-Herrera"
     description: "Initial creation from template."
 
 notes:
-  - "Explain any deviations from the base schema here."
+  - "The group, member, and management schemes have been modified to encompass the specifications of the databases of Peruvian institutions."
   - "List additional code lists or reference documents."

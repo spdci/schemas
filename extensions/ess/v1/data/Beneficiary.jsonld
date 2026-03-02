@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/extensions/ess/v1/data",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "spdciIBR": "https://schema.spdci.org/extensions/ibr/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "spdci:beneficiary",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "This data object contains the information on beneficiary",
+  "rdfs:label": "beneficiary",
+  "rdfs:subClassOf": "spdciIBR:Beneficiary",   
+  "rdfs:property": [
+    
+  ]
+}

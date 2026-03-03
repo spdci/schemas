@@ -17,45 +17,38 @@
           "code:2",
           "code:3",
           "code:4",
-          "code:5",
-          "code:6"
+          "code:5"
         ]
       },
       {
         "@id": "code:1",
         "@type": "type:EmploymentType",
         "rdfs:label": "Permanent",
-        "rdfs:comment": "Permanent type of contact"
+        "rdfs:comment": "Employees who are guaranteed a minimum number of hours of work and are employed on an ongoing or indefinite basis"
       },
       {
         "@id": "code:2",
         "@type": "type:EmploymentType",
         "rdfs:label": "Fixed-term",
-        "rdfs:comment": "a fixed term type of contract"
+        "rdfs:comment": "Employees who are guaranteed a minimum number of hours of work and are employed on a time-limited basis for a period of three months or more."
       },
       {
         "@id": "case:3",
         "@type": "type:EmploymentType",
         "rdfs:label": "Casual",
-        "rdfs:comment": "Casual"
+        "rdfs:comment": "Employees with short-term employment arrangements and/or without a guaranteed minimum number of hours of work per pay period"
       },
       {
         "@id": "code:4",
         "@type": "type:EmploymentType",
         "rdfs:label": "Seasonal",
-        "rdfs:comment": "Seasonal"
+        "rdfs:comment": "Employees with jobs or work activities whose timing and duration are significantly influenced by seasonal factors such as climatic seasons, holidays and agricultural preparations or harvests."
       },
       {
         "@id": "code:5",
         "@type": "type:EmploymentType",
-        "rdfs:label": "Part-time",
-        "rdfs:comment": "Part time"
-      },
-      {
-        "@id": "code:6",
-        "@type": "type:EmploymentType",
-        "rdfs:label": "Full-time",
-        "rdfs:comment": "Full time"
+        "rdfs:label": "Paid apprentices, trainees and interns",
+        "rdfs:comment": "Employees who perform any activity to produce goods or provide services for others, in order to acquire workplace experience or skills in a trade or profession and receive payment in return for work performed"
       }
     ]
   }

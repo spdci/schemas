@@ -26,37 +26,43 @@
         "@id": "code:1",
         "@type": "type:EnrolmentStatus",
         "rdfs:label": "Active",
-        "rdfs:comment": "Actively enrolled in program"
+        "rdfs:comment": "The beneficiary is currently receiving support services"
       },
       {
         "@id": "code:2",
         "@type": "type:EnrolmentStatus",
         "rdfs:label": "Deceased",
-        "rdfs:comment": "member is deceased"
+        "rdfs:comment": "The beneficiary is deceased"
       },
       {
         "@id": "code:3",
         "@type": "type:EnrolmentStatus",
-        "rdfs:label": "Suspended",
-        "rdfs:comment": "Suspended"
+        "rdfs:label": "Exited",
+        "rdfs:comment": "The beneficiary has met the criteria to leave or graduate from a program."
       },
       {
         "@id": "code:4",
         "@type": "type:EnrolmentStatus",
-        "rdfs:label": "Inactive",
-        "rdfs:comment": "Inactive"
+        "rdfs:label": "Suspended",
+        "rdfs:comment": "The beneficiary is currently suspended from a programme and not receiving services"
       },
       {
         "@id": "code:5",
         "@type": "type:EnrolmentStatus",
-        "rdfs:label": "Reinstated",
-        "rdfs:comment": "Reinstated"
+        "rdfs:label": "Inactive",
+        "rdfs:comment": "The beneficiary is not receiving services, but has not been formally suspended or exited from the programme. This could be due to administrative issues, temporary ineligibility, or the beneficiary's personal request."
       },
       {
         "@id": "code:6",
         "@type": "type:EnrolmentStatus",
+        "rdfs:label": "Reinstated",
+        "rdfs:comment": "The beneficiary was previously suspended or exited, but has been reinstated in the programme, typically after meeting certain conditions or upon resolution of the issues that led to their suspension or exit."
+      },
+      {
+        "@id": "code:7",
+        "@type": "type:EnrolmentStatus",
         "rdfs:label": "Awaiting Renewal",
-        "rdfs:comment": "Awaiting Renewal"
+        "rdfs:comment": "The beneficiary's enrolment period is nearing its end, and they are in the process of renewal, subject to reassessment and continued eligibility."
       }
     ]
   }

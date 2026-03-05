@@ -57,7 +57,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Person",
       "rdfs:range": "spdci:DateTime",
-      "rdfs:comment": "The date of birth of the applicant, formatted according to schema:DateTime."
+      "rdfs:comment": "The date of death of the applicant, formatted according to schema:DateTime."
     },
     {
       "@id": "spdci:address",

@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "spdci": "https://schema.spdci.org/core/v1/data",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "spdci:Address",
+  "@type": "rdfs:Class",
+  "rdfs:comment": "An address is a structured entity that represents the details and components of an address.",
+  "rdfs:subClassOf": [
+    {
+      "@type": "rdfs:Class",
+      "rdfs:label": "Structured Entity"
+    }
+  ],
+  "rdfs:property": [
+     {
+      "@id": "spdci:urban_core_name",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Nombre del núcleo urbano."
+    },
+   {
+      "@id": "spdci:urban_core_type",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Address",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Tipo del núcleo urbano."
+    }
+   ]
+}

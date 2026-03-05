@@ -1,0 +1,50 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/core/v1/data",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "code": "https://schema.spdci.org/core/v1/code"
+    },
+    "@id": "spdci:Member",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the information on person detailed information.",
+    "rdfs:label": "Member",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+      {
+      "@id": "spdci:Identity_DNI_status",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Member",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Estado de identidad del DNI"
+      },
+      {
+      "@id": "spdci:Relationship",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Member",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Parentesco"
+      },
+      {
+      "@id": "spdci:Deceased",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Member",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Fallecido"
+      },
+      {
+      "@id": "spdci:Restriction",
+      "@type": "rdfs:Datatype",
+      "rdfs:domain": "spdci:Member",
+      "rdfs:range": "xsd:string",
+      "rdfs:comment": "Restricción"
+      }
+     ]
+   }
+  

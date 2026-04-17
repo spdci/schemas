@@ -1,0 +1,70 @@
+{
+    "@context": {
+      "spdci": "https://schema.spdci.org/extensions/core/v1/data",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "code": "https://schema.spdci.org/core/v1/code"
+    },
+    "@id": "spdci:Group",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "A group unit represents a group of related individuals",
+    "rdfs:label": "Group",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+       {
+        "@id": "spdci:cse_code",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:string",  
+        "rdfs:comment": "Código de clasificación socioeconómica"
+      },
+      {
+        "@id": "spdci:cse_code_validity_init",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "Inicio de vigencia del código de clasificación socioeconómica"
+      },
+      {
+        "@id": "spdci:cse_code_validity_end",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "common:DateTime",
+        "rdfs:comment": "Final de vigencia del código de clasificación socioeconómica"
+      },
+      {
+        "@id": "spdci:cse_code_status_validity_note",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:string",  
+        "rdfs:comment": "Nota acerca de la vigencia del estado de clasificación socioeconómica."
+      },
+      {
+        "@id": "spdci:cse_code_status",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:string",  
+        "rdfs:comment": "Estado de clasificación socioeconómica."
+      },
+            {
+        "@id": "spdci:source",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:string",  
+        "rdfs:comment": "Fuente"
+      },
+      {
+        "@id": "spdci:reference",
+        "@type": "rdfs:Datatype",
+        "rdfs:domain": "spdci:Group",
+        "rdfs:range": "xsd:string",  
+        "rdfs:comment": "Referencia"
+      }
+          ] }
+  

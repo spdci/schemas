@@ -1,0 +1,56 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/ews/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:MessageType",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Message Type",
+        "rdfs:comment": "Indicates the type of CAP message being sent",
+        "owl:oneOf": [
+          "code:alert",
+          "code:update",
+          "code:cancel",
+          "code:ack",
+          "code:error"
+        ]
+      },
+      {
+        "@id": "code:alert",
+        "@type": "type:MessageType",
+        "rdfs:label": "Alert",
+        "rdfs:comment": "Initial or primary alert message"
+      },
+      {
+        "@id": "code:update",
+        "@type": "type:MessageType",
+        "rdfs:label": "Update",
+        "rdfs:comment": "Updates or corrects an earlier alert"
+      },
+      {
+        "@id": "code:cancel",
+        "@type": "type:MessageType",
+        "rdfs:label": "Cancel",
+        "rdfs:comment": "Cancels a previous alert"
+      },
+      {
+        "@id": "code:ack",
+        "@type": "type:MessageType",
+        "rdfs:label": "Ack",
+        "rdfs:comment": "Acknowledges receipt of a previous alert."
+      },
+      {
+        "@id": "code:error",
+        "@type": "type:MessageType",
+        "rdfs:label": "Error",
+        "rdfs:comment": "Indicates an error in a previously sent alert"
+      }
+      
+    ]
+  }
+  

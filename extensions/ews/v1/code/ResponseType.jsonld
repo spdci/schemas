@@ -1,0 +1,78 @@
+{
+    "@context": {
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "@vocab": "http://schema.spdci.org/extensions/ews/v1/code",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/"
+    },
+    "@graph": [
+      {
+        "@id": "type:ResponseType",
+        "@type": "rdfs:Class",
+        "rdfs:subClassOf": "rdfs:Resource",
+        "rdfs:label": "Response Type",
+        "rdfs:comment": "Specifies the response type of action recommended",
+        "owl:oneOf": [
+          "code:shelter",
+          "code:evacuate",
+          "code:prepare",
+          "code:execute",
+          "code:avoid",
+          "code:monitor",
+          "code:assess",
+          "code:allclear",
+          "code:none"
+        ]
+      },
+      {
+        "@id": "code:shelter",
+        "@type": "type:ResponseType",
+        "rdfs:label": "Shelter",
+        "rdfs:comment": "Take shelter in place or per instruction"
+      },
+      {
+        "@id": "code:evacuate",
+        "@type": "type:ResponseType",
+        "rdfs:label": "Evacuate",
+        "rdfs:comment": "Relocate as instructed in the instruction"
+      },
+      {
+        "@id": "code:prepare",
+        "@type": "type:ResponseType",
+        "rdfs:label": "Prepare",
+        "rdfs:comment": "Make preparations per the instruction"
+      },
+      {
+        "@id": "code:avoid",
+        "@type": "type:ResponseType",
+        "rdfs:label": "Avoid",
+        "rdfs:comment": "Avoid the subject event as per the instruction"
+      },
+      {
+        "@id": "code:monitor",
+        "@type": "type:ResponseType",
+        "rdfs:label": "Monitor",
+        "rdfs:comment": "Attend to information sources as described in instruction"
+      },
+      {
+        "@id": "code:assess",
+        "@type": "type:ResponseType",
+        "rdfs:label": "Assess",
+        "rdfs:comment": "Evaluate the information in this message. This value should not be used in public warning applications"
+      },
+      {
+        "@id": "code:allclear",
+        "@type": "type:ResponseType",
+        "rdfs:label": "All Clear",
+        "rdfs:comment": "The subject event no longer poses a thread or concern and any follow on action is described in"
+      },
+      {
+        "@id": "code:none",
+        "@type": "type:ResponseType",
+        "rdfs:label": "None",
+        "rdfs:comment": "No action recommended"
+      }
+      
+    ]
+  }
+  

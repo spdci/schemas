@@ -1,0 +1,161 @@
+{
+    "@context": {
+        "spdci": "https://schema.spdci.org/extensions/ews/v1/data",
+        "code": "https://schema.spdci.org/extensions/ews/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "spdcicore": "https://schema.spdci.org/core/v1/data",
+        "spdcicode": "https://schema.spdci.org/core/v1/code",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:CapAlert",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains alert metadata and descriptive elements aligned with the CAP standard",
+    "rdfs:label": "CapAlert",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+          {
+            "@id": "spdci:identifier",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Unique identifier of the alert message."
+           },
+          {
+            "@id": "spdci:sender",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Identifies the sender of the alert"
+          },
+          {
+            "@id": "spdci:sent",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The time and date of the originated alert"
+          },
+          {
+            "@id": "spdci:status",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "code:Status",
+            "rdfs:comment": "Status of the alert"
+          },
+          {
+            "@id": "spdci:msg_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "code:MessageType",
+            "rdfs:comment": "Type of message"
+          },
+          {
+            "@id": "spdci:source",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The text identifying the source of the alert message"
+          },
+          {
+            "@id": "spdci:scope",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "code:Scope",
+            "rdfs:comment": "Scope of the alert"
+          },
+          {
+            "@id": "spdci:restriction",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The text describing the rule for limiting distribution of the restricted alert message"
+          },
+          {
+
+            "@id": "spdci:addresses",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": {
+                "@type": "@id",
+                "@container": "@list"
+            },
+            "rdfs:comment": "The group listing of intended recipients of the alert message",
+            "schema:value": {
+                "@type": "xsd:string"
+            }
+           },
+          {
+            "@id": "spdci:code",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The code denoting the special handling of the alert message."
+          },
+          {
+            "@id": "spdci:note",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The text describing the purpose or significance of the alert message"
+          },
+          {
+            "@id": "spdci:references",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": {
+                "@type": "@id",
+                "@container": "@list"
+            },
+            "rdfs:comment": "The group listing of identifying earlier message(s) referenced by th alert message",
+            "schema:value": {
+                "@type": "xsd:string"
+            }
+          },
+          {
+            "@id": "spdci:incidents",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Brief summary of the alert."
+          },
+          {
+            "@id": "spdci:description",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range":  {
+                "@type": "@id",
+                "@container": "@list"
+            },
+            "rdfs:comment": "The group listing naming the referent incident(s) of the alert message ",
+            "schema:value": {
+                "@type": "xsd:string"
+            }
+          },
+          {
+            "@id": "spdci:info",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range":  {
+                "@type": "@id",
+                "@container": "@list"
+            },
+            "rdfs:comment": "details of the capAlert",
+            "schema:value": {
+                "@type": "spdci:Info"
+            }
+          },
+          {
+            "@id": "spdci:created_at",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date of the creation of the alert."
+          }
+          
+    ]
+    }

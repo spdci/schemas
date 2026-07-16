@@ -1,0 +1,162 @@
+{
+    "@context": {
+        "spdci": "https://schema.spdci.org/extensions/ews/v1/data",
+        "code": "https://schema.spdci.org/extensions/ews/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "spdcicore": "https://schema.spdci.org/core/v1/data",
+        "spdcicode": "https://schema.spdci.org/core/v1/code",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:Info",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "This data object contains the descriptive element aligned with CAP standard",
+    "rdfs:label": "Info",
+    "rdfs:subClassOf": [
+      {
+        "@type": "rdfs:Class",
+        "rdfs:label": "Structured Entity"
+      }
+    ],
+    "rdfs:property": [
+          {
+            "@id": "spdcicore:language",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "spdcicore:LanguageCodeEnum",
+            "rdfs:comment": "language code"
+          },
+          {
+            "@id": "spdci:category",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "code:Category",
+            "rdfs:comment": "Hazard event type."
+          },
+          {
+            "@id": "spdci:event",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The type of the subject event of the alert message"
+          },
+          {
+            "@id": "spdci:response_type",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "code:ResponseType",
+            "rdfs:comment": "The type of action recommended for the target audience"
+          },
+          {
+            "@id": "spdci:urgency",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "code:Urgency",
+            "rdfs:comment": "Timeframe for response"
+          },
+          {
+            "@id": "spdci:severity",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "code:AlertSeverity",
+            "rdfs:comment": "severity level"
+          },
+          {
+            "@id": "spdci:audience",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The text describing the intended audience of the alert message"
+          },
+          {
+            "@id": "spdci:effective",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "Time when the alert becomes effective"
+          },
+          {
+
+            "@id": "spdci:event_code",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "A system-specific cide identifying the event type of the alert message"
+          },
+          {
+            "@id": "spdci:onset",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The expected time of the beginning of the subject event of the alert message."
+          },
+          {
+            "@id": "spdci:expires",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "Expiration time of the alert"
+          },
+          {
+            "@id": "spdci:sender_name",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The text naming the originator of the alert message."
+          },
+          {
+            "@id": "spdci:headline",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Brief summary of the alert."
+          },
+          {
+            "@id": "spdci:description",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Detailed description of the event and its potential impact"
+          },
+          {
+            "@id": "spdci:web",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "A full absolute URI for an html page or other text resource with additional or reference information regarding this alert"
+          },
+          {
+            "@id": "spdci:contact",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The text describing the contact for follow-up and confirmation of the alert message."
+          },
+          {
+            "@id": "spdci:parameter",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "A system-specific additional parameter associated with the alert message"
+          },
+          {
+            "@id": "spdci:area",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": {
+                "@id": "spdcicore:Area",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+        },
+            "rdfs:comment": "The area impacted by the hazard."
+          },
+          {
+            "@id": "spdci:created_at",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Info",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The date of the creation of the alert."
+          }
+          
+    ]
+    }

@@ -33,7 +33,7 @@
         "rdfs:comment": "Employees who are guaranteed a minimum number of hours of work and are employed on a time-limited basis for a period of three months or more."
       },
       {
-        "@id": "case:3",
+        "@id": "code:3",
         "@type": "type:EmploymentType",
         "rdfs:label": "Casual",
         "rdfs:comment": "Employees with short-term employment arrangements and/or without a guaranteed minimum number of hours of work per pay period"

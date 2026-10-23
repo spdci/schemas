@@ -1,6 +1,7 @@
 {
   "@context": {
     "spdci": "https://schema.spdci.org/extensions/ess/v1/data",
+    "code": "https://schema.spdci.org/extensions/ess/v1/code",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "spdcicore": "https://schema.spdci.org/core/v1/data",
     "spdcicode": "https://schema.spdci.org/core/v1/code",
@@ -47,7 +48,7 @@
           "rdfs:comment": "Employement type.",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Employment_Info",
-          "rdfs:range": "spdcicode:EmploymentType"
+          "rdfs:range": "code:EmploymentType"
         }
       ]
     }

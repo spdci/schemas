@@ -7,7 +7,7 @@
     },
     "@graph": [
       {
-        "@id": "type:scope",
+        "@id": "type:Scope",
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
         "rdfs:label": "Scope",
@@ -20,19 +20,19 @@
       },
       {
         "@id": "code:public",
-        "@type": "type:scope",
+        "@type": "type:Scope",
         "rdfs:label": "Public",
         "rdfs:comment": "Alert intended for general public dissemination"
       },
       {
         "@id": "code:restricted",
-        "@type": "type:scope",
+        "@type": "type:Scope",
         "rdfs:label": "Restricted",
         "rdfs:comment": "Alert intended for restricted audience (e.g government agencies)"
       },
       {
         "@id": "code:private",
-        "@type": "type:MessageType",
+        "@type": "type:Scope",
         "rdfs:label": "Private",
         "rdfs:comment": "Alert intended for specific individuals or private distribution"
       }

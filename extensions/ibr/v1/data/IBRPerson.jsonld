@@ -7,7 +7,7 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#"
   },
-  "@id": "spdci:SR_Person",
+  "@id": "spdci:IBR_Person",
   "@type": "rdfs:Class",
   "rdfs:comment": "This data object contains the information on people and households held in the social registry.",
   "rdfs:label": "IBR Person",

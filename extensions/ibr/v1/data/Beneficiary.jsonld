@@ -23,7 +23,7 @@
       "@id": "spdci:assistance_unit",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Beneficiary",
-      "rdfs:range": "spdcicore:AssistanceUnit",
+      "rdfs:range": "spdcicode:AssistanceUnitEnum",
       "rdfs:comment": "The entity benefiting from the programme"
     },
     {
@@ -61,7 +61,7 @@
       "@id": "spdci:enrollment_status",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Beneficiary",
-      "rdfs:range": "code:EnrollementStatusEnum",
+      "rdfs:range": "code:EnrollmentStatusEnum",
       "rdfs:comment" : "The beneficiaries status with a specific programme"
     },
     {

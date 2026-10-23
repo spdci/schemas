@@ -1,5 +1,7 @@
 {
   "@context": {
+    "spdci": "https://schema.spdci.org/extensions/ibr/v1/data",
+    "spdcicore": "https://schema.spdci.org/core/v1/data",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "@vocab": "http://schema.spdci.org/extensions/ibr/v1/code",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -27,7 +29,7 @@
       "@id": "spdci:dtstart",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:BenefitFrequency",
-      "rdfs:range": "common:DateTime",
+      "rdfs:range": "spdcicore:DateTime",
       "rdfs:comment": "The recurrence start. Besides being the base for the recurrence, missing parameters in the final recurrence instances will also be extracted from this date. If not given, the current time will be used instead.​"
     },
     {
@@ -55,7 +57,7 @@
       "@id": "spdci:until",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:BenefitFrequency",
-      "rdfs:range": "common:DateTime",
+      "rdfs:range": "spdcicore:DateTime",
       "rdfs:comment": "If given, this must be a date specifying the upper-bound limit of the recurrence. The last recurrence in the rule is the greatest datetime that is less than or equal to the value specified in the until parameter.​​"
     }
   ],

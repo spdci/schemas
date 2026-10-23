@@ -21,25 +21,25 @@
       },
       {
         "@id": "level:1",
-        "@type": "category:DisabilityLevelEnum",
+        "@type": "level:DisabilityLevelEnum",
         "rdfs:label": "High Support Needs (sometimes called very severe or profound)",
         "rdfs:comment": "Person requires continuous, intensive support for daily living activities. "
       },
       {
         "@id": "level:2",
-        "@type": "category:DisabilityLevelEnum",
+        "@type": "level:DisabilityLevelEnum",
         "rdfs:label": "Severe",
         "rdfs:comment": "Person experiences significant limitation that limit independence, often needing extensive support."
       },
       {
         "@id": "level:3",
-        "@type": "category:FunctionalSeverityEnum",
+        "@type": "level:DisabilityLevelEnum",
         "rdfs:label": "Moderate",
         "rdfs:comment": "Person experiences noticeable limitations that may require some accommodations or support occasionally or only for certain tasks."
       },
       {
         "@id": "level:4",
-        "@type": "category:DisabilityLevelEnum",
+        "@type": "level:DisabilityLevelEnum",
         "rdfs:label": "Mild",
         "rdfs:comment": "Person experiences minor limitations in performing tasks, generally manageable without special support."
       }

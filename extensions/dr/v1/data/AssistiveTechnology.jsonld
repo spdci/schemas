@@ -22,7 +22,7 @@
           {
             "@id": "spdci:type",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:HumanAssistance",
+            "rdfs:domain": "spdci:AssistiveTechnology",
             "rdfs:range": "code:AssistiveTechnologyEnum",
             "rdfs:comment": "Is the type of technology gadget the disabled person will need."
           },

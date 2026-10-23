@@ -20,19 +20,19 @@
       },
       {
         "@id": "support:home_adaptation",
-        "@type": "type:HousingSupportEnum",
+        "@type": "support:HousingSupportEnum",
         "rdfs:label": "Home Adaptation",
         "rdfs:comment": "Home Adaptation"
       },
       {
-        "@id": "assistance:relocation",
-        "@type": "type:HousingSupportEnum",
+        "@id": "support:relocation",
+        "@type": "support:HousingSupportEnum",
         "rdfs:label": "Relocation",
         "rdfs:comment": "Relocation"
       },
       {
-        "@id": "assistance:utility_cost",
-        "@type": "type:HousingSupportEnum",
+        "@id": "support:utility_cost",
+        "@type": "support:HousingSupportEnum",
         "rdfs:label": "Utility cost",
         "rdfs:comment": "Significant Utility cost"
       }

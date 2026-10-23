@@ -10,7 +10,7 @@
         "@id": "support:AnimalAssistanceEnum",
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
-        "rdfs:label": "type of Medical Care needed Enum",
+        "rdfs:label": "type of Animal Assistance needed Enum",
         "rdfs:comment": "Enumeration for medical care needed.",
         "owl:oneOf": [
           "support:service_dog",
@@ -20,19 +20,19 @@
       },
       {
         "@id": "support:service_dog",
-        "@type": "type:AnimalAssistanceEnum",
+        "@type": "support:AnimalAssistanceEnum",
         "rdfs:label": "Service Dog",
         "rdfs:comment": "Service Dog (guide, hearing ...)"
       },
       {
         "@id": "support:therapy_animal",
-        "@type": "type:AnimalAssistanceEnum",
+        "@type": "support:AnimalAssistanceEnum",
         "rdfs:label": "Therapy Animal",
         "rdfs:comment": "Therapy Animal"
       },
       {
         "@id": "support:other",
-        "@type": "type:AnimalAssistanceEnum",
+        "@type": "support:AnimalAssistanceEnum",
         "rdfs:label": "Other",
         "rdfs:comment": "Other"
       }

@@ -1,47 +1,54 @@
 {
-  "@context": {
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "schema": "http://schema.org/"
-  },
-  "@graph": [
-    {
-      "@id": "category:FunctionalSeverityEnum",
-      "@type": "rdfs:Class",
-      "rdfs:subClassOf": "rdfs:Resource",
-      "rdfs:label": "Functional Severity  Enum",
-      "rdfs:comment": "Enumeration for functional severity categories.",
-      "owl:oneOf": [
-        "category:1",
-        "category:2",
-        "category:3",
-        "category:4"
-      ]
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
     },
-    {
-      "@id": "category:1",
-      "@type": "category:ImpairmentLevel",
-      "rdfs:label": "Mild",
-      "rdfs:comment": "Mild"
-    },
-    {
-      "@id": "category:2",
-      "@type": "category:ImpairmentLevel",
-      "rdfs:label": "Moderate",
-      "rdfs:comment": "Moderate"
-    },
-    {
-      "@id": "category:3",
-      "@type": "category:ImpairmentLevel",
-      "rdfs:label": "Severe",
-      "rdfs:comment": "Severe"
-    },
-    {
-      "@id": "category:4",
-      "@type": "category:ImpairmentLevel",
-      "rdfs:label": "Extreme",
-      "rdfs:comment": "Extreme"
-    }
-  ]
+    "@graph": [
+        {
+            "@id": "category:ImpairmentLevel",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Impairment Level Enum",
+            "rdfs:comment": "Enumeration for impairment / functional limitation levels.",
+            "owl:oneOf": [
+                "category:1",
+                "category:2",
+                "category:3",
+                "category:4",
+                "category:5"
+            ]
+        },
+        {
+            "@id": "category:1",
+            "@type": "category:ImpairmentLevel",
+            "rdfs:label": "No impairment or difficulty",
+            "rdfs:comment": "No impairment or difficulty"
+        },
+        {
+            "@id": "category:2",
+            "@type": "category:ImpairmentLevel",
+            "rdfs:label": "Mild impairment or difficulty",
+            "rdfs:comment": "Mild impairment or difficulty"
+        },
+        {
+            "@id": "category:3",
+            "@type": "category:ImpairmentLevel",
+            "rdfs:label": "Moderate impairment or difficulty",
+            "rdfs:comment": "Moderate impairment or difficulty"
+        },
+        {
+            "@id": "category:4",
+            "@type": "category:ImpairmentLevel",
+            "rdfs:label": "Severe impairment or difficulty",
+            "rdfs:comment": "Severe impairment or difficulty"
+        },
+        {
+            "@id": "category:5",
+            "@type": "category:ImpairmentLevel",
+            "rdfs:label": "Complete impairment or difficulty",
+            "rdfs:comment": "Complete impairment or difficulty"
+        }
+    ]
 }

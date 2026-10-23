@@ -37,43 +37,43 @@
         "rdfs:comment": "Birth complication"
       },
       {
-        "@id": "category:2",
+        "@id": "case:2",
         "@type": "case:ImpairmentCause",
         "rdfs:label": "Illness",
         "rdfs:comment": "Illness"
       },
       {
-        "@id": "category:3",
+        "@id": "case:3",
         "@type": "case:ImpairmentCause",
         "rdfs:label": "Domestic accident",
         "rdfs:comment": "Domestic accident"
       },
       {
-        "@id": "category:4",
+        "@id": "case:4",
         "@type": "case:ImpairmentCause",
         "rdfs:label": "Road accident",
         "rdfs:comment": "Road accident"
       },
       {
-        "@id": "category:5",
+        "@id": "case:5",
         "@type": "case:ImpairmentCause",
         "rdfs:label": "Work accident",
         "rdfs:comment": "Work accident"
       },
       {
-        "@id": "category:6",
+        "@id": "case:6",
         "@type": "case:ImpairmentCause",
         "rdfs:label": "Violence",
         "rdfs:comment": "Violence"
       },
       {
-        "@id": "category:7",
+        "@id": "case:7",
         "@type": "case:ImpairmentCause",
         "rdfs:label": "Armed conflict",
         "rdfs:comment": "Armed conflict"
       },
       {
-        "@id": "category:8",
+        "@id": "case:8",
         "@type": "case:ImpairmentCause",
         "rdfs:label": "Ageing",
         "rdfs:comment": "Ageing"

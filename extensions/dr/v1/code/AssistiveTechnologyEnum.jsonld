@@ -1,40 +1,103 @@
 {
-  "@context": {
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "schema": "http://schema.org/"
-  },
-  "@graph": [
-    {
-      "@id": "type:AssistiveTechnologyEnum",
-      "@type": "rdfs:Class",
-      "rdfs:subClassOf": "rdfs:Resource",
-      "rdfs:label": "Assistive technology Enum",
-      "rdfs:comment": "Enumeration for assistive gadgets provided for disabled person.",
-      "owl:oneOf": [
-        "tech:1",
-        "tech:2",
-        "tech:3"
-      ]
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
     },
-    {
-      "@id": "tech:1",
-      "@type": "type:AssistiveTechnologyEnum",
-      "rdfs:label": "Wheelchairs",
-      "rdfs:comment": "Wheelchairs"
-    },
-    {
-      "@id": "tech:2",
-      "@type": "type:AssistiveTechnologyEnum",
-      "rdfs:label": "Speech-generating devices (SGDs)",
-      "rdfs:comment": "Speech-generating devices (SGDs)"
-    },
-    {
-      "@id": "tech:3",
-      "@type": "type:AssistiveTechnologyEnum",
-      "rdfs:label": "Hearing aids",
-      "rdfs:comment": "Hearing aids"
-    }
-  ]
+    "@graph": [
+        {
+            "@id": "type:AssistiveTechnologyEnum",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Assistive technology Enum",
+            "rdfs:comment": "Enumeration for assistive gadgets provided for disabled person.",
+            "owl:oneOf": [
+                "tech:1",
+                "tech:2",
+                "tech:3",
+                "tech:4",
+                "tech:5",
+                "tech:6",
+                "tech:7",
+                "tech:8",
+                "tech:9",
+                "tech:10",
+                "tech:11",
+                "tech:12"
+            ]
+        },
+        {
+            "@id": "tech:1",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Alarm signalers with light/sound/vibration",
+            "rdfs:comment": "Alarm signalers with light/sound/vibration"
+        },
+        {
+            "@id": "tech:2",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Audioplayers with DAISY capability",
+            "rdfs:comment": "Audioplayers with DAISY capability"
+        },
+        {
+            "@id": "tech:3",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Braille displays (note takers)",
+            "rdfs:comment": "Braille displays (note takers)"
+        },
+        {
+            "@id": "tech:4",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Braille writing equipment/Braillers",
+            "rdfs:comment": "Braille writing equipment/Braillers"
+        },
+        {
+            "@id": "tech:5",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Cane/stick",
+            "rdfs:comment": "Cane/stick"
+        },
+        {
+            "@id": "tech:6",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Chair for shower/bath/toilet",
+            "rdfs:comment": "Chair for shower/bath/toilet"
+        },
+        {
+            "@id": "tech:7",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Closed captioning displays",
+            "rdfs:comment": "Closed captioning displays"
+        },
+        {
+            "@id": "tech:8",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Club foot brace",
+            "rdfs:comment": "Club foot brace"
+        },
+        {
+            "@id": "tech:9",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Communication boards/books/cards",
+            "rdfs:comment": "Communication boards/books/cards"
+        },
+        {
+            "@id": "tech:10",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Communication software",
+            "rdfs:comment": "Communication software"
+        },
+        {
+            "@id": "tech:11",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Crutches, auxiliary/elbow",
+            "rdfs:comment": "Crutches, auxiliary/elbow"
+        },
+        {
+            "@id": "tech:12",
+            "@type": "type:AssistiveTechnologyEnum",
+            "rdfs:label": "Deaf-blind communicators",
+            "rdfs:comment": "Deaf-blind communicators"
+        }
+    ]
 }

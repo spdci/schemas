@@ -1,7 +1,7 @@
 {
   "@context": {
-    "spdci": "https://schema.spdci.org/extensions/social/id/data",
-    "code": "https://schema.spdci.org/extensions/social/id/code",
+    "spdci": "https://schema.spdci.org/extensions/id/v1/data",
+    "code": "https://schema.spdci.org/extensions/id/v1/code",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#"
@@ -15,15 +15,15 @@
       "@id": "spdci:data",        
       "@type": "rdf:Property",
       "rdfs:domain": "spdci:Biometric_Data",   
-      "rdfs:range": "xsd:binary",     
-      "rdfs:comment": "In SR, Member.demographic_info must be a Social Person to allow independent evolving of each interface."
+      "rdfs:range": "xsd:base64Binary",     
+      "rdfs:comment": "The biometric data."
     },
     {
       "@id": "spdci:type",        
       "@type": "rdf:Property",
       "rdfs:domain": "spdci:Biometric_Data",   
-      "rdfs:range": "code:type",     
-      "rdfs:comment": "the type of data sent as biometric dara."
+      "rdfs:range": "code:TypeEnum",     
+      "rdfs:comment": "The type of biometric."
     },
     {
       "@id": "spdci:issuer",        
@@ -31,6 +31,13 @@
       "rdfs:domain": "spdci:Biometric_Data",   
       "rdfs:range": "xsd:string",     
       "rdfs:comment": "the identity of the sender of this data."
+    },
+    {
+        "@id": "spdci:data_type",
+        "@type": "rdf:Property",
+        "rdfs:domain": "spdci:Biometric_Data",
+        "rdfs:range": "code:DataTypeEnum",
+        "rdfs:comment": "The data type of the biometric data."
     }
   ]
 }

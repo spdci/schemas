@@ -1,0 +1,47 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/id/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
+    },
+    "@graph": [
+        {
+            "@id": "datatype:DataTypeEnum",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Biometric Data Type Enum",
+            "rdfs:comment": "Enumeration for the data type of the biometric data.",
+            "owl:oneOf": [
+                "datatype:1",
+                "datatype:2",
+                "datatype:3",
+                "datatype:4"
+            ]
+        },
+        {
+            "@id": "datatype:1",
+            "@type": "datatype:DataTypeEnum",
+            "rdfs:label": "img",
+            "rdfs:comment": "img"
+        },
+        {
+            "@id": "datatype:2",
+            "@type": "datatype:DataTypeEnum",
+            "rdfs:label": "hash",
+            "rdfs:comment": "hash"
+        },
+        {
+            "@id": "datatype:3",
+            "@type": "datatype:DataTypeEnum",
+            "rdfs:label": "template",
+            "rdfs:comment": "template"
+        },
+        {
+            "@id": "datatype:4",
+            "@type": "datatype:DataTypeEnum",
+            "rdfs:label": "sound",
+            "rdfs:comment": "sound"
+        }
+    ]
+}

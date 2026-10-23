@@ -23,11 +23,7 @@
         "@id": "spdci:human_assistance",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:DisabilitySupport",
-        "rdfs:range": {
-          "@id": "spdci:HumanAssistance",
-          "@type": "rdfs:Class",
-          "@container": "@list"
-        },
+        "rdfs:range": "spdci:HumanAssistance",
         "rdfs:comment": "Is the human support details."
       },
       {

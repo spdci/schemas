@@ -1,48 +1,131 @@
 {
     "@context": {
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "@vocab": "http://schema.spdci.org/extensions/id/v1/code",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "schema": "http://schema.org/"
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/id/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
     },
     "@graph": [
-      {
-        "@id": "type:TypeEnum",
-        "@type": "rdfs:Class",
-        "rdfs:subClassOf": "rdfs:Resource",
-        "rdfs:label": "Type  Enum",
-        "rdfs:comment": " ",
-        "owl:oneOf": [
-          "type:1",
-          "type:2",
-          "type:3",
-          "type:4"
-        ]
-      },
-      {
-        "@id": "type:1",
-        "@type": "type:TypeEnum",
-        "rdfs:label": "img",
-        "rdfs:comment": "img"
-      },
-      {
-        "@id": "type:2",
-        "@type": "type:TypeEnum",
-        "rdfs:label": "hash",
-        "rdfs:comment": "hash"
-      },
-      {
-        "@id": "type:3",
-        "@type": "type:TypeEnum",
-        "rdfs:label": "template",
-        "rdfs:comment": "template"
-      },
-      {
-        "@id": "type:4",
-        "@type": "type:TypeEnum",
-        "rdfs:label": "sound",
-        "rdfs:comment": "sound"
-      }
+        {
+            "@id": "type:TypeEnum",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Biometric Type Enum",
+            "rdfs:comment": "Enumeration for the type of biometric.",
+            "owl:oneOf": [
+                "type:1",
+                "type:2",
+                "type:3",
+                "type:4",
+                "type:5",
+                "type:6",
+                "type:7",
+                "type:8",
+                "type:9",
+                "type:10",
+                "type:11",
+                "type:12",
+                "type:13",
+                "type:14",
+                "type:15",
+                "type:16"
+            ]
+        },
+        {
+            "@id": "type:1",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Right Thumb",
+            "rdfs:comment": "Person's Right Thumb biometrics"
+        },
+        {
+            "@id": "type:2",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Right Pointer Finger",
+            "rdfs:comment": "Person's Right Pointer Finger biometrics"
+        },
+        {
+            "@id": "type:3",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Right Middle Finger",
+            "rdfs:comment": "Person's Right Middle Finger biometrics"
+        },
+        {
+            "@id": "type:4",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Right Ring Finger",
+            "rdfs:comment": "Person's Right Ring Finger biometrics"
+        },
+        {
+            "@id": "type:5",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Right Little Finger",
+            "rdfs:comment": "Person's Right Little Finger biometrics"
+        },
+        {
+            "@id": "type:6",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Left Thumb",
+            "rdfs:comment": "Person's Left Thumb biometrics"
+        },
+        {
+            "@id": "type:7",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Left Pointer Finger",
+            "rdfs:comment": "Person's Left Pointer Finger biometrics"
+        },
+        {
+            "@id": "type:8",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Left Middle Finger",
+            "rdfs:comment": "Person's Left Middle Finger biometrics"
+        },
+        {
+            "@id": "type:9",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Left Ring Finger",
+            "rdfs:comment": "Person's Left Ring Finger biometrics"
+        },
+        {
+            "@id": "type:10",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Left Little Finger",
+            "rdfs:comment": "Person's Left Little Finger biometrics"
+        },
+        {
+            "@id": "type:11",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Right Iris",
+            "rdfs:comment": "Person's Right Iris biometrics"
+        },
+        {
+            "@id": "type:12",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Left Iris",
+            "rdfs:comment": "Person's Left Iris biometrics"
+        },
+        {
+            "@id": "type:13",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Face",
+            "rdfs:comment": "Person's Face biometrics"
+        },
+        {
+            "@id": "type:14",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Right Palm Print",
+            "rdfs:comment": "Person's Right Palm Print biometrics"
+        },
+        {
+            "@id": "type:15",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Left Palm Print",
+            "rdfs:comment": "Person's Left Palm Print biometrics"
+        },
+        {
+            "@id": "type:16",
+            "@type": "type:TypeEnum",
+            "rdfs:label": "Voice",
+            "rdfs:comment": "Person's Voice biometrics"
+        }
     ]
-  }
-  
+}

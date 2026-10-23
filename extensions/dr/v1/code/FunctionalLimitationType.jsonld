@@ -1,0 +1,82 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
+    },
+    "@graph": [
+        {
+            "@id": "type:FunctionalLimitationType",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Functional Limitation Type Enum",
+            "rdfs:comment": "Standardized codes and values representing functional limitation types.",
+            "owl:oneOf": [
+                "type:1",
+                "type:2",
+                "type:3",
+                "type:4",
+                "type:5",
+                "type:6",
+                "type:7",
+                "type:8",
+                "type:9"
+            ]
+        },
+        {
+            "@id": "type:1",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Seeing",
+            "rdfs:comment": "Seeing"
+        },
+        {
+            "@id": "type:2",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Hearing",
+            "rdfs:comment": "Hearing"
+        },
+        {
+            "@id": "type:3",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Communication",
+            "rdfs:comment": "Communication"
+        },
+        {
+            "@id": "type:4",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Mobility",
+            "rdfs:comment": "Mobility"
+        },
+        {
+            "@id": "type:5",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Cognition",
+            "rdfs:comment": "Cognition"
+        },
+        {
+            "@id": "type:6",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Interpersonal interaction and relationship",
+            "rdfs:comment": "Interpersonal interaction and relationship"
+        },
+        {
+            "@id": "type:7",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Self-care",
+            "rdfs:comment": "Self-care"
+        },
+        {
+            "@id": "type:8",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Others",
+            "rdfs:comment": "Others"
+        },
+        {
+            "@id": "type:9",
+            "@type": "type:FunctionalLimitationType",
+            "rdfs:label": "Multiple",
+            "rdfs:comment": "Multiple"
+        }
+    ]
+}

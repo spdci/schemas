@@ -1,62 +1,75 @@
 {
-  "@context": {
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "schema": "http://schema.org/"
-  },
-  "@graph": [
-    {
-      "@id": "type:ImpairementType",
-      "@type": "rdfs:Class",
-      "rdfs:subClassOf": "rdfs:Resource",
-      "rdfs:label": "Functional Limitation Type Enum",
-      "rdfs:comment": "Standardized codes and values representing functional limitation types.",
-      "owl:oneOf": [
-        "type:1",
-        "type:2",
-        "type:3",
-        "type:4",
-        "type:5",
-        "type:6"
-      ]
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
     },
-    {
-      "@id": "type:1",
-      "@type": "type:ImpairementType",
-      "rdfs:label": "Vision",
-      "rdfs:comment": "Vision"
-    },
-    {
-      "@id": "type:2",
-      "@type": "type:ImpairementType",
-      "rdfs:label": "Hearing",
-      "rdfs:comment": "Hearing"
-    },
-    {
-      "@id": "type:3",
-      "@type": "type:ImpairementType",
-      "rdfs:label": "Mobility",
-      "rdfs:comment": "Mobility"
-    },
-    {
-      "@id": "type:4",
-      "@type": "type:ImpairementType",
-      "rdfs:label": "Cognitive",
-      "rdfs:comment": "Cognitive"
-    },
-    {
-      "@id": "type:5",
-      "@type": "type:ImpairementType",
-      "rdfs:label": "Speech",
-      "rdfs:comment": "Speech"
-    },
-    {
-      "@id": "type:6",
-      "@type": "type:ImpairementType",
-      "rdfs:label": "Mental",
-      "rdfs:comment": "Mental"
-    }
-  
-  ]
+    "@graph": [
+        {
+            "@id": "type:ImpairmentType",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Impairment Type Enum",
+            "rdfs:comment": "Standardized codes and values representing impairment types.",
+            "owl:oneOf": [
+                "type:1",
+                "type:2",
+                "type:3",
+                "type:4",
+                "type:5",
+                "type:6",
+                "type:7",
+                "type:8"
+            ]
+        },
+        {
+            "@id": "type:1",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Seeing",
+            "rdfs:comment": "Seeing"
+        },
+        {
+            "@id": "type:2",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Hearing",
+            "rdfs:comment": "Hearing"
+        },
+        {
+            "@id": "type:3",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Voice and speech",
+            "rdfs:comment": "Voice and speech"
+        },
+        {
+            "@id": "type:4",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Physical and movement related functions",
+            "rdfs:comment": "Physical and movement related functions"
+        },
+        {
+            "@id": "type:5",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Intellectual",
+            "rdfs:comment": "Intellectual"
+        },
+        {
+            "@id": "type:6",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Mental (psycho-social)",
+            "rdfs:comment": "Mental (psycho-social)"
+        },
+        {
+            "@id": "type:7",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Others (skin, cardiovascular, respiratory, digestive […] systems)",
+            "rdfs:comment": "Others (skin, cardiovascular, respiratory, digestive […] systems)"
+        },
+        {
+            "@id": "type:8",
+            "@type": "type:ImpairmentType",
+            "rdfs:label": "Multiple",
+            "rdfs:comment": "Multiple"
+        }
+    ]
 }

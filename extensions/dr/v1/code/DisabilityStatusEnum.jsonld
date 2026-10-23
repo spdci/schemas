@@ -1,40 +1,40 @@
 {
     "@context": {
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "schema": "http://schema.org/"
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/dr/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
     },
     "@graph": [
-      {
-        "@id": "category:DisabilityStatusEnum",
-        "@type": "rdfs:Class",
-        "rdfs:subClassOf": "rdfs:Resource",
-        "rdfs:label": "Disability status Enum",
-        "rdfs:comment": "Enumeration for disability status.",
-        "owl:oneOf": [
-          "status:0",
-          "status:1",
-          "status:2"
-        ]
-      },
-      {
-        "@id": "status:0",
-        "@type": "type:DisabilityStatusEnum",
-        "rdfs:label": "Approved",
-        "rdfs:comment": "Approved after assessment"
-      },
-      {
-        "@id": "status:1",
-        "@type": "type:DisabilityStatusEnum",
-        "rdfs:label": "Pending",
-        "rdfs:comment": "Still under assessment"
-      },
-      {
-        "@id": "status:2",
-        "@type": "type:DisabilityStatusEnum",
-        "rdfs:label": "Expired",
-        "rdfs:comment": "Needs reassessment"
-      }
+        {
+            "@id": "category:DisabilityStatusEnum",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Disability status Enum",
+            "rdfs:comment": "Enumeration for disability status.",
+            "owl:oneOf": [
+                "status:1",
+                "status:2",
+                "status:3"
+            ]
+        },
+        {
+            "@id": "status:1",
+            "@type": "category:DisabilityStatusEnum",
+            "rdfs:label": "Approved",
+            "rdfs:comment": "The disability assessment has been successfully completed and the individual has received official approval for their disability."
+        },
+        {
+            "@id": "status:2",
+            "@type": "category:DisabilityStatusEnum",
+            "rdfs:label": "Pending approval",
+            "rdfs:comment": "The disability assessment is currently under review and has not yet been finalized."
+        },
+        {
+            "@id": "status:3",
+            "@type": "category:DisabilityStatusEnum",
+            "rdfs:label": "Expired",
+            "rdfs:comment": "The disability assessment status has expired, indicating that the approval of benefits or services is no longer valid."
+        }
     ]
-  }
+}

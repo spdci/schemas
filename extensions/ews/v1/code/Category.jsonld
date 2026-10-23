@@ -7,7 +7,7 @@
     },
     "@graph": [
       {
-        "@id": "type:category",
+        "@id": "type:Category",
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
         "rdfs:label": "hazard type Enum",
@@ -29,73 +29,73 @@
       },
       {
         "@id": "code:geo",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Geo",
         "rdfs:comment": "Geophysical inc. landslide"
       },
       {
         "@id": "code:met",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Met",
         "rdfs:comment": "Meterological inc. flood"
       },
       {
-        "@id": "case:safety",
-        "@type": "type:category",
+        "@id": "code:safety",
+        "@type": "type:Category",
         "rdfs:label": "Safety",
         "rdfs:comment": "General emergency and public safety"
       },
       {
         "@id": "code:security",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Security",
         "rdfs:comment": "Law enforcement, military, homeland and local/private security"
       },
       {
         "@id": "code:rescue",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Rescue",
         "rdfs:comment": "Rescue and recovery"
       },
       {
         "@id": "code:fire",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Fire",
         "rdfs:comment": "Fire suppression and rescue"
       },
       {
         "@id": "code:health",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Health",
         "rdfs:comment": "Medical and public health"
       },
       {
         "@id": "code:env",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Env",
         "rdfs:comment": "Pollution and other environmental"
       },
       {
         "@id": "code:transport",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Transport",
         "rdfs:comment": "Public and private transportation"
       },
       {
         "@id": "code:infra",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Infra",
         "rdfs:comment": "Utility, telecommunication, other non-transport infrastructure"
       },
       {
         "@id": "code:cbrne",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Cbrne",
         "rdfs:comment": "Chemical, biological, radiological, nuclear"
       },
       {
         "@id": "code:other",
-        "@type": "type:category",
+        "@type": "type:Category",
         "rdfs:label": "Other",
         "rdfs:comment": "Other events"
       }

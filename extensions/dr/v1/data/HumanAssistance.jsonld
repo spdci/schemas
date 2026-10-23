@@ -44,7 +44,7 @@
             "@id": "spdci:caregiver",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:HumanAssistance",
-            "rdfs:range": "spdci:DRPerson",
+            "rdfs:range": "spdci:DR_Person",
             "rdfs:comment": "The disable person, personal details such as identifier, name ..."
           },
           {
@@ -52,7 +52,7 @@
             "@id": "spdci:relationship",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:HumanAssistance",
-            "rdfs:range": "spdcicode:RelationshipEnum",
+            "rdfs:range": "spdcicode:RelationshipTypeEnum",
             "rdfs:comment": "The relationship of the caregiver to the disabled person."
           },
           {

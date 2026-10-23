@@ -26,7 +26,7 @@
         "@id": "type:0",
         "@type": "type:MeasurmentUnitEnum",
         "rdfs:label": "H",
-        "rdfs:comment": "Hectar"
+        "rdfs:comment": "Hectare"
       },
       {
         "@id": "type:1",

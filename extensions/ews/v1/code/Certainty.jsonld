@@ -30,7 +30,7 @@
         "@id": "code:likely",
         "@type": "type:Certainty",
         "rdfs:label": "Likely",
-        "rdfs:comment": "Event is expected to occure with high probability"
+        "rdfs:comment": "Event is expected to occur with high probability"
       },
       {
         "@id": "code:possible",

@@ -1,6 +1,6 @@
 {
   "@context": {
-    "spdci": "https://schema.spdci.org/extensions/social/id/data",
+    "spdci": "https://schema.spdci.org/extensions/id/v1/data",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "spdcicore": "https://schema.spdci.org/core/v1/data",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -16,7 +16,11 @@
       "@id": "spdci:biometric_data",        
       "@type": "rdf:Property",
       "rdfs:domain": "spdci:ID_Person",   
-      "rdfs:range": "spdci:Biometric_Data",     
+      "rdfs:range": {
+          "@id": "spdci:Biometric_Data",
+          "@type": "rdfs:Class",
+          "@container": "@list"
+      },     
       "rdfs:comment": ""
     }
   ]

@@ -36,7 +36,7 @@
           {
             "@id": "spdci:sent",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:Info",
+            "rdfs:domain": "spdci:CapAlert",
             "rdfs:range": "spdcicore:DateTime",
             "rdfs:comment": "The time and date of the originated alert"
           },
@@ -97,6 +97,20 @@
             "rdfs:comment": "The code denoting the special handling of the alert message."
           },
           {
+            "@id": "spdci:assessment_date",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "spdcicore:DateTime",
+            "rdfs:comment": "The timestamp when the environmental indicators were calculated"
+          },
+          {
+            "@id": "spdci:threshold_status",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:CapAlert",
+            "rdfs:range": "code:ThresholdStatus",
+            "rdfs:comment": "Tracks step-by-step escalations"
+          },
+          {
             "@id": "spdci:note",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:CapAlert",
@@ -111,7 +125,7 @@
                 "@type": "@id",
                 "@container": "@list"
             },
-            "rdfs:comment": "The group listing of identifying earlier message(s) referenced by th alert message",
+            "rdfs:comment": "The group listing of identifying earlier message(s) referenced by the alert message",
             "schema:value": {
                 "@type": "xsd:string"
             }
@@ -120,18 +134,11 @@
             "@id": "spdci:incidents",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:CapAlert",
-            "rdfs:range": "xsd:string",
-            "rdfs:comment": "Brief summary of the alert."
-          },
-          {
-            "@id": "spdci:description",
-            "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:CapAlert",
             "rdfs:range":  {
                 "@type": "@id",
                 "@container": "@list"
             },
-            "rdfs:comment": "The group listing naming the referent incident(s) of the alert message ",
+            "rdfs:comment": "The group listing naming the referent incident(s) of the alert message",
             "schema:value": {
                 "@type": "xsd:string"
             }
@@ -152,7 +159,7 @@
           {
             "@id": "spdci:created_at",
             "@type": "rdfs:Datatype",
-            "rdfs:domain": "spdci:Info",
+            "rdfs:domain": "spdci:CapAlert",
             "rdfs:range": "spdcicore:DateTime",
             "rdfs:comment": "The date of the creation of the alert."
           }

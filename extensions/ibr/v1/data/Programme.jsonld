@@ -1,6 +1,7 @@
 {
   "@context": {
-    "spdci": "https://schema.spdci.org/extensions/ibr/v1/",
+    "spdci": "https://schema.spdci.org/extensions/ibr/v1/data",
+    "code": "https://schema.spdci.org/extensions/ibr/v1/code",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#"
@@ -47,14 +48,14 @@
       "@id": "spdci:institution_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": "spdci:InstitutionEnum",
+      "rdfs:range": "code:InstitutionEnum",
       "rdfs:comment": "The type of institution responsible for implementing the programme"
     },
     {
       "@id": "spdci:legal_status",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": "spdci:LegalStatusEnum",
+      "rdfs:range": "code:LegalStatusEnum",
       "rdfs:comment": "Specifies if the programme is anchored in legislation"
     },
     {
@@ -62,7 +63,7 @@
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
       "rdfs:range": {
-        "@type": "spdci:SocialProtectionFunctionEnum",
+        "@type": "code:SocialProtectionFunctionEnum",
         "@container": "@list"
       },
       "rdfs:comment": "The type of social protection functions provided by the programme.  More than one value may be provided"
@@ -71,14 +72,14 @@
       "@id": "spdci:contribution_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": "spdci:ContributionTypeEnum",
+      "rdfs:range": "code:ContributionTypeEnum",
       "rdfs:comment": "Specifies if a contribution is required by beneficiaries"
     },
     {
       "@id": "spdci:programme_type",
       "@type": "rdfs:Datatype",
       "rdfs:domain": "spdci:Programme",
-      "rdfs:range": "spdci:ProgrammeTypeEnum",
+      "rdfs:range": "code:ProgrammeTypeEnum",
       "rdfs:comment": "Specifies if a contribution is required by beneficiaries"
     },
     {

@@ -37,7 +37,7 @@
             "@id": "spdci:land_size",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:FarmInfo",
-            "rdfs:range": "xsd:Decimal",
+            "rdfs:range": "xsd:decimal",
             "rdfs:comment": "Is the season of the crop."
           },
           {
@@ -51,7 +51,11 @@
             "@id": "spdci:farming_activities",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:FarmInfo",
-            "rdfs:range": "spdci:FarmingActivities",
+            "rdfs:range": {
+                "@id": "spdci:Farming_Activities",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
             "rdfs:comment": "Is the croptype of the land."
           },
           {
@@ -68,6 +72,26 @@
             "rdfs:domain": "spdci:FarmInfo",
             "rdfs:range": "spdcicore:DateTime",
             "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+          },
+          {
+              "@id": "spdci:farm_type",
+              "@type": "rdfs:Datatype",
+              "rdfs:domain": "spdci:FarmInfo",
+              "rdfs:range": "code:FarmTypeEnum",
+              "rdfs:comment": "Main purpose of farming"
+          },
+          {
+              "@id": "spdci:additional_attributes",
+              "@type": "rdfs:Datatype",
+              "rdfs:domain": "spdci:FarmInfo",
+              "rdfs:range": {
+                  "@type": "@id",
+                  "@container": "@list"
+              },
+              "rdfs:comment": "Additional context/country specific attributes",
+              "schema:value": {
+                  "@type": "xsd:string"
+              }
           }
     ]
     }

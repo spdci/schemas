@@ -7,7 +7,7 @@
     },
     "@graph": [
       {
-        "@id": "type:urgency",
+        "@id": "type:Urgency",
         "@type": "rdfs:Class",
         "rdfs:subClassOf": "rdfs:Resource",
         "rdfs:label": "Urgency",
@@ -22,32 +22,32 @@
       },
       {
         "@id": "code:immediate",
-        "@type": "type:urgency",
+        "@type": "type:Urgency",
         "rdfs:label": "Immediate",
         "rdfs:comment": "Action should be taken immediately"
       },
       {
         "@id": "code:expected",
-        "@type": "type:urgency",
+        "@type": "type:Urgency",
         "rdfs:label": "Expected",
         "rdfs:comment": "Action should be taken soon, within a defined time window"
       },
       {
         "@id": "code:future",
-        "@type": "type:urgency",
+        "@type": "type:Urgency",
         "rdfs:label": "Future",
         "rdfs:comment": "Action is required in the future; event is not imminent"
       },
       {
         "@id": "code:past",
-        "@type": "type:urgency",
+        "@type": "type:Urgency",
         "rdfs:label": "Past",
         "rdfs:comment": "The event has already occurred; alert may provide historical or warning info"
       },
       {
         "@id": "code:unknown",
-        "@type": "type:urgency",
-        "rdfs:label": "Draft",
+        "@type": "type:Urgency",
+        "rdfs:label": "Unknown",
         "rdfs:comment": "Urgency is unknown or not specified"
       }
       

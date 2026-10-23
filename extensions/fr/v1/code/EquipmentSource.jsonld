@@ -24,43 +24,43 @@
       },
       {
         "@id": "source:1",
-        "@type": "type:EquipmentSource",
+        "@type": "group:EquipmentSource",
         "rdfs:label": "Owned solely by the farmer or members of the farmer’s household",
         "rdfs:comment": "Owned solely by the farmer or members of the farmer’s household"
       },
       {
         "@id": "source:2",
-        "@type": "type:EquipmentSource",
+        "@type": "group:EquipmentSource",
         "rdfs:label": "Owned by the farmer jointly with other farmers",
         "rdfs:comment": "Owned by the farmer jointly with other farmers"
       },
       {
         "@id": "source:3",
-        "@type": "type:EquipmentSource",
+        "@type": "group:EquipmentSource",
         "rdfs:label": "Provided by the landlord",
         "rdfs:comment": "Provided by the landlord"
       },
       {
         "@id": "source:4",
-        "@type": "type:EquipmentSource",
+        "@type": "group:EquipmentSource",
         "rdfs:label": "Provided by other private holders (excluding cooperatives)",
         "rdfs:comment": "Provided by other private holders (excluding cooperatives)"
       },
       {
         "@id": "source:5",
-        "@type": "type:EquipmentSource",
+        "@type": "group:EquipmentSource",
         "rdfs:label": "Provided by a cooperative",
         "rdfs:comment": "Provided by a cooperative"
       },
       {
         "@id": "source:6",
-        "@type": "type:EquipmentSource",
+        "@type": "group:EquipmentSource",
         "rdfs:label": "Provided by a private agricultural service establishment",
         "rdfs:comment": "Provided by a private agricultural service establishment"
       },
       {
-        "@id": "source:4",
-        "@type": "type:EquipmentSource",
+        "@id": "source:7",
+        "@type": "group:EquipmentSource",
         "rdfs:label": "Provided by a government agency",
         "rdfs:comment": "Provided by a government agency"
       }

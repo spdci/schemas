@@ -5,7 +5,7 @@
     "schema": "http://schema.org/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
-    "code":"https://schema.spdci.org/core/v1/cide"
+    "code":"https://schema.spdci.org/core/v1/code"
   },
   "@id": "spdci:Identifier",
   "@type": "rdfs:Class",

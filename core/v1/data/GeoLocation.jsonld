@@ -17,65 +17,32 @@
       ],
       "rdfs:property": [
         {
+          "@id": "spdci:latitude",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:GeoLocation",
+          "rdfs:range": "xsd:decimal",
+          "rdfs:comment": "Latitude of a location, for example, 37.42242 (WGS 84)"
+        },
+        {
+          "@id": "spdci:longitude",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:GeoLocation",
+          "rdfs:range": "xsd:decimal",
+          "rdfs:comment": "Longitude of a location, for example, -122.08585 (WGS 84)"
+        },
+        {
+          "@id": "spdci:altitude",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:GeoLocation",
+          "rdfs:range": "xsd:decimal",
+          "rdfs:comment": "Altitude of a location, for example, 500.42212 (WGS 84)"
+        },
+        {
           "@id": "spdci:plus_code",
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:GeoLocation",
-          "rdfs:comment": "contains the plus code information for the location.",
-          "rdfs:range": {
-            "@id": "rdfs:Class",
-            "rdfs:property": [
-              {
-                "@id": "spdci:global_code",
-                "@type": "rdfs:Datatype",
-                "rdfs:domain": "spdci:plus_code",
-                "rdfs:range": "xsd:string",
-                "rdfs:comment": "provides the global code for the latitude/longitude"
-              },
-              {
-                "@id": "spdci:geometry",
-                "@type": "rdfs:Datatype",
-                "rdfs:domain": "spdci:plus_code",
-                "rdfs:comment": "Contains the Geometry Object.",
-                "rdfs:range": {
-                  "@id": "rdfs:Class",
-                  "rdfs:property": [
-                    {
-                      "@id": "spdci:bounds",
-                      "@type": "rdfs:Datatype",
-                      "rdfs:domain": "spdci:geometry",
-                      "rdfs:comment": "provides the bounding box of the code, with the north east and south west coordinates.",
-                      "rdfs:range": {
-                        "@id": "rdfs:Class",
-                        "rdfs:property": [
-                          {
-                            "@id": "spdci:northeast",
-                            "@type": "rdfs:Datatype",
-                            "rdfs:domain": "spdci:bounds",
-                            "rdfs:range": "spdci:GeoCoordinates",
-                            "rdfs:comment": "provides the centre of the bounding box."
-                          },
-                          {
-                            "@id": "spdci:southwest",
-                            "@type": "rdfs:Datatype",
-                            "rdfs:domain": "spdci:bounds",
-                            "rdfs:range": "spdci:GeoCoordinates",
-                            "rdfs:comment": "provides the centre of the bounding box."
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "@id": "spdci:location",
-                      "@type": "rdfs:Datatype",
-                      "rdfs:domain": "spdci:geometry",
-                      "rdfs:range": "spdci:GeoCoordinates",
-                      "rdfs:comment": "provides the centre of the bounding box."
-                    }
-                  ]
-                }
-              }
-            ]
-          }
+          "rdfs:range": "spdci:GooglePlusCode",
+          "rdfs:comment": "Plus code information for the location"
         }
       ]
     }

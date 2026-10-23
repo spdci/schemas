@@ -17,7 +17,7 @@
       "@id": "spdci:demographic_info",        
       "@type": "rdf:Property",
       "rdfs:domain": "spdci:Member",   
-      "rdfs:range": "spdci:SRPerson",     
+      "rdfs:range": "spdci:SR_Person",     
       "rdfs:comment": "In SR, Member.demographic_info must be a Social Person to allow independent evolving of each interface."
     }
   ]

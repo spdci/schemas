@@ -1,7 +1,7 @@
 {
   "@context": {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/"
+    "@vocab": "https://schema.spdci.org/extensions/ibr/v1/code"
   },
   "@graph": [
     {
@@ -24,8 +24,7 @@
         "programme:11",
         "programme:12",
         "programme:13",
-        "programme14",
-        "programme:15"
+        "programme:14"
       ]
     },
     {

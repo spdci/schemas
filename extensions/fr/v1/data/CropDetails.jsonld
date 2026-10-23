@@ -51,7 +51,11 @@
             "@id": "spdci:end_use",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:CropDetails",
-            "rdfs:range": "code:CropEnduseEnum",
+            "rdfs:range": {
+                "@id": "code:CropEnduseEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
             "rdfs:comment": "The purpose of the crop"
           },
           {
@@ -97,7 +101,19 @@
             "rdfs:domain": "spdci:CropDetails",
             "rdfs:range": "spdcicore:DateTime",
             "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+          },
+          {
+              "@id": "spdci:additional_attributes",
+              "@type": "rdfs:Datatype",
+              "rdfs:domain": "spdci:CropDetails",
+              "rdfs:range": {
+                  "@type": "@id",
+                  "@container": "@list"
+              },
+              "rdfs:comment": "Additional context/country specific attributes",
+              "schema:value": {
+                  "@type": "xsd:string"
+              }
           }
-          
     ]
     }

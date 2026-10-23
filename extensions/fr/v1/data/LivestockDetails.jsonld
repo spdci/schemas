@@ -30,14 +30,18 @@
             "@id": "spdci:count",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Animals",
-            "rdfs:range": "xsd:Integer",
+            "rdfs:range": "xsd:integer",
             "rdfs:comment": "Is the count of the animals owned by farmer."
           },
           {
             "@id": "spdci:livestock_system",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Animals",
-            "rdfs:range": "code:LivestockSystemEnum",
+            "rdfs:range": {
+                "@id": "code:LivestockSystemEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
             "rdfs:comment": "Is the type the farmer owns."
           },
           {
@@ -54,7 +58,19 @@
             "rdfs:domain": "spdci:Animals",
             "rdfs:range": "spdcicore:DateTime",
             "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
+          },
+          {
+              "@id": "spdci:additional_attributes",
+              "@type": "rdfs:Datatype",
+              "rdfs:domain": "spdci:Animals",
+              "rdfs:range": {
+                  "@type": "@id",
+                  "@container": "@list"
+              },
+              "rdfs:comment": "Additional context/country specific attributes",
+              "schema:value": {
+                  "@type": "xsd:string"
+              }
           }
-          
     ]
     }

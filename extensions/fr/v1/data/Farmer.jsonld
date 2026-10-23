@@ -75,7 +75,20 @@
         "rdfs:domain": "spdci:Farmer_Person",
         "rdfs:range": "spdcicore:DateTime",
         "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
-      }     
+      },
+      {
+          "@id": "spdci:additional_attributes",
+          "@type": "rdfs:Datatype",
+          "rdfs:domain": "spdci:Farmer_Person",
+          "rdfs:range": {
+              "@type": "@id",
+              "@container": "@list"
+          },
+          "rdfs:comment": "Additional context/country specific attributes",
+          "schema:value": {
+              "@type": "xsd:string"
+          }
+      }
     ]
   }
   

@@ -35,7 +35,7 @@
           "@type": "rdfs:Datatype",
           "rdfs:domain": "spdci:Farming_Activities",
           "rdfs:range": {
-              "@id": "spdci:livestockDetails",
+              "@id": "spdci:Animals",
               "@type": "rdfs:Class",
               "@container": "@list"
           },
@@ -44,7 +44,7 @@
         {
           "@id": "spdci:mixed_farming",
           "@type": "rdfs:Datatype",
-          "rdfs:domain": "spdci:CropDetails",
+          "rdfs:domain": "spdci:Farming_Activities",
           "rdfs:range": "xsd:boolean",
           "rdfs:comment": "Group 015: Mixed farming, Includes both crops and animal related farming activities Yes (1) or No (0)."
         },
@@ -74,7 +74,11 @@
             "@id": "spdci:aqua_support_activities",
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Farming_Activities",
-            "rdfs:range": "code:AquaSupportActivityEnum",
+            "rdfs:range": {
+                "@id": "code:AquaSupportActivityEnum",
+                "@type": "rdfs:Class",
+                "@container": "@list"
+            },
             "rdfs:comment": "Group 033: Support activities for fishing and aquaculture"
         },
         {
@@ -101,8 +105,20 @@
             "rdfs:domain": "spdci:Farming_Activities",
             "rdfs:range": "spdcicore:DateTime",
             "rdfs:comment": "The date when person details got updated , formatted according to schema:DateTime."
-          }
-      
+          },
+        {
+            "@id": "spdci:additional_attributes",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Farming_Activities",
+            "rdfs:range": {
+                "@type": "@id",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Additional context/country specific attributes",
+            "schema:value": {
+                "@type": "xsd:string"
+            }
+        }
     ]
   }
   

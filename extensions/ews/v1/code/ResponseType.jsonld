@@ -43,6 +43,12 @@
         "rdfs:comment": "Make preparations per the instruction"
       },
       {
+        "@id": "code:execute",
+        "@type": "type:ResponseType",
+        "rdfs:label": "Execute",
+        "rdfs:comment": "Execute a pre-planned activity identified in instruction"
+      },
+      {
         "@id": "code:avoid",
         "@type": "type:ResponseType",
         "rdfs:label": "Avoid",
@@ -64,7 +70,7 @@
         "@id": "code:allclear",
         "@type": "type:ResponseType",
         "rdfs:label": "All Clear",
-        "rdfs:comment": "The subject event no longer poses a thread or concern and any follow on action is described in"
+        "rdfs:comment": "The subject event no longer poses a threat or concern and any follow on action is described in"
       },
       {
         "@id": "code:none",

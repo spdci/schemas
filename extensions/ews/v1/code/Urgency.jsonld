@@ -47,7 +47,7 @@
       {
         "@id": "code:unknown",
         "@type": "type:urgency",
-        "rdfs:label": "Draft",
+        "rdfs:label": "Unknown",
         "rdfs:comment": "Urgency is unknown or not specified"
       }
       

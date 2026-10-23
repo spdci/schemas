@@ -1,0 +1,37 @@
+{
+    "@context": {
+        "spdci": "https://schema.spdci.org/extensions/ews/v1/data",
+        "code": "https://schema.spdci.org/extensions/ews/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "spdcicore": "https://schema.spdci.org/core/v1/data",
+        "spdcicode": "https://schema.spdci.org/core/v1/code",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:GeoCode",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "Identifies a geographic area using a recognised geographic coding system. Aligned with OASIS CAP v1.2",
+    "rdfs:label": "GeoCode",
+    "rdfs:subClassOf": [
+        {
+            "@type": "rdfs:Class",
+            "rdfs:label": "Structured Entity"
+        }
+    ],
+    "rdfs:property": [
+        {
+            "@id": "spdci:valueName",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:GeoCode",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Name of the geographic coding system, e.g. UGC"
+        },
+        {
+            "@id": "spdci:value",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:GeoCode",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Code in that coding system, e.g. AKZ185"
+        }
+    ]
+}

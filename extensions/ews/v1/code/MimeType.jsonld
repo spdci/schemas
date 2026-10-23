@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@vocab": "http://schema.spdci.org/extensions/ews/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/"
+    },
+    "@graph": [
+        {
+            "@id": "type:MimeType",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Mime Type",
+            "rdfs:comment": "Specifies the type of resource. Reference: https://www.iana.org/assignments/media-types",
+            "owl:oneOf": [
+                "code:mp4",
+                "code:jpeg"
+            ]
+        },
+        {
+            "@id": "code:mp4",
+            "@type": "type:MimeType",
+            "rdfs:label": "audio/mp4",
+            "rdfs:comment": "https://www.iana.org/assignments/media-types/audio/mp4"
+        },
+        {
+            "@id": "code:jpeg",
+            "@type": "type:MimeType",
+            "rdfs:label": "image/jpeg",
+            "rdfs:comment": "https://www.iana.org/assignments/media-types/image/jpeg"
+        }
+    ]
+}

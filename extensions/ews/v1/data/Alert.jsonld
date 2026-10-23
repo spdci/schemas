@@ -38,7 +38,7 @@
             "@type": "rdfs:Datatype",
             "rdfs:domain": "spdci:Alert",
             "rdfs:range": "spdcicore:GeoShape",
-            "rdfs:comment": "GeoJson geometry object representing the spatial extent of the hazad"
+            "rdfs:comment": "GeoJson geometry object representing the spatial extent of the hazard"
           },
           {
             "@id": "spdci:properties",

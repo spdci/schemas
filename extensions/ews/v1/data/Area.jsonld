@@ -1,0 +1,63 @@
+{
+    "@context": {
+        "spdci": "https://schema.spdci.org/extensions/ews/v1/data",
+        "code": "https://schema.spdci.org/extensions/ews/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "spdcicore": "https://schema.spdci.org/core/v1/data",
+        "spdcicode": "https://schema.spdci.org/core/v1/code",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:Area",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "Refers to the location the alert is happening. Countries can set and agree on their own codes to define areas, as most SP systems store administrative areas rather than coordinates. Aligned with OASIS CAP v1.2",
+    "rdfs:label": "Area",
+    "rdfs:subClassOf": [
+        {
+            "@type": "rdfs:Class",
+            "rdfs:label": "Structured Entity"
+        }
+    ],
+    "rdfs:property": [
+        {
+            "@id": "spdci:areaDesc",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Area",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "Human-readable description of the affected area"
+        },
+        {
+            "@id": "spdci:polygon",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Area",
+            "rdfs:range": {
+                "@type": "@id",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Defines the affected area as a geographic polygon using latitude/longitude pairs",
+            "schema:value": {
+                "@type": "xsd:string"
+            }
+        },
+        {
+            "@id": "spdci:circle",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Area",
+            "rdfs:range": {
+                "@type": "@id",
+                "@container": "@list"
+            },
+            "rdfs:comment": "Defines an affected area as a circle using a center point and radius",
+            "schema:value": {
+                "@type": "xsd:string"
+            }
+        },
+        {
+            "@id": "spdci:geocode",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Area",
+            "rdfs:range": "spdci:GeoCode",
+            "rdfs:comment": "Identifies the area using a recognised geographic coding system"
+        }
+    ]
+}

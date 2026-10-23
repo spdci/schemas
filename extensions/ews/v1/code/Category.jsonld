@@ -46,6 +46,12 @@
         "rdfs:comment": "General emergency and public safety"
       },
       {
+        "@id": "code:safety",
+        "@type": "type:category",
+        "rdfs:label": "Safety",
+        "rdfs:comment": "General emergency and public safety"
+      },
+      {
         "@id": "code:security",
         "@type": "type:category",
         "rdfs:label": "Security",

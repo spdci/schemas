@@ -1,0 +1,65 @@
+{
+    "@context": {
+        "spdci": "https://schema.spdci.org/extensions/ews/v1/data",
+        "code": "https://schema.spdci.org/extensions/ews/v1/code",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "spdcicore": "https://schema.spdci.org/core/v1/data",
+        "spdcicode": "https://schema.spdci.org/core/v1/code",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#"
+    },
+    "@id": "spdci:Resource",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "Refers to an additional file with supplemental information related to this element; e.g., an image or audio file. Aligned with OASIS CAP v1.2",
+    "rdfs:label": "Resource",
+    "rdfs:subClassOf": [
+        {
+            "@type": "rdfs:Class",
+            "rdfs:label": "Structured Entity"
+        }
+    ],
+    "rdfs:property": [
+        {
+            "@id": "spdci:resourceDesc",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Resource",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The human-readable text describing the type and content, such as 'map' or 'photo', of the resource file"
+        },
+        {
+            "@id": "spdci:mimeType",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Resource",
+            "rdfs:range": "code:MimeType",
+            "rdfs:comment": "MIME content type and sub-type as described in RFC 2046"
+        },
+        {
+            "@id": "spdci:size",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Resource",
+            "rdfs:range": "xsd:integer",
+            "rdfs:comment": "Approximate size of the resource file in bytes"
+        },
+        {
+            "@id": "spdci:uri",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Resource",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "A full absolute URI, typically a URL that can be used to retrieve the resource over the Internet, or a relative URI to name the content of a derefUri element if one is present in this resource block"
+        },
+        {
+            "@id": "spdci:derefUri",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Resource",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The base-64 encoded data content of the resource file"
+        },
+        {
+            "@id": "spdci:digest",
+            "@type": "rdfs:Datatype",
+            "rdfs:domain": "spdci:Resource",
+            "rdfs:range": "xsd:string",
+            "rdfs:comment": "The code representing the digital digest ('hash') computed from the resource file"
+        }
+    ]
+}

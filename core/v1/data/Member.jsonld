@@ -1,6 +1,6 @@
 {
     "@context": {
-      "spdci": "https://schema.spdci.org/extensions/core/v1/data",
+      "spdci": "https://schema.spdci.org/core/v1/data",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "owl": "http://www.w3.org/2002/07/owl#",
@@ -42,7 +42,7 @@
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
         "rdfs:range": {
-          "@id": "spdci:RelatePerson",
+          "@id": "spdci:RelatedPerson",
           "@type": "rdfs:Class",
           "@container": "@list"
         },
@@ -83,7 +83,7 @@
         "@id": "spdci:occupation",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
-        "rdfs:range": "spdci:OccupationEnum",
+        "rdfs:range": "code:OccupationEnum",
         "rdfs:comment": "Occupation of the individual."
       },
       {
@@ -97,7 +97,11 @@
         "@id": "spdci:language_code",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Member",
-        "rdfs:range": "code:LanguageCodeEnum",
+        "rdfs:range": {
+            "@id": "code:LanguageCodeEnum",
+            "@type": "rdfs:Class",
+            "@container": "@list"
+        },
         "rdfs:comment": "The languages spoken by the individual."
       },
       {

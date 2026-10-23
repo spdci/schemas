@@ -4,7 +4,7 @@
       "schema": "http://schema.org/",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "owl": "http://www.w3.org/2002/07/owl#" ,
-      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
+      "@vocab": "https://schema.spdci.org/core/v1/code"
     },
     "@graph": [
         {
@@ -14,15 +14,15 @@
             "rdfs:label": "Education code enums Status",
             "rdfs:comment": "Standardized codes and values representing for education code",
             "owl:oneOf": [
-                "education_level:0",
-                "education_level:1",
-                "education_level:2",
-                "education_level:3",
-                "education_level:4",
-                "education_level:5",
-                "education_level:6",
-                "education_level:7",
-                "education_level:8"
+              "category:0",
+              "category:1",
+              "category:2",
+              "category:3",
+              "category:4",
+              "category:5",
+              "category:6",
+              "category:7",
+              "category:8"
             ]
         },
         {

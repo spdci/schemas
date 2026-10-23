@@ -1,27 +1,41 @@
 {
     "@context": {
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "schema": "http://schema.org/",
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "owl": "http://www.w3.org/2002/07/owl#" ,
-      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "@vocab": "https://schema.spdci.org/core/v1/code"
     },
     "@graph": [
-      {
-        "@id": "category:IncomeLevelEnum",
-        "@type": "rdfs:Class",
-        "rdfs:subClassOf": "rdfs:Resource",
-        "rdfs:label": "Income level Enum",
-        "rdfs:comment": "Enumeration for types of incomes.",
-        "owl:oneOf": [
-          "category:1"
-        ]
-      },
-      {
-        "@id": "category:1",
-        "@type": "category:IncomeLevelEnum",
-        "rdfs:label": "1",
-        "rdfs:comment": "income level I."
-      }
+        {
+            "@id": "category:IncomeLevelEnum",
+            "@type": "rdfs:Class",
+            "rdfs:subClassOf": "rdfs:Resource",
+            "rdfs:label": "Income level Enum",
+            "rdfs:comment": "Enumeration for types of incomes.",
+            "owl:oneOf": [
+                "category:1",
+                "category:2",
+                "category:3"
+            ]
+        },
+        {
+            "@id": "category:1",
+            "@type": "category:IncomeLevelEnum",
+            "rdfs:label": "1",
+            "rdfs:comment": "income level I."
+        },
+        {
+            "@id": "category:2",
+            "@type": "category:IncomeLevelEnum",
+            "rdfs:label": "2",
+            "rdfs:comment": "income level II."
+        },
+        {
+            "@id": "category:3",
+            "@type": "category:IncomeLevelEnum",
+            "rdfs:label": "3",
+            "rdfs:comment": "income level III."
+        }
     ]
-  }
+}

@@ -1,6 +1,6 @@
 {
     "@context": {
-      "spdci": "https://schema.spdci.org/extensions/core/v1/data",
+      "spdci": "https://schema.spdci.org/core/v1/data",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "owl": "http://www.w3.org/2002/07/owl#",
@@ -46,11 +46,7 @@
         "@id": "spdci:address",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Group",
-        "rdfs:range": {
-             "@id": "spdci:Address",
-             "@type": "rdfs:Class",
-             "@container":"@list"
-        },
+        "rdfs:range": "spdci:Address",
         "rdfs:comment": "Current residential address of the group, represented as an address object."
       },
       {
@@ -106,14 +102,14 @@
         "@id": "spdci:registration_date",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Group",
-        "rdfs:range": "common:DateTime",
+        "rdfs:range": "spdci:DateTime",
         "rdfs:comment": "The date the details of the group were registered."
       },
       {
         "@id": "spdci:last_updated",
         "@type": "rdfs:Datatype",
         "rdfs:domain": "spdci:Group",
-        "rdfs:range": "common:DateTime",
+        "rdfs:range": "spdci:DateTime",
         "rdfs:comment": "The date the details of the group were last updated."
       },
       {

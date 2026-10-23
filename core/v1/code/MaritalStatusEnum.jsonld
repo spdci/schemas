@@ -4,7 +4,7 @@
       "schema": "http://schema.org/",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "owl": "http://www.w3.org/2002/07/owl#" ,
-      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"  
+      "@vocab": "https://schema.spdci.org/core/v1/code"  
   },
   "@graph": [
     {

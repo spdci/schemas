@@ -4,7 +4,7 @@
       "schema": "http://schema.org/",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "owl": "http://www.w3.org/2002/07/owl#" ,
-      "@vocab": "https://schema.spdci.org/extensions/core/v1/code"
+      "@vocab": "https://schema.spdci.org/core/v1/code"
   },
    "@graph": [
     {
@@ -25,37 +25,37 @@
     },
     {
       "@id": "type:VIS_SS",
-      "@type": "type:DisabilityTypeEnum",
+      "@type": "type:FunctionalLimitationType",
       "rdfs:label": "Vision",
       "rdfs:comment": "Vision"
     },
     {
       "@id": "type:HEAR_SS",
-      "@type": "type:DisabilityTypeEnum",
+      "@type": "type:FunctionalLimitationType",
       "rdfs:label": "Hearing",
       "rdfs:comment": "Hearing"
     },
     {
       "@id": "type:MOB_SS",
-      "@type": "type:DisabilityTypeEnum",
+      "@type": "type:FunctionalLimitationType",
       "rdfs:label": "Mobility",
       "rdfs:comment": "Mobility"
     },
     {
       "@id": "type:COG_SS",
-      "@type": "type:DisabilityTypeEnum",
+      "@type": "type:FunctionalLimitationType",
       "rdfs:label": "COGNITION (REMEMBERING)",
       "rdfs:comment": "COGNITION (REMEMBERING)"
     },
     {
       "@id": "type:SC_SS",
-      "@type": "type:DisabilityTypeEnum",
+      "@type": "type:FunctionalLimitationType",
       "rdfs:label": "Self care",
       "rdfs:comment": "Self care"
     },
     {
       "@id": "type:COM_SS",
-      "@type": "type:DisabilityTypeEnum",
+      "@type": "type:FunctionalLimitationType",
       "rdfs:label": "Communication",
       "rdfs:comment": "Communication"
     }
